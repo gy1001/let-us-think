@@ -18,4 +18,10 @@ export default defineAppConfig({
       },
     ],
   },
+  subpackages: [
+    {
+      root: 'rate',
+      pages: ['pages/rate/index'],
+    },
+  ],
 })

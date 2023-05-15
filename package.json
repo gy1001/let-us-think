@@ -56,6 +56,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@swc/core": "^1.3.58",
     "@tarojs/cli": "3.6.6",
     "@tarojs/webpack5-runner": "3.6.6",
     "@types/node": "^18.15.11",
