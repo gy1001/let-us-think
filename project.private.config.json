@@ -9,6 +9,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "评分",
+          "pathName": "rate/pages/rate/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
