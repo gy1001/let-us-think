@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import store from './store'
 import './app.scss'
+import { Button } from '@nutui/nutui-taro'
 
 const App = createApp({
   onShow(options) {},
@@ -8,5 +9,6 @@ const App = createApp({
 })
 
 App.use(store)
+App.use(Button)
 
 export default App

@@ -261,6 +261,8 @@ function now() {
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/.store/vue@3.3.2/node_modules/vue/index.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store */ "./src/store.ts");
+/* harmony import */ var _nutui_nutui_taro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @nutui/nutui-taro */ "./node_modules/.store/@nutui+nutui-taro@4.0.7/node_modules/@nutui/nutui-taro/dist/packages/button/index.mjs");
+
 
 
 
@@ -269,6 +271,7 @@ var App = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
 });
 
 App.use(_store__WEBPACK_IMPORTED_MODULE_1__["default"]);
+App.use(_nutui_nutui_taro__WEBPACK_IMPORTED_MODULE_2__.Button);
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
@@ -1872,7 +1875,7 @@ var index = {
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["taro","vendors"], function() { return __webpack_exec__("./src/app.ts"); });
+/******/ __webpack_require__.O(0, ["taro","vendors","common"], function() { return __webpack_exec__("./src/app.ts"); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);;
