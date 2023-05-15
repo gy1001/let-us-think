@@ -1,21 +1,21 @@
-export default {
-  pages: ["pages/index/index", "pages/log/index"],
+export default defineAppConfig({
+  pages: ['pages/index/index', 'pages/log/index'],
   window: {
-    backgroundTextStyle: "light",
-    navigationBarBackgroundColor: "#fff",
-    navigationBarTitleText: "WeChat",
-    navigationBarTextStyle: "black",
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#fff',
+    navigationBarTitleText: 'WeChat',
+    navigationBarTextStyle: 'black',
   },
   tabBar: {
     list: [
       {
-        pagePath: "pages/index/index",
-        text: "首页",
+        pagePath: 'pages/index/index',
+        text: '首页',
       },
       {
-        pagePath: "pages/log/index",
-        text: "日志",
+        pagePath: 'pages/log/index',
+        text: '日志',
       },
     ],
   },
-};
+})

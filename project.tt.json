@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
   "projectname": "myApp",
-  "description": "思考吧，编程君",
+  "description": "let-us-think",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,

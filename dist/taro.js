@@ -1,39 +1,54 @@
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["taro"],{
 
-/***/ "./node_modules/_@tarojs_api@3.3.14@@tarojs/api/dist/index.esm.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/_@tarojs_api@3.3.14@@tarojs/api/dist/index.esm.js ***!
-  \************************************************************************/
-/*! exports provided: default */
-/*! all exports used */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/.store/@tarojs+api@3.6.6/node_modules/@tarojs/api/dist/index.esm.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+api@3.6.6/node_modules/@tarojs/api/dist/index.esm.js ***!
+  \******************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global, window) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/typeof.js");
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectSpread2 */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/objectSpread2.js");
-/* harmony import */ var _babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Taro; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_createSuper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/createSuper */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/objectSpread2 */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/objectSpread2.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
 
 
 
 
 
-if (typeof Object.assign !== 'function') {
+
+
+
+function isFunction$1(x) {
+  return typeof x === 'function';
+}
+function isUndefined(x) {
+  return typeof x === 'undefined';
+}
+function isObject(x) {
+  return x && (0,_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1__["default"])(x) === 'object';
+}
+var isBadObj = function isBadObj(x) {
+  return !isObject(x);
+};
+function throwTypeError(s) {
+  throw new TypeError(s);
+}
+if (!isFunction$1(Object.assign)) {
   // Must be writable: true, enumerable: false, configurable: true
   Object.assign = function (target) {
     // .length of function is 2
     if (target == null) {
       // TypeError if undefined or null
-      throw new TypeError('Cannot convert undefined or null to object');
+      throwTypeError('Cannot convert undefined or null to object');
     }
     var to = Object(target);
     for (var index = 1; index < arguments.length; index++) {
@@ -51,18 +66,14 @@ if (typeof Object.assign !== 'function') {
     return to;
   };
 }
-if (typeof Object.defineProperties !== 'function') {
+if (!isFunction$1(Object.defineProperties)) {
   Object.defineProperties = function (obj, properties) {
     function convertToDescriptor(desc) {
       function hasProperty(obj, prop) {
         return Object.prototype.hasOwnProperty.call(obj, prop);
       }
-      function isCallable(v) {
-        // NB: modify as necessary if other values than functions are callable.
-        return typeof v === 'function';
-      }
-      if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(desc) !== 'object' || desc === null) {
-        throw new TypeError('bad desc');
+      if (isBadObj(desc)) {
+        throwTypeError('bad desc');
       }
       var d = {};
       if (hasProperty(desc, 'enumerable')) d.enumerable = !!desc.enumerable;
@@ -73,24 +84,24 @@ if (typeof Object.defineProperties !== 'function') {
       if (hasProperty(desc, 'writable')) d.writable = !!desc.writable;
       if (hasProperty(desc, 'get')) {
         var g = desc.get;
-        if (!isCallable(g) && typeof g !== 'undefined') {
-          throw new TypeError('bad get');
+        if (!isFunction$1(g) && !isUndefined(g)) {
+          throwTypeError('bad get');
         }
         d.get = g;
       }
       if (hasProperty(desc, 'set')) {
         var s = desc.set;
-        if (!isCallable(s) && typeof s !== 'undefined') {
-          throw new TypeError('bad set');
+        if (!isFunction$1(s) && !isUndefined(s)) {
+          throwTypeError('bad set');
         }
         d.set = s;
       }
       if (('get' in d || 'set' in d) && ('value' in d || 'writable' in d)) {
-        throw new TypeError('identity-confused descriptor');
+        throwTypeError('identity-confused descriptor');
       }
       return d;
     }
-    if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(obj) !== 'object' || obj === null) throw new TypeError('bad obj');
+    if (isBadObj(obj)) throwTypeError('bad obj');
     properties = Object(properties);
     var keys = Object.keys(properties);
     var descs = [];
@@ -103,69 +114,472 @@ if (typeof Object.defineProperties !== 'function') {
     return obj;
   };
 }
+var DEFAULT_EMPTY_ARRAY = '[]';
+var NO_DEFAULT_VALUE = '';
+var DEFAULT_TRUE = '!0';
+var DEFAULT_FALSE = '!1';
+var touchEvents = {
+  bindTouchStart: NO_DEFAULT_VALUE,
+  bindTouchMove: NO_DEFAULT_VALUE,
+  bindTouchEnd: NO_DEFAULT_VALUE,
+  bindTouchCancel: NO_DEFAULT_VALUE,
+  bindLongTap: NO_DEFAULT_VALUE
+};
+var animation = {
+  animation: NO_DEFAULT_VALUE,
+  bindAnimationStart: NO_DEFAULT_VALUE,
+  bindAnimationIteration: NO_DEFAULT_VALUE,
+  bindAnimationEnd: NO_DEFAULT_VALUE,
+  bindTransitionEnd: NO_DEFAULT_VALUE
+};
+function singleQuote(s) {
+  return "'".concat(s, "'");
+}
+Object.assign(Object.assign({
+  'hover-class': singleQuote('none'),
+  'hover-stop-propagation': DEFAULT_FALSE,
+  'hover-start-time': '50',
+  'hover-stay-time': '400'
+}, touchEvents), animation);
+Object.assign({
+  longitude: NO_DEFAULT_VALUE,
+  latitude: NO_DEFAULT_VALUE,
+  scale: '16',
+  markers: DEFAULT_EMPTY_ARRAY,
+  covers: NO_DEFAULT_VALUE,
+  polyline: DEFAULT_EMPTY_ARRAY,
+  circles: DEFAULT_EMPTY_ARRAY,
+  controls: DEFAULT_EMPTY_ARRAY,
+  'include-points': DEFAULT_EMPTY_ARRAY,
+  'show-location': NO_DEFAULT_VALUE,
+  'layer-style': '1',
+  bindMarkerTap: NO_DEFAULT_VALUE,
+  bindControlTap: NO_DEFAULT_VALUE,
+  bindCalloutTap: NO_DEFAULT_VALUE,
+  bindUpdated: NO_DEFAULT_VALUE
+}, touchEvents);
+Object.assign({
+  size: singleQuote('default'),
+  type: NO_DEFAULT_VALUE,
+  plain: DEFAULT_FALSE,
+  disabled: NO_DEFAULT_VALUE,
+  loading: DEFAULT_FALSE,
+  'form-type': NO_DEFAULT_VALUE,
+  'open-type': NO_DEFAULT_VALUE,
+  'hover-class': singleQuote('button-hover'),
+  'hover-stop-propagation': DEFAULT_FALSE,
+  'hover-start-time': '20',
+  'hover-stay-time': '70',
+  name: NO_DEFAULT_VALUE
+}, touchEvents);
+Object.assign({
+  'scroll-top': DEFAULT_FALSE
+}, touchEvents);
+Object.assign(Object.assign({
+  direction: 'none',
+  inertia: DEFAULT_FALSE,
+  'out-of-bounds': DEFAULT_FALSE,
+  x: NO_DEFAULT_VALUE,
+  y: NO_DEFAULT_VALUE,
+  damping: '20',
+  friction: '2',
+  disabled: NO_DEFAULT_VALUE,
+  scale: DEFAULT_FALSE,
+  'scale-min': '0.5',
+  'scale-max': '10',
+  'scale-value': '1',
+  bindChange: NO_DEFAULT_VALUE,
+  bindScale: NO_DEFAULT_VALUE,
+  bindHTouchMove: NO_DEFAULT_VALUE,
+  bindVTouchMove: NO_DEFAULT_VALUE,
+  width: singleQuote('10px'),
+  height: singleQuote('10px')
+}, touchEvents), animation);
+Object.assign(Object.assign({
+  'scroll-x': DEFAULT_FALSE,
+  'scroll-y': DEFAULT_FALSE,
+  'upper-threshold': '50',
+  'lower-threshold': '50',
+  'scroll-top': NO_DEFAULT_VALUE,
+  'scroll-left': NO_DEFAULT_VALUE,
+  'scroll-into-view': NO_DEFAULT_VALUE,
+  'scroll-with-animation': DEFAULT_FALSE,
+  'enable-back-to-top': DEFAULT_FALSE,
+  bindScrollToUpper: NO_DEFAULT_VALUE,
+  bindScrollToLower: NO_DEFAULT_VALUE,
+  bindScroll: NO_DEFAULT_VALUE
+}, touchEvents), animation);
+Object.assign({
+  'indicator-dots': DEFAULT_FALSE,
+  'indicator-color': singleQuote('rgba(0, 0, 0, .3)'),
+  'indicator-active-color': singleQuote('#000000'),
+  autoplay: DEFAULT_FALSE,
+  current: '0',
+  interval: '5000',
+  duration: '500',
+  circular: DEFAULT_FALSE,
+  vertical: DEFAULT_FALSE,
+  'previous-margin': singleQuote('0px'),
+  'next-margin': singleQuote('0px'),
+  'display-multiple-items': '1',
+  bindChange: NO_DEFAULT_VALUE,
+  bindTransition: NO_DEFAULT_VALUE,
+  bindAnimationFinish: NO_DEFAULT_VALUE
+}, touchEvents);
+Object.assign({
+  src: NO_DEFAULT_VALUE,
+  mode: singleQuote('scaleToFill'),
+  'lazy-load': DEFAULT_FALSE,
+  bindError: NO_DEFAULT_VALUE,
+  bindLoad: NO_DEFAULT_VALUE
+}, touchEvents);
+Object.assign({
+  src: NO_DEFAULT_VALUE,
+  autoplay: DEFAULT_FALSE,
+  muted: DEFAULT_FALSE,
+  orientation: singleQuote('vertical'),
+  'object-fit': singleQuote('contain'),
+  'background-mute': DEFAULT_FALSE,
+  'min-cache': '1',
+  'max-cache': '3',
+  bindStateChange: NO_DEFAULT_VALUE,
+  bindFullScreenChange: NO_DEFAULT_VALUE,
+  bindNetStatus: NO_DEFAULT_VALUE
+}, animation);
+Object.assign({
+  src: NO_DEFAULT_VALUE,
+  duration: NO_DEFAULT_VALUE,
+  controls: DEFAULT_TRUE,
+  'danmu-list': NO_DEFAULT_VALUE,
+  'danmu-btn': NO_DEFAULT_VALUE,
+  'enable-danmu': NO_DEFAULT_VALUE,
+  autoplay: DEFAULT_FALSE,
+  loop: DEFAULT_FALSE,
+  muted: DEFAULT_FALSE,
+  'initial-time': '0',
+  'page-gesture': DEFAULT_FALSE,
+  direction: NO_DEFAULT_VALUE,
+  'show-progress': DEFAULT_TRUE,
+  'show-fullscreen-btn': DEFAULT_TRUE,
+  'show-play-btn': DEFAULT_TRUE,
+  'show-center-play-btn': DEFAULT_TRUE,
+  'enable-progress-gesture': DEFAULT_TRUE,
+  'object-fit': singleQuote('contain'),
+  poster: NO_DEFAULT_VALUE,
+  'show-mute-btn': DEFAULT_FALSE,
+  bindPlay: NO_DEFAULT_VALUE,
+  bindPause: NO_DEFAULT_VALUE,
+  bindEnded: NO_DEFAULT_VALUE,
+  bindTimeUpdate: NO_DEFAULT_VALUE,
+  bindFullScreenChange: NO_DEFAULT_VALUE,
+  bindWaiting: NO_DEFAULT_VALUE,
+  bindError: NO_DEFAULT_VALUE
+}, animation);
+Object.assign({
+  'canvas-id': NO_DEFAULT_VALUE,
+  'disable-scroll': DEFAULT_FALSE,
+  bindError: NO_DEFAULT_VALUE
+}, touchEvents);
+var PLATFORM_TYPE;
+(function (PLATFORM_TYPE) {
+  PLATFORM_TYPE["MINI"] = "mini";
+  PLATFORM_TYPE["WEB"] = "web";
+  PLATFORM_TYPE["RN"] = "rn";
+  PLATFORM_TYPE["HARMONY"] = "harmony";
+  PLATFORM_TYPE["QUICK"] = "quickapp";
+})(PLATFORM_TYPE || (PLATFORM_TYPE = {}));
+({
+  h5: {
+    type: PLATFORM_TYPE.WEB
+  },
+  harmony: {
+    type: PLATFORM_TYPE.HARMONY
+  },
+  mini: {
+    type: PLATFORM_TYPE.MINI
+  },
+  rn: {
+    type: PLATFORM_TYPE.RN
+  },
+  quickapp: {
+    type: PLATFORM_TYPE.QUICK
+  }
+});
+var Events = /*#__PURE__*/function () {
+  function Events(opts) {
+    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Events);
+    var _a;
+    this.callbacks = (_a = opts === null || opts === void 0 ? void 0 : opts.callbacks) !== null && _a !== void 0 ? _a : {};
+  }
+  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Events, [{
+    key: "on",
+    value: function on(eventName, callback, context) {
+      var event, node, tail, list;
+      if (!callback) {
+        return this;
+      }
+      eventName = eventName.split(Events.eventSplitter);
+      this.callbacks || (this.callbacks = {});
+      var calls = this.callbacks;
+      while (event = eventName.shift()) {
+        list = calls[event];
+        node = list ? list.tail : {};
+        node.next = tail = {};
+        node.context = context;
+        node.callback = callback;
+        calls[event] = {
+          tail: tail,
+          next: list ? list.next : node
+        };
+      }
+      return this;
+    }
+  }, {
+    key: "once",
+    value: function once(events, callback, context) {
+      var _this = this;
+      var wrapper = function wrapper() {
+        for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+        callback.apply(_this, args);
+        _this.off(events, wrapper, context);
+      };
+      this.on(events, wrapper, context);
+      return this;
+    }
+  }, {
+    key: "off",
+    value: function off(events, callback, context) {
+      var event, calls, node, tail, cb, ctx;
+      if (!(calls = this.callbacks)) {
+        return this;
+      }
+      if (!(events || callback || context)) {
+        delete this.callbacks;
+        return this;
+      }
+      events = events ? events.split(Events.eventSplitter) : Object.keys(calls);
+      while (event = events.shift()) {
+        node = calls[event];
+        delete calls[event];
+        if (!node || !(callback || context)) {
+          continue;
+        }
+        tail = node.tail;
+        while ((node = node.next) !== tail) {
+          cb = node.callback;
+          ctx = node.context;
+          if (callback && cb !== callback || context && ctx !== context) {
+            this.on(event, cb, ctx);
+          }
+        }
+      }
+      return this;
+    }
+  }, {
+    key: "trigger",
+    value: function trigger(events) {
+      var event, node, calls, tail;
+      if (!(calls = this.callbacks)) {
+        return this;
+      }
+      events = events.split(Events.eventSplitter);
+      var rest = [].slice.call(arguments, 1);
+      while (event = events.shift()) {
+        if (node = calls[event]) {
+          tail = node.tail;
+          while ((node = node.next) !== tail) {
+            node.callback.apply(node.context || this, rest);
+          }
+        }
+      }
+      return this;
+    }
+  }]);
+  return Events;
+}();
+Events.eventSplitter = ','; // Note: Harmony ACE API 8 开发板不支持使用正则 split 字符串 /\s+/
+function isFunction(o) {
+  return typeof o === 'function';
+}
+var isWebPlatform = function isWebPlatform() {
+  return  false || "mini" === 'web';
+};
+var HOOK_TYPE;
+(function (HOOK_TYPE) {
+  HOOK_TYPE[HOOK_TYPE["SINGLE"] = 0] = "SINGLE";
+  HOOK_TYPE[HOOK_TYPE["MULTI"] = 1] = "MULTI";
+  HOOK_TYPE[HOOK_TYPE["WATERFALL"] = 2] = "WATERFALL";
+})(HOOK_TYPE || (HOOK_TYPE = {}));
+var defaultMiniLifecycle = {
+  app: ['onLaunch', 'onShow', 'onHide'],
+  page: ['onLoad', 'onUnload', 'onReady', 'onShow', 'onHide', ['onPullDownRefresh', 'onReachBottom', 'onPageScroll', 'onResize', 'onTabItemTap', 'onTitleClick', 'onOptionMenuClick', 'onPopMenuClick', 'onPullIntercept', 'onAddToFavorites'], ['onShareAppMessage', 'onShareTimeline']],
+  component: ['attached', 'detached']
+};
+function TaroHook(type, initial) {
+  return {
+    type: type,
+    initial: initial || null
+  };
+}
+var TaroHooks = /*#__PURE__*/function (_Events) {
+  (0,_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroHooks, _Events);
+  var _super = (0,_babel_runtime_helpers_createSuper__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroHooks);
+  function TaroHooks(hooks, opts) {
+    var _this2;
+    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, TaroHooks);
+    _this2 = _super.call(this, opts);
+    _this2.hooks = hooks;
+    for (var hookName in hooks) {
+      var initial = hooks[hookName].initial;
+      if (isFunction(initial)) {
+        _this2.on(hookName, initial);
+      }
+    }
+    return _this2;
+  }
+  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(TaroHooks, [{
+    key: "tapOneOrMany",
+    value: function tapOneOrMany(hookName, callback) {
+      var _this3 = this;
+      var list = isFunction(callback) ? [callback] : callback;
+      list.forEach(function (cb) {
+        return _this3.on(hookName, cb);
+      });
+    }
+  }, {
+    key: "tap",
+    value: function tap(hookName, callback) {
+      var hooks = this.hooks;
+      var _hooks$hookName = hooks[hookName],
+        type = _hooks$hookName.type,
+        initial = _hooks$hookName.initial;
+      if (type === HOOK_TYPE.SINGLE) {
+        this.off(hookName);
+        this.on(hookName, isFunction(callback) ? callback : callback[callback.length - 1]);
+      } else {
+        initial && this.off(hookName, initial);
+        this.tapOneOrMany(hookName, callback);
+      }
+    }
+  }, {
+    key: "call",
+    value: function call(hookName) {
+      var _a;
+      var hook = this.hooks[hookName];
+      if (!hook) return;
+      var type = hook.type;
+      var calls = this.callbacks;
+      if (!calls) return;
+      var list = calls[hookName];
+      if (list) {
+        var tail = list.tail;
+        var node = list.next;
+        for (var _len2 = arguments.length, rest = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+          rest[_key2 - 1] = arguments[_key2];
+        }
+        var args = rest;
+        var res;
+        while (node !== tail) {
+          res = (_a = node.callback) === null || _a === void 0 ? void 0 : _a.apply(node.context || this, args);
+          if (type === HOOK_TYPE.WATERFALL) {
+            var params = [res];
+            args = params;
+          }
+          node = node.next;
+        }
+        return res;
+      }
+    }
+  }, {
+    key: "isExist",
+    value: function isExist(hookName) {
+      var _a;
+      return Boolean((_a = this.callbacks) === null || _a === void 0 ? void 0 : _a[hookName]);
+    }
+  }]);
+  return TaroHooks;
+}(Events);
+new TaroHooks({
+  getMiniLifecycle: TaroHook(HOOK_TYPE.SINGLE, function (defaultConfig) {
+    return defaultConfig;
+  }),
+  getMiniLifecycleImpl: TaroHook(HOOK_TYPE.SINGLE, function () {
+    return this.call('getMiniLifecycle', defaultMiniLifecycle);
+  }),
+  getLifecycle: TaroHook(HOOK_TYPE.SINGLE, function (instance, lifecycle) {
+    return instance[lifecycle];
+  }),
+  getPathIndex: TaroHook(HOOK_TYPE.SINGLE, function (indexOfNode) {
+    return "[".concat(indexOfNode, "]");
+  }),
+  getEventCenter: TaroHook(HOOK_TYPE.SINGLE, function (Events) {
+    return new Events();
+  }),
+  isBubbleEvents: TaroHook(HOOK_TYPE.SINGLE, function (eventName) {
+    /**
+     * 支持冒泡的事件, 除 支付宝小程序外，其余的可冒泡事件都和微信保持一致
+     * 详见 见 https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
+     */
+    var BUBBLE_EVENTS = new Set(['touchstart', 'touchmove', 'touchcancel', 'touchend', 'touchforcechange', 'tap', 'longpress', 'longtap', 'transitionend', 'animationstart', 'animationiteration', 'animationend']);
+    return BUBBLE_EVENTS.has(eventName);
+  }),
+  getSpecialNodes: TaroHook(HOOK_TYPE.SINGLE, function () {
+    return ['view', 'text', 'image'];
+  }),
+  onRemoveAttribute: TaroHook(HOOK_TYPE.SINGLE),
+  batchedEventUpdates: TaroHook(HOOK_TYPE.SINGLE),
+  mergePageInstance: TaroHook(HOOK_TYPE.SINGLE),
+  modifyPageObject: TaroHook(HOOK_TYPE.SINGLE),
+  createPullDownComponent: TaroHook(HOOK_TYPE.SINGLE),
+  getDOMNode: TaroHook(HOOK_TYPE.SINGLE),
+  modifyHydrateData: TaroHook(HOOK_TYPE.SINGLE),
+  modifySetAttrPayload: TaroHook(HOOK_TYPE.SINGLE),
+  modifyRmAttrPayload: TaroHook(HOOK_TYPE.SINGLE),
+  onAddEvent: TaroHook(HOOK_TYPE.SINGLE),
+  modifyMpEvent: TaroHook(HOOK_TYPE.MULTI),
+  modifyMpEventImpl: TaroHook(HOOK_TYPE.SINGLE, function (e) {
+    try {
+      // 有些小程序的事件对象的某些属性只读
+      this.call('modifyMpEvent', e);
+    } catch (error) {
+      console.warn('[Taro modifyMpEvent hook Error]: ' + (error === null || error === void 0 ? void 0 : error.message));
+    }
+  }),
+  injectNewStyleProperties: TaroHook(HOOK_TYPE.SINGLE),
+  modifyTaroEvent: TaroHook(HOOK_TYPE.MULTI),
+  modifyDispatchEvent: TaroHook(HOOK_TYPE.MULTI),
+  initNativeApi: TaroHook(HOOK_TYPE.MULTI),
+  patchElement: TaroHook(HOOK_TYPE.MULTI)
+});
+new Date().getTime().toString();
 var ENV_TYPE = {
   WEAPP: 'WEAPP',
-  WEB: 'WEB',
-  RN: 'RN',
   SWAN: 'SWAN',
   ALIPAY: 'ALIPAY',
   TT: 'TT',
   QQ: 'QQ',
   JD: 'JD',
-  KWAI: 'KWAI'
+  WEB: 'WEB',
+  RN: 'RN',
+  HARMONY: 'HARMONY',
+  QUICKAPP: 'QUICKAPP'
 };
-var _env = null; // 一个taro项目肯定运行同样的环境
-
+var isWeb = isWebPlatform();
 function getEnv() {
-  if (_env) return _env;
-  if (typeof jd !== 'undefined' && jd.getSystemInfo) {
-    _env = ENV_TYPE.JD;
-    return ENV_TYPE.JD;
-  }
-  if (typeof qq !== 'undefined' && qq.getSystemInfo) {
-    _env = ENV_TYPE.QQ;
-    return ENV_TYPE.QQ;
-  }
-  if (typeof tt !== 'undefined' && tt.getSystemInfo) {
-    _env = ENV_TYPE.TT;
-    return ENV_TYPE.TT;
-  }
-  if (typeof wx !== 'undefined' && wx.getSystemInfo) {
-    _env = ENV_TYPE.WEAPP;
+  if (true) {
     return ENV_TYPE.WEAPP;
-  }
-  if (typeof swan !== 'undefined' && swan.getSystemInfo) {
-    _env = ENV_TYPE.SWAN;
-    return ENV_TYPE.SWAN;
-  }
-  if (typeof my !== 'undefined' && my.getSystemInfo) {
-    _env = ENV_TYPE.ALIPAY;
-    return ENV_TYPE.ALIPAY;
-  }
-  if (typeof ks !== 'undefined' && ks.getSystemInfo) {
-    _env = ENV_TYPE.KWAI;
-    return ENV_TYPE.KWAI;
-  }
-  if (typeof global !== 'undefined' && global.__fbGenNativeModule) {
-    _env = ENV_TYPE.RN;
-    return ENV_TYPE.RN;
-  }
-  if (typeof window !== 'undefined') {
-    _env = ENV_TYPE.WEB;
-    return ENV_TYPE.WEB;
-  }
-  return 'Unknown environment';
+  } else {}
 }
 var Chain = /*#__PURE__*/function () {
-  function Chain(requestParams) {
-    var interceptors = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
-    var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Chain);
-    this.index = index;
+  function Chain(requestParams, interceptors, index) {
+    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Chain);
+    this.index = index || 0;
     this.requestParams = requestParams;
-    this.interceptors = interceptors;
+    this.interceptors = interceptors || [];
   }
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Chain, [{
+  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Chain, [{
     key: "proceed",
     value: function proceed(requestParams) {
       this.requestParams = requestParams;
@@ -178,7 +592,9 @@ var Chain = /*#__PURE__*/function () {
       var res = p.catch(function (err) {
         return Promise.reject(err);
       });
-      if (typeof p.abort === 'function') res.abort = p.abort;
+      Object.keys(p).forEach(function (k) {
+        return isFunction$1(p[k]) && (res[k] = p[k]);
+      });
       return res;
     }
   }, {
@@ -196,19 +612,19 @@ var Chain = /*#__PURE__*/function () {
 }();
 var Link = /*#__PURE__*/function () {
   function Link(interceptor) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Link);
+    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Link);
     this.taroInterceptor = interceptor;
     this.chain = new Chain();
   }
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Link, [{
+  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Link, [{
     key: "request",
     value: function request(requestParams) {
-      var _this = this;
-      this.chain.interceptors = this.chain.interceptors.filter(function (interceptor) {
-        return interceptor !== _this.taroInterceptor;
-      });
-      this.chain.interceptors.push(this.taroInterceptor);
-      return this.chain.proceed(_babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1___default()({}, requestParams));
+      var chain = this.chain;
+      var taroInterceptor = this.taroInterceptor;
+      chain.interceptors = chain.interceptors.filter(function (interceptor) {
+        return interceptor !== taroInterceptor;
+      }).concat(taroInterceptor);
+      return chain.proceed((0,_babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_6__["default"])({}, requestParams));
     }
   }, {
     key: "addInterceptor",
@@ -223,6 +639,11 @@ var Link = /*#__PURE__*/function () {
   }]);
   return Link;
 }();
+function interceptorify(promiseifyApi) {
+  return new Link(function (chain) {
+    return promiseifyApi(chain.requestParams);
+  });
+}
 function timeoutInterceptor(chain) {
   var requestParams = chain.requestParams;
   var p;
@@ -241,15 +662,16 @@ function timeoutInterceptor(chain) {
       reject(err);
     });
   });
-  if (p !== undefined && typeof p.abort === 'function') res.abort = p.abort;
+  if (!isUndefined(p) && isFunction$1(p.abort)) res.abort = p.abort;
   return res;
 }
 function logInterceptor(chain) {
   var requestParams = chain.requestParams;
   var method = requestParams.method,
     data = requestParams.data,
-    url = requestParams.url; // eslint-disable-next-line no-console
+    url = requestParams.url;
 
+  // eslint-disable-next-line no-console
   console.log("http ".concat(method || 'GET', " --> ").concat(url, " data: "), data);
   var p = chain.proceed(requestParams);
   var res = p.then(function (res) {
@@ -257,7 +679,7 @@ function logInterceptor(chain) {
     console.log("http <-- ".concat(url, " result:"), res);
     return res;
   });
-  if (typeof p.abort === 'function') res.abort = p.abort;
+  if (isFunction$1(p.abort)) res.abort = p.abort;
   return res;
 }
 var interceptors = /*#__PURE__*/Object.freeze({
@@ -270,43 +692,65 @@ function Behavior(options) {
 }
 function getPreload(current) {
   return function (key, val) {
-    if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(key) === 'object') {
-      current.preloadData = key;
-    } else if (key !== undefined && val !== undefined) {
-      current.preloadData = _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4___default()({}, key, val);
-    }
+    current.preloadData = isObject(key) ? key : (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])({}, key, val);
   };
 }
+var defaultDesignWidth = 750;
+var defaultDesignRatio = {
+  640: 2.34 / 2,
+  750: 1,
+  828: 1.81 / 2
+};
+var defaultBaseFontSize = 20;
+var defaultUnitPrecision = 5;
+var defaultTargetUnit = 'rpx';
 function getInitPxTransform(taro) {
   return function (config) {
     var _config$designWidth = config.designWidth,
-      designWidth = _config$designWidth === void 0 ? 750 : _config$designWidth,
+      designWidth = _config$designWidth === void 0 ? defaultDesignWidth : _config$designWidth,
       _config$deviceRatio = config.deviceRatio,
-      deviceRatio = _config$deviceRatio === void 0 ? {
-        640: 2.34 / 2,
-        750: 1,
-        828: 1.81 / 2
-      } : _config$deviceRatio;
+      deviceRatio = _config$deviceRatio === void 0 ? defaultDesignRatio : _config$deviceRatio,
+      _config$baseFontSize = config.baseFontSize,
+      baseFontSize = _config$baseFontSize === void 0 ? defaultBaseFontSize : _config$baseFontSize,
+      _config$targetUnit = config.targetUnit,
+      targetUnit = _config$targetUnit === void 0 ? defaultTargetUnit : _config$targetUnit,
+      _config$unitPrecision = config.unitPrecision,
+      unitPrecision = _config$unitPrecision === void 0 ? defaultUnitPrecision : _config$unitPrecision;
     taro.config = taro.config || {};
     taro.config.designWidth = designWidth;
     taro.config.deviceRatio = deviceRatio;
+    taro.config.baseFontSize = baseFontSize;
+    taro.config.targetUnit = targetUnit;
+    taro.config.unitPrecision = unitPrecision;
   };
 }
 function getPxTransform(taro) {
   return function (size) {
-    var _ref = taro.config || {},
-      _ref$designWidth = _ref.designWidth,
-      designWidth = _ref$designWidth === void 0 ? 750 : _ref$designWidth,
-      _ref$deviceRatio = _ref.deviceRatio,
-      deviceRatio = _ref$deviceRatio === void 0 ? {
-        640: 2.34 / 2,
-        750: 1,
-        828: 1.81 / 2
-      } : _ref$deviceRatio;
+    var config = taro.config || {};
+    var deviceRatio = config.deviceRatio || defaultDesignRatio;
+    var baseFontSize = config.baseFontSize;
+    var designWidth = function () {
+      var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      return isFunction$1(config.designWidth) ? config.designWidth(input) : config.designWidth || defaultDesignWidth;
+    }(size);
     if (!(designWidth in deviceRatio)) {
       throw new Error("deviceRatio \u914D\u7F6E\u4E2D\u4E0D\u5B58\u5728 ".concat(designWidth, " \u7684\u8BBE\u7F6E\uFF01"));
     }
-    return parseInt(size, 10) * deviceRatio[designWidth] + 'rpx';
+    var formatSize = ~~size;
+    var rootValue = 1 / config.deviceRatio[designWidth];
+    switch (config.targetUnit) {
+      case 'rem':
+        rootValue *= baseFontSize * 2;
+        break;
+      case 'px':
+        rootValue *= 2;
+        break;
+    }
+    var val = formatSize / rootValue;
+    if (config.unitPrecision >= 0 && config.unitPrecision <= 100) {
+      val = Number(val.toFixed(config.unitPrecision));
+    }
+    return val + config.targetUnit;
   };
 }
 
@@ -317,507 +761,1382 @@ var Taro = {
   ENV_TYPE: ENV_TYPE,
   Link: Link,
   interceptors: interceptors,
-  Current: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["Current"],
-  getCurrentInstance: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["getCurrentInstance"],
-  options: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["options"],
-  nextTick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["nextTick"],
-  eventCenter: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["eventCenter"],
-  Events: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["Events"],
-  useDidShow: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useDidShow"],
-  useDidHide: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useDidHide"],
-  usePullDownRefresh: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["usePullDownRefresh"],
-  useReachBottom: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useReachBottom"],
-  usePageScroll: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["usePageScroll"],
-  useResize: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useResize"],
-  useShareAppMessage: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useShareAppMessage"],
-  useTabItemTap: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useTabItemTap"],
-  useTitleClick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useTitleClick"],
-  useOptionMenuClick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useOptionMenuClick"],
-  usePullIntercept: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["usePullIntercept"],
-  useShareTimeline: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useShareTimeline"],
-  useAddToFavorites: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useAddToFavorites"],
-  useReady: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useReady"],
-  useRouter: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useRouter"],
-  getInitPxTransform: getInitPxTransform
+  Current: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.Current,
+  getCurrentInstance: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance,
+  options: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.options,
+  nextTick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.nextTick,
+  eventCenter: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.eventCenter,
+  Events: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.Events,
+  getInitPxTransform: getInitPxTransform,
+  interceptorify: interceptorify
 };
 Taro.initPxTransform = getInitPxTransform(Taro);
-Taro.preload = getPreload(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["Current"]);
+Taro.preload = getPreload(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.Current);
 Taro.pxTransform = getPxTransform(Taro);
-/* harmony default export */ __webpack_exports__["default"] = (Taro);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../_webpack@4.46.0@webpack/buildin/global.js */ "./node_modules/_webpack@4.46.0@webpack/buildin/global.js"), __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js")["window"]))
+
 
 /***/ }),
 
-/***/ "./node_modules/_@tarojs_mini-runner@3.3.14@@tarojs/mini-runner/dist/template/comp.js":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/_@tarojs_mini-runner@3.3.14@@tarojs/mini-runner/dist/template/comp.js ***!
-  \********************************************************************************************/
-/*! no exports provided */
-/*! all exports used */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/.store/@tarojs+plugin-framework-vue3@3.6.6/node_modules/@tarojs/plugin-framework-vue3/dist/runtime.js":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+plugin-framework-vue3@3.6.6/node_modules/@tarojs/plugin-framework-vue3/dist/runtime.js ***!
+  \****************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js");
-/* eslint-disable no-undef */
-
-// @ts-ignore
-Component(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createRecursiveComponentConfig"])());
-
-/***/ }),
-
-/***/ "./node_modules/_@tarojs_mini-runner@3.3.14@@tarojs/mini-runner/dist/template/custom-wrapper.js":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/_@tarojs_mini-runner@3.3.14@@tarojs/mini-runner/dist/template/custom-wrapper.js ***!
-  \******************************************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createVue3App": function() { return /* binding */ createVue3App; }
+/* harmony export */ });
+/* unused harmony exports createNativeComponentConfig, isClassComponent, setGlobalDataPlugin, setReconciler, useAddToFavorites, useDidHide, useDidShow, useError, useLaunch, useLoad, useOptionMenuClick, usePageNotFound, usePageScroll, usePullDownRefresh, usePullIntercept, useReachBottom, useReady, useResize, useRouter, useSaveExitState, useShareAppMessage, useShareTimeline, useTabItemTap, useTitleClick, useUnhandledRejection, useUnload */
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/.store/@tarojs+shared@3.6.6/node_modules/@tarojs/shared/dist/shared.esm.js");
+/* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/.store/vue@3.3.2/node_modules/vue/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_2__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+
+
+
+
+function createTaroHook(lifecycle) {
+  return function (fn) {
+    var id = (0,vue__WEBPACK_IMPORTED_MODULE_2__.inject)('id');
+    var fnRef = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(fn);
+    var inst;
+    var callback;
+    (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(function () {
+      inst = (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.getPageInstance)(id);
+      if (inst === undefined) {
+        inst = Object.create({
+          $options: {}
+        });
+        (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.injectPageInstance)(inst, id);
+      }
+      inst = inst.$options;
+      callback = function callback() {
+        return fnRef.value.apply(fnRef, arguments);
+      };
+      var currentCallback = inst[lifecycle];
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(currentCallback)) {
+        inst[lifecycle] = callback;
+      } else if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(currentCallback)) {
+        inst[lifecycle] = [inst[lifecycle], callback];
+      } else if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(currentCallback)) {
+        inst[lifecycle] = [].concat((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(currentCallback), [callback]);
+      }
+    });
+    (0,vue__WEBPACK_IMPORTED_MODULE_2__.onUnmounted)(function () {
+      if (!inst || !callback) {
+        return;
+      }
+      var list = inst[lifecycle];
+      if (list === callback) {
+        inst[lifecycle] = undefined;
+      } else if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(list)) {
+        inst[lifecycle] = list.filter(function (item) {
+          return item !== callback;
+        });
+      }
+      inst = null;
+      callback = null;
+    });
+  };
+}
+/** LifeCycle */
+var useDidShow = createTaroHook('onShow');
+var useDidHide = createTaroHook('onHide');
+/** App */
+var useError = createTaroHook('onError');
+var useUnhandledRejection = createTaroHook('onUnhandledRejection');
+var useLaunch = createTaroHook('onLaunch');
+var usePageNotFound = createTaroHook('onPageNotFound');
+/** Page */
+var useLoad = createTaroHook('onLoad');
+var usePageScroll = createTaroHook('onPageScroll');
+var usePullDownRefresh = createTaroHook('onPullDownRefresh');
+var usePullIntercept = createTaroHook('onPullIntercept');
+var useReachBottom = createTaroHook('onReachBottom');
+var useResize = createTaroHook('onResize');
+var useUnload = createTaroHook('onUnload');
+/** Mini-Program */
+var useAddToFavorites = createTaroHook('onAddToFavorites');
+var useOptionMenuClick = createTaroHook('onOptionMenuClick');
+var useSaveExitState = createTaroHook('onSaveExitState');
+var useShareAppMessage = createTaroHook('onShareAppMessage');
+var useShareTimeline = createTaroHook('onShareTimeline');
+var useTitleClick = createTaroHook('onTitleClick');
+/** Router */
+var useReady = createTaroHook('onReady');
+var useRouter = function useRouter() {
+  // return dynamic ? Current.router : React.useMemo(() => Current.router, [])
+  return _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.router;
+};
+var useTabItemTap = createTaroHook('onTabItemTap');
+var taroHooks = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  useAddToFavorites: useAddToFavorites,
+  useDidHide: useDidHide,
+  useDidShow: useDidShow,
+  useError: useError,
+  useLaunch: useLaunch,
+  useLoad: useLoad,
+  useOptionMenuClick: useOptionMenuClick,
+  usePageNotFound: usePageNotFound,
+  usePageScroll: usePageScroll,
+  usePullDownRefresh: usePullDownRefresh,
+  usePullIntercept: usePullIntercept,
+  useReachBottom: useReachBottom,
+  useReady: useReady,
+  useResize: useResize,
+  useRouter: useRouter,
+  useSaveExitState: useSaveExitState,
+  useShareAppMessage: useShareAppMessage,
+  useShareTimeline: useShareTimeline,
+  useTabItemTap: useTabItemTap,
+  useTitleClick: useTitleClick,
+  useUnhandledRejection: useUnhandledRejection,
+  useUnload: useUnload
 });
-/* eslint-disable no-undef */
-var runtime_1 = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js");
-// @ts-ignore
-Component(runtime_1.createRecursiveComponentConfig('custom-wrapper'));
+var setGlobalDataPlugin = {
+  install: function install(app, data) {
+    app.taroGlobalData = data;
+  }
+};
+
+/**
+ * set writable, enumerable to true
+ */
+function setDefaultDescriptor(obj) {
+  obj.writable = true;
+  obj.enumerable = true;
+  return obj;
+}
+/**
+ * 设置入口的路由参数
+ * @param options 小程序传入的参数
+ */
+function setRouterParams(options) {
+  _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.router = Object.assign({
+    params: options === null || options === void 0 ? void 0 : options.query
+  }, options);
+}
+var isWeb = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)();
+function setReconciler() {
+  _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('getLifecycle', function (instance, lifecycle) {
+    return instance.$options[lifecycle];
+  });
+  if (isWeb) {
+    _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('createPullDownComponent', function (component, path, h) {
+      var inject = {
+        props: {
+          tid: String
+        },
+        created: function created() {
+          (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.injectPageInstance)(this, path);
+        }
+      };
+      component.mixins = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(component.mixins) ? component.mixins.push(inject) : [inject];
+      return {
+        render: function render() {
+          return h('taro-pull-to-refresh', {
+            class: 'hydrated'
+          }, [h(component, this.$slots.default)]);
+        }
+      };
+    });
+    _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('getDOMNode', function (el) {
+      return el.$el;
+    });
+  }
+}
+function createVue3Page(h, id) {
+  return function (component) {
+    var _a, _b, _c, _d;
+    // 处理类组件
+    component = isClassComponent(component) ? component.__vccOpts : component;
+    var inject = {
+      props: {
+        tid: String
+      },
+      created: function created() {
+        (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.injectPageInstance)(this, id);
+      }
+    };
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(component.mixins)) {
+      var mixins = component.mixins;
+      var idx = mixins.length - 1;
+      if (!((_a = mixins[idx].props) === null || _a === void 0 ? void 0 : _a.tid)) {
+        // mixins 里还没注入过，直接推入数组
+        component.mixins.push(inject);
+      } else {
+        // mixins 里已经注入过，代替前者
+        component.mixins[idx] = inject;
+      }
+    } else {
+      component.mixins = [inject];
+    }
+    var ProviderComponent = {
+      setup: function setup() {
+        (0,vue__WEBPACK_IMPORTED_MODULE_2__.provide)('id', id);
+      },
+      render: function render() {
+        return this.$slots.default();
+      }
+    };
+    var RootElement = isWeb ? 'div' : 'root';
+    var PageComponent = Object.assign({}, component);
+    var option = ((_d = (_c = (_b = PageComponent.props) === null || _b === void 0 ? void 0 : _b.option) === null || _c === void 0 ? void 0 : _c.default) === null || _d === void 0 ? void 0 : _d.call(_c)) || {};
+    return h(ProviderComponent, {
+      key: id
+    }, {
+      default: function _default() {
+        return [h(RootElement, {
+          id: id,
+          class: isWeb ? 'taro_page' : ''
+        }, [h(PageComponent, {
+          tid: id,
+          option: option
+        })])];
+      }
+    });
+  };
+}
+function createVue3App(app, h, config) {
+  var _Object$create;
+  var pages = [];
+  var appInstance;
+  (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.ensure)(!((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(app._component) && !isClassComponent(app._component)), '入口组件不支持使用函数式组件');
+  setReconciler();
+  app._component.render = function () {
+    return pages.slice();
+  };
+  if (!isWeb) {
+    appInstance = app.mount('#app');
+  }
+  var _hooks$call$app = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_4__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').app, 3),
+    ONLAUNCH = _hooks$call$app[0],
+    ONSHOW = _hooks$call$app[1],
+    ONHIDE = _hooks$call$app[2];
+  var appConfig = Object.create({
+    mount: function mount(component, id, cb) {
+      var page = createVue3Page(h, id)(component);
+      pages.push(page);
+      this.updateAppInstance(cb);
+    },
+    unmount: function unmount(id, cb) {
+      pages = pages.filter(function (page) {
+        return page.key !== id;
+      });
+      this.updateAppInstance(cb);
+    },
+    updateAppInstance: function updateAppInstance(cb) {
+      appInstance.$forceUpdate();
+      appInstance.$nextTick(cb);
+    }
+  }, (_Object$create = {
+    config: setDefaultDescriptor({
+      configurable: true,
+      value: config
+    })
+  }, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Object$create, ONLAUNCH, setDefaultDescriptor({
+    value: function value(options) {
+      var _this = this;
+      var _a;
+      setRouterParams(options);
+      if (isWeb) {
+        appInstance = app.mount("#".concat(config.appId || 'app'));
+      }
+      // 把 App Class 上挂载的额外属性同步到全局 app 对象中
+      // eslint-disable-next-line dot-notation
+      if (app['taroGlobalData']) {
+        // eslint-disable-next-line dot-notation
+        var globalData = app['taroGlobalData'];
+        var keys = Object.keys(globalData);
+        var descriptors = Object.getOwnPropertyDescriptors(globalData);
+        keys.forEach(function (key) {
+          Object.defineProperty(_this, key, {
+            configurable: true,
+            enumerable: true,
+            get: function get() {
+              return globalData[key];
+            },
+            set: function set(value) {
+              globalData[key] = value;
+            }
+          });
+        });
+        Object.defineProperties(this, descriptors);
+      }
+      var onLaunch = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onLaunch;
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(onLaunch) && onLaunch.call(appInstance, options);
+    }
+  })), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Object$create, ONSHOW, setDefaultDescriptor({
+    value: function value(options) {
+      var _a;
+      setRouterParams(options);
+      var onShow = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onShow;
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(onShow) && onShow.call(appInstance, options);
+    }
+  })), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Object$create, ONHIDE, setDefaultDescriptor({
+    value: function value(options) {
+      var _a;
+      var onHide = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onHide;
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(onHide) && onHide.call(appInstance, options);
+    }
+  })), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Object$create, "onError", setDefaultDescriptor({
+    value: function value(error) {
+      var _a;
+      var onError = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onError;
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(onError) && onError.call(appInstance, error);
+    }
+  })), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Object$create, "onUnhandledRejection", setDefaultDescriptor({
+    value: function value(error) {
+      var _a;
+      var onUnhandledRejection = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onUnhandledRejection;
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(onUnhandledRejection) && onUnhandledRejection.call(appInstance, error);
+    }
+  })), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Object$create, "onPageNotFound", setDefaultDescriptor({
+    value: function value(res) {
+      var _a;
+      var onPageNotFound = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onPageNotFound;
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(onPageNotFound) && onPageNotFound.call(appInstance, res);
+    }
+  })), _Object$create));
+  _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.app = appConfig;
+  return appConfig;
+}
+function isClassComponent(value) {
+  return (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(value) && '__vccOpts' in value;
+}
+var getNativeCompId = (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.incrementId)();
+function initNativeComponentEntry(h) {
+  setReconciler();
+  var NativeComponentWrapper = {
+    props: ['getCtx', 'compId'],
+    setup: function setup(props) {
+      var root = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)();
+      var ctx = props.getCtx();
+      (0,vue__WEBPACK_IMPORTED_MODULE_2__.provide)('id', props.compId);
+      (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(function () {
+        var rootElement = (0,vue__WEBPACK_IMPORTED_MODULE_2__.toRaw)(root.value);
+        rootElement.ctx = ctx;
+        rootElement.performUpdate(true);
+      });
+      return {
+        root: root
+      };
+    },
+    render: function render() {
+      return h('root', {
+        ref: 'root',
+        id: this.compId
+      }, this.$slots.default());
+    }
+  };
+  var App = (0,vue__WEBPACK_IMPORTED_MODULE_2__.defineComponent)({
+    setup: function setup() {
+      var components = (0,vue__WEBPACK_IMPORTED_MODULE_2__.shallowReactive)([]);
+      function mount(component, compId, getCtx) {
+        var _a, _b, _c, _d;
+        // 处理类组件
+        component = isClassComponent(component) ? component.__vccOpts : component;
+        var inject = {
+          props: {
+            tid: String
+          },
+          created: function created() {
+            (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.injectPageInstance)(this, compId);
+          }
+        };
+        if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(component.mixins)) {
+          var mixins = component.mixins;
+          var idx = mixins.length - 1;
+          if (!((_a = mixins[idx].props) === null || _a === void 0 ? void 0 : _a.tid)) {
+            // mixins 里还没注入过，直接推入数组
+            component.mixins.push(inject);
+          } else {
+            // mixins 里已经注入过，代替前者
+            component.mixins[idx] = inject;
+          }
+        } else {
+          component.mixins = [inject];
+        }
+        var PageComponent = Object.assign({}, component);
+        var option = ((_d = (_c = (_b = PageComponent.props) === null || _b === void 0 ? void 0 : _b.option) === null || _c === void 0 ? void 0 : _c.default) === null || _d === void 0 ? void 0 : _d.call(_c)) || {};
+        var ctx = getCtx();
+        var page = {
+          mounted: function mounted() {
+            ctx.component = this;
+          },
+          unmounted: function unmounted() {
+            (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.removePageInstance)(compId);
+          },
+          render: function render() {
+            return h(NativeComponentWrapper, {
+              compId: compId,
+              getCtx: getCtx
+            }, {
+              default: function _default() {
+                return [h(PageComponent, Object.assign(Object.assign({
+                  tid: compId,
+                  option: option
+                }, (ctx.data || (ctx.data = {})).props), {
+                  _scope: ctx
+                }))];
+              }
+            });
+          }
+        };
+        components.push({
+          compId: compId,
+          component: page
+        });
+      }
+      function unmount(compId) {
+        var index = components.findIndex(function (page) {
+          return page.compId === compId;
+        });
+        components.splice(index, 1);
+      }
+      (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(function () {
+        return _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.app = {
+          mount: mount,
+          unmount: unmount
+        };
+      });
+      return {
+        components: components
+      };
+    },
+    render: function render() {
+      return this.components.map(function (page) {
+        return h(page.component, {
+          key: page.compId
+        });
+      });
+    }
+  });
+  (0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)(App).mount('#app');
+}
+function createNativeComponentConfig(component, h, componentConfig) {
+  var componentObj = {
+    options: componentConfig,
+    properties: {
+      props: {
+        type: null,
+        value: null,
+        observer: function observer(_newVal, oldVal) {
+          var _a;
+          oldVal && ((_a = this.component) === null || _a === void 0 ? void 0 : _a.$forceUpdate());
+        }
+      }
+    },
+    created: function created() {
+      if (!_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.app) {
+        initNativeComponentEntry(h);
+      }
+    },
+    attached: function attached() {
+      var _this2 = this;
+      var compId = this.compId = getNativeCompId();
+      setCurrent(compId);
+      this.config = componentConfig;
+      _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.app.mount(component, compId, function () {
+        return _this2;
+      });
+    },
+    ready: function ready() {
+      (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.safeExecute)(this.compId, 'onReady');
+    },
+    detached: function detached() {
+      resetCurrent();
+      _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.app.unmount(this.compId);
+      this.component = null;
+    },
+    pageLifetimes: {
+      show: function show(options) {
+        (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.safeExecute)(this.compId, 'onShow', options);
+      },
+      hide: function hide() {
+        (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.safeExecute)(this.compId, 'onHide');
+      }
+    },
+    methods: {
+      eh: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.eventHandler
+    }
+  };
+  function resetCurrent() {
+    // 小程序插件页面卸载之后返回到宿主页面时，需重置Current页面和路由。否则引发插件组件二次加载异常 fix:#11991
+    _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.page = null;
+    _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.router = null;
+  }
+  function setCurrent(compId) {
+    var pages = getCurrentPages();
+    var currentPage = pages[pages.length - 1];
+    if (_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.page === currentPage) return;
+    _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.page = currentPage;
+    var route = currentPage.route || currentPage.__route__;
+    var router = {
+      params: currentPage.options || {},
+      path: (0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.addLeadingSlash)(route),
+      $taroPath: compId,
+      onReady: '',
+      onHide: '',
+      onShow: ''
+    };
+    _tarojs_runtime__WEBPACK_IMPORTED_MODULE_1__.Current.router = router;
+    if (!currentPage.options) {
+      // 例如在微信小程序中，页面 options 的设置时机比组件 attached 慢
+      Object.defineProperty(currentPage, 'options', {
+        enumerable: true,
+        configurable: true,
+        get: function get() {
+          return this._optionsValue;
+        },
+        set: function set(value) {
+          router.params = value;
+          this._optionsValue = value;
+        }
+      });
+    }
+  }
+  return componentObj;
+}
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('initNativeApi', function (taro) {
+  for (var hook in taroHooks) {
+    taro[hook] = taroHooks[hook];
+  }
+  taro.setGlobalDataPlugin = setGlobalDataPlugin;
+});
+
 
 /***/ }),
 
-/***/ "./node_modules/_@tarojs_plugin-platform-weapp@3.3.14@@tarojs/plugin-platform-weapp/dist/runtime.js":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/_@tarojs_plugin-platform-weapp@3.3.14@@tarojs/plugin-platform-weapp/dist/runtime.js ***!
-  \**********************************************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/.store/@tarojs+plugin-html@3.6.6/node_modules/@tarojs/plugin-html/dist/runtime.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+plugin-html@3.6.6/node_modules/@tarojs/plugin-html/dist/runtime.js ***!
+  \********************************************************************************************************/
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/_@tarojs_shared@3.3.14@@tarojs/shared/dist/shared.esm.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/.store/@tarojs+shared@3.6.6/node_modules/@tarojs/shared/dist/shared.esm.js");
 
-var needPromiseApis = new Set(['authPrivateMessage', 'disableAlertBeforeUnload', 'enableAlertBeforeUnload', 'getBackgroundFetchData', 'getGroupEnterInfo', 'getShareInfo', 'getWeRunData', 'join1v1Chat', 'openVideoEditor', 'saveFileToDisk', 'scanItem', 'setEnable1v1Chat', 'setWindowSize', 'sendBizRedPacket', 'startFacialRecognitionVerify', 'openCustomerServiceChat']);
+
+
+function genAttrMapFnFromDir(dir) {
+  var fn = function fn(key, value) {
+    var lowerKey = key.toLowerCase();
+    if (lowerKey in dir) {
+      var res = dir[lowerKey];
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(res)) {
+        key = res;
+      } else {
+        key = res[0];
+        value = res[1][value] || value;
+      }
+    }
+    return [key, value];
+  };
+  return fn;
+}
+var inlineElements = new Set(["i", "abbr", "select", "acronym", "small", "bdi", "kbd", "strong", "big", "sub", "sup", "br", "mark", "meter", "template", "cite", "object", "time", "code", "output", "u", "data", "picture", "tt", "datalist", "var", "dfn", "del", "q", "em", "s", "embed", "samp", "b"]);
+var blockElements = new Set(["body", "svg", "address", "fieldset", "li", "span", "article", "figcaption", "main", "aside", "figure", "nav", "blockquote", "footer", "ol", "details", "p", "dialog", "h1", "h2", "h3", "h4", "h5", "h6", "pre", "dd", "header", "section", "div", "hgroup", "table", "dl", "hr", "ul", "dt", "view", "view-block"]);
+var specialElements = new Map([['slot', 'slot'], ['form', 'form'], ['iframe', 'web-view'], ['img', 'image'], ['audio', 'audio'], ['video', 'video'], ['canvas', 'canvas'], ['a', {
+  mapName: function mapName(props) {
+    if (props.as && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(props.as)) return props.as.toLowerCase();
+    return !props.href || /^javascript/.test(props.href) ? 'view' : 'navigator';
+  },
+  mapNameCondition: ['href'],
+  mapAttr: genAttrMapFnFromDir({
+    href: 'url',
+    target: ['openType', {
+      _blank: 'navigate',
+      _self: 'redirect'
+    }]
+  })
+}], ['input', {
+  mapName: function mapName(props) {
+    if (props.type === 'checkbox') {
+      return 'checkbox';
+    } else if (props.type === 'radio') {
+      return 'radio';
+    }
+    return 'input';
+  },
+  mapNameCondition: ['type'],
+  mapAttr: function mapAttr(key, value, props) {
+    var htmlKey = key.toLowerCase();
+    if (htmlKey === 'autofocus') {
+      key = 'focus';
+    } else if (htmlKey === 'readonly') {
+      if (props.disabled === true) {
+        value = true;
+      }
+      key = 'disabled';
+    } else if (htmlKey === 'type') {
+      if (value === 'password') {
+        key = 'password';
+        value = true;
+      } else if (value === 'tel') {
+        value = 'number';
+      }
+    } else if (htmlKey === 'maxlength') {
+      key = 'maxlength';
+    }
+    return [key, value];
+  }
+}], ['label', {
+  mapName: 'label',
+  mapAttr: genAttrMapFnFromDir({
+    htmlfor: 'for'
+  })
+}], ['textarea', {
+  mapName: 'textarea',
+  mapAttr: genAttrMapFnFromDir({
+    autofocus: 'focus',
+    readonly: 'disabled',
+    maxlength: 'maxlength'
+  })
+}], ['progress', {
+  mapName: 'progress',
+  mapAttr: function mapAttr(key, value, props) {
+    if (key === 'value') {
+      var max = props.max || 1;
+      key = 'percent';
+      value = Math.round(value / max * 100);
+    }
+    return [key, value];
+  }
+}], ['button', {
+  mapName: 'button',
+  mapAttr: function mapAttr(key, value) {
+    if (key === 'type' && (value === 'submit' || value === 'reset')) {
+      key = 'formType';
+    }
+    return [key, value];
+  }
+}]]);
+function isHtmlTags(nodeName) {
+  if (inlineElements.has(nodeName) || blockElements.has(nodeName) || specialElements.has(nodeName)) {
+    return true;
+  }
+  return false;
+}
+function getMappedType(nodeName, rawProps) {
+  if (inlineElements.has(nodeName)) {
+    return 'text';
+  } else if (specialElements.has(nodeName)) {
+    var mapping = specialElements.get(nodeName);
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(mapping)) {
+      return mapping;
+    }
+    var mapName = mapping.mapName;
+    return (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(mapName) ? mapName(rawProps) : mapName;
+  } else {
+    return 'view';
+  }
+}
+function getAttrMapFn(nodeName) {
+  var mapping = specialElements.get(nodeName);
+  if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(mapping)) {
+    return mapping === null || mapping === void 0 ? void 0 : mapping.mapAttr;
+  }
+}
+function getMapNameByCondition(nodeName, attr, props) {
+  var mapping = specialElements.get(nodeName);
+  if (!mapping || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(mapping)) return;
+  var mapName = mapping.mapName,
+    mapNameCondition = mapping.mapNameCondition;
+  if (!mapNameCondition) return;
+  if (mapNameCondition.indexOf(attr) > -1 && !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(mapName)) {
+    return mapName(props);
+  }
+}
+function mapNameByContion(nodeName, key, element, componentsAlias) {
+  var mapName = getMapNameByCondition(nodeName, key, element.props);
+  if (mapName) {
+    var mapNameAlias = componentsAlias[mapName]._num;
+    element.enqueueUpdate({
+      path: "".concat(element._path, ".", "nn" /* Shortcuts.NodeName */),
+      value: mapNameAlias
+    });
+  }
+}
+function ensureHtmlClass(tagName) {
+  var className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+  var classList = className.split(' ');
+  var htmlClass = "h5-".concat(tagName);
+  if (classList.indexOf(htmlClass) === -1) {
+    classList.unshift(htmlClass);
+  }
+  return classList.join(' ');
+}
+function ensureRect(props) {
+  var style = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+  var cssText = style;
+  var width = props.width,
+    height = props.height;
+  if (width) {
+    cssText = "width: ".concat(width, ";").concat(cssText);
+  }
+  if (height) {
+    cssText = "height: ".concat(height, ";").concat(cssText);
+  }
+  return cssText;
+}
+function defineMappedProp(obj, propName, mapName) {
+  Object.defineProperty(obj, propName, {
+    enumerable: true,
+    configurable: true,
+    get: function get() {
+      return obj[mapName];
+    },
+    set: function set(val) {
+      obj[mapName] = val;
+    }
+  });
+}
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('modifyHydrateData', function (data) {
+  var nodeName = data["nn" /* Shortcuts.NodeName */];
+  if (!isHtmlTags(nodeName)) return;
+   true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)(data["nn" /* Shortcuts.NodeName */] === 'select', '请使用 Picker 组件代替 <select>');
+  // map nodeName
+  data["nn" /* Shortcuts.NodeName */] = getMappedType(nodeName, data);
+  // map attr Key/Value
+  var attrMapFn = getAttrMapFn(nodeName);
+  if (attrMapFn) {
+    for (var key in data) {
+      var value = data[key];
+      var _attrMapFn = attrMapFn(key, value, data),
+        _attrMapFn2 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_1__["default"])(_attrMapFn, 2),
+        mapKey = _attrMapFn2[0],
+        mapValue = _attrMapFn2[1];
+      if (key !== mapKey) {
+        delete data[key];
+        data[mapKey] = mapValue;
+      } else if (value !== mapValue) {
+        data[key] = mapValue;
+      }
+    }
+  }
+  if (nodeName === 'br') {
+    var _ref;
+    data["cn" /* Shortcuts.Childnodes */] = [(_ref = {}, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, "nn" /* Shortcuts.NodeName */, '#text'), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, "v", '\n'), _ref)];
+  }
+  data["cl" /* Shortcuts.Class */] = ensureHtmlClass(nodeName, data["cl" /* Shortcuts.Class */]);
+  data["st" /* Shortcuts.Style */] = ensureRect(data, data["st" /* Shortcuts.Style */]);
+});
+
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('modifySetAttrPayload', function (element, key, payload, componentsAlias) {
+  var nodeName = element.nodeName,
+    _path = element._path,
+    props = element.props;
+  if (!isHtmlTags(nodeName)) return;
+  // map nodeName
+  mapNameByContion(nodeName, key, element, componentsAlias);
+  var mapName = getMappedType(nodeName, props);
+  var alias = componentsAlias[mapName];
+  // map attr Key/Value
+  var attrMapFn = getAttrMapFn(nodeName);
+  if (attrMapFn) {
+    var value = payload.value;
+    var _attrMapFn3 = attrMapFn(key, value, props),
+      _attrMapFn4 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_1__["default"])(_attrMapFn3, 2),
+      mapKey = _attrMapFn4[0],
+      mapValue = _attrMapFn4[1];
+    payload.path = "".concat(_path, ".").concat(alias[mapKey] || mapKey);
+    payload.value = mapValue;
+  } else if (alias[key] && alias[key] !== key) {
+    payload.path = "".concat(_path, ".").concat((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(alias[key]));
+  }
+  if (key === "cl" /* Shortcuts.Class */) {
+    payload.value = ensureHtmlClass(nodeName, payload.value);
+  } else if (key === "st" /* Shortcuts.Style */ || key === 'width' || key === 'height') {
+    payload.path = "".concat(_path, ".", "st" /* Shortcuts.Style */);
+    payload.value = ensureRect(props, element.style.cssText);
+  }
+});
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('modifyRmAttrPayload', function (element, key, payload, componentsAlias) {
+  var nodeName = element.nodeName,
+    _path = element._path,
+    props = element.props;
+  if (!isHtmlTags(nodeName)) return;
+  // map nodeName
+  mapNameByContion(nodeName, key, element, componentsAlias);
+  var mapName = getMappedType(nodeName, props);
+  var alias = componentsAlias[mapName];
+  // map attr Key/Value
+  var attrMapFn = getAttrMapFn(nodeName);
+  if (attrMapFn) {
+    var value = payload[key];
+    var _attrMapFn5 = attrMapFn(key, value, props),
+      _attrMapFn6 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_1__["default"])(_attrMapFn5, 1),
+      mapKey = _attrMapFn6[0];
+    payload.path = "".concat(_path, ".").concat(alias[mapKey] || mapKey);
+  } else if (alias[key] && alias[key] !== key) {
+    payload.path = "".concat(_path, ".").concat((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(alias[key]));
+  }
+  if (key === "cl" /* Shortcuts.Class */) {
+    payload.value = ensureHtmlClass(nodeName, payload.value);
+  } else if (key === "st" /* Shortcuts.Style */ || key === 'width' || key === 'height') {
+    payload.path = "".concat(_path, ".", "st" /* Shortcuts.Style */);
+    payload.value = ensureRect(props, element.style.cssText);
+  }
+});
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('onAddEvent', function (type, _handler, _options, node) {
+  node = node;
+  if (!isHtmlTags(node.nodeName)) return;
+  if (type === 'click') {
+    defineMappedProp(node.__handlers, type, 'tap');
+  } else if (node.nodeName === 'input') {
+    if (type === 'change') {
+      if (node.props.type === 'checkbox' || node.props.type === 'radio') {
+        defineMappedProp(node.__handlers, type, 'tap');
+      } else {
+        defineMappedProp(node.__handlers, type, 'input');
+      }
+    } else if (type === 'keypress') {
+      defineMappedProp(node.__handlers, type, 'confirm');
+    }
+  }
+});
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('modifyTaroEvent', function (event, element) {
+  var nodeName = element.nodeName,
+    props = element.props;
+  if (nodeName === 'input' && event.type === 'tap') {
+    if (props.type === 'checkbox') {
+      props.checked = !props.checked;
+    } else if (props.type === 'radio' && !props.checked) {
+      props.checked = true;
+    }
+    if (event.mpEvent) {
+      var _event$mpEvent = event.mpEvent,
+        currentTarget = _event$mpEvent.currentTarget,
+        target = _event$mpEvent.target;
+      currentTarget.checked = props.checked;
+      if (target.id === currentTarget.id) {
+        target.checked = props.checked;
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/.store/@tarojs+plugin-platform-weapp@3.6.6/node_modules/@tarojs/plugin-platform-weapp/dist/runtime.js":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+plugin-platform-weapp@3.6.6/node_modules/@tarojs/plugin-platform-weapp/dist/runtime.js ***!
+  \****************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/.store/@tarojs+shared@3.6.6/node_modules/@tarojs/shared/dist/shared.esm.js");
+
+var needPromiseApis = new Set(['addFileToFavorites', 'addVideoToFavorites', 'authPrivateMessage', 'checkIsAddedToMyMiniProgram', 'chooseContact', 'cropImage', 'disableAlertBeforeUnload', 'editImage', 'enableAlertBeforeUnload', 'getBackgroundFetchData', 'getChannelsLiveInfo', 'getChannelsLiveNoticeInfo', 'getFuzzyLocation', 'getGroupEnterInfo', 'getLocalIPAddress', 'getShareInfo', 'getUserProfile', 'getWeRunData', 'join1v1Chat', 'openChannelsActivity', 'openChannelsEvent', 'openChannelsLive', 'openChannelsUserProfile', 'openCustomerServiceChat', 'openVideoEditor', 'saveFileToDisk', 'scanItem', 'setEnable1v1Chat', 'setWindowSize', 'sendBizRedPacket', 'startFacialRecognitionVerify']);
 function initNativeApi(taro) {
-  Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* processApis */ "o"])(taro, wx, {
+  (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.processApis)(taro, wx, {
     needPromiseApis: needPromiseApis,
     modifyApis: function modifyApis(apis) {
       // fix https://github.com/NervJS/taro/issues/9899
       apis.delete('lanDebug');
+    },
+    transformMeta: function transformMeta(api, options) {
+      var _a;
+      if (api === 'showShareMenu') {
+        options.menus = (_a = options.showShareItems) === null || _a === void 0 ? void 0 : _a.map(function (item) {
+          return item === 'wechatFriends' ? 'shareAppMessage' : item === 'wechatMoment' ? 'shareTimeline' : item;
+        });
+      }
+      return {
+        key: api,
+        options: options
+      };
     }
   });
   taro.cloud = wx.cloud;
+  taro.getTabBar = function (pageCtx) {
+    var _a;
+    if (typeof (pageCtx === null || pageCtx === void 0 ? void 0 : pageCtx.getTabBar) === 'function') {
+      return (_a = pageCtx.getTabBar()) === null || _a === void 0 ? void 0 : _a.$taroInstances;
+    }
+  };
+  taro.getRenderer = function () {
+    var _a, _b, _c;
+    return (_c = (_b = (_a = taro.getCurrentInstance()) === null || _a === void 0 ? void 0 : _a.page) === null || _b === void 0 ? void 0 : _b.renderer) !== null && _c !== void 0 ? _c : 'webview';
+  };
 }
+var _true = 'true';
+var _false = 'false';
+var _empty = '';
+var _zero = '0';
 var components = {
   // ======== 调整属性 ========
   Progress: {
-    'border-radius': '0',
+    'border-radius': _zero,
     'font-size': '16',
     duration: '30',
-    bindActiveEnd: ''
+    bindActiveEnd: _empty
   },
   RichText: {
-    space: ''
+    space: _empty,
+    'user-select': _false
   },
   Text: {
-    'user-select': 'false'
+    'user-select': _false
   },
   Map: {
     polygons: '[]',
-    subkey: '',
-    rotate: '0',
-    skew: '0',
+    subkey: _empty,
+    rotate: _zero,
+    skew: _zero,
     'max-scale': '20',
     'min-scale': '3',
-    'enable-3D': 'false',
-    'show-compass': 'false',
-    'show-scale': 'false',
-    'enable-overlooking': 'false',
-    'enable-zoom': 'true',
-    'enable-scroll': 'true',
-    'enable-rotate': 'false',
-    'enable-satellite': 'false',
-    'enable-traffic': 'false',
+    'enable-3D': _false,
+    'show-compass': _false,
+    'show-scale': _false,
+    'enable-overlooking': _false,
+    'enable-zoom': _true,
+    'enable-scroll': _true,
+    'enable-rotate': _false,
+    'enable-satellite': _false,
+    'enable-traffic': _false,
+    'enable-poi': _true,
+    'enable-building': _true,
     setting: '[]',
-    bindLabelTap: '',
-    bindRegionChange: '',
-    bindPoiTap: ''
+    bindLabelTap: _empty,
+    bindRegionChange: _empty,
+    bindPoiTap: _empty,
+    bindAnchorPointTap: _empty
   },
   Button: {
     lang: 'en',
-    'session-from': '',
-    'send-message-title': '',
-    'send-message-path': '',
-    'send-message-img': '',
-    'app-parameter': '',
-    'show-message-card': 'false',
-    'business-id': '',
-    bindGetUserInfo: '',
-    bindContact: '',
-    bindGetPhoneNumber: '',
-    bindError: '',
-    bindOpenSetting: '',
-    bindLaunchApp: ''
+    'session-from': _empty,
+    'send-message-title': _empty,
+    'send-message-path': _empty,
+    'send-message-img': _empty,
+    'app-parameter': _empty,
+    'show-message-card': _false,
+    'business-id': _empty,
+    bindGetUserInfo: _empty,
+    bindContact: _empty,
+    bindGetPhoneNumber: _empty,
+    bindChooseAvatar: _empty,
+    bindError: _empty,
+    bindOpenSetting: _empty,
+    bindLaunchApp: _empty
   },
   Form: {
-    'report-submit-timeout': '0'
+    'report-submit-timeout': _zero
   },
   Input: {
-    'always-embed': 'false',
-    'adjust-position': 'true',
-    'hold-keyboard': 'false',
-    bindKeyboardHeightChange: ''
+    'always-embed': _false,
+    'adjust-position': _true,
+    'hold-keyboard': _false,
+    'safe-password-cert-path': '',
+    'safe-password-length': '',
+    'safe-password-time-stamp': '',
+    'safe-password-nonce': '',
+    'safe-password-salt': '',
+    'safe-password-custom-hash': '',
+    'auto-fill': _empty,
+    bindKeyboardHeightChange: _empty,
+    bindNicknameReview: _empty
   },
   Picker: {
-    'header-text': ''
+    'header-text': _empty,
+    'level': 'region'
   },
   PickerView: {
-    bindPickStart: '',
-    bindPickEnd: ''
+    'immediate-change': _false,
+    bindPickStart: _empty,
+    bindPickEnd: _empty
   },
   Slider: {
-    color: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('#e9e9e9'),
-    'selected-color': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('#1aad19')
+    color: "'#e9e9e9'",
+    'selected-color': "'#1aad19'"
   },
   Textarea: {
-    'show-confirm-bar': 'true',
-    'adjust-position': 'true',
-    'hold-keyboard': 'false',
-    'disable-default-padding': 'false',
-    'confirm-type': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('return'),
-    'confirm-hold': 'false',
-    bindKeyboardHeightChange: ''
+    'show-confirm-bar': _true,
+    'adjust-position': _true,
+    'hold-keyboard': _false,
+    'disable-default-padding': _false,
+    'confirm-type': "'return'",
+    'confirm-hold': _false,
+    bindKeyboardHeightChange: _empty
   },
   ScrollView: {
-    'enable-flex': 'false',
-    'scroll-anchoring': 'false',
-    'refresher-enabled': 'false',
+    'type': "'list'",
+    'event-passive': _false,
+    'enable-flex': _false,
+    'scroll-anchoring': _false,
+    'refresher-enabled': _false,
     'refresher-threshold': '45',
-    'refresher-default-style': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('black'),
-    'refresher-background': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('#FFF'),
-    'refresher-triggered': 'false',
-    enhanced: 'false',
-    bounces: 'true',
-    'show-scrollbar': 'true',
-    'paging-enabled': 'false',
-    'fast-deceleration': 'false',
-    bindDragStart: '',
-    bindDragging: '',
-    bindDragEnd: '',
-    bindRefresherPulling: '',
-    bindRefresherRefresh: '',
-    bindRefresherRestore: '',
-    bindRefresherAbort: ''
+    'refresher-default-style': "'black'",
+    'refresher-background': "'#FFF'",
+    'refresher-triggered': _false,
+    enhanced: _false,
+    bounces: _true,
+    'show-scrollbar': _true,
+    'paging-enabled': _false,
+    'fast-deceleration': _false,
+    reverse: _false,
+    'cache-extent': _zero,
+    'scroll-into-view-within-extent': _false,
+    'scroll-into-view-alignment': "'start'",
+    bindDragStart: _empty,
+    bindDragging: _empty,
+    bindDragEnd: _empty,
+    bindRefresherPulling: _empty,
+    bindRefresherRefresh: _empty,
+    bindRefresherRestore: _empty,
+    bindRefresherAbort: _empty,
+    bindScrollStart: _empty,
+    bindScrollEnd: _empty,
+    bindRefresherWillRefresh: _empty
   },
+  StickySection: {
+    'push-pinned-header': _true
+  },
+  GridView: {
+    type: "'aligned'",
+    'cross-axis-count': '2',
+    'max-cross-axis-extent': _zero,
+    'main-axis-gap': _zero,
+    'cross-axis-gap': _zero
+  },
+  ListView: {},
+  StickyHeader: {},
   Swiper: {
-    'snap-to-edge': 'false',
-    'easing-function': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('default')
+    'snap-to-edge': _false,
+    'easing-function': "'default'"
   },
   SwiperItem: {
-    'skip-hidden-item-layout': 'false'
+    'skip-hidden-item-layout': _false
   },
   Navigator: {
-    target: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('self'),
-    'app-id': '',
-    path: '',
-    'extra-data': '',
-    version: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('version')
+    target: "'self'",
+    'app-id': _empty,
+    path: _empty,
+    'extra-data': _empty,
+    version: "'version'"
   },
   Camera: {
-    mode: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('normal'),
-    resolution: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('medium'),
-    'frame-size': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('medium'),
-    bindInitDone: '',
-    bindScanCode: ''
+    mode: "'normal'",
+    resolution: "'medium'",
+    'frame-size': "'medium'",
+    bindInitDone: _empty,
+    bindScanCode: _empty
   },
   Image: {
-    webp: 'false',
-    'show-menu-by-longpress': 'false'
+    webp: _false,
+    'show-menu-by-longpress': _false
   },
   LivePlayer: {
-    mode: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('live'),
-    'sound-mode': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('speaker'),
-    'auto-pause-if-navigate': 'true',
-    'auto-pause-if-open-native': 'true',
+    mode: "'live'",
+    'sound-mode': "'speaker'",
+    'auto-pause-if-navigate': _true,
+    'auto-pause-if-open-native': _true,
     'picture-in-picture-mode': '[]',
-    bindstatechange: '',
-    bindfullscreenchange: '',
-    bindnetstatus: '',
-    bindAudioVolumeNotify: '',
-    bindEnterPictureInPicture: '',
-    bindLeavePictureInPicture: ''
+    bindstatechange: _empty,
+    bindfullscreenchange: _empty,
+    bindnetstatus: _empty,
+    bindAudioVolumeNotify: _empty,
+    bindEnterPictureInPicture: _empty,
+    bindLeavePictureInPicture: _empty
   },
   Video: {
-    title: '',
-    'play-btn-position': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('bottom'),
-    'enable-play-gesture': 'false',
-    'auto-pause-if-navigate': 'true',
-    'auto-pause-if-open-native': 'true',
-    'vslide-gesture': 'false',
-    'vslide-gesture-in-fullscreen': 'true',
-    'ad-unit-id': '',
-    'poster-for-crawler': '',
-    'show-casting-button': 'false',
+    title: _empty,
+    'play-btn-position': "'bottom'",
+    'enable-play-gesture': _false,
+    'auto-pause-if-navigate': _true,
+    'auto-pause-if-open-native': _true,
+    'vslide-gesture': _false,
+    'vslide-gesture-in-fullscreen': _true,
+    'ad-unit-id': _empty,
+    'poster-for-crawler': _empty,
+    'show-casting-button': _false,
     'picture-in-picture-mode': '[]',
     // picture-in-picture-show-progress 属性先注释掉的原因如下：
     // 该属性超过了 wxml 属性的长度限制，实际无法使用且导致编译报错。可等微信官方修复后再放开。
     // 参考1：https://developers.weixin.qq.com/community/develop/doc/000a429beb87f0eac07acc0fc5b400
     // 参考2: https://developers.weixin.qq.com/community/develop/doc/0006883619c48054286a4308258c00?_at=vyxqpllafi
     // 'picture-in-picture-show-progress': 'false',
-    'enable-auto-rotation': 'false',
-    'show-screen-lock-button': 'false',
-    'show-snapshot-button': 'false',
-    'show-background-playback-button': 'false',
-    'background-poster': '',
-    bindProgress: '',
-    bindLoadedMetadata: '',
-    bindControlsToggle: '',
-    bindEnterPictureInPicture: '',
-    bindLeavePictureInPicture: '',
-    bindSeekComplete: '',
-    bindAdLoad: '',
-    bindAdError: '',
-    bindAdClose: '',
-    bindAdPlay: ''
+    'enable-auto-rotation': _false,
+    'show-screen-lock-button': _false,
+    'show-snapshot-button': _false,
+    'show-background-playback-button': _false,
+    'background-poster': _empty,
+    bindProgress: _empty,
+    bindLoadedMetadata: _empty,
+    bindControlsToggle: _empty,
+    bindEnterPictureInPicture: _empty,
+    bindLeavePictureInPicture: _empty,
+    bindSeekComplete: _empty,
+    bindAdLoad: _empty,
+    bindAdError: _empty,
+    bindAdClose: _empty,
+    bindAdPlay: _empty
   },
   Canvas: {
-    type: ''
+    type: _empty
   },
   Ad: {
-    'ad-type': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('banner'),
-    'ad-theme': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('white')
+    'ad-type': "'banner'",
+    'ad-theme': "'white'"
   },
   CoverView: {
-    'marker-id': '',
-    slot: ''
+    'marker-id': _empty,
+    slot: _empty
   },
   // ======== 额外组件 ========
   Editor: {
-    'read-only': 'false',
-    placeholder: '',
-    'show-img-size': 'false',
-    'show-img-toolbar': 'false',
-    'show-img-resize': 'false',
-    focus: 'false',
-    bindReady: '',
-    bindFocus: '',
-    bindBlur: '',
-    bindInput: '',
-    bindStatusChange: '',
-    name: ''
+    'read-only': _false,
+    placeholder: _empty,
+    'show-img-size': _false,
+    'show-img-toolbar': _false,
+    'show-img-resize': _false,
+    focus: _false,
+    bindReady: _empty,
+    bindFocus: _empty,
+    bindBlur: _empty,
+    bindInput: _empty,
+    bindStatusChange: _empty,
+    name: _empty
   },
   MatchMedia: {
-    'min-width': '',
-    'max-width': '',
-    width: '',
-    'min-height': '',
-    'max-height': '',
-    height: '',
-    orientation: ''
+    'min-width': _empty,
+    'max-width': _empty,
+    width: _empty,
+    'min-height': _empty,
+    'max-height': _empty,
+    height: _empty,
+    orientation: _empty
   },
   FunctionalPageNavigator: {
-    version: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('release'),
-    name: '',
-    args: '',
-    bindSuccess: '',
-    bindFail: '',
-    bindCancel: ''
+    version: "'release'",
+    name: _empty,
+    args: _empty,
+    bindSuccess: _empty,
+    bindFail: _empty,
+    bindCancel: _empty
   },
   LivePusher: {
-    url: '',
-    mode: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('RTC'),
-    autopush: 'false',
-    muted: 'false',
-    'enable-camera': 'true',
-    'auto-focus': 'true',
-    orientation: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('vertical'),
-    beauty: '0',
-    whiteness: '0',
-    aspect: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('9:16'),
+    url: _empty,
+    mode: "'RTC'",
+    autopush: _false,
+    muted: _false,
+    'enable-camera': _true,
+    'auto-focus': _true,
+    orientation: "'vertical'",
+    beauty: _zero,
+    whiteness: _zero,
+    aspect: "'9:16'",
     'min-bitrate': '200',
     'max-bitrate': '1000',
-    'audio-quality': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('high'),
-    'waiting-image': '',
-    'waiting-image-hash': '',
-    zoom: 'false',
-    'device-position': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('front'),
-    'background-mute': 'false',
-    mirror: 'false',
-    'remote-mirror': 'false',
-    'local-mirror': 'false',
-    'audio-reverb-type': '0',
-    'enable-mic': 'true',
-    'enable-agc': 'false',
-    'enable-ans': 'false',
-    'audio-volume-type': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('voicecall'),
+    'audio-quality': "'high'",
+    'waiting-image': _empty,
+    'waiting-image-hash': _empty,
+    zoom: _false,
+    'device-position': "'front'",
+    'background-mute': _false,
+    mirror: _false,
+    'remote-mirror': _false,
+    'local-mirror': _false,
+    'audio-reverb-type': _zero,
+    'enable-mic': _true,
+    'enable-agc': _false,
+    'enable-ans': _false,
+    'audio-volume-type': "'voicecall'",
     'video-width': '360',
     'video-height': '640',
-    'beauty-style': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('smooth'),
-    filter: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('standard'),
-    animation: '',
-    bindStateChange: '',
-    bindNetStatus: '',
-    bindBgmStart: '',
-    bindBgmProgress: '',
-    bindBgmComplete: '',
-    bindAudioVolumeNotify: ''
+    'beauty-style': "'smooth'",
+    filter: "'standard'",
+    animation: _empty,
+    bindStateChange: _empty,
+    bindNetStatus: _empty,
+    bindBgmStart: _empty,
+    bindBgmProgress: _empty,
+    bindBgmComplete: _empty,
+    bindAudioVolumeNotify: _empty
   },
   OfficialAccount: {
-    bindLoad: '',
-    bindError: ''
+    bindLoad: _empty,
+    bindError: _empty
   },
   OpenData: {
-    type: '',
-    'open-gid': '',
-    lang: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('en'),
-    'default-text': '',
-    'default-avatar': '',
-    bindError: ''
+    type: _empty,
+    'open-gid': _empty,
+    lang: "'en'",
+    'default-text': _empty,
+    'default-avatar': _empty,
+    bindError: _empty
   },
   NavigationBar: {
-    title: '',
-    loading: 'false',
-    'front-color': '',
-    'background-color': '',
-    'color-animation-duration': '0',
-    'color-animation-timing-func': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('linear')
+    title: _empty,
+    loading: _false,
+    'front-color': _empty,
+    'background-color': _empty,
+    'color-animation-duration': _zero,
+    'color-animation-timing-func': "'linear'"
   },
   PageMeta: {
-    'background-text-style': '',
-    'background-color': '',
-    'background-color-top': '',
-    'background-color-bottom': '',
-    'scroll-top': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])(''),
+    'background-text-style': _empty,
+    'background-color': _empty,
+    'background-color-top': _empty,
+    'background-color-bottom': _empty,
+    'scroll-top': "''",
     'scroll-duration': '300',
-    'page-style': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])(''),
-    'root-font-size': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])(''),
-    bindResize: '',
-    bindScroll: '',
-    bindScrollDone: ''
+    'page-style': "''",
+    'root-font-size': "''",
+    bindResize: _empty,
+    bindScroll: _empty,
+    bindScrollDone: _empty
   },
   VoipRoom: {
-    openid: '',
-    mode: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('camera'),
-    'device-position': Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('front'),
-    bindError: ''
+    openid: _empty,
+    mode: "'camera'",
+    'device-position': "'front'",
+    bindError: _empty
   },
   AdCustom: {
-    'unit-id': '',
-    'ad-intervals': '',
-    bindLoad: '',
-    bindError: ''
+    'unit-id': _empty,
+    'ad-intervals': _empty,
+    bindLoad: _empty,
+    bindError: _empty
   },
   PageContainer: {
-    show: 'false',
+    show: _false,
     duration: '300',
     'z-index': '100',
-    overlay: 'true',
-    position: Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* singleQuote */ "p"])('bottom'),
-    round: 'false',
-    'close-on-slideDown': 'false',
-    'overlay-style': '',
-    'custom-style': '',
-    bindBeforeEnter: '',
-    bindEnter: '',
-    bindAfterEnter: '',
-    bindBeforeLeave: '',
-    bindLeave: '',
-    bindAfterLeave: '',
-    bindClickOverlay: ''
+    overlay: _true,
+    position: "'bottom'",
+    round: _false,
+    'close-on-slide-down': _false,
+    'overlay-style': _empty,
+    'custom-style': _empty,
+    bindBeforeEnter: _empty,
+    bindEnter: _empty,
+    bindAfterEnter: _empty,
+    bindBeforeLeave: _empty,
+    bindLeave: _empty,
+    bindAfterLeave: _empty,
+    bindClickOverlay: _empty
   },
-  KeyboardAccessory: {}
+  ShareElement: {
+    mapkey: _empty,
+    transform: _false,
+    duration: '300',
+    'easing-function': "'ease-out'"
+  },
+  KeyboardAccessory: {},
+  RootPortal: {},
+  ChannelLive: {
+    feedId: _empty,
+    finderUserName: _empty
+  },
+  ChannelVideo: {
+    feedId: _empty,
+    finderUserName: _empty,
+    autoplay: _false,
+    loop: _false,
+    muted: _false,
+    objectFit: "'contain'",
+    bindError: _empty
+  }
 };
 var hostConfig = {
-  initNativeApi: initNativeApi
+  initNativeApi: initNativeApi,
+  getMiniLifecycle: function getMiniLifecycle(config) {
+    var methods = config.page[5];
+    if (methods.indexOf('onSaveExitState') === -1) {
+      methods.push('onSaveExitState');
+    }
+    return config;
+  }
 };
-Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* mergeReconciler */ "m"])(hostConfig);
-Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__[/* mergeInternalComponents */ "l"])(components);
+(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.mergeReconciler)(hostConfig);
+(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.mergeInternalComponents)(components);
 
 /***/ }),
 
-/***/ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js ***!
-  \**********************************************************************************/
-/*! exports provided: Current, ElementNames, Events, FormElement, SERVICE_IDENTIFIER, SVGElement, Style, TaroElement, TaroEvent, TaroNode, TaroRootElement, TaroText, cancelAnimationFrame, connectReactPage, connectVuePage, container, createComponentConfig, createDocument, createEvent, createNativeComponentConfig, createPageConfig, createReactApp, createRecursiveComponentConfig, createVue3App, createVueApp, document, eventCenter, getComputedStyle, getCurrentInstance, hydrate, injectPageInstance, navigator, nextTick, now, options, processPluginHooks, requestAnimationFrame, stringify, useAddToFavorites, useDidHide, useDidShow, useOptionMenuClick, usePageScroll, usePullDownRefresh, usePullIntercept, useReachBottom, useReady, useResize, useRouter, useScope, useShareAppMessage, useShareTimeline, useTabItemTap, useTitleClick, window */
-/*! all exports used */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js ***!
+  \****************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process, global, document, window, requestAnimationFrame, cancelAnimationFrame) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Current", function() { return Current; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ElementNames", function() { return ElementNames; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Events", function() { return Events; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormElement", function() { return FormElement; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SERVICE_IDENTIFIER", function() { return SERVICE_IDENTIFIER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SVGElement", function() { return SVGElement; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Style", function() { return Style; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TaroElement", function() { return TaroElement; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TaroEvent", function() { return TaroEvent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TaroNode", function() { return TaroNode; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TaroRootElement", function() { return TaroRootElement; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TaroText", function() { return TaroText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cancelAnimationFrame", function() { return caf; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "connectReactPage", function() { return connectReactPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "connectVuePage", function() { return connectVuePage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "container", function() { return container; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createComponentConfig", function() { return createComponentConfig; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createDocument", function() { return createDocument; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createEvent", function() { return createEvent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNativeComponentConfig", function() { return createNativeComponentConfig; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createPageConfig", function() { return createPageConfig; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createReactApp", function() { return createReactApp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createRecursiveComponentConfig", function() { return createRecursiveComponentConfig; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createVue3App", function() { return createVue3App; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createVueApp", function() { return createVueApp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "document", function() { return document$2; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eventCenter", function() { return eventCenter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getComputedStyle", function() { return getComputedStyle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCurrentInstance", function() { return getCurrentInstance; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hydrate", function() { return hydrate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "injectPageInstance", function() { return injectPageInstance; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "navigator", function() { return navigator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nextTick", function() { return nextTick; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "now", function() { return now; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "options", function() { return options; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "processPluginHooks", function() { return processPluginHooks; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestAnimationFrame", function() { return raf; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stringify", function() { return stringify; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useAddToFavorites", function() { return useAddToFavorites; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useDidHide", function() { return useDidHide; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useDidShow", function() { return useDidShow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useOptionMenuClick", function() { return useOptionMenuClick; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "usePageScroll", function() { return usePageScroll; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "usePullDownRefresh", function() { return usePullDownRefresh; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "usePullIntercept", function() { return usePullIntercept; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useReachBottom", function() { return useReachBottom; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useReady", function() { return useReady; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useResize", function() { return useResize; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useRouter", function() { return useRouter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useScope", function() { return useScope; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useShareAppMessage", function() { return useShareAppMessage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useShareTimeline", function() { return useShareTimeline; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTabItemTap", function() { return useTabItemTap; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTitleClick", function() { return useTitleClick; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "window", function() { return window$1; });
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_regeneratorRuntime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/regeneratorRuntime.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/set */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/set.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/get */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/get.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/wrapNativeSuper.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toArray__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toArray */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/toArray.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/createSuper.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/typeof.js");
-/* harmony import */ var inversify__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! inversify */ "./node_modules/_inversify@5.1.1@inversify/es/inversify.js");
-/* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/_@tarojs_shared@3.3.14@@tarojs/shared/dist/shared.esm.js");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Current": function() { return /* binding */ Current; },
+/* harmony export */   "Events": function() { return /* reexport safe */ _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.Events; },
+/* harmony export */   "FormElement": function() { return /* binding */ FormElement; },
+/* harmony export */   "History": function() { return /* binding */ History; },
+/* harmony export */   "Location": function() { return /* binding */ Location; },
+/* harmony export */   "MutationObserver": function() { return /* binding */ MutationObserver; },
+/* harmony export */   "SVGElement": function() { return /* binding */ SVGElement; },
+/* harmony export */   "Style": function() { return /* binding */ Style; },
+/* harmony export */   "TaroElement": function() { return /* binding */ TaroElement; },
+/* harmony export */   "TaroEvent": function() { return /* binding */ TaroEvent; },
+/* harmony export */   "TaroNode": function() { return /* binding */ TaroNode; },
+/* harmony export */   "TaroRootElement": function() { return /* binding */ TaroRootElement; },
+/* harmony export */   "TaroText": function() { return /* binding */ TaroText; },
+/* harmony export */   "URL": function() { return /* binding */ URL; },
+/* harmony export */   "URLSearchParams": function() { return /* binding */ URLSearchParams; },
+/* harmony export */   "addLeadingSlash": function() { return /* binding */ addLeadingSlash; },
+/* harmony export */   "cancelAnimationFrame": function() { return /* binding */ _caf; },
+/* harmony export */   "createComponentConfig": function() { return /* binding */ createComponentConfig; },
+/* harmony export */   "createEvent": function() { return /* binding */ createEvent; },
+/* harmony export */   "createPageConfig": function() { return /* binding */ createPageConfig; },
+/* harmony export */   "createRecursiveComponentConfig": function() { return /* binding */ createRecursiveComponentConfig; },
+/* harmony export */   "document": function() { return /* binding */ document$1; },
+/* harmony export */   "eventCenter": function() { return /* binding */ eventCenter; },
+/* harmony export */   "eventHandler": function() { return /* binding */ eventHandler; },
+/* harmony export */   "eventSource": function() { return /* binding */ eventSource; },
+/* harmony export */   "getComputedStyle": function() { return /* binding */ getComputedStyle; },
+/* harmony export */   "getCurrentInstance": function() { return /* binding */ getCurrentInstance; },
+/* harmony export */   "getPageInstance": function() { return /* binding */ getPageInstance; },
+/* harmony export */   "history": function() { return /* binding */ history; },
+/* harmony export */   "hooks": function() { return /* reexport safe */ _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks; },
+/* harmony export */   "hydrate": function() { return /* binding */ hydrate; },
+/* harmony export */   "incrementId": function() { return /* binding */ incrementId; },
+/* harmony export */   "injectPageInstance": function() { return /* binding */ injectPageInstance; },
+/* harmony export */   "location": function() { return /* binding */ location; },
+/* harmony export */   "navigator": function() { return /* binding */ nav; },
+/* harmony export */   "nextTick": function() { return /* binding */ nextTick; },
+/* harmony export */   "now": function() { return /* binding */ now; },
+/* harmony export */   "options": function() { return /* binding */ options; },
+/* harmony export */   "parseUrl": function() { return /* binding */ parseUrl; },
+/* harmony export */   "removePageInstance": function() { return /* binding */ removePageInstance; },
+/* harmony export */   "requestAnimationFrame": function() { return /* binding */ _raf; },
+/* harmony export */   "safeExecute": function() { return /* binding */ safeExecute; },
+/* harmony export */   "stringify": function() { return /* binding */ stringify; },
+/* harmony export */   "window": function() { return /* binding */ window$1; }
+/* harmony export */ });
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_get_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/get.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/get.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_set_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/set.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/set.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toArray.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createSuper.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/shared */ "./node_modules/.store/@tarojs+shared@3.6.6/node_modules/@tarojs/shared/dist/shared.esm.js");
+/* provided dependency */ var window = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js")["window"];
+/* provided dependency */ var document = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js")["document"];
+/* provided dependency */ var requestAnimationFrame = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js")["requestAnimationFrame"];
+/* provided dependency */ var cancelAnimationFrame = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js")["cancelAnimationFrame"];
 
 
 
@@ -834,1211 +2153,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-/*! *****************************************************************************
-Copyright (C) Microsoft. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
-
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
-
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
-***************************************************************************** */
-
-/** https://github.com/rbuckton/reflect-metadata */
-
-if (false) {} else {
-  // var Reflect;
-  (function (Reflect) {
-    // Metadata Proposal
-    // https://rbuckton.github.io/reflect-metadata/
-    (function (factory) {
-      // var root = typeof global === "object" ? global :
-      //     typeof self === "object" ? self :
-      //         typeof this === "object" ? this :
-      //             Function("return this;")();
-      var exporter = makeExporter(Reflect);
-      // if (typeof root.Reflect === "undefined") {
-      //     root.Reflect = Reflect;
-      // }
-      // else {
-      //     exporter = makeExporter(root.Reflect, exporter);
-      // }
-      factory(exporter);
-      function makeExporter(target, previous) {
-        return function (key, value) {
-          if (typeof target[key] !== "function") {
-            Object.defineProperty(target, key, {
-              configurable: true,
-              writable: true,
-              value: value
-            });
-          }
-          if (previous) previous(key, value);
-        };
-      }
-    })(function (exporter) {
-      var hasOwn = Object.prototype.hasOwnProperty;
-      // feature test for Symbol support
-      var supportsSymbol = typeof Symbol === "function";
-      var toPrimitiveSymbol = supportsSymbol && typeof Symbol.toPrimitive !== "undefined" ? Symbol.toPrimitive : "@@toPrimitive";
-      var iteratorSymbol = supportsSymbol && typeof Symbol.iterator !== "undefined" ? Symbol.iterator : "@@iterator";
-      var supportsCreate = typeof Object.create === "function"; // feature test for Object.create support
-      var supportsProto = {
-        __proto__: []
-      } instanceof Array; // feature test for __proto__ support
-      var downLevel = !supportsCreate && !supportsProto;
-      var HashMap = {
-        // create an object in dictionary mode (a.k.a. "slow" mode in v8)
-        create: supportsCreate ? function () {
-          return MakeDictionary(Object.create(null));
-        } : supportsProto ? function () {
-          return MakeDictionary({
-            __proto__: null
-          });
-        } : function () {
-          return MakeDictionary({});
-        },
-        has: downLevel ? function (map, key) {
-          return hasOwn.call(map, key);
-        } : function (map, key) {
-          return key in map;
-        },
-        get: downLevel ? function (map, key) {
-          return hasOwn.call(map, key) ? map[key] : undefined;
-        } : function (map, key) {
-          return map[key];
-        }
-      };
-      // Load global or shim versions of Map, Set, and WeakMap
-      var functionPrototype = Object.getPrototypeOf(Function);
-      var usePolyfill = (typeof process === "undefined" ? "undefined" : Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(process)) === "object" && process.env && process.env["REFLECT_METADATA_USE_MAP_POLYFILL"] === "true";
-      var _Map = !usePolyfill && typeof Map === "function" && typeof Map.prototype.entries === "function" ? Map : CreateMapPolyfill();
-      var _Set = !usePolyfill && typeof Set === "function" && typeof Set.prototype.entries === "function" ? Set : CreateSetPolyfill();
-      var _WeakMap = !usePolyfill && typeof WeakMap === "function" ? WeakMap : CreateWeakMapPolyfill();
-      // [[Metadata]] internal slot
-      // https://rbuckton.github.io/reflect-metadata/#ordinary-object-internal-methods-and-internal-slots
-      var Metadata = new _WeakMap();
-      /**
-       * Applies a set of decorators to a property of a target object.
-       * @param decorators An array of decorators.
-       * @param target The target object.
-       * @param propertyKey (Optional) The property key to decorate.
-       * @param attributes (Optional) The property descriptor for the target key.
-       * @remarks Decorators are applied in reverse order.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     Example = Reflect.decorate(decoratorsArray, Example);
-       *
-       *     // property (on constructor)
-       *     Reflect.decorate(decoratorsArray, Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     Reflect.decorate(decoratorsArray, Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     Object.defineProperty(Example, "staticMethod",
-       *         Reflect.decorate(decoratorsArray, Example, "staticMethod",
-       *             Object.getOwnPropertyDescriptor(Example, "staticMethod")));
-       *
-       *     // method (on prototype)
-       *     Object.defineProperty(Example.prototype, "method",
-       *         Reflect.decorate(decoratorsArray, Example.prototype, "method",
-       *             Object.getOwnPropertyDescriptor(Example.prototype, "method")));
-       *
-       */
-      function decorate(decorators, target, propertyKey, attributes) {
-        if (!IsUndefined(propertyKey)) {
-          if (!IsArray(decorators)) throw new TypeError();
-          if (!IsObject(target)) throw new TypeError();
-          if (!IsObject(attributes) && !IsUndefined(attributes) && !IsNull(attributes)) throw new TypeError();
-          if (IsNull(attributes)) attributes = undefined;
-          propertyKey = ToPropertyKey(propertyKey);
-          return DecorateProperty(decorators, target, propertyKey, attributes);
-        } else {
-          if (!IsArray(decorators)) throw new TypeError();
-          if (!IsConstructor(target)) throw new TypeError();
-          return DecorateConstructor(decorators, target);
-        }
-      }
-      exporter("decorate", decorate);
-      // 4.1.2 Reflect.metadata(metadataKey, metadataValue)
-      // https://rbuckton.github.io/reflect-metadata/#reflect.metadata
-      /**
-       * A default metadata decorator factory that can be used on a class, class member, or parameter.
-       * @param metadataKey The key for the metadata entry.
-       * @param metadataValue The value for the metadata entry.
-       * @returns A decorator function.
-       * @remarks
-       * If `metadataKey` is already defined for the target and target key, the
-       * metadataValue for that key will be overwritten.
-       * @example
-       *
-       *     // constructor
-       *     @Reflect.metadata(key, value)
-       *     class Example {
-       *     }
-       *
-       *     // property (on constructor, TypeScript only)
-       *     class Example {
-       *         @Reflect.metadata(key, value)
-       *         static staticProperty;
-       *     }
-       *
-       *     // property (on prototype, TypeScript only)
-       *     class Example {
-       *         @Reflect.metadata(key, value)
-       *         property;
-       *     }
-       *
-       *     // method (on constructor)
-       *     class Example {
-       *         @Reflect.metadata(key, value)
-       *         static staticMethod() { }
-       *     }
-       *
-       *     // method (on prototype)
-       *     class Example {
-       *         @Reflect.metadata(key, value)
-       *         method() { }
-       *     }
-       *
-       */
-      function metadata(metadataKey, metadataValue) {
-        function decorator(target, propertyKey) {
-          if (!IsObject(target)) throw new TypeError();
-          if (!IsUndefined(propertyKey) && !IsPropertyKey(propertyKey)) throw new TypeError();
-          OrdinaryDefineOwnMetadata(metadataKey, metadataValue, target, propertyKey);
-        }
-        return decorator;
-      }
-      exporter("metadata", metadata);
-      /**
-       * Define a unique metadata entry on the target.
-       * @param metadataKey A key used to store and retrieve metadata.
-       * @param metadataValue A value that contains attached metadata.
-       * @param target The target object on which to define metadata.
-       * @param propertyKey (Optional) The property key for the target.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     Reflect.defineMetadata("custom:annotation", options, Example);
-       *
-       *     // property (on constructor)
-       *     Reflect.defineMetadata("custom:annotation", options, Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     Reflect.defineMetadata("custom:annotation", options, Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     Reflect.defineMetadata("custom:annotation", options, Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     Reflect.defineMetadata("custom:annotation", options, Example.prototype, "method");
-       *
-       *     // decorator factory as metadata-producing annotation.
-       *     function MyAnnotation(options): Decorator {
-       *         return (target, key?) => Reflect.defineMetadata("custom:annotation", options, target, key);
-       *     }
-       *
-       */
-      function defineMetadata(metadataKey, metadataValue, target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryDefineOwnMetadata(metadataKey, metadataValue, target, propertyKey);
-      }
-      exporter("defineMetadata", defineMetadata);
-      /**
-       * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
-       * @param metadataKey A key used to store and retrieve metadata.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns `true` if the metadata key was defined on the target object or its prototype chain; otherwise, `false`.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.hasMetadata("custom:annotation", Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.hasMetadata("custom:annotation", Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.hasMetadata("custom:annotation", Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.hasMetadata("custom:annotation", Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.hasMetadata("custom:annotation", Example.prototype, "method");
-       *
-       */
-      function hasMetadata(metadataKey, target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryHasMetadata(metadataKey, target, propertyKey);
-      }
-      exporter("hasMetadata", hasMetadata);
-      /**
-       * Gets a value indicating whether the target object has the provided metadata key defined.
-       * @param metadataKey A key used to store and retrieve metadata.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns `true` if the metadata key was defined on the target object; otherwise, `false`.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.hasOwnMetadata("custom:annotation", Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.hasOwnMetadata("custom:annotation", Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.hasOwnMetadata("custom:annotation", Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.hasOwnMetadata("custom:annotation", Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.hasOwnMetadata("custom:annotation", Example.prototype, "method");
-       *
-       */
-      function hasOwnMetadata(metadataKey, target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryHasOwnMetadata(metadataKey, target, propertyKey);
-      }
-      exporter("hasOwnMetadata", hasOwnMetadata);
-      /**
-       * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
-       * @param metadataKey A key used to store and retrieve metadata.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns The metadata value for the metadata key if found; otherwise, `undefined`.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.getMetadata("custom:annotation", Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.getMetadata("custom:annotation", Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.getMetadata("custom:annotation", Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.getMetadata("custom:annotation", Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.getMetadata("custom:annotation", Example.prototype, "method");
-       *
-       */
-      function getMetadata(metadataKey, target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryGetMetadata(metadataKey, target, propertyKey);
-      }
-      exporter("getMetadata", getMetadata);
-      /**
-       * Gets the metadata value for the provided metadata key on the target object.
-       * @param metadataKey A key used to store and retrieve metadata.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns The metadata value for the metadata key if found; otherwise, `undefined`.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.getOwnMetadata("custom:annotation", Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.getOwnMetadata("custom:annotation", Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.getOwnMetadata("custom:annotation", Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.getOwnMetadata("custom:annotation", Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.getOwnMetadata("custom:annotation", Example.prototype, "method");
-       *
-       */
-      function getOwnMetadata(metadataKey, target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryGetOwnMetadata(metadataKey, target, propertyKey);
-      }
-      exporter("getOwnMetadata", getOwnMetadata);
-      /**
-       * Gets the metadata keys defined on the target object or its prototype chain.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns An array of unique metadata keys.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.getMetadataKeys(Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.getMetadataKeys(Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.getMetadataKeys(Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.getMetadataKeys(Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.getMetadataKeys(Example.prototype, "method");
-       *
-       */
-      function getMetadataKeys(target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryMetadataKeys(target, propertyKey);
-      }
-      exporter("getMetadataKeys", getMetadataKeys);
-      /**
-       * Gets the unique metadata keys defined on the target object.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns An array of unique metadata keys.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.getOwnMetadataKeys(Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.getOwnMetadataKeys(Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.getOwnMetadataKeys(Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.getOwnMetadataKeys(Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.getOwnMetadataKeys(Example.prototype, "method");
-       *
-       */
-      function getOwnMetadataKeys(target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        return OrdinaryOwnMetadataKeys(target, propertyKey);
-      }
-      exporter("getOwnMetadataKeys", getOwnMetadataKeys);
-      /**
-       * Deletes the metadata entry from the target object with the provided key.
-       * @param metadataKey A key used to store and retrieve metadata.
-       * @param target The target object on which the metadata is defined.
-       * @param propertyKey (Optional) The property key for the target.
-       * @returns `true` if the metadata entry was found and deleted; otherwise, false.
-       * @example
-       *
-       *     class Example {
-       *         // property declarations are not part of ES6, though they are valid in TypeScript:
-       *         // static staticProperty;
-       *         // property;
-       *
-       *         constructor(p) { }
-       *         static staticMethod(p) { }
-       *         method(p) { }
-       *     }
-       *
-       *     // constructor
-       *     result = Reflect.deleteMetadata("custom:annotation", Example);
-       *
-       *     // property (on constructor)
-       *     result = Reflect.deleteMetadata("custom:annotation", Example, "staticProperty");
-       *
-       *     // property (on prototype)
-       *     result = Reflect.deleteMetadata("custom:annotation", Example.prototype, "property");
-       *
-       *     // method (on constructor)
-       *     result = Reflect.deleteMetadata("custom:annotation", Example, "staticMethod");
-       *
-       *     // method (on prototype)
-       *     result = Reflect.deleteMetadata("custom:annotation", Example.prototype, "method");
-       *
-       */
-      function deleteMetadata(metadataKey, target, propertyKey) {
-        if (!IsObject(target)) throw new TypeError();
-        if (!IsUndefined(propertyKey)) propertyKey = ToPropertyKey(propertyKey);
-        var metadataMap = GetOrCreateMetadataMap(target, propertyKey, /*Create*/false);
-        if (IsUndefined(metadataMap)) return false;
-        if (!metadataMap.delete(metadataKey)) return false;
-        if (metadataMap.size > 0) return true;
-        var targetMetadata = Metadata.get(target);
-        targetMetadata.delete(propertyKey);
-        if (targetMetadata.size > 0) return true;
-        Metadata.delete(target);
-        return true;
-      }
-      exporter("deleteMetadata", deleteMetadata);
-      function DecorateConstructor(decorators, target) {
-        for (var i = decorators.length - 1; i >= 0; --i) {
-          var decorator = decorators[i];
-          var decorated = decorator(target);
-          if (!IsUndefined(decorated) && !IsNull(decorated)) {
-            if (!IsConstructor(decorated)) throw new TypeError();
-            target = decorated;
-          }
-        }
-        return target;
-      }
-      function DecorateProperty(decorators, target, propertyKey, descriptor) {
-        for (var i = decorators.length - 1; i >= 0; --i) {
-          var decorator = decorators[i];
-          var decorated = decorator(target, propertyKey, descriptor);
-          if (!IsUndefined(decorated) && !IsNull(decorated)) {
-            if (!IsObject(decorated)) throw new TypeError();
-            descriptor = decorated;
-          }
-        }
-        return descriptor;
-      }
-      function GetOrCreateMetadataMap(O, P, Create) {
-        var targetMetadata = Metadata.get(O);
-        if (IsUndefined(targetMetadata)) {
-          if (!Create) return undefined;
-          targetMetadata = new _Map();
-          Metadata.set(O, targetMetadata);
-        }
-        var metadataMap = targetMetadata.get(P);
-        if (IsUndefined(metadataMap)) {
-          if (!Create) return undefined;
-          metadataMap = new _Map();
-          targetMetadata.set(P, metadataMap);
-        }
-        return metadataMap;
-      }
-      // 3.1.1.1 OrdinaryHasMetadata(MetadataKey, O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinaryhasmetadata
-      function OrdinaryHasMetadata(MetadataKey, O, P) {
-        var hasOwn = OrdinaryHasOwnMetadata(MetadataKey, O, P);
-        if (hasOwn) return true;
-        var parent = OrdinaryGetPrototypeOf(O);
-        if (!IsNull(parent)) return OrdinaryHasMetadata(MetadataKey, parent, P);
-        return false;
-      }
-      // 3.1.2.1 OrdinaryHasOwnMetadata(MetadataKey, O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinaryhasownmetadata
-      function OrdinaryHasOwnMetadata(MetadataKey, O, P) {
-        var metadataMap = GetOrCreateMetadataMap(O, P, /*Create*/false);
-        if (IsUndefined(metadataMap)) return false;
-        return ToBoolean(metadataMap.has(MetadataKey));
-      }
-      // 3.1.3.1 OrdinaryGetMetadata(MetadataKey, O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinarygetmetadata
-      function OrdinaryGetMetadata(MetadataKey, O, P) {
-        var hasOwn = OrdinaryHasOwnMetadata(MetadataKey, O, P);
-        if (hasOwn) return OrdinaryGetOwnMetadata(MetadataKey, O, P);
-        var parent = OrdinaryGetPrototypeOf(O);
-        if (!IsNull(parent)) return OrdinaryGetMetadata(MetadataKey, parent, P);
-        return undefined;
-      }
-      // 3.1.4.1 OrdinaryGetOwnMetadata(MetadataKey, O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinarygetownmetadata
-      function OrdinaryGetOwnMetadata(MetadataKey, O, P) {
-        var metadataMap = GetOrCreateMetadataMap(O, P, /*Create*/false);
-        if (IsUndefined(metadataMap)) return undefined;
-        return metadataMap.get(MetadataKey);
-      }
-      // 3.1.5.1 OrdinaryDefineOwnMetadata(MetadataKey, MetadataValue, O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinarydefineownmetadata
-      function OrdinaryDefineOwnMetadata(MetadataKey, MetadataValue, O, P) {
-        var metadataMap = GetOrCreateMetadataMap(O, P, /*Create*/true);
-        metadataMap.set(MetadataKey, MetadataValue);
-      }
-      // 3.1.6.1 OrdinaryMetadataKeys(O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinarymetadatakeys
-      function OrdinaryMetadataKeys(O, P) {
-        var ownKeys = OrdinaryOwnMetadataKeys(O, P);
-        var parent = OrdinaryGetPrototypeOf(O);
-        if (parent === null) return ownKeys;
-        var parentKeys = OrdinaryMetadataKeys(parent, P);
-        if (parentKeys.length <= 0) return ownKeys;
-        if (ownKeys.length <= 0) return parentKeys;
-        var set = new _Set();
-        var keys = [];
-        for (var _i = 0, ownKeys_1 = ownKeys; _i < ownKeys_1.length; _i++) {
-          var key = ownKeys_1[_i];
-          var hasKey = set.has(key);
-          if (!hasKey) {
-            set.add(key);
-            keys.push(key);
-          }
-        }
-        for (var _a = 0, parentKeys_1 = parentKeys; _a < parentKeys_1.length; _a++) {
-          var key = parentKeys_1[_a];
-          var hasKey = set.has(key);
-          if (!hasKey) {
-            set.add(key);
-            keys.push(key);
-          }
-        }
-        return keys;
-      }
-      // 3.1.7.1 OrdinaryOwnMetadataKeys(O, P)
-      // https://rbuckton.github.io/reflect-metadata/#ordinaryownmetadatakeys
-      function OrdinaryOwnMetadataKeys(O, P) {
-        var keys = [];
-        var metadataMap = GetOrCreateMetadataMap(O, P, /*Create*/false);
-        if (IsUndefined(metadataMap)) return keys;
-        var keysObj = metadataMap.keys();
-        var iterator = GetIterator(keysObj);
-        var k = 0;
-        while (true) {
-          var next = IteratorStep(iterator);
-          if (!next) {
-            keys.length = k;
-            return keys;
-          }
-          var nextValue = IteratorValue(next);
-          try {
-            keys[k] = nextValue;
-          } catch (e) {
-            try {
-              IteratorClose(iterator);
-            } finally {
-              throw e;
-            }
-          }
-          k++;
-        }
-      }
-      // 6 ECMAScript Data Typ0es and Values
-      // https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values
-      function Type(x) {
-        if (x === null) return 1 /* Null */;
-        switch (Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(x)) {
-          case "undefined":
-            return 0 /* Undefined */;
-          case "boolean":
-            return 2 /* Boolean */;
-          case "string":
-            return 3 /* String */;
-          case "symbol":
-            return 4 /* Symbol */;
-          case "number":
-            return 5 /* Number */;
-          case "object":
-            return x === null ? 1 /* Null */ : 6 /* Object */;
-          default:
-            return 6 /* Object */;
-        }
-      }
-      // 6.1.1 The Undefined Type
-      // https://tc39.github.io/ecma262/#sec-ecmascript-language-types-undefined-type
-      function IsUndefined(x) {
-        return x === undefined;
-      }
-      // 6.1.2 The Null Type
-      // https://tc39.github.io/ecma262/#sec-ecmascript-language-types-null-type
-      function IsNull(x) {
-        return x === null;
-      }
-      // 6.1.5 The Symbol Type
-      // https://tc39.github.io/ecma262/#sec-ecmascript-language-types-symbol-type
-      function IsSymbol(x) {
-        return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(x) === "symbol";
-      }
-      // 6.1.7 The Object Type
-      // https://tc39.github.io/ecma262/#sec-object-type
-      function IsObject(x) {
-        return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(x) === "object" ? x !== null : typeof x === "function";
-      }
-      // 7.1 Type Conversion
-      // https://tc39.github.io/ecma262/#sec-type-conversion
-      // 7.1.1 ToPrimitive(input [, PreferredType])
-      // https://tc39.github.io/ecma262/#sec-toprimitive
-      function ToPrimitive(input, PreferredType) {
-        switch (Type(input)) {
-          case 0 /* Undefined */:
-            return input;
-          case 1 /* Null */:
-            return input;
-          case 2 /* Boolean */:
-            return input;
-          case 3 /* String */:
-            return input;
-          case 4 /* Symbol */:
-            return input;
-          case 5 /* Number */:
-            return input;
-        }
-        var hint = PreferredType === 3 /* String */ ? "string" : PreferredType === 5 /* Number */ ? "number" : "default";
-        var exoticToPrim = GetMethod(input, toPrimitiveSymbol);
-        if (exoticToPrim !== undefined) {
-          var result = exoticToPrim.call(input, hint);
-          if (IsObject(result)) throw new TypeError();
-          return result;
-        }
-        return OrdinaryToPrimitive(input, hint === "default" ? "number" : hint);
-      }
-      // 7.1.1.1 OrdinaryToPrimitive(O, hint)
-      // https://tc39.github.io/ecma262/#sec-ordinarytoprimitive
-      function OrdinaryToPrimitive(O, hint) {
-        if (hint === "string") {
-          var toString_1 = O.toString;
-          if (IsCallable(toString_1)) {
-            var result = toString_1.call(O);
-            if (!IsObject(result)) return result;
-          }
-          var valueOf = O.valueOf;
-          if (IsCallable(valueOf)) {
-            var result = valueOf.call(O);
-            if (!IsObject(result)) return result;
-          }
-        } else {
-          var valueOf = O.valueOf;
-          if (IsCallable(valueOf)) {
-            var result = valueOf.call(O);
-            if (!IsObject(result)) return result;
-          }
-          var toString_2 = O.toString;
-          if (IsCallable(toString_2)) {
-            var result = toString_2.call(O);
-            if (!IsObject(result)) return result;
-          }
-        }
-        throw new TypeError();
-      }
-      // 7.1.2 ToBoolean(argument)
-      // https://tc39.github.io/ecma262/2016/#sec-toboolean
-      function ToBoolean(argument) {
-        return !!argument;
-      }
-      // 7.1.12 ToString(argument)
-      // https://tc39.github.io/ecma262/#sec-tostring
-      function ToString(argument) {
-        return "" + argument;
-      }
-      // 7.1.14 ToPropertyKey(argument)
-      // https://tc39.github.io/ecma262/#sec-topropertykey
-      function ToPropertyKey(argument) {
-        var key = ToPrimitive(argument, 3 /* String */);
-        if (IsSymbol(key)) return key;
-        return ToString(key);
-      }
-      // 7.2 Testing and Comparison Operations
-      // https://tc39.github.io/ecma262/#sec-testing-and-comparison-operations
-      // 7.2.2 IsArray(argument)
-      // https://tc39.github.io/ecma262/#sec-isarray
-      function IsArray(argument) {
-        return Array.isArray ? Array.isArray(argument) : argument instanceof Object ? argument instanceof Array : Object.prototype.toString.call(argument) === "[object Array]";
-      }
-      // 7.2.3 IsCallable(argument)
-      // https://tc39.github.io/ecma262/#sec-iscallable
-      function IsCallable(argument) {
-        // NOTE: This is an approximation as we cannot check for [[Call]] internal method.
-        return typeof argument === "function";
-      }
-      // 7.2.4 IsConstructor(argument)
-      // https://tc39.github.io/ecma262/#sec-isconstructor
-      function IsConstructor(argument) {
-        // NOTE: This is an approximation as we cannot check for [[Construct]] internal method.
-        return typeof argument === "function";
-      }
-      // 7.2.7 IsPropertyKey(argument)
-      // https://tc39.github.io/ecma262/#sec-ispropertykey
-      function IsPropertyKey(argument) {
-        switch (Type(argument)) {
-          case 3 /* String */:
-            return true;
-          case 4 /* Symbol */:
-            return true;
-          default:
-            return false;
-        }
-      }
-      // 7.3 Operations on Objects
-      // https://tc39.github.io/ecma262/#sec-operations-on-objects
-      // 7.3.9 GetMethod(V, P)
-      // https://tc39.github.io/ecma262/#sec-getmethod
-      function GetMethod(V, P) {
-        var func = V[P];
-        if (func === undefined || func === null) return undefined;
-        if (!IsCallable(func)) throw new TypeError();
-        return func;
-      }
-      // 7.4 Operations on Iterator Objects
-      // https://tc39.github.io/ecma262/#sec-operations-on-iterator-objects
-      function GetIterator(obj) {
-        var method = GetMethod(obj, iteratorSymbol);
-        if (!IsCallable(method)) throw new TypeError(); // from Call
-        var iterator = method.call(obj);
-        if (!IsObject(iterator)) throw new TypeError();
-        return iterator;
-      }
-      // 7.4.4 IteratorValue(iterResult)
-      // https://tc39.github.io/ecma262/2016/#sec-iteratorvalue
-      function IteratorValue(iterResult) {
-        return iterResult.value;
-      }
-      // 7.4.5 IteratorStep(iterator)
-      // https://tc39.github.io/ecma262/#sec-iteratorstep
-      function IteratorStep(iterator) {
-        var result = iterator.next();
-        return result.done ? false : result;
-      }
-      // 7.4.6 IteratorClose(iterator, completion)
-      // https://tc39.github.io/ecma262/#sec-iteratorclose
-      function IteratorClose(iterator) {
-        var f = iterator["return"];
-        if (f) f.call(iterator);
-      }
-      // 9.1 Ordinary Object Internal Methods and Internal Slots
-      // https://tc39.github.io/ecma262/#sec-ordinary-object-internal-methods-and-internal-slots
-      // 9.1.1.1 OrdinaryGetPrototypeOf(O)
-      // https://tc39.github.io/ecma262/#sec-ordinarygetprototypeof
-      function OrdinaryGetPrototypeOf(O) {
-        var proto = Object.getPrototypeOf(O);
-        if (typeof O !== "function" || O === functionPrototype) return proto;
-        // TypeScript doesn't set __proto__ in ES5, as it's non-standard.
-        // Try to determine the superclass constructor. Compatible implementations
-        // must either set __proto__ on a subclass constructor to the superclass constructor,
-        // or ensure each class has a valid `constructor` property on its prototype that
-        // points back to the constructor.
-        // If this is not the same as Function.[[Prototype]], then this is definately inherited.
-        // This is the case when in ES6 or when using __proto__ in a compatible browser.
-        if (proto !== functionPrototype) return proto;
-        // If the super prototype is Object.prototype, null, or undefined, then we cannot determine the heritage.
-        var prototype = O.prototype;
-        var prototypeProto = prototype && Object.getPrototypeOf(prototype);
-        if (prototypeProto == null || prototypeProto === Object.prototype) return proto;
-        // If the constructor was not a function, then we cannot determine the heritage.
-        var constructor = prototypeProto.constructor;
-        if (typeof constructor !== "function") return proto;
-        // If we have some kind of self-reference, then we cannot determine the heritage.
-        if (constructor === O) return proto;
-        // we have a pretty good guess at the heritage.
-        return constructor;
-      }
-      // naive Map shim
-      function CreateMapPolyfill() {
-        var cacheSentinel = {};
-        var arraySentinel = [];
-        var MapIterator = /** @class */function () {
-          function MapIterator(keys, values, selector) {
-            this._index = 0;
-            this._keys = keys;
-            this._values = values;
-            this._selector = selector;
-          }
-          MapIterator.prototype["@@iterator"] = function () {
-            return this;
-          };
-          MapIterator.prototype[iteratorSymbol] = function () {
-            return this;
-          };
-          MapIterator.prototype.next = function () {
-            var index = this._index;
-            if (index >= 0 && index < this._keys.length) {
-              var result = this._selector(this._keys[index], this._values[index]);
-              if (index + 1 >= this._keys.length) {
-                this._index = -1;
-                this._keys = arraySentinel;
-                this._values = arraySentinel;
-              } else {
-                this._index++;
-              }
-              return {
-                value: result,
-                done: false
-              };
-            }
-            return {
-              value: undefined,
-              done: true
-            };
-          };
-          MapIterator.prototype.throw = function (error) {
-            if (this._index >= 0) {
-              this._index = -1;
-              this._keys = arraySentinel;
-              this._values = arraySentinel;
-            }
-            throw error;
-          };
-          MapIterator.prototype.return = function (value) {
-            if (this._index >= 0) {
-              this._index = -1;
-              this._keys = arraySentinel;
-              this._values = arraySentinel;
-            }
-            return {
-              value: value,
-              done: true
-            };
-          };
-          return MapIterator;
-        }();
-        return (/** @class */function () {
-            function Map() {
-              this._keys = [];
-              this._values = [];
-              this._cacheKey = cacheSentinel;
-              this._cacheIndex = -2;
-            }
-            Object.defineProperty(Map.prototype, "size", {
-              get: function get() {
-                return this._keys.length;
-              },
-              enumerable: true,
-              configurable: true
-            });
-            Map.prototype.has = function (key) {
-              return this._find(key, /*insert*/false) >= 0;
-            };
-            Map.prototype.get = function (key) {
-              var index = this._find(key, /*insert*/false);
-              return index >= 0 ? this._values[index] : undefined;
-            };
-            Map.prototype.set = function (key, value) {
-              var index = this._find(key, /*insert*/true);
-              this._values[index] = value;
-              return this;
-            };
-            Map.prototype.delete = function (key) {
-              var index = this._find(key, /*insert*/false);
-              if (index >= 0) {
-                var size = this._keys.length;
-                for (var i = index + 1; i < size; i++) {
-                  this._keys[i - 1] = this._keys[i];
-                  this._values[i - 1] = this._values[i];
-                }
-                this._keys.length--;
-                this._values.length--;
-                if (key === this._cacheKey) {
-                  this._cacheKey = cacheSentinel;
-                  this._cacheIndex = -2;
-                }
-                return true;
-              }
-              return false;
-            };
-            Map.prototype.clear = function () {
-              this._keys.length = 0;
-              this._values.length = 0;
-              this._cacheKey = cacheSentinel;
-              this._cacheIndex = -2;
-            };
-            Map.prototype.keys = function () {
-              return new MapIterator(this._keys, this._values, getKey);
-            };
-            Map.prototype.values = function () {
-              return new MapIterator(this._keys, this._values, getValue);
-            };
-            Map.prototype.entries = function () {
-              return new MapIterator(this._keys, this._values, getEntry);
-            };
-            Map.prototype["@@iterator"] = function () {
-              return this.entries();
-            };
-            Map.prototype[iteratorSymbol] = function () {
-              return this.entries();
-            };
-            Map.prototype._find = function (key, insert) {
-              if (this._cacheKey !== key) {
-                this._cacheIndex = this._keys.indexOf(this._cacheKey = key);
-              }
-              if (this._cacheIndex < 0 && insert) {
-                this._cacheIndex = this._keys.length;
-                this._keys.push(key);
-                this._values.push(undefined);
-              }
-              return this._cacheIndex;
-            };
-            return Map;
-          }()
-        );
-        function getKey(key, _) {
-          return key;
-        }
-        function getValue(_, value) {
-          return value;
-        }
-        function getEntry(key, value) {
-          return [key, value];
-        }
-      }
-      // naive Set shim
-      function CreateSetPolyfill() {
-        return (/** @class */function () {
-            function Set() {
-              this._map = new _Map();
-            }
-            Object.defineProperty(Set.prototype, "size", {
-              get: function get() {
-                return this._map.size;
-              },
-              enumerable: true,
-              configurable: true
-            });
-            Set.prototype.has = function (value) {
-              return this._map.has(value);
-            };
-            Set.prototype.add = function (value) {
-              return this._map.set(value, value), this;
-            };
-            Set.prototype.delete = function (value) {
-              return this._map.delete(value);
-            };
-            Set.prototype.clear = function () {
-              this._map.clear();
-            };
-            Set.prototype.keys = function () {
-              return this._map.keys();
-            };
-            Set.prototype.values = function () {
-              return this._map.values();
-            };
-            Set.prototype.entries = function () {
-              return this._map.entries();
-            };
-            Set.prototype["@@iterator"] = function () {
-              return this.keys();
-            };
-            Set.prototype[iteratorSymbol] = function () {
-              return this.keys();
-            };
-            return Set;
-          }()
-        );
-      }
-      // naive WeakMap shim
-      function CreateWeakMapPolyfill() {
-        var UUID_SIZE = 16;
-        var keys = HashMap.create();
-        var rootKey = CreateUniqueKey();
-        return (/** @class */function () {
-            function WeakMap() {
-              this._key = CreateUniqueKey();
-            }
-            WeakMap.prototype.has = function (target) {
-              var table = GetOrCreateWeakMapTable(target, /*create*/false);
-              return table !== undefined ? HashMap.has(table, this._key) : false;
-            };
-            WeakMap.prototype.get = function (target) {
-              var table = GetOrCreateWeakMapTable(target, /*create*/false);
-              return table !== undefined ? HashMap.get(table, this._key) : undefined;
-            };
-            WeakMap.prototype.set = function (target, value) {
-              var table = GetOrCreateWeakMapTable(target, /*create*/true);
-              table[this._key] = value;
-              return this;
-            };
-            WeakMap.prototype.delete = function (target) {
-              var table = GetOrCreateWeakMapTable(target, /*create*/false);
-              return table !== undefined ? delete table[this._key] : false;
-            };
-            WeakMap.prototype.clear = function () {
-              // NOTE: not a real clear, just makes the previous data unreachable
-              this._key = CreateUniqueKey();
-            };
-            return WeakMap;
-          }()
-        );
-        function CreateUniqueKey() {
-          var key;
-          do key = "@@WeakMap@@" + CreateUUID(); while (HashMap.has(keys, key));
-          keys[key] = true;
-          return key;
-        }
-        function GetOrCreateWeakMapTable(target, create) {
-          if (!hasOwn.call(target, rootKey)) {
-            if (!create) return undefined;
-            Object.defineProperty(target, rootKey, {
-              value: HashMap.create()
-            });
-          }
-          return target[rootKey];
-        }
-        function FillRandomBytes(buffer, size) {
-          for (var i = 0; i < size; ++i) buffer[i] = Math.random() * 0xff | 0;
-          return buffer;
-        }
-        function GenRandomBytes(size) {
-          if (typeof Uint8Array === "function") {
-            if (typeof crypto !== "undefined") return crypto.getRandomValues(new Uint8Array(size));
-            if (typeof msCrypto !== "undefined") return msCrypto.getRandomValues(new Uint8Array(size));
-            return FillRandomBytes(new Uint8Array(size), size);
-          }
-          return FillRandomBytes(new Array(size), size);
-        }
-        function CreateUUID() {
-          var data = GenRandomBytes(UUID_SIZE);
-          // mark as random - RFC 4122 § 4.4
-          data[6] = data[6] & 0x4f | 0x40;
-          data[8] = data[8] & 0xbf | 0x80;
-          var result = "";
-          for (var offset = 0; offset < UUID_SIZE; ++offset) {
-            var byte = data[offset];
-            if (offset === 4 || offset === 6 || offset === 8) result += "-";
-            if (byte < 16) result += "0";
-            result += byte.toString(16).toLowerCase();
-          }
-          return result;
-        }
-      }
-      // uses a heuristic used by v8 and chakra to force an object into dictionary mode.
-      function MakeDictionary(obj) {
-        obj.__ = undefined;
-        delete obj.__;
-        return obj;
-      }
-    });
-  })(Reflect || (Reflect = {}));
-}
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
-
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
-
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
-***************************************************************************** */
-
-function __decorate(decorators, target, key, desc) {
-  var c = arguments.length,
-    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-    d;
-  if ((typeof Reflect === "undefined" ? "undefined" : Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-function __param(paramIndex, decorator) {
-  return function (target, key) {
-    decorator(target, key, paramIndex);
-  };
-}
-function __metadata(metadataKey, metadataValue) {
-  if ((typeof Reflect === "undefined" ? "undefined" : Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-var SERVICE_IDENTIFIER = {
-  TaroElement: 'TaroElement',
-  TaroElementFactory: 'Factory<TaroElement>',
-  TaroText: 'TaroText',
-  TaroTextFactory: 'Factory<TaroText>',
-  TaroNodeImpl: 'TaroNodeImpl',
-  TaroElementImpl: 'TaroElementImpl',
-  Hooks: 'hooks',
-  onRemoveAttribute: 'onRemoveAttribute',
-  getLifecycle: 'getLifecycle',
-  getPathIndex: 'getPathIndex',
-  getEventCenter: 'getEventCenter',
-  isBubbleEvents: 'isBubbleEvents',
-  getSpecialNodes: 'getSpecialNodes',
-  eventCenter: 'eventCenter',
-  modifyMpEvent: 'modifyMpEvent',
-  modifyTaroEvent: 'modifyTaroEvent',
-  batchedEventUpdates: 'batchedEventUpdates',
-  mergePageInstance: 'mergePageInstance',
-  createPullDownComponent: 'createPullDownComponent',
-  getDOMNode: 'getDOMNode',
-  initNativeApi: 'initNativeApi',
-  modifyHydrateData: 'modifyHydrateData',
-  modifySetAttrPayload: 'modifySetAttrPayload',
-  modifyRmAttrPayload: 'modifyRmAttrPayload',
-  onAddEvent: 'onAddEvent',
-  patchElement: 'patchElement'
-};
 var PROPERTY_THRESHOLD = 2046;
-var HOOKS_APP_ID = 'taro-app';
 var SET_DATA = '小程序 setData';
 var PAGE_INIT = '页面初始化';
 var ROOT_STR = 'root';
@@ -2071,23 +2186,209 @@ var CONFIRM = 'confirm';
 var TIME_STAMP = 'timeStamp';
 var KEY_CODE = 'keyCode';
 var TOUCHMOVE = 'touchmove';
-var DATE = 'Date';
-var SET_TIMEOUT = 'setTimeout';
 var CATCHMOVE = 'catchMove';
 var CATCH_VIEW = 'catch-view';
 var COMMENT = 'comment';
+var ON_LOAD = 'onLoad';
+var ON_READY = 'onReady';
+var ON_SHOW = 'onShow';
+var ON_HIDE = 'onHide';
+var OPTIONS = 'options';
+var EXTERNAL_CLASSES = 'externalClasses';
+var EVENT_CALLBACK_RESULT = 'e_result';
+var BEHAVIORS = 'behaviors';
+var A = 'a';
+/**
+ * 页面上下文切换时的行为
+ */
+var CONTEXT_ACTIONS;
+(function (CONTEXT_ACTIONS) {
+  CONTEXT_ACTIONS["INIT"] = "0";
+  CONTEXT_ACTIONS["RESTORE"] = "1";
+  CONTEXT_ACTIONS["RECOVER"] = "2";
+  CONTEXT_ACTIONS["DESTORY"] = "3";
+})(CONTEXT_ACTIONS || (CONTEXT_ACTIONS = {}));
+var observers = [];
+/**
+ * The MutationObserver provides the ability
+ * to watch for changes being made to the DOM tree.
+ * It will invoke a specified callback function
+ * when DOM changes occur.
+ * @see https://dom.spec.whatwg.org/#mutationobserver
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+ */
+var MutationObserverImpl = /*#__PURE__*/function () {
+  function MutationObserverImpl(callback) {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MutationObserverImpl);
+    this.records = [];
+    this.callback = callback;
+  }
+  /**
+   * Configures the MutationObserver
+   * to begin receiving notifications
+   * through its callback function
+   * when DOM changes matching the given options occur.
+   *
+   * Options matching is to be implemented.
+   */
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(MutationObserverImpl, [{
+    key: "observe",
+    value: function observe(target, options) {
+      this.disconnect();
+      this.target = target;
+      this.options = options || {};
+      observers.push(this);
+    }
+    /**
+     * Stop the MutationObserver instance
+     * from receiving further notifications
+     * until and unless observe() is called again.
+     */
+  }, {
+    key: "disconnect",
+    value: function disconnect() {
+      this.target = null;
+      var index = observers.indexOf(this);
+      if (index >= 0) {
+        observers.splice(index, 1);
+      }
+    }
+    /**
+     * Removes all pending notifications
+     * from the MutationObserver's notification queue
+     * and returns them in a new Array of MutationRecord objects.
+     */
+  }, {
+    key: "takeRecords",
+    value: function takeRecords() {
+      return this.records.splice(0, this.records.length);
+    }
+  }]);
+  return MutationObserverImpl;
+}();
+/** Match two TaroNodes by sid. */
+var sidMatches = function sidMatches(observerTarget, target) {
+  return !!observerTarget && observerTarget.sid === (target === null || target === void 0 ? void 0 : target.sid);
+};
+var isConcerned = function isConcerned(record, options) {
+  var characterData = options.characterData,
+    characterDataOldValue = options.characterDataOldValue,
+    attributes = options.attributes,
+    attributeOldValue = options.attributeOldValue,
+    childList = options.childList;
+  switch (record.type) {
+    case "characterData" /* MutationRecordType.CHARACTER_DATA */:
+      if (characterData) {
+        if (!characterDataOldValue) record.oldValue = null;
+        return true;
+      }
+      return false;
+    case "attributes" /* MutationRecordType.ATTRIBUTES */:
+      if (attributes) {
+        if (!attributeOldValue) record.oldValue = null;
+        return true;
+      }
+      return false;
+    case "childList" /* MutationRecordType.CHILD_LIST */:
+      if (childList) {
+        return true;
+      }
+      return false;
+  }
+};
+var pendingMuatations = false;
+function logMutation(observer, record) {
+  observer.records.push(record);
+  if (!pendingMuatations) {
+    pendingMuatations = true;
+    Promise.resolve().then(function () {
+      pendingMuatations = false;
+      observers.forEach(function (observer) {
+        return observer.callback(observer.takeRecords());
+      });
+    });
+  }
+}
+function recordMutation(record) {
+  observers.forEach(function (observer) {
+    var options = observer.options;
+    for (var t = record.target; t; t = t.parentNode) {
+      if (sidMatches(observer.target, t) && isConcerned(record, options)) {
+        logMutation(observer, record);
+        break;
+      }
+      if (!options.subtree) break;
+    }
+  });
+}
+var MutationObserver = /*#__PURE__*/function () {
+  function MutationObserver(callback) {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MutationObserver);
+    if (true) {
+      this.core = new MutationObserverImpl(callback);
+    } else {}
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(MutationObserver, [{
+    key: "observe",
+    value: function observe() {
+      var _this$core;
+      (_this$core = this.core).observe.apply(_this$core, arguments);
+    }
+  }, {
+    key: "disconnect",
+    value: function disconnect() {
+      this.core.disconnect();
+    }
+  }, {
+    key: "takeRecords",
+    value: function takeRecords() {
+      return this.core.takeRecords();
+    }
+  }], [{
+    key: "record",
+    value: function record(_record) {
+      recordMutation(_record);
+    }
+  }]);
+  return MutationObserver;
+}();
 var incrementId = function incrementId() {
-  var id = 0;
+  var chatCodes = [];
+  // A-Z
+  for (var i = 65; i <= 90; i++) {
+    chatCodes.push(i);
+  }
+  // a-z
+  for (var _i = 97; _i <= 122; _i++) {
+    chatCodes.push(_i);
+  }
+  var chatCodesLen = chatCodes.length - 1;
+  var list = [0, 0];
   return function () {
-    return (id++).toString();
+    var target = list.map(function (item) {
+      return chatCodes[item];
+    });
+    var res = String.fromCharCode.apply(String, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(target));
+    var tailIdx = list.length - 1;
+    list[tailIdx]++;
+    while (list[tailIdx] > chatCodesLen) {
+      list[tailIdx] = 0;
+      tailIdx = tailIdx - 1;
+      if (tailIdx < 0) {
+        list.push(0);
+        break;
+      }
+      list[tailIdx]++;
+    }
+    return res;
   };
 };
 function isElement(node) {
-  return node.nodeType === 1 /* ELEMENT_NODE */;
+  return node.nodeType === 1 /* NodeType.ELEMENT_NODE */;
 }
 
 function isText(node) {
-  return node.nodeType === 3 /* TEXT_NODE */;
+  return node.nodeType === 3 /* NodeType.TEXT_NODE */;
 }
 
 function isComment(node) {
@@ -2119,39 +2420,275 @@ function isParentBinded(node, type) {
 function shortcutAttr(key) {
   switch (key) {
     case STYLE:
-      return "st" /* Style */;
+      return "st" /* Shortcuts.Style */;
     case ID:
       return UID;
     case CLASS:
-      return "cl" /* Class */;
+      return "cl" /* Shortcuts.Class */;
     default:
       return key;
   }
 }
-var TaroEventTarget = /*#__PURE__*/function () {
-  function TaroEventTarget(
-  // eslint-disable-next-line @typescript-eslint/indent
-  hooks) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroEventTarget);
-    this.__handlers = {};
-    this.hooks = hooks;
+var customWrapperCache = new Map();
+function _extend(ctor, methodName, options) {
+  if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options)) {
+    options = {
+      value: options
+    };
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroEventTarget, [{
+  Object.defineProperty(ctor.prototype, methodName, Object.assign({
+    configurable: true,
+    enumerable: true
+  }, options));
+}
+var componentsAlias$1;
+function getComponentsAlias() {
+  if (!componentsAlias$1) {
+    componentsAlias$1 = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.getComponentsAlias)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.internalComponents);
+  }
+  return componentsAlias$1;
+}
+var ClassList = /*#__PURE__*/function () {
+  function ClassList(className, el) {
+    var _this = this;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, ClassList);
+    this.tokenList = [];
+    this.el = el;
+    className.trim().split(/\s+/).forEach(function (token) {
+      return _this.tokenList.push(token);
+    });
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(ClassList, [{
+    key: "value",
+    get: function get() {
+      return this.toString();
+    }
+  }, {
+    key: "length",
+    get: function get() {
+      return this.tokenList.length;
+    }
+  }, {
+    key: "add",
+    value: function add() {
+      var index = 0;
+      var updated = false;
+      var tokens = arguments;
+      var length = tokens.length;
+      var tokenList = this.tokenList;
+      do {
+        var token = tokens[index];
+        if (this.checkTokenIsValid(token) && !~tokenList.indexOf(token)) {
+          tokenList.push(token);
+          updated = true;
+        }
+      } while (++index < length);
+      if (updated) {
+        this._update();
+      }
+    }
+  }, {
+    key: "remove",
+    value: function remove() {
+      var i = 0;
+      var updated = false;
+      var tokens = arguments;
+      var length = tokens.length;
+      var tokenList = this.tokenList;
+      do {
+        var token = tokens[i] + '';
+        if (!this.checkTokenIsValid(token)) continue;
+        var index = tokenList.indexOf(token);
+        if (~tokenList.indexOf(token)) {
+          tokenList.splice(index, 1);
+          updated = true;
+        }
+      } while (++i < length);
+      if (updated) {
+        this._update();
+      }
+    }
+  }, {
+    key: "contains",
+    value: function contains(token) {
+      if (!this.checkTokenIsValid(token)) return false;
+      return !!~this.tokenList.indexOf(token);
+    }
+  }, {
+    key: "toggle",
+    value: function toggle(token, force) {
+      var result = this.contains(token);
+      var method = result ? force !== true && 'remove' : force !== false && 'add';
+      if (method) {
+        // @ts-ignore
+        this[method](token);
+      }
+      if (force === true || force === false) {
+        return force;
+      } else {
+        return !result;
+      }
+    }
+  }, {
+    key: "replace",
+    value: function replace(token, replacement_token) {
+      if (!this.checkTokenIsValid(token) || !this.checkTokenIsValid(replacement_token)) return;
+      var index = this.tokenList.indexOf(token);
+      if (~index) {
+        this.tokenList.splice(index, 1, replacement_token);
+        this._update();
+      }
+    }
+  }, {
+    key: "toString",
+    value: function toString() {
+      return this.tokenList.filter(function (v) {
+        return v !== '';
+      }).join(' ');
+    }
+  }, {
+    key: "checkTokenIsValid",
+    value: function checkTokenIsValid(token) {
+      if (token === '' || /\s/.test(token)) return false;
+      return true;
+    }
+  }, {
+    key: "_update",
+    value: function _update() {
+      this.el.className = this.value;
+    }
+  }]);
+  return ClassList;
+}();
+var EventSource = /*#__PURE__*/function (_Map) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(EventSource, _Map);
+  var _super = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(EventSource);
+  function EventSource() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, EventSource);
+    return _super.apply(this, arguments);
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(EventSource, [{
+    key: "removeNode",
+    value: function removeNode(child) {
+      var sid = child.sid,
+        uid = child.uid;
+      this.delete(sid);
+      if (uid !== sid && uid) this.delete(uid);
+    }
+  }, {
+    key: "removeNodeTree",
+    value: function removeNodeTree(child) {
+      var _this2 = this;
+      this.removeNode(child);
+      var childNodes = child.childNodes;
+      childNodes.forEach(function (node) {
+        return _this2.removeNodeTree(node);
+      });
+    }
+  }]);
+  return EventSource;
+}( /*#__PURE__*/(0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__["default"])(Map));
+var eventSource = new EventSource();
+var isWeb$1 = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)();
+var env = {
+  window: isWeb$1 ? window : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ,
+  document: isWeb$1 ? document : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ
+};
+var SPECIAL_NODES;
+var componentsAlias;
+/**
+ * React also has a fancy function's name for this: `hydrate()`.
+ * You may have been heard `hydrate` as a SSR-related function,
+ * actually, `hydrate` basicly do the `render()` thing, but ignore some properties,
+ * it's a vnode traverser and modifier: that's exactly what Taro's doing in here.
+ */
+function hydrate(node) {
+  var _data;
+  if (!componentsAlias) {
+    // 初始化 componentsAlias
+    componentsAlias = getComponentsAlias();
+  }
+  if (!SPECIAL_NODES) {
+    // 初始化 SPECIAL_NODES
+    SPECIAL_NODES = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getSpecialNodes');
+  }
+  var nodeName = node.nodeName;
+  if (isText(node)) {
+    var _ref;
+    return _ref = {}, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_ref, "v" /* Shortcuts.Text */, node.nodeValue), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_ref, "nn" /* Shortcuts.NodeName */, componentsAlias[nodeName]._num), _ref;
+  }
+  var data = (_data = {}, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_data, "nn" /* Shortcuts.NodeName */, nodeName), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_data, "sid", node.sid), _data);
+  if (node.uid !== node.sid) {
+    data.uid = node.uid;
+  }
+  if (!node.isAnyEventBinded() && SPECIAL_NODES.indexOf(nodeName) > -1) {
+    data["nn" /* Shortcuts.NodeName */] = "static-".concat(nodeName);
+    if (nodeName === VIEW && !isHasExtractProp(node)) {
+      data["nn" /* Shortcuts.NodeName */] = PURE_VIEW;
+    }
+  }
+  var props = node.props;
+  for (var prop in props) {
+    var propInCamelCase = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(prop);
+    if (!prop.startsWith('data-') &&
+    // 在 node.dataset 的数据
+    prop !== CLASS && prop !== STYLE && prop !== ID && propInCamelCase !== CATCHMOVE) {
+      data[propInCamelCase] = props[prop];
+    }
+    if (nodeName === VIEW && propInCamelCase === CATCHMOVE && props[prop] !== false) {
+      data["nn" /* Shortcuts.NodeName */] = CATCH_VIEW;
+    }
+  }
+  var childNodes = node.childNodes;
+  // 过滤 comment 节点
+  childNodes = childNodes.filter(function (node) {
+    return !isComment(node);
+  });
+  if (childNodes.length > 0) {
+    data["cn" /* Shortcuts.Childnodes */] = childNodes.map(hydrate);
+  } else {
+    data["cn" /* Shortcuts.Childnodes */] = [];
+  }
+  if (node.className !== '') {
+    data["cl" /* Shortcuts.Class */] = node.className;
+  }
+  var cssText = node.cssText;
+  if (cssText !== '' && nodeName !== 'swiper-item') {
+    data["st" /* Shortcuts.Style */] = cssText;
+  }
+  _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyHydrateData', data);
+  var nn = data["nn" /* Shortcuts.NodeName */];
+  var componentAlias = componentsAlias[nn];
+  if (componentAlias) {
+    data["nn" /* Shortcuts.NodeName */] = componentAlias._num;
+    for (var _prop in data) {
+      if (_prop in componentAlias) {
+        data[componentAlias[_prop]] = data[_prop];
+        delete data[_prop];
+      }
+    }
+  }
+  return data;
+}
+var TaroEventTarget = /*#__PURE__*/function () {
+  function TaroEventTarget() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroEventTarget);
+    this.__handlers = {};
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroEventTarget, [{
     key: "addEventListener",
     value: function addEventListener(type, handler, options) {
-      var _a, _b;
-      (_b = (_a = this.hooks).onAddEvent) === null || _b === void 0 ? void 0 : _b.call(_a, type, handler, options, this);
+      type = type.toLowerCase();
+      _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('onAddEvent', type, handler, options, this);
       if (type === 'regionchange') {
         // map 组件的 regionchange 事件非常特殊，详情：https://github.com/NervJS/taro/issues/5766
         this.addEventListener('begin', handler, options);
         this.addEventListener('end', handler, options);
         return;
       }
-      type = type.toLowerCase();
-      var handlers = this.__handlers[type];
       var isCapture = Boolean(options);
       var isOnce = false;
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isObject */ "i"])(options)) {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(options)) {
         isCapture = Boolean(options.capture);
         isOnce = Boolean(options.once);
       }
@@ -2165,8 +2702,19 @@ var TaroEventTarget = /*#__PURE__*/function () {
         }));
         return;
       }
-       true && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* warn */ "s"])(isCapture, 'Taro 暂未实现 event 的 capture 特性。');
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(handlers)) {
+       true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)(isCapture, 'Taro 暂未实现 event 的 capture 特性。');
+      // 某些框架，如 PReact 有委托的机制，handler 始终是同一个函数
+      // 这会导致多层停止冒泡失败：view -> view(handler.stop = false) -> view(handler.stop = true)
+      // 这样解决：view -> view(handlerA.stop = false) -> view(handlerB.stop = false)
+      // 因此每次绑定事件都新建一个函数，如果带来了性能问题，可以把这段逻辑抽取到 PReact 插件中。
+      var oldHandler = handler;
+      handler = function handler() {
+        return oldHandler.apply(this, arguments); // this 指向 Element
+      };
+
+      handler.oldHandler = oldHandler;
+      var handlers = this.__handlers[type];
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(handlers)) {
         handlers.push(handler);
       } else {
         this.__handlers[type] = [handler];
@@ -2176,15 +2724,23 @@ var TaroEventTarget = /*#__PURE__*/function () {
     key: "removeEventListener",
     value: function removeEventListener(type, handler) {
       type = type.toLowerCase();
-      if (handler == null) {
+      if (type === 'regionchange') {
+        // map 组件的 regionchange 事件非常特殊，详情：https://github.com/NervJS/taro/issues/5766
+        this.removeEventListener('begin', handler);
+        this.removeEventListener('end', handler);
+        return;
+      }
+      if (!handler) {
         return;
       }
       var handlers = this.__handlers[type];
-      if (!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(handlers)) {
+      if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(handlers)) {
         return;
       }
-      var index = handlers.indexOf(handler);
-       true && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* warn */ "s"])(index === -1, "\u4E8B\u4EF6: '".concat(type, "' \u6CA1\u6709\u6CE8\u518C\u5728 DOM \u4E2D\uFF0C\u56E0\u6B64\u4E0D\u4F1A\u88AB\u79FB\u9664\u3002"));
+      var index = handlers.findIndex(function (item) {
+        if (item === handler || item.oldHandler === handler) return true;
+      });
+       true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)(index === -1, "\u4E8B\u4EF6: '".concat(type, "' \u6CA1\u6709\u6CE8\u518C\u5728 DOM \u4E2D\uFF0C\u56E0\u6B64\u4E0D\u4F1A\u88AB\u79FB\u9664\u3002"));
       handlers.splice(index, 1);
     }
   }, {
@@ -2199,104 +2755,44 @@ var TaroEventTarget = /*#__PURE__*/function () {
   }]);
   return TaroEventTarget;
 }();
-TaroEventTarget = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.Hooks)), __metadata("design:paramtypes", [Object])], TaroEventTarget);
-
-/**
- * React also has a fancy function's name for this: `hydrate()`.
- * You may have been heard `hydrate` as a SSR-related function,
- * actually, `hydrate` basicly do the `render()` thing, but ignore some properties,
- * it's a vnode traverser and modifier: that's exactly what Taro's doing in here.
- */
-function hydrate(node) {
-  var _data;
-  var _a, _b;
-  var nodeName = node.nodeName;
-  if (isText(node)) {
-    var _ref;
-    return _ref = {}, Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(_ref, "v" /* Text */, node.nodeValue), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(_ref, "nn" /* NodeName */, nodeName), _ref;
-  }
-  var data = (_data = {}, Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(_data, "nn" /* NodeName */, nodeName), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(_data, "uid", node.uid), _data);
-  var props = node.props;
-  var SPECIAL_NODES = node.hooks.getSpecialNodes();
-  if (!node.isAnyEventBinded() && SPECIAL_NODES.indexOf(nodeName) > -1) {
-    data["nn" /* NodeName */] = "static-".concat(nodeName);
-    if (nodeName === VIEW && !isHasExtractProp(node)) {
-      data["nn" /* NodeName */] = PURE_VIEW;
-    }
-  }
-  for (var prop in props) {
-    var propInCamelCase = Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(prop);
-    if (!prop.startsWith('data-') &&
-    // 在 node.dataset 的数据
-    prop !== CLASS && prop !== STYLE && prop !== ID && propInCamelCase !== CATCHMOVE) {
-      data[propInCamelCase] = props[prop];
-    }
-    if (nodeName === VIEW && propInCamelCase === CATCHMOVE && props[prop] !== false) {
-      data["nn" /* NodeName */] = CATCH_VIEW;
-    }
-  }
-  var childNodes = node.childNodes;
-  // 过滤 comment 节点
-  childNodes = childNodes.filter(function (node) {
-    return !isComment(node);
-  });
-  if (childNodes.length > 0) {
-    data["cn" /* Childnodes */] = childNodes.map(hydrate);
-  } else {
-    data["cn" /* Childnodes */] = [];
-  }
-  if (node.className !== '') {
-    data["cl" /* Class */] = node.className;
-  }
-  if (node.cssText !== '' && nodeName !== 'swiper-item') {
-    data["st" /* Style */] = node.cssText;
-  }
-  (_b = (_a = node.hooks).modifyHydrateData) === null || _b === void 0 ? void 0 : _b.call(_a, data);
-  return data;
-}
-var eventSource = new Map();
-var ElementNames;
-(function (ElementNames) {
-  ElementNames["Element"] = "Element";
-  ElementNames["Document"] = "Document";
-  ElementNames["RootElement"] = "RootElement";
-  ElementNames["FormElement"] = "FormElement";
-})(ElementNames || (ElementNames = {}));
+var CHILDNODES = "cn" /* Shortcuts.Childnodes */;
 var nodeId = incrementId();
 var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(TaroNode, _TaroEventTarget);
-  var _super = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroNode);
-  function TaroNode(
-  // eslint-disable-next-line @typescript-eslint/indent
-  impl, getElement, hooks) {
-    var _this;
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroNode);
-    _this = _super.call(this, hooks);
-    _this.parentNode = null;
-    _this.childNodes = [];
-    _this.hydrate = function (node) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroNode, _TaroEventTarget);
+  var _super2 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroNode);
+  function TaroNode() {
+    var _this3;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroNode);
+    _this3 = _super2.call(this);
+    _this3.parentNode = null;
+    _this3.childNodes = [];
+    _this3.hydrate = function (node) {
       return function () {
         return hydrate(node);
       };
     };
-    impl.bind(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this));
-    _this._getElement = getElement;
-    _this.uid = "_n_".concat(nodeId());
-    eventSource.set(_this.uid, Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this));
-    return _this;
+    _this3.uid = '_' + nodeId(); // dom 节点 id，开发者可修改
+    _this3.sid = _this3.uid; // dom 节点全局唯一 id，不可被修改
+    eventSource.set(_this3.sid, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this3));
+    return _this3;
   }
-  /**
-   * like jQuery's $.empty()
-   */
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroNode, [{
-    key: "_empty",
-    value: function _empty() {
-      while (this.childNodes.length > 0) {
-        var child = this.childNodes[0];
-        child.parentNode = null;
-        eventSource.delete(child.uid);
-        this.childNodes.shift();
-      }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroNode, [{
+    key: "updateChildNodes",
+    value: function updateChildNodes(isClean) {
+      var _this4 = this;
+      var cleanChildNodes = function cleanChildNodes() {
+        return [];
+      };
+      var rerenderChildNodes = function rerenderChildNodes() {
+        var childNodes = _this4.childNodes.filter(function (node) {
+          return !isComment(node);
+        });
+        return childNodes.map(hydrate);
+      };
+      this.enqueueUpdate({
+        path: "".concat(this._path, ".").concat(CHILDNODES),
+        value: isClean ? cleanChildNodes : rerenderChildNodes
+      });
     }
   }, {
     key: "_root",
@@ -2308,7 +2804,7 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
     key: "findIndex",
     value: function findIndex(refChild) {
       var index = this.childNodes.indexOf(refChild);
-      Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* ensure */ "d"])(index !== -1, 'The node to be replaced is not a child of this node.');
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.ensure)(index !== -1, 'The node to be replaced is not a child of this node.');
       return index;
     }
   }, {
@@ -2321,8 +2817,8 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
           return !isComment(node);
         });
         var indexOfNode = list.indexOf(this);
-        var index = this.hooks.getPathIndex(indexOfNode);
-        return "".concat(parentNode._path, ".", "cn" /* Childnodes */, ".").concat(index);
+        var index = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getPathIndex', indexOfNode);
+        return "".concat(parentNode._path, ".").concat(CHILDNODES, ".").concat(index);
       }
       return '';
     }
@@ -2342,7 +2838,7 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
     key: "parentElement",
     get: function get() {
       var parentNode = this.parentNode;
-      if ((parentNode === null || parentNode === void 0 ? void 0 : parentNode.nodeType) === 1 /* ELEMENT_NODE */) {
+      if ((parentNode === null || parentNode === void 0 ? void 0 : parentNode.nodeType) === 1 /* NodeType.ELEMENT_NODE */) {
         return parentNode;
       }
       return null;
@@ -2362,110 +2858,181 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
      * @textContent 目前只能置空子元素
      * @TODO 等待完整 innerHTML 实现
      */
+    // eslint-disable-next-line accessor-pairs
   }, {
     key: "textContent",
     set: function set(text) {
-      this._empty();
-      if (text === '') {
-        this.enqueueUpdate({
-          path: "".concat(this._path, ".", "cn" /* Childnodes */),
-          value: function value() {
-            return [];
-          }
+      var removedNodes = this.childNodes.slice();
+      var addedNodes = [];
+      // Handle old children' data structure & ref
+      while (this.firstChild) {
+        this.removeChild(this.firstChild, {
+          doUpdate: false
         });
-      } else {
-        var _document = this._getElement(ElementNames.Document)();
-        this.appendChild(_document.createTextNode(text));
       }
+      if (text === '') {
+        this.updateChildNodes(true);
+      } else {
+        var newText = env.document.createTextNode(text);
+        addedNodes.push(newText);
+        this.appendChild(newText);
+        this.updateChildNodes();
+      }
+      // @Todo: appendChild 会多触发一次
+      MutationObserver.record({
+        type: "childList" /* MutationRecordType.CHILD_LIST */,
+        target: this,
+        removedNodes: removedNodes,
+        addedNodes: addedNodes
+      });
     }
+    /**
+     * @doc https://developer.mozilla.org/zh-CN/docs/Web/API/Node/insertBefore
+     * @scenario
+     * [A,B,C]
+     *   1. insert D before C, D has no parent
+     *   2. insert D before C, D has the same parent of C
+     *   3. insert D before C, D has the different parent of C
+     */
   }, {
     key: "insertBefore",
     value: function insertBefore(newChild, refChild, isReplace) {
-      var _this2 = this;
+      var _this5 = this;
       if (newChild.nodeName === DOCUMENT_FRAGMENT) {
         newChild.childNodes.reduceRight(function (previousValue, currentValue) {
-          _this2.insertBefore(currentValue, previousValue);
+          _this5.insertBefore(currentValue, previousValue);
           return currentValue;
         }, refChild);
         return newChild;
       }
-      newChild.remove();
+      // Parent release newChild
+      //   - cleanRef: false (No need to clean eventSource, because newChild is about to be inserted)
+      //   - update: true (Need to update parent.childNodes, because parent.childNodes is reordered)
+      newChild.remove({
+        cleanRef: false
+      });
+      // Data structure
       newChild.parentNode = this;
-      var payload;
       if (refChild) {
+        // insertBefore & replaceChild
         var index = this.findIndex(refChild);
         this.childNodes.splice(index, 0, newChild);
-        if (isReplace) {
-          payload = {
+      } else {
+        // appendChild
+        this.childNodes.push(newChild);
+      }
+      // Serialization
+      if (this._root) {
+        if (!refChild) {
+          // appendChild
+          var isOnlyChild = this.childNodes.length === 1;
+          if (isOnlyChild) {
+            this.updateChildNodes();
+          } else {
+            this.enqueueUpdate({
+              path: newChild._path,
+              value: this.hydrate(newChild)
+            });
+          }
+        } else if (isReplace) {
+          // replaceChild
+          this.enqueueUpdate({
             path: newChild._path,
             value: this.hydrate(newChild)
-          };
+          });
         } else {
-          payload = {
-            path: "".concat(this._path, ".", "cn" /* Childnodes */),
-            value: function value() {
-              var childNodes = _this2.childNodes.filter(function (node) {
-                return !isComment(node);
-              });
-              return childNodes.map(hydrate);
-            }
-          };
+          // insertBefore
+          this.updateChildNodes();
         }
-      } else {
-        this.childNodes.push(newChild);
-        payload = {
-          path: newChild._path,
-          value: this.hydrate(newChild)
-        };
       }
-      this.enqueueUpdate(payload);
-      if (!eventSource.has(newChild.uid)) {
-        eventSource.set(newChild.uid, newChild);
-      }
+      MutationObserver.record({
+        type: "childList" /* MutationRecordType.CHILD_LIST */,
+        target: this,
+        addedNodes: [newChild],
+        removedNodes: isReplace ? [refChild] /** replaceChild */ : [],
+        nextSibling: isReplace ? refChild.nextSibling /** replaceChild */ : refChild || null,
+        previousSibling: newChild.previousSibling
+      });
       return newChild;
     }
+    /**
+     * @doc https://developer.mozilla.org/zh-CN/docs/Web/API/Node/appendChild
+     * @scenario
+     * [A,B,C]
+     *   1. append C, C has no parent
+     *   2. append C, C has the same parent of B
+     *   3. append C, C has the different parent of B
+     */
   }, {
     key: "appendChild",
-    value: function appendChild(child) {
-      this.insertBefore(child);
+    value: function appendChild(newChild) {
+      return this.insertBefore(newChild);
     }
+    /**
+     * @doc https://developer.mozilla.org/zh-CN/docs/Web/API/Node/replaceChild
+     * @scenario
+     * [A,B,C]
+     *   1. replace B with C, C has no parent
+     *   2. replace B with C, C has no parent, C has the same parent of B
+     *   3. replace B with C, C has no parent, C has the different parent of B
+     */
   }, {
     key: "replaceChild",
     value: function replaceChild(newChild, oldChild) {
-      if (oldChild.parentNode === this) {
-        this.insertBefore(newChild, oldChild, true);
-        oldChild.remove(true);
-        return oldChild;
-      }
+      if (oldChild.parentNode !== this) return;
+      // Insert the newChild
+      this.insertBefore(newChild, oldChild, true);
+      // Destroy the oldChild
+      //   - cleanRef: true (Need to clean eventSource, because the oldChild was detached from the DOM tree)
+      //   - update: false (No need to update parent.childNodes, because replace will not cause the parent.childNodes being reordered)
+      oldChild.remove({
+        doUpdate: false
+      });
+      return oldChild;
     }
+    /**
+     * @doc https://developer.mozilla.org/zh-CN/docs/Web/API/Node/removeChild
+     * @scenario
+     * [A,B,C]
+     *   1. remove A or B
+     *   2. remove C
+     */
   }, {
     key: "removeChild",
-    value: function removeChild(child, isReplace) {
-      var _this3 = this;
-      var index = this.findIndex(child);
-      this.childNodes.splice(index, 1);
-      if (!isReplace) {
-        this.enqueueUpdate({
-          path: "".concat(this._path, ".", "cn" /* Childnodes */),
-          value: function value() {
-            var childNodes = _this3.childNodes.filter(function (node) {
-              return !isComment(node);
-            });
-            return childNodes.map(hydrate);
-          }
+    value: function removeChild(child) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var cleanRef = options.cleanRef,
+        doUpdate = options.doUpdate;
+      if (cleanRef !== false && doUpdate !== false) {
+        // appendChild/replaceChild/insertBefore 不应该触发
+        // @Todo: 但其实如果 newChild 的父节点是另一颗子树的节点，应该是要触发的
+        MutationObserver.record({
+          type: "childList" /* MutationRecordType.CHILD_LIST */,
+          target: this,
+          removedNodes: [child],
+          nextSibling: child.nextSibling,
+          previousSibling: child.previousSibling
         });
       }
+      // Data Structure
+      var index = this.findIndex(child);
+      this.childNodes.splice(index, 1);
       child.parentNode = null;
-      eventSource.delete(child.uid);
-      // @TODO: eventSource memory overflow
-      // child._empty()
+      // Set eventSource
+      if (cleanRef !== false) {
+        eventSource.removeNodeTree(child);
+      }
+      // Serialization
+      if (this._root && doUpdate !== false) {
+        this.updateChildNodes();
+      }
       return child;
     }
   }, {
     key: "remove",
-    value: function remove(isReplace) {
+    value: function remove(options) {
       var _a;
-      (_a = this.parentNode) === null || _a === void 0 ? void 0 : _a.removeChild(this, isReplace);
+      (_a = this.parentNode) === null || _a === void 0 ? void 0 : _a.removeChild(this, options);
     }
   }, {
     key: "hasChildNodes",
@@ -2479,71 +3046,24 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
       (_a = this._root) === null || _a === void 0 ? void 0 : _a.enqueueUpdate(payload);
     }
   }, {
-    key: "contains",
-    value: function contains(node) {
-      var isContains = false;
-      this.childNodes.some(function (childNode) {
-        var uid = childNode.uid;
-        if (uid === node.uid || uid === node.id || childNode.contains(node)) {
-          isContains = true;
-          return true;
-        }
-      });
-      return isContains;
-    }
-  }, {
     key: "ownerDocument",
     get: function get() {
-      var document = this._getElement(ElementNames.Document)();
-      return document;
+      return env.document;
+    }
+  }], [{
+    key: "extend",
+    value: function extend(methodName, options) {
+      _extend(TaroNode, methodName, options);
     }
   }]);
   return TaroNode;
 }(TaroEventTarget);
-TaroNode = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroNodeImpl)), __param(1, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementFactory)), __param(2, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.Hooks)), __metadata("design:paramtypes", [Function, Function, Function])], TaroNode);
-var TaroText = /*#__PURE__*/function (_TaroNode) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(TaroText, _TaroNode);
-  var _super2 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroText);
-  function TaroText(
-  // eslint-disable-next-line @typescript-eslint/indent
-  nodeImpl, getElement, hooks) {
-    var _this4;
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroText);
-    _this4 = _super2.call(this, nodeImpl, getElement, hooks);
-    _this4.nodeType = 3 /* TEXT_NODE */;
-    _this4.nodeName = '#text';
-    return _this4;
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroText, [{
-    key: "textContent",
-    get: function get() {
-      return this._value;
-    },
-    set: function set(text) {
-      this._value = text;
-      this.enqueueUpdate({
-        path: "".concat(this._path, ".", "v" /* Text */),
-        value: text
-      });
-    }
-  }, {
-    key: "nodeValue",
-    get: function get() {
-      return this._value;
-    },
-    set: function set(text) {
-      this.textContent = text;
-    }
-  }]);
-  return TaroText;
-}(TaroNode);
-TaroText = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroNodeImpl)), __param(1, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementFactory)), __param(2, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.Hooks)), __metadata("design:paramtypes", [Function, Function, Function])], TaroText);
-
 /*
  *
  * https://www.w3.org/Style/CSS/all-properties.en.html
  */
-var styleProperties = ['all', 'appearance', 'blockOverflow', 'blockSize', 'bottom', 'clear', 'contain', 'content', 'continue', 'cursor', 'direction', 'display', 'filter', 'float', 'gap', 'height', 'inset', 'isolation', 'left', 'letterSpacing', 'lightingColor', 'markerSide', 'mixBlendMode', 'opacity', 'order', 'position', 'quotes', 'resize', 'right', 'rowGap', 'tabSize', 'tableLayout', 'top', 'userSelect', 'verticalAlign', 'visibility', 'voiceFamily', 'volume', 'whiteSpace', 'widows', 'width', 'zIndex', 'pointerEvents'
+var WEBKIT = 'webkit';
+var styleProperties = ['all', 'appearance', 'blockOverflow', 'blockSize', 'bottom', 'clear', 'contain', 'content', 'continue', 'cursor', 'direction', 'display', 'filter', 'float', 'gap', 'height', 'inset', 'isolation', 'left', 'letterSpacing', 'lightingColor', 'markerSide', 'mixBlendMode', 'opacity', 'order', 'position', 'quotes', 'resize', 'right', 'rowGap', 'tabSize', 'tableLayout', 'top', 'userSelect', 'verticalAlign', 'visibility', 'voiceFamily', 'volume', 'whiteSpace', 'widows', 'width', 'zIndex', 'pointerEvents', 'aspectRatio'
 /** 非常用 style */
 // 'azimuth',
 // 'backfaceVisibility',
@@ -2579,6 +3099,9 @@ function combine(prefix, list, excludeSelf) {
   !excludeSelf && styleProperties.push(prefix);
   list.forEach(function (item) {
     styleProperties.push(prefix + item);
+    if (prefix === WEBKIT) {
+      styleProperties.push('Webkit' + item);
+    }
   });
 }
 var color = 'Color';
@@ -2633,7 +3156,6 @@ combine('mask', ['Clip', 'Composite', image, 'Mode', 'Origin', 'Position', 'Repe
 combine('borderImage', ['Outset', 'Repeat', 'Slice', 'Source', 'Transform', width]);
 combine('maskBorder', ['Mode', 'Outset', 'Repeat', 'Slice', 'Source', width]);
 combine('font', ['Family', 'FeatureSettings', 'Kerning', 'LanguageOverride', 'MaxSize', 'MinSize', 'OpticalSizing', 'Palette', size, 'SizeAdjust', 'Stretch', style, 'Weight', 'VariationSettings']);
-combine('fontSynthesis', ['SmallCaps', style, 'Weight']);
 combine('transform', ['Box', 'Origin', style]);
 combine('background', [color, image, 'Attachment', 'BlendMode', 'Clip', 'Origin', 'Position', 'Repeat', size]);
 combine('listStyle', [image, 'Position', 'Type']);
@@ -2642,22 +3164,17 @@ combine('grid', ['Area', 'AutoColumns', 'AutoFlow', 'AutoRows']);
 combine('gridTemplate', ['Areas', 'Columns', 'Rows']);
 combine('overflow', ['Block', 'Inline', 'Wrap', 'X', 'Y']);
 combine('transition', ['Delay', 'Duration', 'Property', 'TimingFunction']);
-combine('lineStacking', ['Ruby', 'Shift', 'Strategy']);
 combine('color', ['Adjust', 'InterpolationFilters', 'Scheme']);
 combine('textAlign', ['All', 'Last']);
 combine('page', ['BreakAfter', 'BreakBefore', 'BreakInside']);
-combine('speak', ['Header', 'Numeral', 'Punctuation']);
 combine('animation', ['Delay', 'Direction', 'Duration', 'FillMode', 'IterationCount', 'Name', 'PlayState', 'TimingFunction']);
 combine('flex', ['Basis', 'Direction', 'Flow', 'Grow', 'Shrink', 'Wrap']);
 combine('offset', [].concat(after_before, end_start, ['Anchor', 'Distance', 'Path', 'Position', 'Rotate']));
-combine('fontVariant', ['Alternates', 'Caps', 'EastAsian', 'Emoji', 'Ligatures', 'Numeric', 'Position']);
 combine('perspective', ['Origin']);
-combine('pitch', ['Range']);
 combine('clip', ['Path', 'Rule']);
 combine('flow', ['From', 'Into']);
 combine('align', ['Content', 'Items', 'Self'], true);
 combine('alignment', ['Adjust', 'Baseline'], true);
-combine('bookmark', ['Label', 'Level', 'State'], true);
 combine('borderStart', endRadius_startRadius, true);
 combine('borderEnd', endRadius_startRadius, true);
 combine('borderCorner', ['Fit', image, 'ImageTransform'], true);
@@ -2677,30 +3194,51 @@ combine('inline', ['BoxAlign', size, 'Sizing'], true);
 combine('text', ['CombineUpright', 'GroupAlign', 'Height', 'Indent', 'Justify', 'Orientation', 'Overflow', 'Shadow', 'SpaceCollapse', 'SpaceTrim', 'Spacing', 'Transform', 'UnderlinePosition', 'Wrap'], true);
 combine('shape', ['ImageThreshold', 'Inside', 'Margin', 'Outside'], true);
 combine('word', ['Break', 'Spacing', 'Wrap'], true);
-combine('nav', ['Down', 'Left', 'Right', 'Up'], true);
 combine('object', ['Fit', 'Position'], true);
 combine('box', ['DecorationBreak', 'Shadow', 'Sizing', 'Snap'], true);
-function setStyle(newVal, styleKey) {
-  var old = this[styleKey];
-  if (newVal) {
-    this._usedStyleProp.add(styleKey);
-  }
-   true && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* warn */ "s"])(Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isString */ "j"])(newVal) && newVal.length > PROPERTY_THRESHOLD, "Style \u5C5E\u6027 ".concat(styleKey, " \u7684\u503C\u6570\u636E\u91CF\u8FC7\u5927\uFF0C\u53EF\u80FD\u4F1A\u5F71\u54CD\u6E32\u67D3\u6027\u80FD\uFF0C\u8003\u8651\u4F7F\u7528 CSS \u7C7B\u6216\u5176\u5B83\u65B9\u6848\u66FF\u4EE3\u3002"));
-  if (old !== newVal) {
-    this._value[styleKey] = newVal;
-    this._element.enqueueUpdate({
-      path: "".concat(this._element._path, ".", "st" /* Style */),
-      value: this.cssText
+combine(WEBKIT, ['LineClamp', 'BoxOrient', 'TextFillColor', 'TextStroke', 'TextStrokeColor', 'TextStrokeWidth'], true);
+function recordCss(obj) {
+  MutationObserver.record({
+    type: "attributes" /* MutationRecordType.ATTRIBUTES */,
+    target: obj._element,
+    attributeName: 'style',
+    oldValue: obj.cssText
+  });
+}
+function enqueueUpdate(obj) {
+  var element = obj._element;
+  if (element._root) {
+    element.enqueueUpdate({
+      path: "".concat(element._path, ".", "st" /* Shortcuts.Style */),
+      value: obj.cssText
     });
   }
 }
-function initStyle(ctor) {
+function setStyle(newVal, styleKey) {
+   true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(newVal) && newVal.length > PROPERTY_THRESHOLD, "Style \u5C5E\u6027 ".concat(styleKey, " \u7684\u503C\u6570\u636E\u91CF\u8FC7\u5927\uFF0C\u53EF\u80FD\u4F1A\u5F71\u54CD\u6E32\u67D3\u6027\u80FD\uFF0C\u8003\u8651\u4F7F\u7528 CSS \u7C7B\u6216\u5176\u5B83\u65B9\u6848\u66FF\u4EE3\u3002"));
+  var old = this[styleKey];
+  if (old === newVal) return;
+  !this._pending && recordCss(this);
+  if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNull)(newVal) || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(newVal)) {
+    this._usedStyleProp.delete(styleKey);
+    delete this._value[styleKey];
+  } else {
+    this._usedStyleProp.add(styleKey);
+    this._value[styleKey] = newVal;
+  }
+  !this._pending && enqueueUpdate(this);
+}
+function initStyle(ctor, styleProperties) {
   var properties = {};
   var _loop = function _loop() {
     var styleKey = styleProperties[i];
+    if (ctor[styleKey]) return {
+      v: void 0
+    };
     properties[styleKey] = {
       get: function get() {
-        return this._value[styleKey] || '';
+        var val = this._value[styleKey];
+        return (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNull)(val) || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(val) ? '' : val;
       },
       set: function set(newVal) {
         setStyle.call(this, newVal, styleKey);
@@ -2708,7 +3246,8 @@ function initStyle(ctor) {
     };
   };
   for (var i = 0; i < styleProperties.length; i++) {
-    _loop();
+    var _ret = _loop();
+    if ((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_9__["default"])(_ret) === "object") return _ret.v;
   }
   Object.defineProperties(ctor.prototype, properties);
 }
@@ -2717,48 +3256,53 @@ function isCssVariable(propertyName) {
 }
 var Style = /*#__PURE__*/function () {
   function Style(element) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Style);
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Style);
     this._element = element;
     this._usedStyleProp = new Set();
     this._value = {};
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Style, [{
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Style, [{
     key: "setCssVariables",
     value: function setCssVariables(styleKey) {
-      var _this5 = this;
+      var _this6 = this;
       this.hasOwnProperty(styleKey) || Object.defineProperty(this, styleKey, {
         enumerable: true,
         configurable: true,
         get: function get() {
-          return _this5._value[styleKey] || '';
+          return _this6._value[styleKey] || '';
         },
         set: function set(newVal) {
-          setStyle.call(_this5, newVal, styleKey);
+          setStyle.call(_this6, newVal, styleKey);
         }
       });
     }
   }, {
     key: "cssText",
     get: function get() {
-      var _this6 = this;
-      var text = '';
+      var _this7 = this;
+      if (!this._usedStyleProp.size) return '';
+      var texts = [];
       this._usedStyleProp.forEach(function (key) {
-        var val = _this6[key];
-        if (!val) return;
-        var styleName = isCssVariable(key) ? key : Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toDashed */ "r"])(key);
-        text += "".concat(styleName, ": ").concat(val, ";");
+        var val = _this7[key];
+        if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNull)(val) || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(val)) return;
+        var styleName = isCssVariable(key) ? key : (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toDashed)(key);
+        if (styleName.indexOf('webkit') === 0 || styleName.indexOf('Webkit') === 0) {
+          styleName = "-".concat(styleName);
+        }
+        texts.push("".concat(styleName, ": ").concat(val, ";"));
       });
-      return text;
+      return texts.join(' ');
     },
     set: function set(str) {
-      var _this7 = this;
-      if (str == null) {
-        str = '';
-      }
+      var _this8 = this;
+      this._pending = true;
+      recordCss(this);
       this._usedStyleProp.forEach(function (prop) {
-        _this7.removeProperty(prop);
+        _this8.removeProperty(prop);
       });
-      if (str === '') {
+      if (str === '' || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(str) || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNull)(str)) {
+        this._pending = false;
+        enqueueUpdate(this);
         return;
       }
       var rules = str.split(';');
@@ -2769,15 +3313,17 @@ var Style = /*#__PURE__*/function () {
         }
         // 可能存在 'background: url(http:x/y/z)' 的情况
         var _rule$split = rule.split(':'),
-          _rule$split2 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toArray__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_rule$split),
+          _rule$split2 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_10__["default"])(_rule$split),
           propName = _rule$split2[0],
           valList = _rule$split2.slice(1);
         var val = valList.join(':');
-        if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isUndefined */ "k"])(val)) {
+        if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(val)) {
           continue;
         }
         this.setProperty(propName.trim(), val.trim());
       }
+      this._pending = false;
+      enqueueUpdate(this);
     }
   }, {
     key: "setProperty",
@@ -2786,12 +3332,9 @@ var Style = /*#__PURE__*/function () {
         // 支持 webkit 属性或 css 变量
         this.setCssVariables(propertyName);
       } else {
-        propertyName = Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(propertyName);
+        propertyName = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(propertyName);
       }
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isUndefined */ "k"])(value)) {
-        return;
-      }
-      if (value === null || value === '') {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNull)(value) || (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(value)) {
         this.removeProperty(propertyName);
       } else {
         this[propertyName] = value;
@@ -2800,19 +3343,18 @@ var Style = /*#__PURE__*/function () {
   }, {
     key: "removeProperty",
     value: function removeProperty(propertyName) {
-      propertyName = Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(propertyName);
+      propertyName = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(propertyName);
       if (!this._usedStyleProp.has(propertyName)) {
         return '';
       }
       var value = this[propertyName];
-      this[propertyName] = '';
-      this._usedStyleProp.delete(propertyName);
+      this[propertyName] = undefined;
       return value;
     }
   }, {
     key: "getPropertyValue",
     value: function getPropertyValue(propertyName) {
-      propertyName = Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(propertyName);
+      propertyName = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(propertyName);
       var value = this[propertyName];
       if (!value) {
         return '';
@@ -2822,7 +3364,15 @@ var Style = /*#__PURE__*/function () {
   }]);
   return Style;
 }();
-initStyle(Style);
+initStyle(Style, styleProperties);
+_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.tap('injectNewStyleProperties', function (newStyleProperties) {
+  if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(newStyleProperties)) {
+    initStyle(Style, newStyleProperties);
+  } else {
+    if (typeof newStyleProperties !== 'string') return;
+    initStyle(Style, [newStyleProperties]);
+  }
+});
 function returnTrue() {
   return true;
 }
@@ -2831,7 +3381,7 @@ function treeToArray(root, predict) {
   var filter = predict !== null && predict !== void 0 ? predict : returnTrue;
   var object = root;
   while (object) {
-    if (object.nodeType === 1 /* ELEMENT_NODE */ && filter(object)) {
+    if (object.nodeType === 1 /* NodeType.ELEMENT_NODE */ && filter(object)) {
       array.push(object);
     }
     object = following(object, root);
@@ -2840,7 +3390,9 @@ function treeToArray(root, predict) {
 }
 function following(el, root) {
   var firstChild = el.firstChild;
-  if (firstChild) {
+  var isElmentTypeValid = el.nodeType === 1 /* NodeType.ELEMENT_NODE */ || el.nodeType === 9 /* NodeType.DOCUMENT_NODE */;
+  // 如果当前 el 不是 element 或 document 元素，则可以直接不递归他的子元素了
+  if (firstChild && isElmentTypeValid) {
     return firstChild;
   }
   var current = el;
@@ -2856,93 +3408,21 @@ function following(el, root) {
   } while (current);
   return null;
 }
-var ClassList = /*#__PURE__*/function (_Set2) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(ClassList, _Set2);
-  var _super3 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(ClassList);
-  function ClassList(className, el) {
-    var _thisSuper, _this8;
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, ClassList);
-    _this8 = _super3.call(this);
-    className.trim().split(/\s+/).forEach(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])((_thisSuper = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this8), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype)), "add", _thisSuper).bind(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this8)));
-    _this8.el = el;
-    return _this8;
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(ClassList, [{
-    key: "value",
-    get: function get() {
-      return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(this).join(' ');
-    }
-  }, {
-    key: "add",
-    value: function add(s) {
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
-      this._update();
-      return this;
-    }
-  }, {
-    key: "length",
-    get: function get() {
-      return this.size;
-    }
-  }, {
-    key: "remove",
-    value: function remove(s) {
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s);
-      this._update();
-    }
-  }, {
-    key: "toggle",
-    value: function toggle(s) {
-      if (Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "has", this).call(this, s)) {
-        Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s);
-      } else {
-        Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
-      }
-      this._update();
-    }
-  }, {
-    key: "replace",
-    value: function replace(s1, s2) {
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s1);
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s2);
-      this._update();
-    }
-  }, {
-    key: "contains",
-    value: function contains(s) {
-      return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList.prototype), "has", this).call(this, s);
-    }
-  }, {
-    key: "toString",
-    value: function toString() {
-      return this.value;
-    }
-  }, {
-    key: "_update",
-    value: function _update() {
-      this.el.className = this.value;
-    }
-  }]);
-  return ClassList;
-}( /*#__PURE__*/Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Set));
-var TaroElement = /*#__PURE__*/function (_TaroNode2) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(TaroElement, _TaroNode2);
-  var _super4 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroElement);
-  function TaroElement(
-  // eslint-disable-next-line @typescript-eslint/indent
-  nodeImpl, getElement, hooks, elementImpl) {
+var TaroElement = /*#__PURE__*/function (_TaroNode) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroElement, _TaroNode);
+  var _super3 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroElement);
+  function TaroElement() {
     var _this9;
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroElement);
-    _this9 = _super4.call(this, nodeImpl, getElement, hooks);
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroElement);
+    _this9 = _super3.call(this);
     _this9.props = {};
-    _this9.dataset = _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-    elementImpl.bind(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this9));
-    _this9.nodeType = 1 /* ELEMENT_NODE */;
-    _this9.style = new Style(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this9));
-    hooks.patchElement(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_this9));
+    _this9.dataset = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ;
+    _this9.nodeType = 1 /* NodeType.ELEMENT_NODE */;
+    _this9.style = new Style((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this9));
+    _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('patchElement', (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this9));
     return _this9;
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroElement, [{
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroElement, [{
     key: "_stopPropagation",
     value: function _stopPropagation(event) {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
@@ -2950,7 +3430,7 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
       // eslint-disable-next-line no-cond-assign
       while (target = target.parentNode) {
         var listeners = target.__handlers[event.type];
-        if (!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(listeners)) {
+        if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(listeners)) {
           continue;
         }
         for (var i = listeners.length; i--;) {
@@ -3018,12 +3498,12 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
       return text;
     },
     set: function set(text) {
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroElement.prototype), "textContent", text, this, true);
+      (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_set_js__WEBPACK_IMPORTED_MODULE_11__["default"])((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__["default"])(TaroElement.prototype), "textContent", text, this, true);
     }
   }, {
     key: "hasAttribute",
     value: function hasAttribute(qualifiedName) {
-      return !Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isUndefined */ "k"])(this.props[qualifiedName]);
+      return !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(this.props[qualifiedName]);
     }
   }, {
     key: "hasAttributes",
@@ -3032,8 +3512,15 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
     }
   }, {
     key: "focus",
-    value: function focus() {
-      this.setAttribute(FOCUS, true);
+    get: function get() {
+      return function () {
+        this.setAttribute(FOCUS, true);
+      };
+    }
+    // 兼容 Vue3，详情请见：https://github.com/NervJS/taro/issues/10579
+    ,
+    set: function set(value) {
+      this.setAttribute(FOCUS, value);
     }
   }, {
     key: "blur",
@@ -3043,15 +3530,26 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
   }, {
     key: "setAttribute",
     value: function setAttribute(qualifiedName, value) {
-      var _a, _b;
-       true && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* warn */ "s"])(Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isString */ "j"])(value) && value.length > PROPERTY_THRESHOLD, "\u5143\u7D20 ".concat(this.nodeName, " \u7684 \u5C5E\u6027 ").concat(qualifiedName, " \u7684\u503C\u6570\u636E\u91CF\u8FC7\u5927\uFF0C\u53EF\u80FD\u4F1A\u5F71\u54CD\u6E32\u67D3\u6027\u80FD\u3002\u8003\u8651\u964D\u4F4E\u56FE\u7247\u8F6C\u4E3A base64 \u7684\u9608\u503C\u6216\u5728 CSS \u4E2D\u4F7F\u7528 base64\u3002"));
+       true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(value) && value.length > PROPERTY_THRESHOLD, "\u5143\u7D20 ".concat(this.nodeName, " \u7684 ").concat(qualifiedName, " \u5C5E\u6027\u503C\u6570\u636E\u91CF\u8FC7\u5927\uFF0C\u53EF\u80FD\u4F1A\u5F71\u54CD\u6E32\u67D3\u6027\u80FD\u3002\u8003\u8651\u964D\u4F4E\u56FE\u7247\u8F6C\u4E3A base64 \u7684\u9608\u503C\u6216\u5728 CSS \u4E2D\u4F7F\u7528 base64\u3002"));
       var isPureView = this.nodeName === VIEW && !isHasExtractProp(this) && !this.isAnyEventBinded();
+      if (qualifiedName !== STYLE) {
+        MutationObserver.record({
+          target: this,
+          type: "attributes" /* MutationRecordType.ATTRIBUTES */,
+          attributeName: qualifiedName,
+          oldValue: this.getAttribute(qualifiedName)
+        });
+      }
       switch (qualifiedName) {
         case STYLE:
           this.style.cssText = value;
           break;
         case ID:
-          eventSource.delete(this.uid);
+          if (this.uid !== this.sid) {
+            // eventSource[sid] 永远保留，直到组件卸载
+            // eventSource[uid] 可变
+            eventSource.delete(this.uid);
+          }
           value = String(value);
           this.props[qualifiedName] = this.uid = value;
           eventSource.set(value, this);
@@ -3059,33 +3557,48 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
         default:
           this.props[qualifiedName] = value;
           if (qualifiedName.startsWith('data-')) {
-            if (this.dataset === _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"]) {
+            if (this.dataset === _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ) {
               this.dataset = Object.create(null);
             }
-            this.dataset[Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(qualifiedName.replace(/^data-/, ''))] = value;
+            this.dataset[(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(qualifiedName.replace(/^data-/, ''))] = value;
           }
           break;
       }
+      // Serialization
+      if (!this._root) return;
+      var componentsAlias = getComponentsAlias();
+      var _alias = componentsAlias[this.nodeName];
+      var viewAlias = componentsAlias[VIEW]._num;
+      var staticViewAlias = componentsAlias[STATIC_VIEW]._num;
+      var catchViewAlias = componentsAlias[CATCH_VIEW]._num;
+      var _path = this._path;
       qualifiedName = shortcutAttr(qualifiedName);
+      var qualifiedNameInCamelCase = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(qualifiedName);
       var payload = {
-        path: "".concat(this._path, ".").concat(Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(qualifiedName)),
-        value: value
+        path: "".concat(_path, ".").concat(qualifiedNameInCamelCase),
+        value: (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(value) ? function () {
+          return value;
+        } : value
       };
-      (_b = (_a = this.hooks).modifySetAttrPayload) === null || _b === void 0 ? void 0 : _b.call(_a, this, qualifiedName, payload);
+      _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifySetAttrPayload', this, qualifiedName, payload, componentsAlias);
+      if (_alias) {
+        var qualifiedNameAlias = _alias[qualifiedNameInCamelCase] || qualifiedName;
+        payload.path = "".concat(_path, ".").concat((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(qualifiedNameAlias));
+      }
       this.enqueueUpdate(payload);
       if (this.nodeName === VIEW) {
-        if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(qualifiedName) === CATCHMOVE) {
+        if (qualifiedNameInCamelCase === CATCHMOVE) {
           // catchMove = true: catch-view
           // catchMove = false: view or static-view
           this.enqueueUpdate({
-            path: "".concat(this._path, ".", "nn" /* NodeName */),
-            value: value ? CATCH_VIEW : this.isAnyEventBinded() ? VIEW : STATIC_VIEW
+            path: "".concat(_path, ".", "nn" /* Shortcuts.NodeName */),
+            value: value ? catchViewAlias : this.isAnyEventBinded() ? viewAlias : staticViewAlias
           });
         } else if (isPureView && isHasExtractProp(this)) {
           // pure-view => static-view
           this.enqueueUpdate({
-            path: "".concat(this._path, ".", "nn" /* NodeName */),
-            value: STATIC_VIEW
+            path: "".concat(_path, ".", "nn" /* Shortcuts.NodeName */),
+            value: staticViewAlias
           });
         }
       }
@@ -3093,12 +3606,17 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
   }, {
     key: "removeAttribute",
     value: function removeAttribute(qualifiedName) {
-      var _a, _b, _c, _d;
       var isStaticView = this.nodeName === VIEW && isHasExtractProp(this) && !this.isAnyEventBinded();
+      MutationObserver.record({
+        target: this,
+        type: "attributes" /* MutationRecordType.ATTRIBUTES */,
+        attributeName: qualifiedName,
+        oldValue: this.getAttribute(qualifiedName)
+      });
       if (qualifiedName === STYLE) {
         this.style.cssText = '';
       } else {
-        var isInterrupt = (_b = (_a = this.hooks).onRemoveAttribute) === null || _b === void 0 ? void 0 : _b.call(_a, this, qualifiedName);
+        var isInterrupt = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('onRemoveAttribute', this, qualifiedName);
         if (isInterrupt) {
           return;
         }
@@ -3107,25 +3625,38 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
         }
         delete this.props[qualifiedName];
       }
+      // Serialization
+      if (!this._root) return;
+      var componentsAlias = getComponentsAlias();
+      var _alias = componentsAlias[this.nodeName];
+      var viewAlias = componentsAlias[VIEW]._num;
+      var staticViewAlias = componentsAlias[STATIC_VIEW]._num;
+      var pureViewAlias = componentsAlias[PURE_VIEW]._num;
+      var _path = this._path;
       qualifiedName = shortcutAttr(qualifiedName);
+      var qualifiedNameInCamelCase = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(qualifiedName);
       var payload = {
-        path: "".concat(this._path, ".").concat(Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(qualifiedName)),
+        path: "".concat(_path, ".").concat(qualifiedNameInCamelCase),
         value: ''
       };
-      (_d = (_c = this.hooks).modifyRmAttrPayload) === null || _d === void 0 ? void 0 : _d.call(_c, this, qualifiedName, payload);
+      _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyRmAttrPayload', this, qualifiedName, payload, componentsAlias);
+      if (_alias) {
+        var qualifiedNameAlias = _alias[qualifiedNameInCamelCase] || qualifiedName;
+        payload.path = "".concat(_path, ".").concat((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.toCamelCase)(qualifiedNameAlias));
+      }
       this.enqueueUpdate(payload);
       if (this.nodeName === VIEW) {
-        if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* toCamelCase */ "q"])(qualifiedName) === CATCHMOVE) {
+        if (qualifiedNameInCamelCase === CATCHMOVE) {
           // catch-view => view or static-view or pure-view
           this.enqueueUpdate({
-            path: "".concat(this._path, ".", "nn" /* NodeName */),
-            value: this.isAnyEventBinded() ? VIEW : isHasExtractProp(this) ? STATIC_VIEW : PURE_VIEW
+            path: "".concat(_path, ".", "nn" /* Shortcuts.NodeName */),
+            value: this.isAnyEventBinded() ? viewAlias : isHasExtractProp(this) ? staticViewAlias : pureViewAlias
           });
         } else if (isStaticView && !isHasExtractProp(this)) {
           // static-view => pure-view
           this.enqueueUpdate({
-            path: "".concat(this._path, ".", "nn" /* NodeName */),
-            value: PURE_VIEW
+            path: "".concat(_path, ".", "nn" /* Shortcuts.NodeName */),
+            value: pureViewAlias
           });
         }
       }
@@ -3147,11 +3678,11 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
   }, {
     key: "getElementsByClassName",
     value: function getElementsByClassName(className) {
+      var classNames = className.trim().split(/\s+/);
       return treeToArray(this, function (el) {
         var classList = el.classList;
-        var classNames = className.trim().split(/\s+/);
         return classNames.every(function (c) {
-          return classList.has(c);
+          return classList.contains(c);
         });
       });
     }
@@ -3160,7 +3691,7 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
     value: function dispatchEvent(event) {
       var cancelable = event.cancelable;
       var listeners = this.__handlers[event.type];
-      if (!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(listeners)) {
+      if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(listeners)) {
         return false;
       }
       for (var i = listeners.length; i--;) {
@@ -3169,10 +3700,14 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
         if (listener._stop) {
           listener._stop = false;
         } else {
+          _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyDispatchEvent', event, this);
           result = listener.call(this, event);
         }
         if ((result === false || event._end) && cancelable) {
           event.defaultPrevented = true;
+        }
+        if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(result) && event.mpEvent) {
+          event.mpEvent[EVENT_CALLBACK_RESULT] = result;
         }
         if (event._end && event._stop) {
           break;
@@ -3189,1352 +3724,51 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
     key: "addEventListener",
     value: function addEventListener(type, handler, options) {
       var name = this.nodeName;
-      var SPECIAL_NODES = this.hooks.getSpecialNodes();
-      if (!this.isAnyEventBinded() && SPECIAL_NODES.indexOf(name) > -1) {
+      var SPECIAL_NODES = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getSpecialNodes');
+      var sideEffect = true;
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(options) && options.sideEffect === false) {
+        sideEffect = false;
+        delete options.sideEffect;
+      }
+      if (sideEffect !== false && !this.isAnyEventBinded() && SPECIAL_NODES.indexOf(name) > -1) {
+        var _componentsAlias = getComponentsAlias();
+        var alias = _componentsAlias[name]._num;
         this.enqueueUpdate({
-          path: "".concat(this._path, ".", "nn" /* NodeName */),
-          value: name
+          path: "".concat(this._path, ".", "nn" /* Shortcuts.NodeName */),
+          value: alias
         });
       }
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroElement.prototype), "addEventListener", this).call(this, type, handler, options);
+      (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_get_js__WEBPACK_IMPORTED_MODULE_13__["default"])((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__["default"])(TaroElement.prototype), "addEventListener", this).call(this, type, handler, options);
     }
   }, {
     key: "removeEventListener",
     value: function removeEventListener(type, handler) {
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroElement.prototype), "removeEventListener", this).call(this, type, handler);
+      var sideEffect = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_get_js__WEBPACK_IMPORTED_MODULE_13__["default"])((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__["default"])(TaroElement.prototype), "removeEventListener", this).call(this, type, handler);
       var name = this.nodeName;
-      var SPECIAL_NODES = this.hooks.getSpecialNodes();
-      if (!this.isAnyEventBinded() && SPECIAL_NODES.indexOf(name) > -1) {
+      var SPECIAL_NODES = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getSpecialNodes');
+      if (sideEffect !== false && !this.isAnyEventBinded() && SPECIAL_NODES.indexOf(name) > -1) {
+        var _componentsAlias2 = getComponentsAlias();
+        var value = isHasExtractProp(this) ? "static-".concat(name) : "pure-".concat(name);
+        var valueAlias = _componentsAlias2[value]._num;
         this.enqueueUpdate({
-          path: "".concat(this._path, ".", "nn" /* NodeName */),
-          value: isHasExtractProp(this) ? "static-".concat(name) : "pure-".concat(name)
+          path: "".concat(this._path, ".", "nn" /* Shortcuts.NodeName */),
+          value: valueAlias
         });
       }
+    }
+  }], [{
+    key: "extend",
+    value: function extend(methodName, options) {
+      _extend(TaroElement, methodName, options);
     }
   }]);
   return TaroElement;
 }(TaroNode);
-TaroElement = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroNodeImpl)), __param(1, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementFactory)), __param(2, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.Hooks)), __param(3, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementImpl)), __metadata("design:paramtypes", [Function, Function, Function, Function])], TaroElement);
-
-/**
- * Checks if `value` is classified as an `Array` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an array, else `false`.
- * @example
- *
- * _.isArray([1, 2, 3]);
- * // => true
- *
- * _.isArray(document.body.children);
- * // => false
- *
- * _.isArray('abc');
- * // => false
- *
- * _.isArray(_.noop);
- * // => false
- */
-var isArray = Array.isArray;
-
-/** Detect free variable `global` from Node.js. */
-var freeGlobal = (typeof global === "undefined" ? "undefined" : Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(global)) == 'object' && global && global.Object === Object && global;
-
-/** Detect free variable `self`. */
-var freeSelf = (typeof self === "undefined" ? "undefined" : Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(self)) == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-/** Built-in value references. */
-var Symbol$1 = root.Symbol;
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var nativeObjectToString = objectProto.toString;
-
-/** Built-in value references. */
-var symToStringTag = Symbol$1 ? Symbol$1.toStringTag : undefined;
-
-/**
- * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
- *
- * @private
- * @param {*} value The value to query.
- * @returns {string} Returns the raw `toStringTag`.
- */
-function getRawTag(value) {
-  var isOwn = hasOwnProperty.call(value, symToStringTag),
-    tag = value[symToStringTag];
-  try {
-    value[symToStringTag] = undefined;
-    var unmasked = true;
-  } catch (e) {}
-  var result = nativeObjectToString.call(value);
-  if (unmasked) {
-    if (isOwn) {
-      value[symToStringTag] = tag;
-    } else {
-      delete value[symToStringTag];
-    }
-  }
-  return result;
-}
-
-/** Used for built-in method references. */
-var objectProto$1 = Object.prototype;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var nativeObjectToString$1 = objectProto$1.toString;
-
-/**
- * Converts `value` to a string using `Object.prototype.toString`.
- *
- * @private
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- */
-function objectToString(value) {
-  return nativeObjectToString$1.call(value);
-}
-
-/** `Object#toString` result references. */
-var nullTag = '[object Null]',
-  undefinedTag = '[object Undefined]';
-
-/** Built-in value references. */
-var symToStringTag$1 = Symbol$1 ? Symbol$1.toStringTag : undefined;
-
-/**
- * The base implementation of `getTag` without fallbacks for buggy environments.
- *
- * @private
- * @param {*} value The value to query.
- * @returns {string} Returns the `toStringTag`.
- */
-function baseGetTag(value) {
-  if (value == null) {
-    return value === undefined ? undefinedTag : nullTag;
-  }
-  return symToStringTag$1 && symToStringTag$1 in Object(value) ? getRawTag(value) : objectToString(value);
-}
-
-/**
- * Checks if `value` is object-like. A value is object-like if it's not `null`
- * and has a `typeof` result of "object".
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
- * @example
- *
- * _.isObjectLike({});
- * // => true
- *
- * _.isObjectLike([1, 2, 3]);
- * // => true
- *
- * _.isObjectLike(_.noop);
- * // => false
- *
- * _.isObjectLike(null);
- * // => false
- */
-function isObjectLike(value) {
-  return value != null && Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(value) == 'object';
-}
-
-/** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
-
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
- * @example
- *
- * _.isSymbol(Symbol.iterator);
- * // => true
- *
- * _.isSymbol('abc');
- * // => false
- */
-function isSymbol(value) {
-  return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(value) == 'symbol' || isObjectLike(value) && baseGetTag(value) == symbolTag;
-}
-
-/** Used to match property names within property paths. */
-var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
-  reIsPlainProp = /^\w*$/;
-
-/**
- * Checks if `value` is a property name and not a property path.
- *
- * @private
- * @param {*} value The value to check.
- * @param {Object} [object] The object to query keys on.
- * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
- */
-function isKey(value, object) {
-  if (isArray(value)) {
-    return false;
-  }
-  var type = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(value);
-  if (type == 'number' || type == 'symbol' || type == 'boolean' || value == null || isSymbol(value)) {
-    return true;
-  }
-  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in Object(object);
-}
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(value);
-  return value != null && (type == 'object' || type == 'function');
-}
-
-/** `Object#toString` result references. */
-var asyncTag = '[object AsyncFunction]',
-  funcTag = '[object Function]',
-  genTag = '[object GeneratorFunction]',
-  proxyTag = '[object Proxy]';
-
-/**
- * Checks if `value` is classified as a `Function` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a function, else `false`.
- * @example
- *
- * _.isFunction(_);
- * // => true
- *
- * _.isFunction(/abc/);
- * // => false
- */
-function isFunction(value) {
-  if (!isObject(value)) {
-    return false;
-  }
-  // The use of `Object#toString` avoids issues with the `typeof` operator
-  // in Safari 9 which returns 'object' for typed arrays and other constructors.
-  var tag = baseGetTag(value);
-  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
-}
-
-/** Used to detect overreaching core-js shims. */
-var coreJsData = root['__core-js_shared__'];
-
-/** Used to detect methods masquerading as native. */
-var maskSrcKey = function () {
-  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
-  return uid ? 'Symbol(src)_1.' + uid : '';
-}();
-
-/**
- * Checks if `func` has its source masked.
- *
- * @private
- * @param {Function} func The function to check.
- * @returns {boolean} Returns `true` if `func` is masked, else `false`.
- */
-function isMasked(func) {
-  return !!maskSrcKey && maskSrcKey in func;
-}
-
-/** Used for built-in method references. */
-var funcProto = Function.prototype;
-
-/** Used to resolve the decompiled source of functions. */
-var funcToString = funcProto.toString;
-
-/**
- * Converts `func` to its source code.
- *
- * @private
- * @param {Function} func The function to convert.
- * @returns {string} Returns the source code.
- */
-function toSource(func) {
-  if (func != null) {
-    try {
-      return funcToString.call(func);
-    } catch (e) {}
-    try {
-      return func + '';
-    } catch (e) {}
-  }
-  return '';
-}
-
-/**
- * Used to match `RegExp`
- * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
- */
-var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
-
-/** Used to detect host constructors (Safari). */
-var reIsHostCtor = /^\[object .+?Constructor\]$/;
-
-/** Used for built-in method references. */
-var funcProto$1 = Function.prototype,
-  objectProto$2 = Object.prototype;
-
-/** Used to resolve the decompiled source of functions. */
-var funcToString$1 = funcProto$1.toString;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty$1 = objectProto$2.hasOwnProperty;
-
-/** Used to detect if a method is native. */
-var reIsNative = RegExp('^' + funcToString$1.call(hasOwnProperty$1).replace(reRegExpChar, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
-
-/**
- * The base implementation of `_.isNative` without bad shim checks.
- *
- * @private
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a native function,
- *  else `false`.
- */
-function baseIsNative(value) {
-  if (!isObject(value) || isMasked(value)) {
-    return false;
-  }
-  var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
-  return pattern.test(toSource(value));
-}
-
-/**
- * Gets the value at `key` of `object`.
- *
- * @private
- * @param {Object} [object] The object to query.
- * @param {string} key The key of the property to get.
- * @returns {*} Returns the property value.
- */
-function getValue(object, key) {
-  return object == null ? undefined : object[key];
-}
-
-/**
- * Gets the native function at `key` of `object`.
- *
- * @private
- * @param {Object} object The object to query.
- * @param {string} key The key of the method to get.
- * @returns {*} Returns the function if it's native, else `undefined`.
- */
-function getNative(object, key) {
-  var value = getValue(object, key);
-  return baseIsNative(value) ? value : undefined;
-}
-
-/* Built-in method references that are verified to be native. */
-var nativeCreate = getNative(Object, 'create');
-
-/**
- * Removes all key-value entries from the hash.
- *
- * @private
- * @name clear
- * @memberOf Hash
- */
-function hashClear() {
-  this.__data__ = nativeCreate ? nativeCreate(null) : {};
-  this.size = 0;
-}
-
-/**
- * Removes `key` and its value from the hash.
- *
- * @private
- * @name delete
- * @memberOf Hash
- * @param {Object} hash The hash to modify.
- * @param {string} key The key of the value to remove.
- * @returns {boolean} Returns `true` if the entry was removed, else `false`.
- */
-function hashDelete(key) {
-  var result = this.has(key) && delete this.__data__[key];
-  this.size -= result ? 1 : 0;
-  return result;
-}
-
-/** Used to stand-in for `undefined` hash values. */
-var HASH_UNDEFINED = '__lodash_hash_undefined__';
-
-/** Used for built-in method references. */
-var objectProto$3 = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty$2 = objectProto$3.hasOwnProperty;
-
-/**
- * Gets the hash value for `key`.
- *
- * @private
- * @name get
- * @memberOf Hash
- * @param {string} key The key of the value to get.
- * @returns {*} Returns the entry value.
- */
-function hashGet(key) {
-  var data = this.__data__;
-  if (nativeCreate) {
-    var result = data[key];
-    return result === HASH_UNDEFINED ? undefined : result;
-  }
-  return hasOwnProperty$2.call(data, key) ? data[key] : undefined;
-}
-
-/** Used for built-in method references. */
-var objectProto$4 = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty$3 = objectProto$4.hasOwnProperty;
-
-/**
- * Checks if a hash value for `key` exists.
- *
- * @private
- * @name has
- * @memberOf Hash
- * @param {string} key The key of the entry to check.
- * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
- */
-function hashHas(key) {
-  var data = this.__data__;
-  return nativeCreate ? data[key] !== undefined : hasOwnProperty$3.call(data, key);
-}
-
-/** Used to stand-in for `undefined` hash values. */
-var HASH_UNDEFINED$1 = '__lodash_hash_undefined__';
-
-/**
- * Sets the hash `key` to `value`.
- *
- * @private
- * @name set
- * @memberOf Hash
- * @param {string} key The key of the value to set.
- * @param {*} value The value to set.
- * @returns {Object} Returns the hash instance.
- */
-function hashSet(key, value) {
-  var data = this.__data__;
-  this.size += this.has(key) ? 0 : 1;
-  data[key] = nativeCreate && value === undefined ? HASH_UNDEFINED$1 : value;
-  return this;
-}
-
-/**
- * Creates a hash object.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function Hash(entries) {
-  var index = -1,
-    length = entries == null ? 0 : entries.length;
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `Hash`.
-Hash.prototype.clear = hashClear;
-Hash.prototype['delete'] = hashDelete;
-Hash.prototype.get = hashGet;
-Hash.prototype.has = hashHas;
-Hash.prototype.set = hashSet;
-
-/**
- * Removes all key-value entries from the list cache.
- *
- * @private
- * @name clear
- * @memberOf ListCache
- */
-function listCacheClear() {
-  this.__data__ = [];
-  this.size = 0;
-}
-
-/**
- * Performs a
- * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * comparison between two values to determine if they are equivalent.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to compare.
- * @param {*} other The other value to compare.
- * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
- * @example
- *
- * var object = { 'a': 1 };
- * var other = { 'a': 1 };
- *
- * _.eq(object, object);
- * // => true
- *
- * _.eq(object, other);
- * // => false
- *
- * _.eq('a', 'a');
- * // => true
- *
- * _.eq('a', Object('a'));
- * // => false
- *
- * _.eq(NaN, NaN);
- * // => true
- */
-function eq(value, other) {
-  return value === other || value !== value && other !== other;
-}
-
-/**
- * Gets the index at which the `key` is found in `array` of key-value pairs.
- *
- * @private
- * @param {Array} array The array to inspect.
- * @param {*} key The key to search for.
- * @returns {number} Returns the index of the matched value, else `-1`.
- */
-function assocIndexOf(array, key) {
-  var length = array.length;
-  while (length--) {
-    if (eq(array[length][0], key)) {
-      return length;
-    }
-  }
-  return -1;
-}
-
-/** Used for built-in method references. */
-var arrayProto = Array.prototype;
-
-/** Built-in value references. */
-var splice = arrayProto.splice;
-
-/**
- * Removes `key` and its value from the list cache.
- *
- * @private
- * @name delete
- * @memberOf ListCache
- * @param {string} key The key of the value to remove.
- * @returns {boolean} Returns `true` if the entry was removed, else `false`.
- */
-function listCacheDelete(key) {
-  var data = this.__data__,
-    index = assocIndexOf(data, key);
-  if (index < 0) {
-    return false;
-  }
-  var lastIndex = data.length - 1;
-  if (index == lastIndex) {
-    data.pop();
-  } else {
-    splice.call(data, index, 1);
-  }
-  --this.size;
-  return true;
-}
-
-/**
- * Gets the list cache value for `key`.
- *
- * @private
- * @name get
- * @memberOf ListCache
- * @param {string} key The key of the value to get.
- * @returns {*} Returns the entry value.
- */
-function listCacheGet(key) {
-  var data = this.__data__,
-    index = assocIndexOf(data, key);
-  return index < 0 ? undefined : data[index][1];
-}
-
-/**
- * Checks if a list cache value for `key` exists.
- *
- * @private
- * @name has
- * @memberOf ListCache
- * @param {string} key The key of the entry to check.
- * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
- */
-function listCacheHas(key) {
-  return assocIndexOf(this.__data__, key) > -1;
-}
-
-/**
- * Sets the list cache `key` to `value`.
- *
- * @private
- * @name set
- * @memberOf ListCache
- * @param {string} key The key of the value to set.
- * @param {*} value The value to set.
- * @returns {Object} Returns the list cache instance.
- */
-function listCacheSet(key, value) {
-  var data = this.__data__,
-    index = assocIndexOf(data, key);
-  if (index < 0) {
-    ++this.size;
-    data.push([key, value]);
-  } else {
-    data[index][1] = value;
-  }
-  return this;
-}
-
-/**
- * Creates an list cache object.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function ListCache(entries) {
-  var index = -1,
-    length = entries == null ? 0 : entries.length;
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `ListCache`.
-ListCache.prototype.clear = listCacheClear;
-ListCache.prototype['delete'] = listCacheDelete;
-ListCache.prototype.get = listCacheGet;
-ListCache.prototype.has = listCacheHas;
-ListCache.prototype.set = listCacheSet;
-
-/* Built-in method references that are verified to be native. */
-var Map$1 = getNative(root, 'Map');
-
-/**
- * Removes all key-value entries from the map.
- *
- * @private
- * @name clear
- * @memberOf MapCache
- */
-function mapCacheClear() {
-  this.size = 0;
-  this.__data__ = {
-    'hash': new Hash(),
-    'map': new (Map$1 || ListCache)(),
-    'string': new Hash()
-  };
-}
-
-/**
- * Checks if `value` is suitable for use as unique object key.
- *
- * @private
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
- */
-function isKeyable(value) {
-  var type = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(value);
-  return type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean' ? value !== '__proto__' : value === null;
-}
-
-/**
- * Gets the data for `map`.
- *
- * @private
- * @param {Object} map The map to query.
- * @param {string} key The reference key.
- * @returns {*} Returns the map data.
- */
-function getMapData(map, key) {
-  var data = map.__data__;
-  return isKeyable(key) ? data[typeof key == 'string' ? 'string' : 'hash'] : data.map;
-}
-
-/**
- * Removes `key` and its value from the map.
- *
- * @private
- * @name delete
- * @memberOf MapCache
- * @param {string} key The key of the value to remove.
- * @returns {boolean} Returns `true` if the entry was removed, else `false`.
- */
-function mapCacheDelete(key) {
-  var result = getMapData(this, key)['delete'](key);
-  this.size -= result ? 1 : 0;
-  return result;
-}
-
-/**
- * Gets the map value for `key`.
- *
- * @private
- * @name get
- * @memberOf MapCache
- * @param {string} key The key of the value to get.
- * @returns {*} Returns the entry value.
- */
-function mapCacheGet(key) {
-  return getMapData(this, key).get(key);
-}
-
-/**
- * Checks if a map value for `key` exists.
- *
- * @private
- * @name has
- * @memberOf MapCache
- * @param {string} key The key of the entry to check.
- * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
- */
-function mapCacheHas(key) {
-  return getMapData(this, key).has(key);
-}
-
-/**
- * Sets the map `key` to `value`.
- *
- * @private
- * @name set
- * @memberOf MapCache
- * @param {string} key The key of the value to set.
- * @param {*} value The value to set.
- * @returns {Object} Returns the map cache instance.
- */
-function mapCacheSet(key, value) {
-  var data = getMapData(this, key),
-    size = data.size;
-  data.set(key, value);
-  this.size += data.size == size ? 0 : 1;
-  return this;
-}
-
-/**
- * Creates a map cache object to store key-value pairs.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function MapCache(entries) {
-  var index = -1,
-    length = entries == null ? 0 : entries.length;
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `MapCache`.
-MapCache.prototype.clear = mapCacheClear;
-MapCache.prototype['delete'] = mapCacheDelete;
-MapCache.prototype.get = mapCacheGet;
-MapCache.prototype.has = mapCacheHas;
-MapCache.prototype.set = mapCacheSet;
-
-/** Error message constants. */
-var FUNC_ERROR_TEXT = 'Expected a function';
-
-/**
- * Creates a function that memoizes the result of `func`. If `resolver` is
- * provided, it determines the cache key for storing the result based on the
- * arguments provided to the memoized function. By default, the first argument
- * provided to the memoized function is used as the map cache key. The `func`
- * is invoked with the `this` binding of the memoized function.
- *
- * **Note:** The cache is exposed as the `cache` property on the memoized
- * function. Its creation may be customized by replacing the `_.memoize.Cache`
- * constructor with one whose instances implement the
- * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
- * method interface of `clear`, `delete`, `get`, `has`, and `set`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Function
- * @param {Function} func The function to have its output memoized.
- * @param {Function} [resolver] The function to resolve the cache key.
- * @returns {Function} Returns the new memoized function.
- * @example
- *
- * var object = { 'a': 1, 'b': 2 };
- * var other = { 'c': 3, 'd': 4 };
- *
- * var values = _.memoize(_.values);
- * values(object);
- * // => [1, 2]
- *
- * values(other);
- * // => [3, 4]
- *
- * object.a = 2;
- * values(object);
- * // => [1, 2]
- *
- * // Modify the result cache.
- * values.cache.set(object, ['a', 'b']);
- * values(object);
- * // => ['a', 'b']
- *
- * // Replace `_.memoize.Cache`.
- * _.memoize.Cache = WeakMap;
- */
-function memoize(func, resolver) {
-  if (typeof func != 'function' || resolver != null && typeof resolver != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  var memoized = function memoized() {
-    var args = arguments,
-      key = resolver ? resolver.apply(this, args) : args[0],
-      cache = memoized.cache;
-    if (cache.has(key)) {
-      return cache.get(key);
-    }
-    var result = func.apply(this, args);
-    memoized.cache = cache.set(key, result) || cache;
-    return result;
-  };
-  memoized.cache = new (memoize.Cache || MapCache)();
-  return memoized;
-}
-
-// Expose `MapCache`.
-memoize.Cache = MapCache;
-
-/** Used as the maximum memoize cache size. */
-var MAX_MEMOIZE_SIZE = 500;
-
-/**
- * A specialized version of `_.memoize` which clears the memoized function's
- * cache when it exceeds `MAX_MEMOIZE_SIZE`.
- *
- * @private
- * @param {Function} func The function to have its output memoized.
- * @returns {Function} Returns the new memoized function.
- */
-function memoizeCapped(func) {
-  var result = memoize(func, function (key) {
-    if (cache.size === MAX_MEMOIZE_SIZE) {
-      cache.clear();
-    }
-    return key;
-  });
-  var cache = result.cache;
-  return result;
-}
-
-/** Used to match property names within property paths. */
-var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
-
-/** Used to match backslashes in property paths. */
-var reEscapeChar = /\\(\\)?/g;
-
-/**
- * Converts `string` to a property path array.
- *
- * @private
- * @param {string} string The string to convert.
- * @returns {Array} Returns the property path array.
- */
-var stringToPath = memoizeCapped(function (string) {
-  var result = [];
-  if (string.charCodeAt(0) === 46 /* . */) {
-    result.push('');
-  }
-  string.replace(rePropName, function (match, number, quote, subString) {
-    result.push(quote ? subString.replace(reEscapeChar, '$1') : number || match);
-  });
-  return result;
-});
-
-/**
- * A specialized version of `_.map` for arrays without support for iteratee
- * shorthands.
- *
- * @private
- * @param {Array} [array] The array to iterate over.
- * @param {Function} iteratee The function invoked per iteration.
- * @returns {Array} Returns the new mapped array.
- */
-function arrayMap(array, iteratee) {
-  var index = -1,
-    length = array == null ? 0 : array.length,
-    result = Array(length);
-  while (++index < length) {
-    result[index] = iteratee(array[index], index, array);
-  }
-  return result;
-}
-
-/** Used as references for various `Number` constants. */
-var INFINITY = 1 / 0;
-
-/** Used to convert symbols to primitives and strings. */
-var symbolProto = Symbol$1 ? Symbol$1.prototype : undefined,
-  symbolToString = symbolProto ? symbolProto.toString : undefined;
-
-/**
- * The base implementation of `_.toString` which doesn't convert nullish
- * values to empty strings.
- *
- * @private
- * @param {*} value The value to process.
- * @returns {string} Returns the string.
- */
-function baseToString(value) {
-  // Exit early for strings to avoid a performance hit in some environments.
-  if (typeof value == 'string') {
-    return value;
-  }
-  if (isArray(value)) {
-    // Recursively convert values (susceptible to call stack limits).
-    return arrayMap(value, baseToString) + '';
-  }
-  if (isSymbol(value)) {
-    return symbolToString ? symbolToString.call(value) : '';
-  }
-  var result = value + '';
-  return result == '0' && 1 / value == -INFINITY ? '-0' : result;
-}
-
-/**
- * Converts `value` to a string. An empty string is returned for `null`
- * and `undefined` values. The sign of `-0` is preserved.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- * @example
- *
- * _.toString(null);
- * // => ''
- *
- * _.toString(-0);
- * // => '-0'
- *
- * _.toString([1, 2, 3]);
- * // => '1,2,3'
- */
-function toString(value) {
-  return value == null ? '' : baseToString(value);
-}
-
-/**
- * Casts `value` to a path array if it's not one.
- *
- * @private
- * @param {*} value The value to inspect.
- * @param {Object} [object] The object to query keys on.
- * @returns {Array} Returns the cast property path array.
- */
-function castPath(value, object) {
-  if (isArray(value)) {
-    return value;
-  }
-  return isKey(value, object) ? [value] : stringToPath(toString(value));
-}
-
-/** Used as references for various `Number` constants. */
-var INFINITY$1 = 1 / 0;
-
-/**
- * Converts `value` to a string key if it's not a string or symbol.
- *
- * @private
- * @param {*} value The value to inspect.
- * @returns {string|symbol} Returns the key.
- */
-function toKey(value) {
-  if (typeof value == 'string' || isSymbol(value)) {
-    return value;
-  }
-  var result = value + '';
-  return result == '0' && 1 / value == -INFINITY$1 ? '-0' : result;
-}
-
-/**
- * The base implementation of `_.get` without support for default values.
- *
- * @private
- * @param {Object} object The object to query.
- * @param {Array|string} path The path of the property to get.
- * @returns {*} Returns the resolved value.
- */
-function baseGet(object, path) {
-  path = castPath(path, object);
-  var index = 0,
-    length = path.length;
-  while (object != null && index < length) {
-    object = object[toKey(path[index++])];
-  }
-  return index && index == length ? object : undefined;
-}
-
-/**
- * Gets the value at `path` of `object`. If the resolved value is
- * `undefined`, the `defaultValue` is returned in its place.
- *
- * @static
- * @memberOf _
- * @since 3.7.0
- * @category Object
- * @param {Object} object The object to query.
- * @param {Array|string} path The path of the property to get.
- * @param {*} [defaultValue] The value returned for `undefined` resolved values.
- * @returns {*} Returns the resolved value.
- * @example
- *
- * var object = { 'a': [{ 'b': { 'c': 3 } }] };
- *
- * _.get(object, 'a[0].b.c');
- * // => 3
- *
- * _.get(object, ['a', '0', 'b', 'c']);
- * // => 3
- *
- * _.get(object, 'a.b.c', 'default');
- * // => 'default'
- */
-function get(object, path, defaultValue) {
-  var result = object == null ? undefined : baseGet(object, path);
-  return result === undefined ? defaultValue : result;
-}
 var options = {
   prerender: true,
   debug: false
 };
-var Performance = /*#__PURE__*/function () {
-  function Performance() {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Performance);
-    this.recorder = new Map();
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Performance, [{
-    key: "start",
-    value: function start(id) {
-      if (!options.debug) {
-        return;
-      }
-      this.recorder.set(id, Date.now());
-    }
-  }, {
-    key: "stop",
-    value: function stop(id) {
-      if (!options.debug) {
-        return;
-      }
-      var now = Date.now();
-      var prev = this.recorder.get(id);
-      var time = now - prev;
-      // eslint-disable-next-line no-console
-      console.log("".concat(id, " \u65F6\u957F\uFF1A ").concat(time, "ms"));
-    }
-  }]);
-  return Performance;
-}();
-var perf = new Performance();
-var eventIncrementId = incrementId();
-var TaroRootElement = /*#__PURE__*/function (_TaroElement) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(TaroRootElement, _TaroElement);
-  var _super5 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroRootElement);
-  function TaroRootElement(
-  // eslint-disable-next-line @typescript-eslint/indent
-  nodeImpl, getElement, hooks, elementImpl, eventCenter) {
-    var _this11;
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroRootElement);
-    _this11 = _super5.call(this, nodeImpl, getElement, hooks, elementImpl);
-    _this11.pendingFlush = false;
-    _this11.updatePayloads = [];
-    _this11.updateCallbacks = [];
-    _this11.pendingUpdate = false;
-    _this11.ctx = null;
-    _this11.nodeName = ROOT_STR;
-    _this11.eventCenter = eventCenter;
-    return _this11;
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroRootElement, [{
-    key: "_path",
-    get: function get() {
-      return ROOT_STR;
-    }
-  }, {
-    key: "_root",
-    get: function get() {
-      return this;
-    }
-  }, {
-    key: "enqueueUpdate",
-    value: function enqueueUpdate(payload) {
-      this.updatePayloads.push(payload);
-      if (!this.pendingUpdate && this.ctx !== null) {
-        this.performUpdate();
-      }
-    }
-  }, {
-    key: "performUpdate",
-    value: function performUpdate() {
-      var _this12 = this;
-      var initRender = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-      var prerender = arguments.length > 1 ? arguments[1] : undefined;
-      this.pendingUpdate = true;
-      var ctx = this.ctx;
-      setTimeout(function () {
-        perf.start(SET_DATA);
-        var data = Object.create(null);
-        var resetPaths = new Set(initRender ? ['root.cn.[0]', 'root.cn[0]'] : []);
-        while (_this12.updatePayloads.length > 0) {
-          var _this12$updatePayload = _this12.updatePayloads.shift(),
-            path = _this12$updatePayload.path,
-            value = _this12$updatePayload.value;
-          if (path.endsWith("cn" /* Childnodes */)) {
-            resetPaths.add(path);
-          }
-          data[path] = value;
-        }
-        var _loop2 = function _loop2(_path) {
-          resetPaths.forEach(function (p) {
-            // 已经重置了数组，就不需要分别再设置了
-            if (_path.includes(p) && _path !== p) {
-              delete data[_path];
-            }
-          });
-          var value = data[_path];
-          if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(value)) {
-            data[_path] = value();
-          }
-        };
-        for (var _path in data) {
-          _loop2(_path);
-        }
-        if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(prerender)) {
-          prerender(data);
-        } else {
-          _this12.pendingUpdate = false;
-          var customWrapperUpdate = [];
-          var customWrapperMap = new Map();
-          var normalUpdate = {};
-          if (!initRender) {
-            for (var p in data) {
-              var dataPathArr = p.split('.');
-              var hasCustomWrapper = false;
-              for (var i = dataPathArr.length; i > 0; i--) {
-                var allPath = dataPathArr.slice(0, i).join('.');
-                var getData = get(ctx.__data__ || ctx.data, allPath);
-                if (getData && getData.nn && getData.nn === CUSTOM_WRAPPER) {
-                  var customWrapperId = getData.uid;
-                  var customWrapper = ctx.selectComponent("#".concat(customWrapperId));
-                  var splitedPath = dataPathArr.slice(i).join('.');
-                  if (customWrapper) {
-                    hasCustomWrapper = true;
-                    customWrapperMap.set(customWrapper, Object.assign(Object.assign({}, customWrapperMap.get(customWrapper) || {}), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])({}, "i.".concat(splitedPath), data[p])));
-                  }
-                  break;
-                }
-              }
-              if (!hasCustomWrapper) {
-                normalUpdate[p] = data[p];
-              }
-            }
-            if (customWrapperMap.size > 0) {
-              customWrapperMap.forEach(function (data, ctx) {
-                customWrapperUpdate.push({
-                  ctx: ctx,
-                  data: data
-                });
-              });
-            }
-          }
-          var updateArrLen = customWrapperUpdate.length;
-          if (updateArrLen) {
-            var eventId = "".concat(_this12._path, "_update_").concat(eventIncrementId());
-            var _eventCenter = _this12.eventCenter;
-            var executeTime = 0;
-            _eventCenter.once(eventId, function () {
-              executeTime++;
-              if (executeTime === updateArrLen + 1) {
-                perf.stop(SET_DATA);
-                if (!_this12.pendingFlush) {
-                  _this12.flushUpdateCallback();
-                }
-                if (initRender) {
-                  perf.stop(PAGE_INIT);
-                }
-              }
-            }, _eventCenter);
-            customWrapperUpdate.forEach(function (item) {
-              if ( true && options.debug) {
-                // eslint-disable-next-line no-console
-                console.log('custom wrapper setData: ', item.data);
-              }
-              item.ctx.setData(item.data, function () {
-                _eventCenter.trigger(eventId);
-              });
-            });
-            if (Object.keys(normalUpdate).length) {
-              if ( true && options.debug) {
-                // eslint-disable-next-line no-console
-                console.log('setData:', normalUpdate);
-              }
-              ctx.setData(normalUpdate, function () {
-                _eventCenter.trigger(eventId);
-              });
-            }
-          } else {
-            if ( true && options.debug) {
-              // eslint-disable-next-line no-console
-              console.log('setData:', data);
-            }
-            ctx.setData(data, function () {
-              perf.stop(SET_DATA);
-              if (!_this12.pendingFlush) {
-                _this12.flushUpdateCallback();
-              }
-              if (initRender) {
-                perf.stop(PAGE_INIT);
-              }
-            });
-          }
-        }
-      }, 0);
-    }
-  }, {
-    key: "enqueueUpdateCallback",
-    value: function enqueueUpdateCallback(cb, ctx) {
-      this.updateCallbacks.push(function () {
-        ctx ? cb.call(ctx) : cb();
-      });
-    }
-  }, {
-    key: "flushUpdateCallback",
-    value: function flushUpdateCallback() {
-      this.pendingFlush = false;
-      var copies = this.updateCallbacks.slice(0);
-      this.updateCallbacks.length = 0;
-      for (var i = 0; i < copies.length; i++) {
-        copies[i]();
-      }
-    }
-  }]);
-  return TaroRootElement;
-}(TaroElement);
-TaroRootElement = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroNodeImpl)), __param(1, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementFactory)), __param(2, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.Hooks)), __param(3, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementImpl)), __param(4, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.eventCenter)), __metadata("design:paramtypes", [Function, Function, Function, Function, Function])], TaroRootElement);
-var FormElement = /*#__PURE__*/function (_TaroElement2) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(FormElement, _TaroElement2);
-  var _super6 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(FormElement);
-  function FormElement() {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, FormElement);
-    return _super6.apply(this, arguments);
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(FormElement, [{
-    key: "value",
-    get: function get() {
-      // eslint-disable-next-line dot-notation
-      var val = this.props[VALUE];
-      return val == null ? '' : val;
-    },
-    set: function set(val) {
-      this.setAttribute(VALUE, val);
-    }
-  }, {
-    key: "dispatchEvent",
-    value: function dispatchEvent(event) {
-      if (event.mpEvent) {
-        var val = event.mpEvent.detail.value;
-        if (event.type === CHANGE) {
-          this.props.value = val;
-        } else if (event.type === INPUT) {
-          // Web 规范中表单组件的 value 应该跟着输入改变
-          // 只是改 this.props.value 的话不会进行 setData，因此这里修改 this.value。
-          // 只测试了 React、Vue、Vue3 input 组件的 onInput 事件，onChange 事件不确定有没有副作用，所以暂不修改。
-          this.value = val;
-        }
-      }
-      return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(FormElement.prototype), "dispatchEvent", this).call(this, event);
-    }
-  }]);
-  return FormElement;
-}(TaroElement); // for Vue3
-var SVGElement = /*#__PURE__*/function (_TaroElement3) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(SVGElement, _TaroElement3);
-  var _super7 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(SVGElement);
-  function SVGElement() {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, SVGElement);
-    return _super7.apply(this, arguments);
-  }
-  return Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(SVGElement);
-}(TaroElement);
 function initPosition() {
   return {
     index: 0,
@@ -4546,8 +3780,8 @@ function feedPosition(position, str, len) {
   var start = position.index;
   var end = position.index = start + len;
   for (var i = start; i < end; i++) {
-    var char = str.charAt(i);
-    if (char === '\n') {
+    var _char = str.charAt(i);
+    if (_char === '\n') {
       position.line++;
       position.column = 0;
     } else {
@@ -4567,12 +3801,12 @@ function copyPosition(position) {
   };
 }
 var whitespace = /\s/;
-function isWhitespaceChar(char) {
-  return whitespace.test(char);
+function isWhitespaceChar(_char2) {
+  return whitespace.test(_char2);
 }
 var equalSign = /=/;
-function isEqualSignChar(char) {
-  return equalSign.test(char);
+function isEqualSignChar(_char3) {
+  return equalSign.test(_char3);
 }
 function shouldBeIgnore(tagName) {
   var name = tagName.toLowerCase();
@@ -4588,8 +3822,8 @@ function findTextEnd(str, index) {
     if (textEnd === -1) {
       return textEnd;
     }
-    var char = str.charAt(textEnd + 1);
-    if (char === '/' || char === '!' || alphanumeric.test(char)) {
+    var _char4 = str.charAt(textEnd + 1);
+    if (_char4 === '/' || _char4 === '!' || alphanumeric.test(_char4)) {
       return textEnd;
     }
     index = textEnd + 1;
@@ -4600,29 +3834,29 @@ function isWordEnd(cursor, wordBegin, html) {
   var len = html.length;
   // backwrad
   for (var i = cursor - 1; i > wordBegin; i--) {
-    var char = html.charAt(i);
-    if (!isWhitespaceChar(char)) {
-      if (isEqualSignChar(char)) return false;
+    var _char5 = html.charAt(i);
+    if (!isWhitespaceChar(_char5)) {
+      if (isEqualSignChar(_char5)) return false;
       break;
     }
   }
   // forward
   for (var _i2 = cursor + 1; _i2 < len; _i2++) {
-    var _char = html.charAt(_i2);
-    if (!isWhitespaceChar(_char)) {
-      if (isEqualSignChar(_char)) return false;
+    var _char6 = html.charAt(_i2);
+    if (!isWhitespaceChar(_char6)) {
+      if (isEqualSignChar(_char6)) return false;
       return true;
     }
   }
 }
 var Scaner = /*#__PURE__*/function () {
   function Scaner(html) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Scaner);
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Scaner);
     this.tokens = [];
     this.position = initPosition();
     this.html = html;
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Scaner, [{
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Scaner, [{
     key: "scan",
     value: function scan() {
       var html = this.html,
@@ -4749,15 +3983,15 @@ var Scaner = /*#__PURE__*/function () {
       var len = html.length;
       var start = position.index;
       while (start < len) {
-        var char = html.charAt(start);
-        var isTagChar = !(isWhitespaceChar(char) || char === '/' || char === '>');
+        var _char7 = html.charAt(start);
+        var isTagChar = !(isWhitespaceChar(_char7) || _char7 === '/' || _char7 === '>');
         if (isTagChar) break;
         start++;
       }
       var end = start + 1;
       while (end < len) {
-        var _char2 = html.charAt(end);
-        var _isTagChar = !(isWhitespaceChar(_char2) || _char2 === '/' || _char2 === '>');
+        var _char8 = html.charAt(end);
+        var _isTagChar = !(isWhitespaceChar(_char8) || _char8 === '/' || _char8 === '>');
         if (!_isTagChar) break;
         end++;
       }
@@ -4781,16 +4015,16 @@ var Scaner = /*#__PURE__*/function () {
       var words = []; // "key", "key=value", "key='value'", etc
       var len = html.length;
       while (cursor < len) {
-        var char = html.charAt(cursor);
+        var _char9 = html.charAt(cursor);
         if (quote) {
-          var isQuoteEnd = char === quote;
+          var isQuoteEnd = _char9 === quote;
           if (isQuoteEnd) {
             quote = null;
           }
           cursor++;
           continue;
         }
-        var isTagEnd = char === '/' || char === '>';
+        var isTagEnd = _char9 === '/' || _char9 === '>';
         if (isTagEnd) {
           if (cursor !== wordBegin) {
             words.push(html.slice(wordBegin, cursor));
@@ -4805,9 +4039,9 @@ var Scaner = /*#__PURE__*/function () {
           cursor++;
           continue;
         }
-        var isQuoteStart = char === '\'' || char === '"';
+        var isQuoteStart = _char9 === '\'' || _char9 === '"';
         if (isQuoteStart) {
-          quote = char;
+          quote = _char9;
           cursor++;
           continue;
         }
@@ -4891,31 +4125,6 @@ var Scaner = /*#__PURE__*/function () {
   }]);
   return Scaner;
 }();
-function makeMap(str, expectsLowerCase) {
-  var map = Object.create(null);
-  var list = str.split(',');
-  for (var i = 0; i < list.length; i++) {
-    map[list[i]] = true;
-  }
-  return expectsLowerCase ? function (val) {
-    return !!map[val.toLowerCase()];
-  } : function (val) {
-    return !!map[val];
-  };
-}
-var specialMiniElements = {
-  img: 'image',
-  iframe: 'web-view'
-};
-var internalCompsList = Object.keys(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* internalComponents */ "e"]).map(function (i) {
-  return i.toLowerCase();
-}).join(',');
-// https://developers.weixin.qq.com/miniprogram/dev/component
-var isMiniElements = makeMap(internalCompsList, true);
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
-var isInlineElements = makeMap('a,i,abbr,iframe,select,acronym,slot,small,span,bdi,kbd,strong,big,map,sub,sup,br,mark,mark,meter,template,canvas,textarea,cite,object,time,code,output,u,data,picture,tt,datalist,var,dfn,del,q,em,s,embed,samp,b', true);
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
-var isBlockElements = makeMap('address,fieldset,li,article,figcaption,main,aside,figure,nav,blockquote,footer,ol,details,form,p,dialog,h1,h2,h3,h4,h5,h6,pre,dd,header,section,div,hgroup,table,dl,hr,ul,dt', true);
 function unquote(str) {
   var car = str.charAt(0);
   var end = str.length - 1;
@@ -4934,19 +4143,19 @@ var GENERAL_SIBLING_COMBINATOR = '~';
 var ADJACENT_SIBLING_COMBINATOR = '+';
 var StyleTagParser = /*#__PURE__*/function () {
   function StyleTagParser() {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, StyleTagParser);
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, StyleTagParser);
     this.styles = [];
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(StyleTagParser, [{
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(StyleTagParser, [{
     key: "extractStyle",
     value: function extractStyle(src) {
-      var _this13 = this;
+      var _this11 = this;
       var REG_STYLE = /<style\s?[^>]*>((.|\n|\s)+?)<\/style>/g;
       var html = src;
       // let html = src.replace(/\n/g, '')
       html = html.replace(REG_STYLE, function (_, $1) {
         var style = $1.trim();
-        _this13.stringToSelector(style);
+        _this11.stringToSelector(style);
         return '';
       });
       return html.trim();
@@ -4954,9 +4163,9 @@ var StyleTagParser = /*#__PURE__*/function () {
   }, {
     key: "stringToSelector",
     value: function stringToSelector(style) {
-      var _this14 = this;
+      var _this12 = this;
       var lb = style.indexOf(LEFT_BRACKET);
-      var _loop3 = function _loop3() {
+      var _loop2 = function _loop2() {
         var rb = style.indexOf(RIGHT_BRACKET);
         var selectors = style.slice(0, lb).trim();
         var content = style.slice(lb + 1, rb);
@@ -4970,8 +4179,8 @@ var StyleTagParser = /*#__PURE__*/function () {
           content += ';';
         }
         selectors.split(',').forEach(function (src) {
-          var selectorList = _this14.parseSelector(src);
-          _this14.styles.push({
+          var selectorList = _this12.parseSelector(src);
+          _this12.styles.push({
             content: content,
             selectorList: selectorList
           });
@@ -4980,15 +4189,14 @@ var StyleTagParser = /*#__PURE__*/function () {
         lb = style.indexOf(LEFT_BRACKET);
       };
       while (lb > -1) {
-        _loop3();
+        _loop2();
       }
       // console.log('res this.styles: ', this.styles)
     }
   }, {
     key: "parseSelector",
     value: function parseSelector(src) {
-      // todo: 属性选择器里可以带空格：[a = "b"]，这里的 split(' ') 需要作兼容
-      var list = src.trim().replace(/ *([>~+]) */g, ' $1').replace(/ +/g, ' ').split(' ');
+      var list = src.trim().replace(/ *([>~+]) */g, ' $1').replace(/ +/g, ' ').replace(/\[\s*([^[\]=\s]+)\s*=\s*([^[\]=\s]+)\s*\]/g, '[$1=$2]').split(' ');
       var selectors = list.map(function (item) {
         var firstChar = item.charAt(0);
         var selector = {
@@ -5004,7 +4212,7 @@ var StyleTagParser = /*#__PURE__*/function () {
         // 属性选择器
         item = item.replace(/\[(.+?)\]/g, function (_, $1) {
           var _$1$split = $1.split('='),
-            _$1$split2 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_$1$split, 2),
+            _$1$split2 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_14__["default"])(_$1$split, 2),
             key = _$1$split2[0],
             value = _$1$split2[1];
           var all = $1.indexOf('=') === -1;
@@ -5037,7 +4245,7 @@ var StyleTagParser = /*#__PURE__*/function () {
   }, {
     key: "matchStyle",
     value: function matchStyle(tagName, el, list) {
-      var _this15 = this;
+      var _this13 = this;
       var res = sortStyles(this.styles).reduce(function (str, _ref2, i) {
         var content = _ref2.content,
           selectorList = _ref2.selectorList;
@@ -5049,11 +4257,11 @@ var StyleTagParser = /*#__PURE__*/function () {
           idx += 1;
           list[i] += 1;
         }
-        var isMatch = _this15.matchCurrent(tagName, el, selector);
+        var isMatch = _this13.matchCurrent(tagName, el, selector);
         if (isMatch && selector.isGeneralSibling) {
           var prev = getPreviousElement(el);
           while (prev) {
-            if (prev.h5tagName && _this15.matchCurrent(prev.h5tagName, prev, selectorList[idx - 1])) {
+            if (prev.h5tagName && _this13.matchCurrent(prev.h5tagName, prev, selectorList[idx - 1])) {
               isMatch = true;
               break;
             }
@@ -5066,7 +4274,7 @@ var StyleTagParser = /*#__PURE__*/function () {
           if (!_prev || !_prev.h5tagName) {
             isMatch = false;
           } else {
-            var isSiblingMatch = _this15.matchCurrent(_prev.h5tagName, _prev, selectorList[idx - 1]);
+            var isSiblingMatch = _this13.matchCurrent(_prev.h5tagName, _prev, selectorList[idx - 1]);
             if (!isSiblingMatch) {
               isMatch = false;
             }
@@ -5082,7 +4290,7 @@ var StyleTagParser = /*#__PURE__*/function () {
           // 直接子代组合器: >
           if (selector.isChild && idx > 0) {
             list[i] -= 1;
-            if (_this15.matchCurrent(tagName, el, selectorList[list[i]])) {
+            if (_this13.matchCurrent(tagName, el, selectorList[list[i]])) {
               list[i] += 1;
             }
           }
@@ -5135,7 +4343,7 @@ function getPreviousElement(el) {
   if (!parent) return null;
   var prev = el.previousSibling;
   if (!prev) return null;
-  if (prev.nodeType === 1 /* ELEMENT_NODE */) {
+  if (prev.nodeType === 1 /* NodeType.ELEMENT_NODE */) {
     return prev;
   } else {
     return getPreviousElement(prev);
@@ -5172,6 +4380,31 @@ function getOnesWeight(selectors) {
     return pre + (cur.tag ? 1 : 0);
   }, 0);
 }
+function makeMap(str, expectsLowerCase) {
+  var map = Object.create(null);
+  var list = str.split(',');
+  for (var i = 0; i < list.length; i++) {
+    map[list[i]] = true;
+  }
+  return expectsLowerCase ? function (val) {
+    return !!map[val.toLowerCase()];
+  } : function (val) {
+    return !!map[val];
+  };
+}
+var specialMiniElements = {
+  img: 'image',
+  iframe: 'web-view'
+};
+var internalCompsList = Object.keys(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.internalComponents).map(function (i) {
+  return i.toLowerCase();
+}).join(',');
+// https://developers.weixin.qq.com/miniprogram/dev/component
+var isMiniElements = makeMap(internalCompsList, true);
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+var isInlineElements = makeMap('a,i,abbr,iframe,select,acronym,slot,small,span,bdi,kbd,strong,big,map,sub,sup,br,mark,mark,meter,template,canvas,textarea,cite,object,time,code,output,u,data,picture,tt,datalist,var,dfn,del,q,em,s,embed,samp,b', true);
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+var isBlockElements = makeMap('address,fieldset,li,article,figcaption,main,aside,figure,nav,blockquote,footer,ol,details,form,p,dialog,h1,h2,h3,h4,h5,h6,pre,dd,header,section,div,hgroup,table,dl,hr,ul,dt', true);
 var closingTagAncestorBreakers = {
   li: ['ul', 'ol', 'menu'],
   dt: ['dl'],
@@ -5235,7 +4468,7 @@ function format(children, document, styleOptions, parent) {
     // 文本节点
     if (child.type === 'text') {
       var text = document.createTextNode(child.content);
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(options.html.transformText)) {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.html.transformText)) {
         text = options.html.transformText(text, child);
       }
       parent === null || parent === void 0 ? void 0 : parent.appendChild(text);
@@ -5250,7 +4483,7 @@ function format(children, document, styleOptions, parent) {
     for (var i = 0; i < child.attributes.length; i++) {
       var attr = child.attributes[i];
       var _splitEqual = splitEqual(attr),
-        _splitEqual2 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_splitEqual, 2),
+        _splitEqual2 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_14__["default"])(_splitEqual, 2),
         key = _splitEqual2[0],
         value = _splitEqual2[1];
       if (key === 'class') {
@@ -5271,7 +4504,7 @@ function format(children, document, styleOptions, parent) {
       styleTagParser: styleTagParser,
       descendantList: list
     }, el);
-    if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(options.html.transformElement)) {
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.html.transformElement)) {
       return options.html.transformElement(el, child);
     }
     return el;
@@ -5394,13 +4627,36 @@ options.html = {
   closingElements: new Set(['html', 'head', 'body', 'p', 'dt', 'dd', 'li', 'option', 'thead', 'th', 'tbody', 'tr', 'td', 'tfoot', 'colgroup']),
   renderHTMLTag: false
 };
-function setInnerHTML(element, html, getDoc) {
+function setInnerHTML(element, html) {
   while (element.firstChild) {
     element.removeChild(element.firstChild);
   }
-  var children = parser(html, getDoc());
+  var children = parser(html, element.ownerDocument);
   for (var i = 0; i < children.length; i++) {
     element.appendChild(children[i]);
+  }
+}
+function getBoundingClientRectImpl() {
+  var _this14 = this;
+  if (!options.miniGlobal) return Promise.resolve(null);
+  return new Promise(function (resolve) {
+    var query = options.miniGlobal.createSelectorQuery();
+    query.select("#".concat(_this14.uid)).boundingClientRect(function (res) {
+      resolve(res);
+    }).exec();
+  });
+}
+function getTemplateContent(ctx) {
+  if (ctx.nodeName === 'template') {
+    var _document = ctx.ownerDocument;
+    var content = _document.createElement(DOCUMENT_FRAGMENT);
+    content.childNodes = ctx.childNodes;
+    ctx.childNodes = [content];
+    content.parentNode = ctx;
+    content.childNodes.forEach(function (nodes) {
+      nodes.parentNode = content;
+    });
+    return content;
   }
 }
 
@@ -5408,9 +4664,9 @@ function setInnerHTML(element, html, getDoc) {
  * An implementation of `Element.insertAdjacentHTML()`
  * to support Vue 3 with a version of or greater than `vue@3.1.2`
  */
-function insertAdjacentHTMLImpl(position, html, getDoc) {
+function insertAdjacentHTML(position, html) {
   var _a, _b;
-  var parsedNodes = parser(html, getDoc());
+  var parsedNodes = parser(html, this.ownerDocument);
   for (var i = 0; i < parsedNodes.length; i++) {
     var n = parsedNodes[i];
     switch (position) {
@@ -5433,18 +4689,18 @@ function insertAdjacentHTMLImpl(position, html, getDoc) {
     }
   }
 }
-function cloneNode(ctx, getDoc) {
-  var isDeep = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  var document = getDoc();
+function cloneNode() {
+  var isDeep = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  var document = this.ownerDocument;
   var newNode;
-  if (ctx.nodeType === 1 /* ELEMENT_NODE */) {
-    newNode = document.createElement(ctx.nodeName);
-  } else if (ctx.nodeType === 3 /* TEXT_NODE */) {
+  if (this.nodeType === 1 /* NodeType.ELEMENT_NODE */) {
+    newNode = document.createElement(this.nodeName);
+  } else if (this.nodeType === 3 /* NodeType.TEXT_NODE */) {
     newNode = document.createTextNode('');
   }
   for (var key in this) {
     var value = this[key];
-    if ([PROPS, DATASET].includes(key) && Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"])(value) === OBJECT) {
+    if ([PROPS, DATASET].includes(key) && (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_9__["default"])(value) === OBJECT) {
       newNode[key] = Object.assign({}, value);
     } else if (key === '_value') {
       newNode[key] = value;
@@ -5454,329 +4710,62 @@ function cloneNode(ctx, getDoc) {
     }
   }
   if (isDeep) {
-    newNode.childNodes = ctx.childNodes.map(function (node) {
+    newNode.childNodes = this.childNodes.map(function (node) {
       return node.cloneNode(true);
     });
   }
   return newNode;
 }
-var TaroNodeImpl = /*#__PURE__*/function () {
-  function TaroNodeImpl(
-  // eslint-disable-next-line @typescript-eslint/indent
-  getElement) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroNodeImpl);
-    this.getDoc = function () {
-      return getElement(ElementNames.Document)();
-    };
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroNodeImpl, [{
-    key: "bind",
-    value: function bind(ctx) {
-      var getDoc = this.getDoc;
-      if (true) {
-        bindInnerHTML(ctx, getDoc);
-        if (true) {
-          bindAdjacentHTML(ctx, getDoc);
-        }
-      }
-      if (true) {
-        ctx.cloneNode = cloneNode.bind(ctx, ctx, getDoc);
-      }
-    }
-  }]);
-  return TaroNodeImpl;
-}();
-TaroNodeImpl = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementFactory)), __metadata("design:paramtypes", [Function])], TaroNodeImpl);
-function bindInnerHTML(ctx, getDoc) {
-  Object.defineProperty(ctx, 'innerHTML', {
-    configurable: true,
-    enumerable: true,
-    set: function set(html) {
-      setInnerHTML.call(ctx, ctx, html, getDoc);
-    },
-    get: function get() {
-      return '';
+function contains(node) {
+  var isContains = false;
+  this.childNodes.some(function (childNode) {
+    var uid = childNode.uid;
+    if (uid === node.uid || uid === node.id || childNode.contains(node)) {
+      isContains = true;
+      return true;
     }
   });
+  return isContains;
 }
-function bindAdjacentHTML(ctx, getDoc) {
-  ctx.insertAdjacentHTML = function (position, html) {
-    insertAdjacentHTMLImpl.call(ctx, position, html, getDoc);
-  };
-}
-function getBoundingClientRectImpl() {
-  var _this16 = this;
-  if (!options.miniGlobal) return Promise.resolve(null);
-  return new Promise(function (resolve) {
-    var query = options.miniGlobal.createSelectorQuery();
-    query.select("#".concat(_this16.uid)).boundingClientRect(function (res) {
-      resolve(res);
-    }).exec();
-  });
-}
-function getTemplateContent(ctx) {
-  if (ctx.nodeName === 'template') {
-    var content = ctx._getElement(ElementNames.Element)(DOCUMENT_FRAGMENT);
-    content.childNodes = ctx.childNodes;
-    ctx.childNodes = [content];
-    content.parentNode = ctx;
-    content.childNodes.forEach(function (nodes) {
-      nodes.parentNode = content;
+if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)()) {
+  if (true) {
+    TaroNode.extend('innerHTML', {
+      set: function set(html) {
+        setInnerHTML.call(this, this, html);
+      },
+      get: function get() {
+        return '';
+      }
     });
-    return content;
+    if (true) {
+      TaroNode.extend('insertAdjacentHTML', insertAdjacentHTML);
+    }
+  }
+  if (true) {
+    TaroNode.extend('cloneNode', cloneNode);
+  }
+  if (false) {}
+  if (true) {
+    TaroElement.extend('getBoundingClientRect', getBoundingClientRectImpl);
+  }
+  if (true) {
+    TaroElement.extend('content', {
+      get: function get() {
+        return getTemplateContent(this);
+      }
+    });
   }
 }
-var TaroElementImpl = /*#__PURE__*/function () {
-  function TaroElementImpl() {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroElementImpl);
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroElementImpl, [{
-    key: "bind",
-    value: function bind(ctx) {
-      if (false) {}
-      if (true) {
-        bindContent(ctx);
-      }
-    }
-  }]);
-  return TaroElementImpl;
-}();
-TaroElementImpl = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])()], TaroElementImpl);
-function bindContent(ctx) {
-  Object.defineProperty(ctx, 'content', {
-    configurable: true,
-    enumerable: true,
-    get: function get() {
-      return getTemplateContent(ctx);
-    }
-  });
-}
-var TaroDocument = /*#__PURE__*/function (_TaroElement4) {
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(TaroDocument, _TaroElement4);
-  var _super8 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroDocument);
-  function TaroDocument(
-  // eslint-disable-next-line @typescript-eslint/indent
-  nodeImpl, getElement, hooks, elementImpl, getText) {
-    var _this17;
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroDocument);
-    _this17 = _super8.call(this, nodeImpl, getElement, hooks, elementImpl);
-    _this17._getText = getText;
-    _this17.nodeType = 9 /* DOCUMENT_NODE */;
-    _this17.nodeName = DOCUMENT_ELEMENT_NAME;
-    return _this17;
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroDocument, [{
-    key: "createElement",
-    value: function createElement(type) {
-      if (type === ROOT_STR) {
-        return this._getElement(ElementNames.RootElement)();
-      }
-      if (_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* controlledComponent */ "b"].has(type)) {
-        return this._getElement(ElementNames.FormElement)(type);
-      }
-      return this._getElement(ElementNames.Element)(type);
-    }
-    // an ugly fake createElementNS to deal with @vue/runtime-dom's
-    // support mounting app to svg container since vue@3.0.8
-  }, {
-    key: "createElementNS",
-    value: function createElementNS(_svgNS, type) {
-      return this.createElement(type);
-    }
-  }, {
-    key: "createTextNode",
-    value: function createTextNode(text) {
-      return this._getText(text);
-    }
-  }, {
-    key: "getElementById",
-    value: function getElementById(id) {
-      var el = eventSource.get(id);
-      return Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isUndefined */ "k"])(el) ? null : el;
-    }
-  }, {
-    key: "querySelector",
-    value: function querySelector(query) {
-      // 为了 Vue3 的乞丐版实现
-      if (/^#/.test(query)) {
-        return this.getElementById(query.slice(1));
-      }
-      return null;
-    }
-  }, {
-    key: "querySelectorAll",
-    value: function querySelectorAll() {
-      // fake hack
-      return [];
-    }
-    // @TODO: @PERF: 在 hydrate 移除掉空的 node
-  }, {
-    key: "createComment",
-    value: function createComment() {
-      var textnode = this._getText('');
-      textnode.nodeName = COMMENT;
-      return textnode;
-    }
-  }]);
-  return TaroDocument;
-}(TaroElement);
-TaroDocument = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])(), __param(0, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroNodeImpl)), __param(1, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementFactory)), __param(2, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.Hooks)), __param(3, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroElementImpl)), __param(4, Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.TaroTextFactory)), __metadata("design:paramtypes", [Function, Function, Function, Function, Function])], TaroDocument);
-var Hooks = /*#__PURE__*/function () {
-  function Hooks() {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Hooks);
-  }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Hooks, [{
-    key: "modifyMpEvent",
-    value: function modifyMpEvent(e) {
-      var _a;
-      (_a = this.modifyMpEventImpls) === null || _a === void 0 ? void 0 : _a.forEach(function (fn) {
-        return fn(e);
-      });
-    }
-  }, {
-    key: "modifyTaroEvent",
-    value: function modifyTaroEvent(e, element) {
-      var _a;
-      (_a = this.modifyTaroEventImpls) === null || _a === void 0 ? void 0 : _a.forEach(function (fn) {
-        return fn(e, element);
-      });
-    }
-  }, {
-    key: "initNativeApi",
-    value: function initNativeApi(taro) {
-      var _a;
-      (_a = this.initNativeApiImpls) === null || _a === void 0 ? void 0 : _a.forEach(function (fn) {
-        return fn(taro);
-      });
-    }
-  }, {
-    key: "patchElement",
-    value: function patchElement(element) {
-      var _a;
-      (_a = this.patchElementImpls) === null || _a === void 0 ? void 0 : _a.forEach(function (fn) {
-        return fn(element);
-      });
-    }
-  }]);
-  return Hooks;
-}();
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.getLifecycle), __metadata("design:type", Function)], Hooks.prototype, "getLifecycle", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.getPathIndex), __metadata("design:type", Function)], Hooks.prototype, "getPathIndex", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.getEventCenter), __metadata("design:type", Function)], Hooks.prototype, "getEventCenter", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.isBubbleEvents), __metadata("design:type", Function)], Hooks.prototype, "isBubbleEvents", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.getSpecialNodes), __metadata("design:type", Function)], Hooks.prototype, "getSpecialNodes", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.onRemoveAttribute), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "onRemoveAttribute", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.batchedEventUpdates), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "batchedEventUpdates", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.mergePageInstance), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "mergePageInstance", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.createPullDownComponent), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "createPullDownComponent", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.getDOMNode), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "getDOMNode", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.modifyHydrateData), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "modifyHydrateData", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.modifySetAttrPayload), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "modifySetAttrPayload", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.modifyRmAttrPayload), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "modifyRmAttrPayload", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* inject */ "c"])(SERVICE_IDENTIFIER.onAddEvent), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Function)], Hooks.prototype, "onAddEvent", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* multiInject */ "e"])(SERVICE_IDENTIFIER.modifyMpEvent), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Array)], Hooks.prototype, "modifyMpEventImpls", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* multiInject */ "e"])(SERVICE_IDENTIFIER.modifyTaroEvent), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Array)], Hooks.prototype, "modifyTaroEventImpls", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* multiInject */ "e"])(SERVICE_IDENTIFIER.initNativeApi), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Array)], Hooks.prototype, "initNativeApiImpls", void 0);
-__decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* multiInject */ "e"])(SERVICE_IDENTIFIER.patchElement), Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* optional */ "f"])(), __metadata("design:type", Array)], Hooks.prototype, "patchElementImpls", void 0);
-Hooks = __decorate([Object(inversify__WEBPACK_IMPORTED_MODULE_16__[/* injectable */ "d"])()], Hooks);
 
-/**
- * 支持冒泡的事件, 除 支付宝小程序外，其余的可冒泡事件都和微信保持一致
- * 详见 见 https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
- */
-var BUBBLE_EVENTS = new Set(['touchstart', 'touchmove', 'touchcancel', 'touchend', 'touchforcechange', 'tap', 'longpress', 'longtap', 'transitionend', 'animationstart', 'animationiteration', 'animationend']);
-var getLifecycle = function getLifecycle(instance, lifecycle) {
-  return instance[lifecycle];
-};
-var getPathIndex = function getPathIndex(indexOfNode) {
-  return "[".concat(indexOfNode, "]");
-};
-var getEventCenter = function getEventCenter(Events) {
-  return new Events();
-};
-var isBubbleEvents = function isBubbleEvents(eventName) {
-  return BUBBLE_EVENTS.has(eventName);
-};
-var getSpecialNodes = function getSpecialNodes() {
-  return ['view', 'text', 'image'];
-};
-var DefaultHooksContainer = new inversify__WEBPACK_IMPORTED_MODULE_16__[/* ContainerModule */ "b"](function (bind) {
-  bind(SERVICE_IDENTIFIER.getLifecycle).toFunction(getLifecycle);
-  bind(SERVICE_IDENTIFIER.getPathIndex).toFunction(getPathIndex);
-  bind(SERVICE_IDENTIFIER.getEventCenter).toFunction(getEventCenter);
-  bind(SERVICE_IDENTIFIER.isBubbleEvents).toFunction(isBubbleEvents);
-  bind(SERVICE_IDENTIFIER.getSpecialNodes).toFunction(getSpecialNodes);
-});
-function processPluginHooks(container) {
-  var keys = Object.keys(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* defaultReconciler */ "c"]);
-  keys.forEach(function (key) {
-    if (key in SERVICE_IDENTIFIER) {
-      // is hooks
-      var identifier = SERVICE_IDENTIFIER[key];
-      var fn = _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* defaultReconciler */ "c"][key];
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(fn)) {
-        // is multi
-        fn.forEach(function (item) {
-          return container.bind(identifier).toFunction(item);
-        });
-      } else {
-        if (container.isBound(identifier)) {
-          // 之前有绑定过，需要重新绑定以覆盖前者
-          container.rebind(identifier).toFunction(fn);
-        } else {
-          container.bind(identifier).toFunction(fn);
-        }
-      }
-    }
-  });
-}
-var container = new inversify__WEBPACK_IMPORTED_MODULE_16__[/* Container */ "a"]();
-if (true) {
-  container.bind(SERVICE_IDENTIFIER.TaroElement).to(TaroElement).whenTargetNamed(ElementNames.Element);
-  container.bind(SERVICE_IDENTIFIER.TaroElement).to(TaroDocument).inSingletonScope().whenTargetNamed(ElementNames.Document);
-  container.bind(SERVICE_IDENTIFIER.TaroElement).to(TaroRootElement).whenTargetNamed(ElementNames.RootElement);
-  container.bind(SERVICE_IDENTIFIER.TaroElement).to(FormElement).whenTargetNamed(ElementNames.FormElement);
-  container.bind(SERVICE_IDENTIFIER.TaroElementFactory).toFactory(function (context) {
-    return function (named) {
-      return function (nodeName) {
-        var el = context.container.getNamed(SERVICE_IDENTIFIER.TaroElement, named);
-        if (nodeName) {
-          el.nodeName = nodeName;
-        }
-        el.tagName = el.nodeName.toUpperCase();
-        return el;
-      };
-    };
-  });
-  container.bind(SERVICE_IDENTIFIER.TaroText).to(TaroText);
-  container.bind(SERVICE_IDENTIFIER.TaroTextFactory).toFactory(function (context) {
-    return function (text) {
-      var textNode = context.container.get(SERVICE_IDENTIFIER.TaroText);
-      textNode._value = text;
-      return textNode;
-    };
-  });
-  container.bind(SERVICE_IDENTIFIER.TaroNodeImpl).to(TaroNodeImpl).inSingletonScope();
-  container.bind(SERVICE_IDENTIFIER.TaroElementImpl).to(TaroElementImpl).inSingletonScope();
-}
-container.bind(SERVICE_IDENTIFIER.Hooks).to(Hooks).inSingletonScope();
-container.load(DefaultHooksContainer);
-processPluginHooks(container);
-var hooks;
-var getElement;
-var document$1;
-if (true) {
-  hooks = container.get(SERVICE_IDENTIFIER.Hooks);
-  getElement = container.get(SERVICE_IDENTIFIER.TaroElementFactory);
-  document$1 = getElement(ElementNames.Document)();
-}
 // Taro 事件对象。以 Web 标准的事件对象为基础，加入小程序事件对象中携带的部分信息，并模拟实现事件冒泡。
 var TaroEvent = /*#__PURE__*/function () {
   function TaroEvent(type, opts, event) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, TaroEvent);
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroEvent);
     this._stop = false;
     this._end = false;
     this.defaultPrevented = false;
+    // Mouse Event botton property, it's used in 3rd lib, like react-router. default 0 in general
+    this.button = 0;
     // timestamp can either be hi-res ( relative to page load) or low-res (relative to UNIX epoch)
     // here use hi-res timestamp
     this.timeStamp = Date.now();
@@ -5785,7 +4774,7 @@ var TaroEvent = /*#__PURE__*/function () {
     this.bubbles = Boolean(opts && opts.bubbles);
     this.cancelable = Boolean(opts && opts.cancelable);
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(TaroEvent, [{
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroEvent, [{
     key: "stopPropagation",
     value: function stopPropagation() {
       this._stop = true;
@@ -5803,23 +4792,44 @@ var TaroEvent = /*#__PURE__*/function () {
   }, {
     key: "target",
     get: function get() {
-      var _a, _b, _c;
-      var element = document$1.getElementById((_a = this.mpEvent) === null || _a === void 0 ? void 0 : _a.target.id);
-      return Object.assign(Object.assign(Object.assign({}, (_b = this.mpEvent) === null || _b === void 0 ? void 0 : _b.target), (_c = this.mpEvent) === null || _c === void 0 ? void 0 : _c.detail), {
-        dataset: element !== null ? element.dataset : _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"]
-      });
+      var _a, _b;
+      var cacheTarget = this.cacheTarget;
+      if (!cacheTarget) {
+        var target = Object.create(((_a = this.mpEvent) === null || _a === void 0 ? void 0 : _a.target) || null);
+        var element = env.document.getElementById(target.id);
+        target.dataset = element !== null ? element.dataset : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ;
+        for (var key in (_b = this.mpEvent) === null || _b === void 0 ? void 0 : _b.detail) {
+          target[key] = this.mpEvent.detail[key];
+        }
+        this.cacheTarget = target;
+        return target;
+      } else {
+        return cacheTarget;
+      }
     }
   }, {
     key: "currentTarget",
     get: function get() {
-      var _a, _b, _c;
-      var element = document$1.getElementById((_a = this.mpEvent) === null || _a === void 0 ? void 0 : _a.currentTarget.id);
-      if (element === null) {
-        return this.target;
+      var _a, _b, _c, _d;
+      var cacheCurrentTarget = this.cacheCurrentTarget;
+      if (!cacheCurrentTarget) {
+        var doc = env.document;
+        var currentTarget = Object.create(((_a = this.mpEvent) === null || _a === void 0 ? void 0 : _a.currentTarget) || null);
+        var element = doc.getElementById(currentTarget.id);
+        var targetElement = doc.getElementById(((_c = (_b = this.mpEvent) === null || _b === void 0 ? void 0 : _b.target) === null || _c === void 0 ? void 0 : _c.id) || null);
+        if (element === null || element && element === targetElement) {
+          this.cacheCurrentTarget = this.target;
+          return this.target;
+        }
+        currentTarget.dataset = element.dataset;
+        for (var key in (_d = this.mpEvent) === null || _d === void 0 ? void 0 : _d.detail) {
+          currentTarget[key] = this.mpEvent.detail[key];
+        }
+        this.cacheCurrentTarget = currentTarget;
+        return currentTarget;
+      } else {
+        return cacheCurrentTarget;
       }
-      return Object.assign(Object.assign(Object.assign({}, (_b = this.mpEvent) === null || _b === void 0 ? void 0 : _b.currentTarget), (_c = this.mpEvent) === null || _c === void 0 ? void 0 : _c.detail), {
-        dataset: element.dataset
-      });
     }
   }]);
   return TaroEvent;
@@ -5850,26 +4860,41 @@ function createEvent(event, node) {
   return domEv;
 }
 var eventsBatch = {};
+function getEventCBResult(event) {
+  var result = event[EVENT_CALLBACK_RESULT];
+  if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(result)) {
+    delete event[EVENT_CALLBACK_RESULT];
+  }
+  return result;
+}
 // 小程序的事件代理回调函数
 function eventHandler(event) {
-  var _a;
-  (_a = hooks.modifyMpEvent) === null || _a === void 0 ? void 0 : _a.call(hooks, event);
-  if (event.currentTarget == null) {
-    event.currentTarget = event.target;
-  }
-  var node = document$1.getElementById(event.currentTarget.id);
+  var _a, _b;
+  // Note: ohos 上事件没有设置 type、detail 类型 setter 方法，且部分事件（例如 load 等）缺失 target 导致事件错误
+  event.type === undefined && Object.defineProperty(event, 'type', {
+    value: event._type // ohos only
+  });
+
+  event.detail === undefined && Object.defineProperty(event, 'detail', {
+    value: event._detail || Object.assign({}, event) // ohos only
+  });
+
+  event.currentTarget = event.currentTarget || event.target || Object.assign({}, event);
+  _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyMpEventImpl', event);
+  var currentTarget = event.currentTarget;
+  var id = ((_a = currentTarget.dataset) === null || _a === void 0 ? void 0 : _a.sid /** sid */) || currentTarget.id /** uid */ || ((_b = event.detail) === null || _b === void 0 ? void 0 : _b.id) || '';
+  var node = env.document.getElementById(id);
   if (node) {
     var dispatch = function dispatch() {
-      var _a;
       var e = createEvent(event, node);
-      (_a = hooks.modifyTaroEvent) === null || _a === void 0 ? void 0 : _a.call(hooks, e, node);
+      _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyTaroEvent', e, node);
       node.dispatchEvent(e);
     };
-    if (typeof hooks.batchedEventUpdates === 'function') {
+    if (_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.isExist('batchedEventUpdates')) {
       var type = event.type;
-      if (!hooks.isBubbleEvents(type) || !isParentBinded(node, type) || type === TOUCHMOVE && !!node.props.catchMove) {
+      if (!_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('isBubbleEvents', type) || !isParentBinded(node, type) || type === TOUCHMOVE && !!node.props.catchMove) {
         // 最上层组件统一 batchUpdate
-        hooks.batchedEventUpdates(function () {
+        _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('batchedEventUpdates', function () {
           if (eventsBatch[type]) {
             eventsBatch[type].forEach(function (fn) {
               return fn();
@@ -5878,59 +4903,1361 @@ function eventHandler(event) {
           }
           dispatch();
         });
+        return getEventCBResult(event);
       } else {
         // 如果上层组件也有绑定同类型的组件，委托给上层组件调用事件回调
         (eventsBatch[type] || (eventsBatch[type] = [])).push(dispatch);
       }
     } else {
       dispatch();
+      return getEventCBResult(event);
     }
   }
 }
-var isBrowser = typeof document !== 'undefined' && !!document.scripts;
-var doc = isBrowser ? document : _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-var win = isBrowser ? window : _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-function createDocument() {
-  /**
-   * <document>
-   *   <html>
-   *     <head></head>
-   *     <body>
-   *       <container>
-   *         <app id="app" />
-   *       </container>
-   *     </body>
-   *   </html>
-   * </document>
-   */
-  var getElement = container.get(SERVICE_IDENTIFIER.TaroElementFactory);
-  var doc = getElement(ElementNames.Document)();
-  var documentCreateElement = doc.createElement.bind(doc);
-  var html = documentCreateElement(HTML);
-  var head = documentCreateElement(HEAD);
-  var body = documentCreateElement(BODY);
-  var app = documentCreateElement(APP);
-  app.id = APP;
-  var container$1 = documentCreateElement(CONTAINER); // 多包一层主要为了兼容 vue
-  doc.appendChild(html);
-  html.appendChild(head);
-  html.appendChild(body);
-  body.appendChild(container$1);
-  container$1.appendChild(app);
-  doc.documentElement = html;
-  doc.head = head;
-  doc.body = body;
-  doc.createEvent = createEvent;
-  return doc;
+var FormElement = /*#__PURE__*/function (_TaroElement) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(FormElement, _TaroElement);
+  var _super4 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(FormElement);
+  function FormElement() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, FormElement);
+    return _super4.apply(this, arguments);
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(FormElement, [{
+    key: "value",
+    get: function get() {
+      // eslint-disable-next-line dot-notation
+      var val = this.props[VALUE];
+      return val == null ? '' : val;
+    },
+    set: function set(val) {
+      this.setAttribute(VALUE, val);
+    }
+  }, {
+    key: "dispatchEvent",
+    value: function dispatchEvent(event) {
+      if (event.mpEvent) {
+        var val = event.mpEvent.detail.value;
+        if (event.type === CHANGE) {
+          this.props.value = val;
+        } else if (event.type === INPUT) {
+          // Web 规范中表单组件的 value 应该跟着输入改变
+          // 只是改 this.props.value 的话不会进行 setData，因此这里修改 this.value。
+          // 只测试了 React、Vue、Vue3 input 组件的 onInput 事件，onChange 事件不确定有没有副作用，所以暂不修改。
+          this.value = val;
+        }
+      }
+      return (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_get_js__WEBPACK_IMPORTED_MODULE_13__["default"])((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__["default"])(FormElement.prototype), "dispatchEvent", this).call(this, event);
+    }
+  }]);
+  return FormElement;
+}(TaroElement);
+var Performance = /*#__PURE__*/function () {
+  function Performance() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Performance);
+    this.recorder = new Map();
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Performance, [{
+    key: "start",
+    value: function start(id) {
+      if (!options.debug) {
+        return;
+      }
+      this.recorder.set(id, Date.now());
+    }
+  }, {
+    key: "stop",
+    value: function stop(id) {
+      if (!options.debug) {
+        return;
+      }
+      var now = Date.now();
+      var prev = this.recorder.get(id);
+      this.recorder.delete(id);
+      var time = now - prev;
+      // eslint-disable-next-line no-console
+      console.log("".concat(id, " \u65F6\u957F\uFF1A ").concat(time, "ms"));
+    }
+  }]);
+  return Performance;
+}();
+var perf = new Performance();
+function findCustomWrapper(root, dataPathArr) {
+  // ['root', 'cn', '[0]'] remove 'root' => ['cn', '[0]']
+  var list = dataPathArr.slice(1);
+  var currentData = root;
+  var customWrapper;
+  var splitedPath = '';
+  list.some(function (item, i) {
+    var key = item
+    // '[0]' => '0'
+    .replace(/^\[(.+)\]$/, '$1')
+    // 'cn' => 'childNodes'
+    .replace(/\bcn\b/g, 'childNodes');
+    currentData = currentData[key];
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(currentData)) {
+      currentData = currentData.filter(function (el) {
+        return !isComment(el);
+      });
+    }
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(currentData)) return true;
+    if (currentData.nodeName === CUSTOM_WRAPPER) {
+      var res = customWrapperCache.get(currentData.sid);
+      if (res) {
+        customWrapper = res;
+        splitedPath = dataPathArr.slice(i + 2).join('.');
+      }
+    }
+  });
+  if (customWrapper) {
+    return {
+      customWrapper: customWrapper,
+      splitedPath: splitedPath
+    };
+  }
 }
-var document$2 = isBrowser ? doc : createDocument();
+var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroRootElement, _TaroElement2);
+  var _super5 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroRootElement);
+  function TaroRootElement() {
+    var _this15;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroRootElement);
+    _this15 = _super5.call(this);
+    _this15.updatePayloads = [];
+    _this15.updateCallbacks = [];
+    _this15.pendingUpdate = false;
+    _this15.ctx = null;
+    _this15.nodeName = ROOT_STR;
+    _this15.tagName = ROOT_STR.toUpperCase();
+    return _this15;
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroRootElement, [{
+    key: "_path",
+    get: function get() {
+      return ROOT_STR;
+    }
+  }, {
+    key: "_root",
+    get: function get() {
+      return this;
+    }
+  }, {
+    key: "enqueueUpdate",
+    value: function enqueueUpdate(payload) {
+      this.updatePayloads.push(payload);
+      if (!this.pendingUpdate && this.ctx) {
+        this.performUpdate();
+      }
+    }
+  }, {
+    key: "performUpdate",
+    value: function performUpdate() {
+      var _this16 = this;
+      var initRender = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+      var prerender = arguments.length > 1 ? arguments[1] : undefined;
+      this.pendingUpdate = true;
+      var ctx = this.ctx;
+      setTimeout(function () {
+        var setDataMark = "".concat(SET_DATA, " \u5F00\u59CB\u65F6\u95F4\u6233 ").concat(Date.now());
+        perf.start(setDataMark);
+        var data = Object.create(null);
+        var resetPaths = new Set(initRender ? ['root.cn.[0]', 'root.cn[0]'] : []);
+        while (_this16.updatePayloads.length > 0) {
+          var _this16$updatePayload = _this16.updatePayloads.shift(),
+            path = _this16$updatePayload.path,
+            value = _this16$updatePayload.value;
+          if (path.endsWith("cn" /* Shortcuts.Childnodes */)) {
+            resetPaths.add(path);
+          }
+          data[path] = value;
+        }
+        var _loop3 = function _loop3(_path2) {
+          resetPaths.forEach(function (p) {
+            // 已经重置了数组，就不需要分别再设置了
+            if (_path2.includes(p) && _path2 !== p) {
+              delete data[_path2];
+            }
+          });
+          var value = data[_path2];
+          if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(value)) {
+            data[_path2] = value();
+          }
+        };
+        for (var _path2 in data) {
+          _loop3(_path2);
+        }
+        // 预渲染
+        if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(prerender)) return prerender(data);
+        // 正常渲染
+        _this16.pendingUpdate = false;
+        var normalUpdate = {};
+        var customWrapperMap = new Map();
+        if (initRender) {
+          // 初次渲染，使用页面级别的 setData
+          normalUpdate = data;
+        } else {
+          // 更新渲染，区分 CustomWrapper 与页面级别的 setData
+          for (var p in data) {
+            var dataPathArr = p.split('.');
+            var found = findCustomWrapper(_this16, dataPathArr);
+            if (found) {
+              // 此项数据使用 CustomWrapper 去更新
+              var customWrapper = found.customWrapper,
+                splitedPath = found.splitedPath;
+              // 合并同一个 customWrapper 的相关更新到一次 setData 中
+              customWrapperMap.set(customWrapper, Object.assign(Object.assign({}, customWrapperMap.get(customWrapper) || {}), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "i.".concat(splitedPath), data[p])));
+            } else {
+              // 此项数据使用页面去更新
+              normalUpdate[p] = data[p];
+            }
+          }
+        }
+        var customWrapperCount = customWrapperMap.size;
+        var isNeedNormalUpdate = Object.keys(normalUpdate).length > 0;
+        var updateArrLen = customWrapperCount + (isNeedNormalUpdate ? 1 : 0);
+        var executeTime = 0;
+        var cb = function cb() {
+          if (++executeTime === updateArrLen) {
+            perf.stop(setDataMark);
+            _this16.flushUpdateCallback();
+            initRender && perf.stop(PAGE_INIT);
+          }
+        };
+        // custom-wrapper setData
+        if (customWrapperCount) {
+          customWrapperMap.forEach(function (data, ctx) {
+            if ( true && options.debug) {
+              // eslint-disable-next-line no-console
+              console.log('custom wrapper setData: ', data);
+            }
+            ctx.setData(data, cb);
+          });
+        }
+        // page setData
+        if (isNeedNormalUpdate) {
+          if ( true && options.debug) {
+            // eslint-disable-next-line no-console
+            console.log('page setData:', normalUpdate);
+          }
+          ctx.setData(normalUpdate, cb);
+        }
+      }, 0);
+    }
+  }, {
+    key: "enqueueUpdateCallback",
+    value: function enqueueUpdateCallback(cb, ctx) {
+      this.updateCallbacks.push(function () {
+        ctx ? cb.call(ctx) : cb();
+      });
+    }
+  }, {
+    key: "flushUpdateCallback",
+    value: function flushUpdateCallback() {
+      var updateCallbacks = this.updateCallbacks;
+      if (!updateCallbacks.length) return;
+      var copies = updateCallbacks.slice(0);
+      this.updateCallbacks.length = 0;
+      for (var i = 0; i < copies.length; i++) {
+        copies[i]();
+      }
+    }
+  }]);
+  return TaroRootElement;
+}(TaroElement);
+var TaroText = /*#__PURE__*/function (_TaroNode2) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroText, _TaroNode2);
+  var _super6 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroText);
+  function TaroText(value) {
+    var _this17;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroText);
+    _this17 = _super6.call(this);
+    _this17.nodeType = 3 /* NodeType.TEXT_NODE */;
+    _this17.nodeName = '#text';
+    _this17._value = value;
+    return _this17;
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroText, [{
+    key: "textContent",
+    get: function get() {
+      return this._value;
+    },
+    set: function set(text) {
+      MutationObserver.record({
+        target: this,
+        type: "characterData" /* MutationRecordType.CHARACTER_DATA */,
+        oldValue: this._value
+      });
+      this._value = text;
+      this.enqueueUpdate({
+        path: "".concat(this._path, ".", "v" /* Shortcuts.Text */),
+        value: text
+      });
+    }
+  }, {
+    key: "nodeValue",
+    get: function get() {
+      return this._value;
+    },
+    set: function set(text) {
+      this.textContent = text;
+    }
+  }, {
+    key: "data",
+    get: function get() {
+      return this._value;
+    },
+    set: function set(text) {
+      this.textContent = text;
+    }
+  }]);
+  return TaroText;
+}(TaroNode);
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+function __classPrivateFieldGet(receiver, state, kind, f) {
+  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+  if (kind === "m") throw new TypeError("Private method is not writable");
+  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+  return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+var _URLSearchParams_dict;
+var findReg = /[!'()~]|%20|%00/g;
+var plusReg = /\+/g;
+var replaceCharMap = {
+  '!': '%21',
+  "'": '%27',
+  '(': '%28',
+  ')': '%29',
+  '~': '%7E',
+  '%20': '+',
+  '%00': '\x00'
+};
+function replacer(match) {
+  return replaceCharMap[match];
+}
+function appendTo(dict, name, value) {
+  var res = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(value) ? value.join(',') : value;
+  if (name in dict) dict[name].push(res);else dict[name] = [res];
+}
+function addEach(value, key) {
+  appendTo(this, key, value);
+}
+function decode(str) {
+  return decodeURIComponent(str.replace(plusReg, ' '));
+}
+function encode(str) {
+  return encodeURIComponent(str).replace(findReg, replacer);
+}
+var URLSearchParams = /*#__PURE__*/function () {
+  function URLSearchParams(query) {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, URLSearchParams);
+    _URLSearchParams_dict.set(this, Object.create(null));
+    query !== null && query !== void 0 ? query : query = '';
+    var dict = __classPrivateFieldGet(this, _URLSearchParams_dict, "f");
+    if (typeof query === 'string') {
+      if (query.charAt(0) === '?') {
+        query = query.slice(1);
+      }
+      for (var pairs = query.split('&'), i = 0, length = pairs.length; i < length; i++) {
+        var value = pairs[i];
+        var index = value.indexOf('=');
+        if (index > -1) {
+          appendTo(dict, decode(value.slice(0, index)), decode(value.slice(index + 1)));
+        } else if (value.length) {
+          appendTo(dict, decode(value), '');
+        }
+      }
+    } else {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(query)) {
+        for (var _i4 = 0, _length = query.length; _i4 < _length; _i4++) {
+          var _value = query[_i4];
+          appendTo(dict, _value[0], _value[1]);
+        }
+      } else if (query.forEach) {
+        query.forEach(addEach, dict);
+      } else {
+        for (var key in query) {
+          appendTo(dict, key, query[key]);
+        }
+      }
+    }
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(URLSearchParams, [{
+    key: "append",
+    value: function append(name, value) {
+      appendTo(__classPrivateFieldGet(this, _URLSearchParams_dict, "f"), name, value);
+    }
+  }, {
+    key: "delete",
+    value: function _delete(name) {
+      delete __classPrivateFieldGet(this, _URLSearchParams_dict, "f")[name];
+    }
+  }, {
+    key: "get",
+    value: function get(name) {
+      var dict = __classPrivateFieldGet(this, _URLSearchParams_dict, "f");
+      return name in dict ? dict[name][0] : null;
+    }
+  }, {
+    key: "getAll",
+    value: function getAll(name) {
+      var dict = __classPrivateFieldGet(this, _URLSearchParams_dict, "f");
+      return name in dict ? dict[name].slice(0) : [];
+    }
+  }, {
+    key: "has",
+    value: function has(name) {
+      return name in __classPrivateFieldGet(this, _URLSearchParams_dict, "f");
+    }
+  }, {
+    key: "keys",
+    value: function keys() {
+      return Object.keys(__classPrivateFieldGet(this, _URLSearchParams_dict, "f"));
+    }
+  }, {
+    key: "set",
+    value: function set(name, value) {
+      __classPrivateFieldGet(this, _URLSearchParams_dict, "f")[name] = ['' + value];
+    }
+  }, {
+    key: "forEach",
+    value: function forEach(callback, thisArg) {
+      var dict = __classPrivateFieldGet(this, _URLSearchParams_dict, "f");
+      Object.getOwnPropertyNames(dict).forEach(function (name) {
+        dict[name].forEach(function (value) {
+          callback.call(thisArg, value, name, this);
+        }, this);
+      }, this);
+    }
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return {};
+    }
+  }, {
+    key: "toString",
+    value: function toString() {
+      var dict = __classPrivateFieldGet(this, _URLSearchParams_dict, "f");
+      var query = [];
+      for (var key in dict) {
+        var name = encode(key);
+        for (var i = 0, value = dict[key]; i < value.length; i++) {
+          query.push(name + '=' + encode(value[i]));
+        }
+      }
+      return query.join('&');
+    }
+  }]);
+  return URLSearchParams;
+}();
+_URLSearchParams_dict = new WeakMap();
+var _URL_hash, _URL_hostname, _URL_pathname, _URL_port, _URL_protocol, _URL_search;
+var URL = /*#__PURE__*/function () {
+  function URL(url, base) {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, URL);
+    /* private property */
+    _URL_hash.set(this, '');
+    _URL_hostname.set(this, '');
+    _URL_pathname.set(this, '');
+    _URL_port.set(this, '');
+    _URL_protocol.set(this, '');
+    _URL_search.set(this, void 0);
+    if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(url)) url = String(url);
+    var parseResult = parseUrlBase(url, base);
+    var hash = parseResult.hash,
+      hostname = parseResult.hostname,
+      pathname = parseResult.pathname,
+      port = parseResult.port,
+      protocol = parseResult.protocol,
+      search = parseResult.search;
+    __classPrivateFieldSet(this, _URL_hash, hash, "f");
+    __classPrivateFieldSet(this, _URL_hostname, hostname, "f");
+    __classPrivateFieldSet(this, _URL_pathname, pathname || '/', "f");
+    __classPrivateFieldSet(this, _URL_port, port, "f");
+    __classPrivateFieldSet(this, _URL_protocol, protocol, "f");
+    __classPrivateFieldSet(this, _URL_search, new URLSearchParams(search), "f");
+  }
+  /* public property */
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(URL, [{
+    key: "protocol",
+    get: function get() {
+      return __classPrivateFieldGet(this, _URL_protocol, "f");
+    },
+    set: function set(val) {
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val) && __classPrivateFieldSet(this, _URL_protocol, val.trim(), "f");
+    }
+  }, {
+    key: "host",
+    get: function get() {
+      return this.hostname + (this.port ? ':' + this.port : '');
+    },
+    set: function set(val) {
+      if (val && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) {
+        val = val.trim();
+        var _parseUrl = parseUrl("//".concat(val)),
+          hostname = _parseUrl.hostname,
+          port = _parseUrl.port;
+        this.hostname = hostname;
+        this.port = port;
+      }
+    }
+  }, {
+    key: "hostname",
+    get: function get() {
+      return __classPrivateFieldGet(this, _URL_hostname, "f");
+    },
+    set: function set(val) {
+      val && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val) && __classPrivateFieldSet(this, _URL_hostname, val.trim(), "f");
+    }
+  }, {
+    key: "port",
+    get: function get() {
+      return __classPrivateFieldGet(this, _URL_port, "f");
+    },
+    set: function set(val) {
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val) && __classPrivateFieldSet(this, _URL_port, val.trim(), "f");
+    }
+  }, {
+    key: "pathname",
+    get: function get() {
+      return __classPrivateFieldGet(this, _URL_pathname, "f");
+    },
+    set: function set(val) {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) {
+        val = val.trim();
+        var HEAD_REG = /^(\/|\.\/|\.\.\/)/;
+        var temp = val;
+        while (HEAD_REG.test(temp)) {
+          temp = temp.replace(HEAD_REG, '');
+        }
+        if (temp) __classPrivateFieldSet(this, _URL_pathname, '/' + temp, "f");else __classPrivateFieldSet(this, _URL_pathname, '/', "f");
+      }
+    }
+  }, {
+    key: "search",
+    get: function get() {
+      var val = __classPrivateFieldGet(this, _URL_search, "f").toString();
+      return val.length === 0 || val.startsWith('?') ? val : "?".concat(val);
+    },
+    set: function set(val) {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) {
+        val = val.trim();
+        __classPrivateFieldSet(this, _URL_search, new URLSearchParams(val), "f");
+      }
+    }
+  }, {
+    key: "hash",
+    get: function get() {
+      return __classPrivateFieldGet(this, _URL_hash, "f");
+    },
+    set: function set(val) {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) {
+        val = val.trim();
+        if (val) __classPrivateFieldSet(this, _URL_hash, val.startsWith('#') ? val : "#".concat(val), "f");else __classPrivateFieldSet(this, _URL_hash, '', "f");
+      }
+    }
+  }, {
+    key: "href",
+    get: function get() {
+      return "".concat(this.protocol, "//").concat(this.host).concat(this.pathname).concat(this.search).concat(this.hash);
+    },
+    set: function set(val) {
+      if (val && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) {
+        val = val.trim();
+        var _parseUrl2 = parseUrl(val),
+          protocol = _parseUrl2.protocol,
+          hostname = _parseUrl2.hostname,
+          port = _parseUrl2.port,
+          hash = _parseUrl2.hash,
+          search = _parseUrl2.search,
+          pathname = _parseUrl2.pathname;
+        this.protocol = protocol;
+        this.hostname = hostname;
+        this.pathname = pathname;
+        this.port = port;
+        this.hash = hash;
+        this.search = search;
+      }
+    }
+  }, {
+    key: "origin",
+    get: function get() {
+      return "".concat(this.protocol, "//").concat(this.host);
+    },
+    set: function set(val) {
+      if (val && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) {
+        val = val.trim();
+        var _parseUrl3 = parseUrl(val),
+          protocol = _parseUrl3.protocol,
+          hostname = _parseUrl3.hostname,
+          port = _parseUrl3.port;
+        this.protocol = protocol;
+        this.hostname = hostname;
+        this.port = port;
+      }
+    }
+  }, {
+    key: "searchParams",
+    get: function get() {
+      return __classPrivateFieldGet(this, _URL_search, "f");
+    }
+    // public method
+  }, {
+    key: "toString",
+    value: function toString() {
+      return this.href;
+    }
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return this.toString();
+    }
+    // convenient for deconstructor
+  }, {
+    key: "_toRaw",
+    value: function _toRaw() {
+      return {
+        protocol: this.protocol,
+        port: this.port,
+        host: this.host,
+        hostname: this.hostname,
+        pathname: this.pathname,
+        hash: this.hash,
+        search: this.search,
+        origin: this.origin,
+        href: this.href
+      };
+    }
+  }], [{
+    key: "createObjectURL",
+    value: function createObjectURL() {
+      throw new Error('Oops, not support URL.createObjectURL() in miniprogram.');
+    }
+  }, {
+    key: "revokeObjectURL",
+    value: function revokeObjectURL() {
+      throw new Error('Oops, not support URL.revokeObjectURL() in miniprogram.');
+    }
+  }]);
+  return URL;
+}();
+_URL_hash = new WeakMap(), _URL_hostname = new WeakMap(), _URL_pathname = new WeakMap(), _URL_port = new WeakMap(), _URL_protocol = new WeakMap(), _URL_search = new WeakMap();
+function parseUrl() {
+  var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var result = {
+    href: '',
+    origin: '',
+    protocol: '',
+    hostname: '',
+    host: '',
+    port: '',
+    pathname: '',
+    search: '',
+    hash: ''
+  };
+  if (!url || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(url)) return result;
+  url = url.trim();
+  var PATTERN = /^(([^:/?#]+):)?\/\/(([^/?#]+):(.+)@)?([^/?#:]*)(:(\d+))?([^?#]*)(\?([^#]*))?(#(.*))?/;
+  var matches = url.match(PATTERN);
+  if (!matches) return result;
+  // TODO: username & password ?
+  result.protocol = matches[1] || 'https:';
+  result.hostname = matches[6] || 'taro.com';
+  result.port = matches[8] || '';
+  result.pathname = matches[9] || '/';
+  result.search = matches[10] || '';
+  result.hash = matches[12] || '';
+  result.href = url;
+  result.origin = result.protocol + '//' + result.hostname;
+  result.host = result.hostname + (result.port ? ":".concat(result.port) : '');
+  return result;
+}
+function parseUrlBase(url, base) {
+  var VALID_URL = /^(https?:)\/\//i;
+  var fullUrl = '';
+  var parsedBase = null;
+  if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(base)) {
+    base = String(base).trim();
+    if (!VALID_URL.test(base)) throw new TypeError("Failed to construct 'URL': Invalid base URL");
+    parsedBase = parseUrl(base);
+  }
+  url = String(url).trim();
+  if (VALID_URL.test(url)) {
+    fullUrl = url;
+  } else if (parsedBase) {
+    if (url) {
+      if (url.startsWith('//')) {
+        fullUrl = parsedBase.protocol + url;
+      } else {
+        fullUrl = parsedBase.origin + (url.startsWith('/') ? url : "/".concat(url));
+      }
+    } else {
+      fullUrl = parsedBase.href;
+    }
+  } else {
+    throw new TypeError("Failed to construct 'URL': Invalid URL");
+  }
+  return parseUrl(fullUrl);
+}
+var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(AnchorElement, _TaroElement3);
+  var _super7 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(AnchorElement);
+  function AnchorElement() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, AnchorElement);
+    return _super7.apply(this, arguments);
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(AnchorElement, [{
+    key: "href",
+    get: function get() {
+      var _a;
+      return (_a = this.props["href" /* AnchorElementAttrs.HREF */]) !== null && _a !== void 0 ? _a : '';
+    },
+    set: function set(val) {
+      this.setAttribute("href" /* AnchorElementAttrs.HREF */, val);
+    }
+  }, {
+    key: "protocol",
+    get: function get() {
+      var _a;
+      return (_a = this.props["protocol" /* AnchorElementAttrs.PROTOCOL */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "host",
+    get: function get() {
+      var _a;
+      return (_a = this.props["host" /* AnchorElementAttrs.HOST */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "search",
+    get: function get() {
+      var _a;
+      return (_a = this.props["search" /* AnchorElementAttrs.SEARCH */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "hash",
+    get: function get() {
+      var _a;
+      return (_a = this.props["hash" /* AnchorElementAttrs.HASH */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "hostname",
+    get: function get() {
+      var _a;
+      return (_a = this.props["hostname" /* AnchorElementAttrs.HOSTNAME */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "port",
+    get: function get() {
+      var _a;
+      return (_a = this.props["port" /* AnchorElementAttrs.PORT */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "pathname",
+    get: function get() {
+      var _a;
+      return (_a = this.props["pathname" /* AnchorElementAttrs.PATHNAME */]) !== null && _a !== void 0 ? _a : '';
+    }
+  }, {
+    key: "setAttribute",
+    value: function setAttribute(qualifiedName, value) {
+      if (qualifiedName === "href" /* AnchorElementAttrs.HREF */) {
+        var willSetAttr = parseUrl(value);
+        for (var k in willSetAttr) {
+          (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_get_js__WEBPACK_IMPORTED_MODULE_13__["default"])((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__["default"])(AnchorElement.prototype), "setAttribute", this).call(this, k, willSetAttr[k]);
+        }
+      } else {
+        (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_get_js__WEBPACK_IMPORTED_MODULE_13__["default"])((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_getPrototypeOf_js__WEBPACK_IMPORTED_MODULE_12__["default"])(AnchorElement.prototype), "setAttribute", this).call(this, qualifiedName, value);
+      }
+    }
+  }]);
+  return AnchorElement;
+}(TaroElement);
+var CustomWrapperElement = /*#__PURE__*/function (_TaroElement4) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(CustomWrapperElement, _TaroElement4);
+  var _super8 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(CustomWrapperElement);
+  function CustomWrapperElement() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, CustomWrapperElement);
+    return _super8.apply(this, arguments);
+  }
+  return (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(CustomWrapperElement);
+}(TaroElement);
+var TaroDocument = /*#__PURE__*/function (_TaroElement5) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroDocument, _TaroElement5);
+  var _super9 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(TaroDocument);
+  function TaroDocument() {
+    var _this18;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, TaroDocument);
+    _this18 = _super9.call(this);
+    _this18.createEvent = createEvent;
+    _this18.nodeType = 9 /* NodeType.DOCUMENT_NODE */;
+    _this18.nodeName = DOCUMENT_ELEMENT_NAME;
+    return _this18;
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(TaroDocument, [{
+    key: "createElement",
+    value: function createElement(type) {
+      var nodeName = type.toLowerCase();
+      var element;
+      switch (true) {
+        case nodeName === ROOT_STR:
+          element = new TaroRootElement();
+          return element;
+        case _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.controlledComponent.has(nodeName):
+          element = new FormElement();
+          break;
+        case nodeName === A:
+          element = new AnchorElement();
+          break;
+        case nodeName === CUSTOM_WRAPPER:
+          element = new CustomWrapperElement();
+          break;
+        default:
+          element = new TaroElement();
+          break;
+      }
+      element.nodeName = nodeName;
+      element.tagName = type.toUpperCase();
+      return element;
+    }
+    // an ugly fake createElementNS to deal with @vue/runtime-dom's
+    // support mounting app to svg container since vue@3.0.8
+  }, {
+    key: "createElementNS",
+    value: function createElementNS(_svgNS, type) {
+      return this.createElement(type);
+    }
+  }, {
+    key: "createTextNode",
+    value: function createTextNode(text) {
+      return new TaroText(text);
+    }
+  }, {
+    key: "getElementById",
+    value: function getElementById(id) {
+      var el = eventSource.get(id);
+      return (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(el) ? null : el;
+    }
+  }, {
+    key: "querySelector",
+    value: function querySelector(query) {
+      // 为了 Vue3 的乞丐版实现
+      if (/^#/.test(query)) {
+        return this.getElementById(query.slice(1));
+      }
+      return null;
+    }
+  }, {
+    key: "querySelectorAll",
+    value: function querySelectorAll() {
+      // fake hack
+      return [];
+    }
+    // @TODO: @PERF: 在 hydrate 移除掉空的 node
+  }, {
+    key: "createComment",
+    value: function createComment() {
+      var textnode = new TaroText('');
+      textnode.nodeName = COMMENT;
+      return textnode;
+    }
+  }, {
+    key: "defaultView",
+    get: function get() {
+      return env.window;
+    }
+  }]);
+  return TaroDocument;
+}(TaroElement);
+var document$1;
+if ( true && !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)()) {
+  /* eslint-disable no-inner-declarations */
+  var createDocument = function createDocument() {
+    /**
+       * <document>
+       *   <html>
+       *     <head></head>
+       *     <body>
+       *       <container>
+       *         <app id="app" />
+       *       </container>
+       *     </body>
+       *   </html>
+       * </document>
+       */
+    var doc = new TaroDocument();
+    var documentCreateElement = doc.createElement.bind(doc);
+    var html = documentCreateElement(HTML);
+    var head = documentCreateElement(HEAD);
+    var body = documentCreateElement(BODY);
+    var app = documentCreateElement(APP);
+    app.id = APP;
+    var container = documentCreateElement(CONTAINER); // 多包一层主要为了兼容 vue
+    doc.appendChild(html);
+    html.appendChild(head);
+    html.appendChild(body);
+    body.appendChild(container);
+    container.appendChild(app);
+    doc.documentElement = html;
+    doc.head = head;
+    doc.body = body;
+    return doc;
+  };
+  document$1 = env.document = createDocument();
+} else {
+  document$1 = env.document;
+}
+function getComputedStyle(element) {
+  return element.style;
+}
+var eventCenter = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getEventCenter', _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.Events);
+
+/**
+ * 一个小型缓存池，用于在切换页面时，存储一些上下文信息
+ */
+var RuntimeCache = /*#__PURE__*/function () {
+  function RuntimeCache(name) {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, RuntimeCache);
+    this.cache = new Map();
+    this.name = name;
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(RuntimeCache, [{
+    key: "has",
+    value: function has(identifier) {
+      return this.cache.has(identifier);
+    }
+  }, {
+    key: "set",
+    value: function set(identifier, ctx) {
+      if (identifier && ctx) {
+        this.cache.set(identifier, ctx);
+      }
+    }
+  }, {
+    key: "get",
+    value: function get(identifier) {
+      if (this.has(identifier)) return this.cache.get(identifier);
+    }
+  }, {
+    key: "delete",
+    value: function _delete(identifier) {
+      this.cache.delete(identifier);
+    }
+  }]);
+  return RuntimeCache;
+}();
+var _History_instances, _History_location, _History_stack, _History_cur, _History_window, _History_reset;
+var cache$1 = new RuntimeCache('history');
+var History = /*#__PURE__*/function (_Events) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(History, _Events);
+  var _super10 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(History);
+  function History(location, options) {
+    var _this19;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, History);
+    _this19 = _super10.call(this);
+    _History_instances.add((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19));
+    /* private property */
+    _History_location.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), void 0);
+    _History_stack.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), []);
+    _History_cur.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), 0);
+    _History_window.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), void 0);
+    __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_window, options.window, "f");
+    __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_location, location, "f");
+    __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_location, "f").on('__record_history__', function (href) {
+      var _a;
+      __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_cur, (_a = __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_cur, "f"), _a++, _a), "f");
+      __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_stack, __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_stack, "f").slice(0, __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_cur, "f")), "f");
+      __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_stack, "f").push({
+        state: null,
+        title: '',
+        url: href
+      });
+    }, null);
+    __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_location, "f").on('__reset_history__', function (href) {
+      __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_instances, "m", _History_reset).call((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), href);
+    }, null);
+    // 切换上下文行为
+    _this19.on(CONTEXT_ACTIONS.INIT, function () {
+      __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_instances, "m", _History_reset).call((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19));
+    }, null);
+    _this19.on(CONTEXT_ACTIONS.RESTORE, function (pageId) {
+      cache$1.set(pageId, {
+        location: __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_location, "f"),
+        stack: __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_stack, "f").slice(),
+        cur: __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_cur, "f")
+      });
+    }, null);
+    _this19.on(CONTEXT_ACTIONS.RECOVER, function (pageId) {
+      if (cache$1.has(pageId)) {
+        var ctx = cache$1.get(pageId);
+        __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_location, ctx.location, "f");
+        __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_stack, ctx.stack, "f");
+        __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_cur, ctx.cur, "f");
+      }
+    }, null);
+    _this19.on(CONTEXT_ACTIONS.DESTORY, function (pageId) {
+      cache$1.delete(pageId);
+    }, null);
+    __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19), _History_instances, "m", _History_reset).call((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this19));
+    return _this19;
+  }
+  /* public property */
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(History, [{
+    key: "length",
+    get: function get() {
+      return __classPrivateFieldGet(this, _History_stack, "f").length;
+    }
+  }, {
+    key: "state",
+    get: function get() {
+      return __classPrivateFieldGet(this, _History_stack, "f")[__classPrivateFieldGet(this, _History_cur, "f")].state;
+    }
+    /* public method */
+  }, {
+    key: "go",
+    value: function go(delta) {
+      if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(delta) || isNaN(delta)) return;
+      var targetIdx = __classPrivateFieldGet(this, _History_cur, "f") + delta;
+      targetIdx = Math.min(Math.max(targetIdx, 0), this.length - 1);
+      __classPrivateFieldSet(this, _History_cur, targetIdx, "f");
+      __classPrivateFieldGet(this, _History_location, "f").trigger('__set_href_without_history__', __classPrivateFieldGet(this, _History_stack, "f")[__classPrivateFieldGet(this, _History_cur, "f")].url);
+      __classPrivateFieldGet(this, _History_window, "f").trigger('popstate', __classPrivateFieldGet(this, _History_stack, "f")[__classPrivateFieldGet(this, _History_cur, "f")]);
+    }
+  }, {
+    key: "back",
+    value: function back() {
+      this.go(-1);
+    }
+  }, {
+    key: "forward",
+    value: function forward() {
+      this.go(1);
+    }
+  }, {
+    key: "pushState",
+    value: function pushState(state, title, url) {
+      if (!url || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(url)) return;
+      __classPrivateFieldSet(this, _History_stack, __classPrivateFieldGet(this, _History_stack, "f").slice(0, __classPrivateFieldGet(this, _History_cur, "f") + 1), "f");
+      __classPrivateFieldGet(this, _History_stack, "f").push({
+        state: state,
+        title: title,
+        url: url
+      });
+      __classPrivateFieldSet(this, _History_cur, this.length - 1, "f");
+      __classPrivateFieldGet(this, _History_location, "f").trigger('__set_href_without_history__', url);
+    }
+  }, {
+    key: "replaceState",
+    value: function replaceState(state, title, url) {
+      if (!url || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(url)) return;
+      __classPrivateFieldGet(this, _History_stack, "f")[__classPrivateFieldGet(this, _History_cur, "f")] = {
+        state: state,
+        title: title,
+        url: url
+      };
+      __classPrivateFieldGet(this, _History_location, "f").trigger('__set_href_without_history__', url);
+    }
+    // For debug
+  }, {
+    key: "cache",
+    get: function get() {
+      return cache$1;
+    }
+  }]);
+  return History;
+}(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.Events);
+_History_location = new WeakMap(), _History_stack = new WeakMap(), _History_cur = new WeakMap(), _History_window = new WeakMap(), _History_instances = new WeakSet(), _History_reset = function _History_reset() {
+  var href = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  __classPrivateFieldSet(this, _History_stack, [{
+    state: null,
+    title: '',
+    url: href || __classPrivateFieldGet(this, _History_location, "f").href
+  }], "f");
+  __classPrivateFieldSet(this, _History_cur, 0, "f");
+};
+var Current = {
+  app: null,
+  router: null,
+  page: null
+};
+var getCurrentInstance = function getCurrentInstance() {
+  return Current;
+};
+var _Location_instances, _Location_url, _Location_noCheckUrl, _Location_window, _Location_reset, _Location_getPreValue, _Location_rollBack, _Location_recordHistory, _Location_checkUrlChange;
+var INIT_URL = 'https://taro.com';
+var cache = new RuntimeCache('location');
+var Location = /*#__PURE__*/function (_Events2) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(Location, _Events2);
+  var _super11 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(Location);
+  function Location(options) {
+    var _this20;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Location);
+    _this20 = _super11.call(this);
+    _Location_instances.add((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20));
+    /* private property */
+    _Location_url.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), new URL(INIT_URL));
+    _Location_noCheckUrl.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), false);
+    _Location_window.set((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), void 0);
+    __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_window, options.window, "f");
+    __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_instances, "m", _Location_reset).call((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20));
+    _this20.on('__set_href_without_history__', function (href) {
+      __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_noCheckUrl, true, "f");
+      var lastHash = __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_url, "f").hash;
+      __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_url, "f").href = generateFullUrl(href);
+      if (lastHash !== __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_url, "f").hash) {
+        __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_window, "f").trigger('hashchange');
+      }
+      __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_noCheckUrl, false, "f");
+    }, null);
+    // 切换上下文行为
+    _this20.on(CONTEXT_ACTIONS.INIT, function () {
+      __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_instances, "m", _Location_reset).call((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20));
+    }, null);
+    _this20.on(CONTEXT_ACTIONS.RESTORE, function (pageId) {
+      cache.set(pageId, {
+        lastHref: _this20.href
+      });
+    }, null);
+    _this20.on(CONTEXT_ACTIONS.RECOVER, function (pageId) {
+      // 数据恢复时，不需要执行跳转
+      if (cache.has(pageId)) {
+        var ctx = cache.get(pageId);
+        __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_noCheckUrl, true, "f");
+        __classPrivateFieldGet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_url, "f").href = ctx.lastHref;
+        __classPrivateFieldSet((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this20), _Location_noCheckUrl, false, "f");
+      }
+    }, null);
+    _this20.on(CONTEXT_ACTIONS.DESTORY, function (pageId) {
+      cache.delete(pageId);
+    }, null);
+    return _this20;
+  }
+  /* public property */
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Location, [{
+    key: "protocol",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").protocol;
+    },
+    set: function set(val) {
+      var REG = /^(http|https):$/i;
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val) || !REG.test(val.trim())) return;
+      val = val.trim();
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").protocol = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "host",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").host;
+    },
+    set: function set(val) {
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) return;
+      val = val.trim();
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").host = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "hostname",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").hostname;
+    },
+    set: function set(val) {
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) return;
+      val = val.trim();
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").hostname = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "port",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").port;
+    },
+    set: function set(val) {
+      var xVal = Number(val = val.trim());
+      if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(xVal) || xVal <= 0) return;
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").port = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "pathname",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").pathname;
+    },
+    set: function set(val) {
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) return;
+      val = val.trim();
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").pathname = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "search",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").search;
+    },
+    set: function set(val) {
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) return;
+      val = val.trim();
+      val = val.startsWith('?') ? val : "?".concat(val);
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").search = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "hash",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").hash;
+    }
+    // 小程序的navigateTo存在截断hash字符串的问题
+    ,
+    set: function set(val) {
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val)) return;
+      val = val.trim();
+      val = val.startsWith('#') ? val : "#".concat(val);
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").hash = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "href",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").href;
+    },
+    set: function set(val) {
+      var REG = /^(http:|https:)?\/\/.+/;
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val) || !REG.test(val = val.trim())) return;
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").href = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+  }, {
+    key: "origin",
+    get: function get() {
+      return __classPrivateFieldGet(this, _Location_url, "f").origin;
+    },
+    set: function set(val) {
+      var REG = /^(http:|https:)?\/\/.+/;
+      if (!val || !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(val) || !REG.test(val = val.trim())) return;
+      var preValue = __classPrivateFieldGet(this, _Location_instances, "m", _Location_getPreValue).call(this);
+      __classPrivateFieldGet(this, _Location_url, "f").origin = val;
+      if (__classPrivateFieldGet(this, _Location_instances, "m", _Location_checkUrlChange).call(this, preValue)) __classPrivateFieldGet(this, _Location_instances, "m", _Location_recordHistory).call(this);
+    }
+    /* public method */
+  }, {
+    key: "assign",
+    value: function assign() {
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)(true, '小程序环境中调用location.assign()无效.');
+    }
+  }, {
+    key: "reload",
+    value: function reload() {
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.warn)(true, '小程序环境中调用location.reload()无效.');
+    }
+  }, {
+    key: "replace",
+    value: function replace(url) {
+      this.trigger('__set_href_without_history__', url);
+    }
+  }, {
+    key: "toString",
+    value: function toString() {
+      return this.href;
+    }
+    // For debug
+  }, {
+    key: "cache",
+    get: function get() {
+      return cache;
+    }
+  }]);
+  return Location;
+}(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.Events);
+_Location_url = new WeakMap(), _Location_noCheckUrl = new WeakMap(), _Location_window = new WeakMap(), _Location_instances = new WeakSet(), _Location_reset = function _Location_reset() {
+  var Current = getCurrentInstance();
+  var router = Current.router;
+  if (router) {
+    var path = router.path,
+      params = router.params;
+    var searchArr = Object.keys(params).map(function (key) {
+      return "".concat(key, "=").concat(params[key]);
+    });
+    var searchStr = searchArr.length > 0 ? '?' + searchArr.join('&') : '';
+    var url = "".concat(INIT_URL).concat(path.startsWith('/') ? path : '/' + path).concat(searchStr);
+    __classPrivateFieldSet(this, _Location_url, new URL(url), "f");
+    this.trigger('__reset_history__', this.href);
+  }
+}, _Location_getPreValue = function _Location_getPreValue() {
+  return __classPrivateFieldGet(this, _Location_url, "f")._toRaw();
+}, _Location_rollBack = function _Location_rollBack(href) {
+  __classPrivateFieldGet(this, _Location_url, "f").href = href;
+}, _Location_recordHistory = function _Location_recordHistory() {
+  this.trigger('__record_history__', this.href);
+}, _Location_checkUrlChange = function _Location_checkUrlChange(preValue) {
+  if (__classPrivateFieldGet(this, _Location_noCheckUrl, "f")) {
+    return false;
+  }
+  var _classPrivateFieldGe = __classPrivateFieldGet(this, _Location_url, "f")._toRaw(),
+    protocol = _classPrivateFieldGe.protocol,
+    hostname = _classPrivateFieldGe.hostname,
+    port = _classPrivateFieldGe.port,
+    pathname = _classPrivateFieldGe.pathname,
+    search = _classPrivateFieldGe.search,
+    hash = _classPrivateFieldGe.hash;
+  // 跨域三要素不允许修改
+  if (protocol !== preValue.protocol || hostname !== preValue.hostname || port !== preValue.port) {
+    __classPrivateFieldGet(this, _Location_instances, "m", _Location_rollBack).call(this, preValue.href);
+    return false;
+  }
+  // pathname
+  if (pathname !== preValue.pathname) {
+    return true;
+  }
+  // search
+  if (search !== preValue.search) {
+    return true;
+  }
+  // hashchange
+  if (hash !== preValue.hash) {
+    __classPrivateFieldGet(this, _Location_window, "f").trigger('hashchange');
+    return true;
+  }
+  __classPrivateFieldGet(this, _Location_instances, "m", _Location_rollBack).call(this, preValue.href);
+  return false;
+};
+function generateFullUrl() {
+  var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var origin = INIT_URL;
+  if (/^[/?#]/.test(val)) {
+    return origin + val;
+  }
+  return val;
+}
 var machine = 'Macintosh';
 var arch = 'Intel Mac OS X 10_14_5';
 var engine = 'AppleWebKit/534.36 (KHTML, like Gecko) NodeJS/v4.1.0 Chrome/76.0.3809.132 Safari/534.36';
-var navigator = isBrowser ? win.navigator : {
+var msg = '(' + machine + '; ' + arch + ') ' + engine;
+var nav = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)() ? env.window.navigator : {
   appCodeName: 'Mozilla',
   appName: 'Netscape',
-  appVersion: '5.0 (' + machine + '; ' + arch + ') ' + engine,
+  appVersion: '5.0 ' + msg,
   cookieEnabled: true,
   mimeTypes: [],
   onLine: true,
@@ -5938,7 +6265,7 @@ var navigator = isBrowser ? win.navigator : {
   plugins: [],
   product: 'Taro',
   productSub: '20030107',
-  userAgent: 'Mozilla/5.0 (' + machine + '; ' + arch + ') ' + engine,
+  userAgent: 'Mozilla/5.0 ' + msg,
   vendor: 'Joyent',
   vendorSub: ''
 };
@@ -5952,79 +6279,1034 @@ var now;
       return performance.now();
     };
   } else if (Date.now) {
+    loadTime = Date.now();
     now = function now() {
       return Date.now() - loadTime;
     };
-    loadTime = Date.now();
   } else {
+    loadTime = new Date().getTime();
     now = function now() {
       return new Date().getTime() - loadTime;
     };
-    loadTime = new Date().getTime();
   }
 })();
 var lastTime = 0;
 // https://gist.github.com/paulirish/1579671
 // https://gist.github.com/jalbam/5fe05443270fa6d8136238ec72accbc0
-var raf = typeof requestAnimationFrame !== 'undefined' && requestAnimationFrame !== null ? requestAnimationFrame : function (callback) {
+var _raf = typeof requestAnimationFrame !== 'undefined' && requestAnimationFrame !== null ? requestAnimationFrame : function (callback) {
   var _now = now();
   var nextTime = Math.max(lastTime + 16, _now); // First time will execute it immediately but barely noticeable and performance is gained.
   return setTimeout(function () {
     callback(lastTime = nextTime);
   }, nextTime - _now);
 };
-var caf = typeof cancelAnimationFrame !== 'undefined' && cancelAnimationFrame !== null ? cancelAnimationFrame : function (seed) {
+var _caf = typeof cancelAnimationFrame !== 'undefined' && cancelAnimationFrame !== null ? cancelAnimationFrame : function (seed) {
   // fix https://github.com/NervJS/taro/issues/7749
   clearTimeout(seed);
 };
-function getComputedStyle(element) {
-  return element.style;
+var window$1;
+if ( true && !(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)()) {
+  var Window = /*#__PURE__*/function (_Events3) {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(Window, _Events3);
+    var _super12 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(Window);
+    function Window() {
+      var _this21;
+      (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Window);
+      _this21 = _super12.call(this);
+      _this21.navigator = nav;
+      _this21.requestAnimationFrame = _raf;
+      _this21.cancelAnimationFrame = _caf;
+      _this21.getComputedStyle = getComputedStyle;
+      var globalProperties = [].concat((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object.getOwnPropertyNames(__webpack_require__.g || {})), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object.getOwnPropertySymbols(__webpack_require__.g || {})));
+      globalProperties.forEach(function (property) {
+        if (property === 'atob' || property === 'document') return;
+        if (!Object.prototype.hasOwnProperty.call((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this21), property)) {
+          // 防止小程序环境下，window 上的某些 get 属性在赋值时报错
+          try {
+            _this21[property] = __webpack_require__.g[property];
+          } catch (e) {
+            if (true) {
+              console.warn("[Taro warn] window.".concat(String(property), " \u5728\u8D4B\u503C\u5230 window \u65F6\u62A5\u9519"));
+            }
+          }
+        }
+      });
+      _this21.Date || (_this21.Date = Date);
+      // 应用启动时，提供给需要读取历史信息的库使用
+      _this21.location = new Location({
+        window: (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this21)
+      });
+      _this21.history = new History(_this21.location, {
+        window: (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_8__["default"])(_this21)
+      });
+      _this21.initEvent();
+      return _this21;
+    }
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Window, [{
+      key: "initEvent",
+      value: function initEvent() {
+        var _location = this.location;
+        var _history = this.history;
+        this.on(CONTEXT_ACTIONS.INIT, function (pageId) {
+          // 页面onload，为该页面建立新的上下文信息
+          _location.trigger(CONTEXT_ACTIONS.INIT, pageId);
+        }, null);
+        this.on(CONTEXT_ACTIONS.RECOVER, function (pageId) {
+          // 页面onshow，恢复当前页面的上下文信息
+          _location.trigger(CONTEXT_ACTIONS.RECOVER, pageId);
+          _history.trigger(CONTEXT_ACTIONS.RECOVER, pageId);
+        }, null);
+        this.on(CONTEXT_ACTIONS.RESTORE, function (pageId) {
+          // 页面onhide，缓存当前页面的上下文信息
+          _location.trigger(CONTEXT_ACTIONS.RESTORE, pageId);
+          _history.trigger(CONTEXT_ACTIONS.RESTORE, pageId);
+        }, null);
+        this.on(CONTEXT_ACTIONS.DESTORY, function (pageId) {
+          // 页面onunload，清除当前页面的上下文信息
+          _location.trigger(CONTEXT_ACTIONS.DESTORY, pageId);
+          _history.trigger(CONTEXT_ACTIONS.DESTORY, pageId);
+        }, null);
+      }
+    }, {
+      key: "document",
+      get: function get() {
+        return env.document;
+      }
+    }, {
+      key: "addEventListener",
+      value: function addEventListener(event, callback) {
+        if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(event)) return;
+        this.on(event, callback, null);
+      }
+    }, {
+      key: "removeEventListener",
+      value: function removeEventListener(event, callback) {
+        if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(event)) return;
+        this.off(event, callback, null);
+      }
+    }, {
+      key: "setTimeout",
+      value: function (_setTimeout) {
+        function setTimeout() {
+          return _setTimeout.apply(this, arguments);
+        }
+        setTimeout.toString = function () {
+          return _setTimeout.toString();
+        };
+        return setTimeout;
+      }(function () {
+        return setTimeout.apply(void 0, arguments);
+      })
+    }, {
+      key: "clearTimeout",
+      value: function (_clearTimeout) {
+        function clearTimeout() {
+          return _clearTimeout.apply(this, arguments);
+        }
+        clearTimeout.toString = function () {
+          return _clearTimeout.toString();
+        };
+        return clearTimeout;
+      }(function () {
+        return clearTimeout.apply(void 0, arguments);
+      })
+    }]);
+    return Window;
+  }(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.Events);
+  window$1 = env.window = new Window();
+} else {
+  window$1 = env.window;
 }
-var window$1 = isBrowser ? win : {
-  navigator: navigator,
-  document: document$2
-};
-if (!isBrowser) {
-  var globalProperties = [].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(Object.getOwnPropertyNames(global || win)), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(Object.getOwnPropertySymbols(global || win)));
-  globalProperties.forEach(function (property) {
-    if (property === 'atob') return;
-    if (!Object.prototype.hasOwnProperty.call(window$1, property)) {
-      window$1[property] = global[property];
+var location = window$1.location;
+var history = window$1.history;
+
+// for Vue3
+var SVGElement = /*#__PURE__*/function (_TaroElement6) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__["default"])(SVGElement, _TaroElement6);
+  var _super13 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_5__["default"])(SVGElement);
+  function SVGElement() {
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, SVGElement);
+    return _super13.apply(this, arguments);
+  }
+  return (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__["default"])(SVGElement);
+}(TaroElement);
+/* eslint-disable dot-notation */
+var instances = new Map();
+var pageId = incrementId();
+var isWeb = (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)();
+function injectPageInstance(inst, id) {
+  _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('mergePageInstance', instances.get(id), inst);
+  instances.set(id, inst);
+}
+function getPageInstance(id) {
+  return instances.get(id);
+}
+function removePageInstance(id) {
+  instances.delete(id);
+}
+function addLeadingSlash(path) {
+  if (path == null) {
+    return '';
+  }
+  return path.charAt(0) === '/' ? path : '/' + path;
+}
+function safeExecute(path, lifecycle) {
+  for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    args[_key - 2] = arguments[_key];
+  }
+  var instance = instances.get(path);
+  if (instance == null) {
+    return;
+  }
+  var func = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getLifecycle', instance, lifecycle);
+  if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isArray)(func)) {
+    var res = func.map(function (fn) {
+      return fn.apply(instance, args);
+    });
+    return res[0];
+  }
+  if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(func)) {
+    return;
+  }
+  return func.apply(instance, args);
+}
+function stringify(obj) {
+  if (obj == null) {
+    return '';
+  }
+  var path = Object.keys(obj).map(function (key) {
+    return key + '=' + obj[key];
+  }).join('&');
+  return path === '' ? path : '?' + path;
+}
+function getPath(id, options) {
+  var idx = id.indexOf('?');
+  if (isWeb) {
+    return "".concat(idx > -1 ? id.substring(0, idx) : id).concat(stringify((options === null || options === void 0 ? void 0 : options.stamp) ? {
+      stamp: options.stamp
+    } : {}));
+  } else {
+    return "".concat(idx > -1 ? id.substring(0, idx) : id).concat(stringify(options));
+  }
+}
+function getOnReadyEventKey(path) {
+  return path + '.' + ON_READY;
+}
+function getOnShowEventKey(path) {
+  return path + '.' + ON_SHOW;
+}
+function getOnHideEventKey(path) {
+  return path + '.' + ON_HIDE;
+}
+function createPageConfig(component, pageName, data, pageConfig) {
+  var _config;
+  // 小程序 Page 构造器是一个傲娇小公主，不能把复杂的对象挂载到参数上
+  var id = pageName !== null && pageName !== void 0 ? pageName : "taro_page_".concat(pageId());
+  var _hooks$call$page = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_14__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').page, 7),
+    ONLOAD = _hooks$call$page[0],
+    ONUNLOAD = _hooks$call$page[1],
+    ONREADY = _hooks$call$page[2],
+    ONSHOW = _hooks$call$page[3],
+    ONHIDE = _hooks$call$page[4],
+    LIFECYCLES = _hooks$call$page[5],
+    SIDE_EFFECT_LIFECYCLES = _hooks$call$page[6];
+  var pageElement = null;
+  var unmounting = false;
+  var prepareMountList = [];
+  function setCurrentRouter(page) {
+    var router = isWeb ? page.$taroPath : page.route || page.__route__ || page.$taroPath;
+    Current.router = {
+      params: page.$taroParams,
+      path: addLeadingSlash(router),
+      $taroPath: page.$taroPath,
+      onReady: getOnReadyEventKey(id),
+      onShow: getOnShowEventKey(id),
+      onHide: getOnHideEventKey(id)
+    };
+    if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(page.exitState)) {
+      Current.router.exitState = page.exitState;
+    }
+  }
+  var loadResolver;
+  var hasLoaded;
+  var config = (_config = {}, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config, ONLOAD, function () {
+    var _this22 = this;
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var cb = arguments.length > 1 ? arguments[1] : undefined;
+    hasLoaded = new Promise(function (resolve) {
+      loadResolver = resolve;
+    });
+    perf.start(PAGE_INIT);
+    Current.page = this;
+    this.config = pageConfig || {};
+    // this.$taroPath 是页面唯一标识
+    var uniqueOptions = Object.assign({}, options, {
+      $taroTimestamp: Date.now()
+    });
+    var $taroPath = this.$taroPath = getPath(id, uniqueOptions);
+    if (isWeb) {
+      config.path = $taroPath;
+    }
+    // this.$taroParams 作为暴露给开发者的页面参数对象，可以被随意修改
+    if (this.$taroParams == null) {
+      this.$taroParams = uniqueOptions;
+    }
+    setCurrentRouter(this);
+    // 初始化当前页面的上下文信息
+    if (!isWeb) {
+      window$1.trigger(CONTEXT_ACTIONS.INIT, $taroPath);
+    }
+    var mount = function mount() {
+      Current.app.mount(component, $taroPath, function () {
+        pageElement = env.document.getElementById($taroPath);
+        (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.ensure)(pageElement !== null, '没有找到页面实例。');
+        safeExecute($taroPath, ON_LOAD, _this22.$taroParams);
+        loadResolver();
+        if (!isWeb) {
+          pageElement.ctx = _this22;
+          pageElement.performUpdate(true, cb);
+        } else {
+          (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(cb) && cb();
+        }
+      });
+    };
+    if (unmounting) {
+      prepareMountList.push(mount);
+    } else {
+      mount();
+    }
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config, ONUNLOAD, function () {
+    var $taroPath = this.$taroPath;
+    // 销毁当前页面的上下文信息
+    if (!isWeb) {
+      window$1.trigger(CONTEXT_ACTIONS.DESTORY, $taroPath);
+    }
+    // 触发onUnload生命周期
+    safeExecute($taroPath, ONUNLOAD);
+    unmounting = true;
+    Current.app.unmount($taroPath, function () {
+      unmounting = false;
+      instances.delete($taroPath);
+      if (pageElement) {
+        pageElement.ctx = null;
+        pageElement = null;
+      }
+      if (prepareMountList.length) {
+        prepareMountList.forEach(function (fn) {
+          return fn();
+        });
+        prepareMountList = [];
+      }
+    });
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config, ONREADY, function () {
+    var _this23 = this;
+    hasLoaded.then(function () {
+      // 触发生命周期
+      safeExecute(_this23.$taroPath, ON_READY);
+      // 通过事件触发子组件的生命周期
+      _raf(function () {
+        return eventCenter.trigger(getOnReadyEventKey(id));
+      });
+      _this23.onReady.called = true;
+    });
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config, ONSHOW, function () {
+    var _this24 = this;
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    hasLoaded.then(function () {
+      // 设置 Current 的 page 和 router
+      Current.page = _this24;
+      setCurrentRouter(_this24);
+      // 恢复上下文信息
+      if (!isWeb) {
+        window$1.trigger(CONTEXT_ACTIONS.RECOVER, _this24.$taroPath);
+      }
+      // 触发生命周期
+      safeExecute(_this24.$taroPath, ON_SHOW, options);
+      // 通过事件触发子组件的生命周期
+      _raf(function () {
+        return eventCenter.trigger(getOnShowEventKey(id));
+      });
+    });
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config, ONHIDE, function () {
+    // 缓存当前页面上下文信息
+    if (!isWeb) {
+      window$1.trigger(CONTEXT_ACTIONS.RESTORE, this.$taroPath);
+    }
+    // 设置 Current 的 page 和 router
+    if (Current.page === this) {
+      Current.page = null;
+      Current.router = null;
+    }
+    // 触发生命周期
+    safeExecute(this.$taroPath, ON_HIDE);
+    // 通过事件触发子组件的生命周期
+    eventCenter.trigger(getOnHideEventKey(id));
+  }), _config);
+  LIFECYCLES.forEach(function (lifecycle) {
+    config[lifecycle] = function () {
+      return safeExecute.apply(void 0, [this.$taroPath, lifecycle].concat(Array.prototype.slice.call(arguments)));
+    };
+  });
+  // onShareAppMessage 和 onShareTimeline 一样，会影响小程序右上方按钮的选项，因此不能默认注册。
+  SIDE_EFFECT_LIFECYCLES.forEach(function (lifecycle) {
+    var _a;
+    if (component[lifecycle] || ((_a = component.prototype) === null || _a === void 0 ? void 0 : _a[lifecycle]) || component[lifecycle.replace(/^on/, 'enable')]) {
+      config[lifecycle] = function () {
+        var _a;
+        for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+          args[_key2] = arguments[_key2];
+        }
+        var target = (_a = args[0]) === null || _a === void 0 ? void 0 : _a.target;
+        if (target === null || target === void 0 ? void 0 : target.id) {
+          var _id = target.id;
+          var element = env.document.getElementById(_id);
+          if (element) {
+            target.dataset = element.dataset;
+          }
+        }
+        return safeExecute.apply(void 0, [this.$taroPath, lifecycle].concat(args));
+      };
     }
   });
-  document$2.defaultView = window$1;
-}
-if (true) {
-  window$1.requestAnimationFrame = raf;
-  window$1.cancelAnimationFrame = caf;
-  window$1.getComputedStyle = getComputedStyle;
-  window$1.addEventListener = function () {};
-  window$1.removeEventListener = function () {};
-  if (!(DATE in window$1)) {
-    window$1.Date = Date;
+  config.eh = eventHandler;
+  if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(data)) {
+    config.data = data;
   }
-  if (!(SET_TIMEOUT in window$1)) {
-    window$1.setTimeout = setTimeout;
-  }
+  _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('modifyPageObject', config);
+  return config;
 }
-var Current = {
-  app: null,
-  router: null,
-  page: null
+function createComponentConfig(component, componentName, data) {
+  var _config2;
+  var id = componentName !== null && componentName !== void 0 ? componentName : "taro_component_".concat(pageId());
+  var componentElement = null;
+  var _hooks$call$component = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_14__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').component, 2),
+    ATTACHED = _hooks$call$component[0],
+    DETACHED = _hooks$call$component[1];
+  var config = (_config2 = {}, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config2, ATTACHED, function () {
+    var _this25 = this;
+    var _a;
+    perf.start(PAGE_INIT);
+    var path = getPath(id, {
+      id: ((_a = this.getPageId) === null || _a === void 0 ? void 0 : _a.call(this)) || pageId()
+    });
+    Current.app.mount(component, path, function () {
+      componentElement = env.document.getElementById(path);
+      (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.ensure)(componentElement !== null, '没有找到组件实例。');
+      _this25.$taroInstances = instances.get(path);
+      safeExecute(path, ON_LOAD);
+      if (!isWeb) {
+        componentElement.ctx = _this25;
+        componentElement.performUpdate(true);
+      }
+    });
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config2, DETACHED, function () {
+    var path = getPath(id, {
+      id: this.getPageId()
+    });
+    Current.app.unmount(path, function () {
+      instances.delete(path);
+      if (componentElement) {
+        componentElement.ctx = null;
+      }
+    });
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_config2, "methods", {
+    eh: eventHandler
+  }), _config2);
+  if (!(0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isUndefined)(data)) {
+    config.data = data;
+  }
+  [OPTIONS, EXTERNAL_CLASSES, BEHAVIORS].forEach(function (key) {
+    var _a;
+    config[key] = (_a = component[key]) !== null && _a !== void 0 ? _a : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ;
+  });
+  return config;
+}
+function createRecursiveComponentConfig(componentName) {
+  var _ref3;
+  var isCustomWrapper = componentName === CUSTOM_WRAPPER;
+  var _hooks$call$component2 = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_14__["default"])(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.hooks.call('getMiniLifecycleImpl').component, 2),
+    ATTACHED = _hooks$call$component2[0],
+    DETACHED = _hooks$call$component2[1];
+  var lifeCycles = isCustomWrapper ? (_ref3 = {}, (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_ref3, ATTACHED, function () {
+    var _a, _b;
+    var componentId = ((_a = this.data.i) === null || _a === void 0 ? void 0 : _a.sid) || ((_b = this.props.i) === null || _b === void 0 ? void 0 : _b.sid);
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(componentId)) {
+      customWrapperCache.set(componentId, this);
+      var el = env.document.getElementById(componentId);
+      if (el) {
+        el.ctx = this;
+      }
+    }
+  }), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])(_ref3, DETACHED, function () {
+    var _a, _b;
+    var componentId = ((_a = this.data.i) === null || _a === void 0 ? void 0 : _a.sid) || ((_b = this.props.i) === null || _b === void 0 ? void 0 : _b.sid);
+    if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(componentId)) {
+      customWrapperCache.delete(componentId);
+      var el = env.document.getElementById(componentId);
+      if (el) {
+        el.ctx = null;
+      }
+    }
+  }), _ref3) : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.EMPTY_OBJ;
+  return Object.assign({
+    properties: {
+      i: {
+        type: Object,
+        value: (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__["default"])({}, "nn" /* Shortcuts.NodeName */, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.getComponentsAlias)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.internalComponents)[VIEW]._num)
+      },
+      l: {
+        type: String,
+        value: ''
+      }
+    },
+    options: {
+      addGlobalClass: true,
+      virtualHost: !isCustomWrapper
+    },
+    methods: {
+      eh: eventHandler
+    }
+  }, lifeCycles);
+}
+var nextTick = function nextTick(cb, ctx) {
+  var _a, _b, _c;
+  var router = Current.router;
+  var timerFunc = function timerFunc() {
+    setTimeout(function () {
+      ctx ? cb.call(ctx) : cb();
+    }, 1);
+  };
+  if (router !== null) {
+    var pageElement = null;
+    var path = router.$taroPath;
+    pageElement = env.document.getElementById(path);
+    if (pageElement === null || pageElement === void 0 ? void 0 : pageElement.pendingUpdate) {
+      if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__.isWebPlatform)()) {
+        // eslint-disable-next-line dot-notation
+        (_c = (_b = (_a = pageElement.firstChild) === null || _a === void 0 ? void 0 : _a['componentOnReady']) === null || _b === void 0 ? void 0 : _b.call(_a).then(function () {
+          timerFunc();
+        })) !== null && _c !== void 0 ? _c : timerFunc();
+      } else {
+        pageElement.enqueueUpdateCallback(cb, ctx);
+      }
+    } else {
+      timerFunc();
+    }
+  } else {
+    timerFunc();
+  }
 };
-var getCurrentInstance = function getCurrentInstance() {
-  return Current;
+
+
+/***/ }),
+
+/***/ "./node_modules/.store/@tarojs+shared@3.6.6/node_modules/@tarojs/shared/dist/shared.esm.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+shared@3.6.6/node_modules/@tarojs/shared/dist/shared.esm.js ***!
+  \*************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EMPTY_OBJ": function() { return /* binding */ EMPTY_OBJ; },
+/* harmony export */   "Events": function() { return /* binding */ Events; },
+/* harmony export */   "controlledComponent": function() { return /* binding */ controlledComponent; },
+/* harmony export */   "ensure": function() { return /* binding */ ensure; },
+/* harmony export */   "getComponentsAlias": function() { return /* binding */ getComponentsAlias; },
+/* harmony export */   "hooks": function() { return /* binding */ hooks; },
+/* harmony export */   "internalComponents": function() { return /* binding */ internalComponents; },
+/* harmony export */   "isArray": function() { return /* binding */ isArray; },
+/* harmony export */   "isFunction": function() { return /* binding */ isFunction; },
+/* harmony export */   "isNull": function() { return /* binding */ isNull; },
+/* harmony export */   "isNumber": function() { return /* binding */ isNumber; },
+/* harmony export */   "isObject": function() { return /* binding */ isObject; },
+/* harmony export */   "isString": function() { return /* binding */ isString; },
+/* harmony export */   "isUndefined": function() { return /* binding */ isUndefined; },
+/* harmony export */   "isWebPlatform": function() { return /* binding */ isWebPlatform; },
+/* harmony export */   "mergeInternalComponents": function() { return /* binding */ mergeInternalComponents; },
+/* harmony export */   "mergeReconciler": function() { return /* binding */ mergeReconciler; },
+/* harmony export */   "processApis": function() { return /* binding */ processApis; },
+/* harmony export */   "toCamelCase": function() { return /* binding */ toCamelCase; },
+/* harmony export */   "toDashed": function() { return /* binding */ toDashed; },
+/* harmony export */   "warn": function() { return /* binding */ warn; }
+/* harmony export */ });
+/* unused harmony exports EMPTY_ARR, HOOK_TYPE, PLATFORM_CONFIG_MAP, PLATFORM_TYPE, TaroHook, TaroHooks, animation, box, cacheDataGet, cacheDataHas, cacheDataSet, capitalize, focusComponents, getPlatformType, getUniqueKey, hasOwn, indent, isBoolean, isBooleanStringLiteral, nestElements, nonsupport, noop, queryToJson, setUniqueKeyToRoute, singleQuote, toKebabCase, touchEvents, unbox, voidElements */
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/inherits.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createSuper.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/typeof.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/classCallCheck.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createClass.js */ "./node_modules/.store/@babel+runtime@7.21.5/node_modules/@babel/runtime/helpers/esm/createClass.js");
+
+
+
+
+
+
+var DEFAULT_EMPTY_ARRAY = '[]';
+var NO_DEFAULT_VALUE = '';
+var DEFAULT_TRUE = '!0';
+var DEFAULT_FALSE = '!1';
+var touchEvents = {
+  bindTouchStart: NO_DEFAULT_VALUE,
+  bindTouchMove: NO_DEFAULT_VALUE,
+  bindTouchEnd: NO_DEFAULT_VALUE,
+  bindTouchCancel: NO_DEFAULT_VALUE,
+  bindLongTap: NO_DEFAULT_VALUE
+};
+var animation = {
+  animation: NO_DEFAULT_VALUE,
+  bindAnimationStart: NO_DEFAULT_VALUE,
+  bindAnimationIteration: NO_DEFAULT_VALUE,
+  bindAnimationEnd: NO_DEFAULT_VALUE,
+  bindTransitionEnd: NO_DEFAULT_VALUE
+};
+function singleQuote(s) {
+  return "'".concat(s, "'");
+}
+var View = Object.assign(Object.assign({
+  'hover-class': singleQuote('none'),
+  'hover-stop-propagation': DEFAULT_FALSE,
+  'hover-start-time': '50',
+  'hover-stay-time': '400'
+}, touchEvents), animation);
+var Icon = {
+  type: NO_DEFAULT_VALUE,
+  size: '23',
+  color: NO_DEFAULT_VALUE
+};
+var MapComp = Object.assign({
+  longitude: NO_DEFAULT_VALUE,
+  latitude: NO_DEFAULT_VALUE,
+  scale: '16',
+  markers: DEFAULT_EMPTY_ARRAY,
+  covers: NO_DEFAULT_VALUE,
+  polyline: DEFAULT_EMPTY_ARRAY,
+  circles: DEFAULT_EMPTY_ARRAY,
+  controls: DEFAULT_EMPTY_ARRAY,
+  'include-points': DEFAULT_EMPTY_ARRAY,
+  'show-location': NO_DEFAULT_VALUE,
+  'layer-style': '1',
+  bindMarkerTap: NO_DEFAULT_VALUE,
+  bindControlTap: NO_DEFAULT_VALUE,
+  bindCalloutTap: NO_DEFAULT_VALUE,
+  bindUpdated: NO_DEFAULT_VALUE
+}, touchEvents);
+var Progress = {
+  percent: NO_DEFAULT_VALUE,
+  'stroke-width': '6',
+  color: singleQuote('#09BB07'),
+  activeColor: singleQuote('#09BB07'),
+  backgroundColor: singleQuote('#EBEBEB'),
+  active: DEFAULT_FALSE,
+  'active-mode': singleQuote('backwards'),
+  'show-info': DEFAULT_FALSE
+};
+var RichText = {
+  nodes: DEFAULT_EMPTY_ARRAY
+};
+var Text = {
+  selectable: DEFAULT_FALSE,
+  space: NO_DEFAULT_VALUE,
+  decode: DEFAULT_FALSE
+};
+var Button = Object.assign({
+  size: singleQuote('default'),
+  type: NO_DEFAULT_VALUE,
+  plain: DEFAULT_FALSE,
+  disabled: NO_DEFAULT_VALUE,
+  loading: DEFAULT_FALSE,
+  'form-type': NO_DEFAULT_VALUE,
+  'open-type': NO_DEFAULT_VALUE,
+  'hover-class': singleQuote('button-hover'),
+  'hover-stop-propagation': DEFAULT_FALSE,
+  'hover-start-time': '20',
+  'hover-stay-time': '70',
+  name: NO_DEFAULT_VALUE
+}, touchEvents);
+var Checkbox = {
+  value: NO_DEFAULT_VALUE,
+  disabled: NO_DEFAULT_VALUE,
+  checked: DEFAULT_FALSE,
+  color: singleQuote('#09BB07'),
+  name: NO_DEFAULT_VALUE
+};
+var CheckboxGroup = {
+  bindChange: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Form = {
+  'report-submit': DEFAULT_FALSE,
+  bindSubmit: NO_DEFAULT_VALUE,
+  bindReset: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Input = {
+  value: NO_DEFAULT_VALUE,
+  type: singleQuote(NO_DEFAULT_VALUE),
+  password: DEFAULT_FALSE,
+  placeholder: NO_DEFAULT_VALUE,
+  'placeholder-style': NO_DEFAULT_VALUE,
+  'placeholder-class': singleQuote('input-placeholder'),
+  disabled: NO_DEFAULT_VALUE,
+  maxlength: '140',
+  'cursor-spacing': '0',
+  focus: DEFAULT_FALSE,
+  'confirm-type': singleQuote('done'),
+  'confirm-hold': DEFAULT_FALSE,
+  cursor: 'i.value.length',
+  'selection-start': '-1',
+  'selection-end': '-1',
+  bindInput: NO_DEFAULT_VALUE,
+  bindFocus: NO_DEFAULT_VALUE,
+  bindBlur: NO_DEFAULT_VALUE,
+  bindConfirm: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Label = {
+  for: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Picker = {
+  mode: singleQuote('selector'),
+  disabled: NO_DEFAULT_VALUE,
+  range: NO_DEFAULT_VALUE,
+  'range-key': NO_DEFAULT_VALUE,
+  value: NO_DEFAULT_VALUE,
+  start: NO_DEFAULT_VALUE,
+  end: NO_DEFAULT_VALUE,
+  fields: singleQuote('day'),
+  'custom-item': NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE,
+  bindCancel: NO_DEFAULT_VALUE,
+  bindChange: NO_DEFAULT_VALUE,
+  bindColumnChange: NO_DEFAULT_VALUE
+};
+var PickerView = {
+  value: NO_DEFAULT_VALUE,
+  'indicator-style': NO_DEFAULT_VALUE,
+  'indicator-class': NO_DEFAULT_VALUE,
+  'mask-style': NO_DEFAULT_VALUE,
+  'mask-class': NO_DEFAULT_VALUE,
+  bindChange: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var PickerViewColumn = {
+  name: NO_DEFAULT_VALUE
+};
+var Radio = {
+  value: NO_DEFAULT_VALUE,
+  checked: DEFAULT_FALSE,
+  disabled: NO_DEFAULT_VALUE,
+  color: singleQuote('#09BB07'),
+  name: NO_DEFAULT_VALUE
+};
+var RadioGroup = {
+  bindChange: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Slider = {
+  min: '0',
+  max: '100',
+  step: '1',
+  disabled: NO_DEFAULT_VALUE,
+  value: '0',
+  activeColor: singleQuote('#1aad19'),
+  backgroundColor: singleQuote('#e9e9e9'),
+  'block-size': '28',
+  'block-color': singleQuote('#ffffff'),
+  'show-value': DEFAULT_FALSE,
+  bindChange: NO_DEFAULT_VALUE,
+  bindChanging: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Switch = {
+  checked: DEFAULT_FALSE,
+  disabled: NO_DEFAULT_VALUE,
+  type: singleQuote('switch'),
+  color: singleQuote('#04BE02'),
+  bindChange: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var Textarea = {
+  value: NO_DEFAULT_VALUE,
+  placeholder: NO_DEFAULT_VALUE,
+  'placeholder-style': NO_DEFAULT_VALUE,
+  'placeholder-class': singleQuote('textarea-placeholder'),
+  disabled: NO_DEFAULT_VALUE,
+  maxlength: '140',
+  'auto-focus': DEFAULT_FALSE,
+  focus: DEFAULT_FALSE,
+  'auto-height': DEFAULT_FALSE,
+  fixed: DEFAULT_FALSE,
+  'cursor-spacing': '0',
+  cursor: '-1',
+  'selection-start': '-1',
+  'selection-end': '-1',
+  bindFocus: NO_DEFAULT_VALUE,
+  bindBlur: NO_DEFAULT_VALUE,
+  bindLineChange: NO_DEFAULT_VALUE,
+  bindInput: NO_DEFAULT_VALUE,
+  bindConfirm: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE
+};
+var CoverImage = {
+  src: NO_DEFAULT_VALUE,
+  bindLoad: 'eh',
+  bindError: 'eh'
+};
+var CoverView = Object.assign({
+  'scroll-top': DEFAULT_FALSE
+}, touchEvents);
+var MovableArea = {
+  'scale-area': DEFAULT_FALSE
+};
+var MovableView = Object.assign(Object.assign({
+  direction: 'none',
+  inertia: DEFAULT_FALSE,
+  'out-of-bounds': DEFAULT_FALSE,
+  x: NO_DEFAULT_VALUE,
+  y: NO_DEFAULT_VALUE,
+  damping: '20',
+  friction: '2',
+  disabled: NO_DEFAULT_VALUE,
+  scale: DEFAULT_FALSE,
+  'scale-min': '0.5',
+  'scale-max': '10',
+  'scale-value': '1',
+  bindChange: NO_DEFAULT_VALUE,
+  bindScale: NO_DEFAULT_VALUE,
+  bindHTouchMove: NO_DEFAULT_VALUE,
+  bindVTouchMove: NO_DEFAULT_VALUE,
+  width: singleQuote('10px'),
+  height: singleQuote('10px')
+}, touchEvents), animation);
+var ScrollView = Object.assign(Object.assign({
+  'scroll-x': DEFAULT_FALSE,
+  'scroll-y': DEFAULT_FALSE,
+  'upper-threshold': '50',
+  'lower-threshold': '50',
+  'scroll-top': NO_DEFAULT_VALUE,
+  'scroll-left': NO_DEFAULT_VALUE,
+  'scroll-into-view': NO_DEFAULT_VALUE,
+  'scroll-with-animation': DEFAULT_FALSE,
+  'enable-back-to-top': DEFAULT_FALSE,
+  bindScrollToUpper: NO_DEFAULT_VALUE,
+  bindScrollToLower: NO_DEFAULT_VALUE,
+  bindScroll: NO_DEFAULT_VALUE
+}, touchEvents), animation);
+var Swiper = Object.assign({
+  'indicator-dots': DEFAULT_FALSE,
+  'indicator-color': singleQuote('rgba(0, 0, 0, .3)'),
+  'indicator-active-color': singleQuote('#000000'),
+  autoplay: DEFAULT_FALSE,
+  current: '0',
+  interval: '5000',
+  duration: '500',
+  circular: DEFAULT_FALSE,
+  vertical: DEFAULT_FALSE,
+  'previous-margin': singleQuote('0px'),
+  'next-margin': singleQuote('0px'),
+  'display-multiple-items': '1',
+  bindChange: NO_DEFAULT_VALUE,
+  bindTransition: NO_DEFAULT_VALUE,
+  bindAnimationFinish: NO_DEFAULT_VALUE
+}, touchEvents);
+var SwiperItem = {
+  'item-id': NO_DEFAULT_VALUE
+};
+var Navigator = {
+  url: NO_DEFAULT_VALUE,
+  'open-type': singleQuote('navigate'),
+  delta: '1',
+  'hover-class': singleQuote('navigator-hover'),
+  'hover-stop-propagation': DEFAULT_FALSE,
+  'hover-start-time': '50',
+  'hover-stay-time': '600',
+  bindSuccess: NO_DEFAULT_VALUE,
+  bindFail: NO_DEFAULT_VALUE,
+  bindComplete: NO_DEFAULT_VALUE
+};
+var Audio = {
+  id: NO_DEFAULT_VALUE,
+  src: NO_DEFAULT_VALUE,
+  loop: DEFAULT_FALSE,
+  controls: DEFAULT_FALSE,
+  poster: NO_DEFAULT_VALUE,
+  name: NO_DEFAULT_VALUE,
+  author: NO_DEFAULT_VALUE,
+  bindError: NO_DEFAULT_VALUE,
+  bindPlay: NO_DEFAULT_VALUE,
+  bindPause: NO_DEFAULT_VALUE,
+  bindTimeUpdate: NO_DEFAULT_VALUE,
+  bindEnded: NO_DEFAULT_VALUE
+};
+var Camera = {
+  'device-position': singleQuote('back'),
+  flash: singleQuote('auto'),
+  bindStop: NO_DEFAULT_VALUE,
+  bindError: NO_DEFAULT_VALUE
+};
+var Image = Object.assign({
+  src: NO_DEFAULT_VALUE,
+  mode: singleQuote('scaleToFill'),
+  'lazy-load': DEFAULT_FALSE,
+  bindError: NO_DEFAULT_VALUE,
+  bindLoad: NO_DEFAULT_VALUE
+}, touchEvents);
+var LivePlayer = Object.assign({
+  src: NO_DEFAULT_VALUE,
+  autoplay: DEFAULT_FALSE,
+  muted: DEFAULT_FALSE,
+  orientation: singleQuote('vertical'),
+  'object-fit': singleQuote('contain'),
+  'background-mute': DEFAULT_FALSE,
+  'min-cache': '1',
+  'max-cache': '3',
+  bindStateChange: NO_DEFAULT_VALUE,
+  bindFullScreenChange: NO_DEFAULT_VALUE,
+  bindNetStatus: NO_DEFAULT_VALUE
+}, animation);
+var Video = Object.assign({
+  src: NO_DEFAULT_VALUE,
+  duration: NO_DEFAULT_VALUE,
+  controls: DEFAULT_TRUE,
+  'danmu-list': NO_DEFAULT_VALUE,
+  'danmu-btn': NO_DEFAULT_VALUE,
+  'enable-danmu': NO_DEFAULT_VALUE,
+  autoplay: DEFAULT_FALSE,
+  loop: DEFAULT_FALSE,
+  muted: DEFAULT_FALSE,
+  'initial-time': '0',
+  'page-gesture': DEFAULT_FALSE,
+  direction: NO_DEFAULT_VALUE,
+  'show-progress': DEFAULT_TRUE,
+  'show-fullscreen-btn': DEFAULT_TRUE,
+  'show-play-btn': DEFAULT_TRUE,
+  'show-center-play-btn': DEFAULT_TRUE,
+  'enable-progress-gesture': DEFAULT_TRUE,
+  'object-fit': singleQuote('contain'),
+  poster: NO_DEFAULT_VALUE,
+  'show-mute-btn': DEFAULT_FALSE,
+  bindPlay: NO_DEFAULT_VALUE,
+  bindPause: NO_DEFAULT_VALUE,
+  bindEnded: NO_DEFAULT_VALUE,
+  bindTimeUpdate: NO_DEFAULT_VALUE,
+  bindFullScreenChange: NO_DEFAULT_VALUE,
+  bindWaiting: NO_DEFAULT_VALUE,
+  bindError: NO_DEFAULT_VALUE
+}, animation);
+var Canvas = Object.assign({
+  'canvas-id': NO_DEFAULT_VALUE,
+  'disable-scroll': DEFAULT_FALSE,
+  bindError: NO_DEFAULT_VALUE
+}, touchEvents);
+var Ad = {
+  'unit-id': NO_DEFAULT_VALUE,
+  'ad-intervals': NO_DEFAULT_VALUE,
+  bindLoad: NO_DEFAULT_VALUE,
+  bindError: NO_DEFAULT_VALUE,
+  bindClose: NO_DEFAULT_VALUE
+};
+var WebView = {
+  src: NO_DEFAULT_VALUE,
+  bindMessage: NO_DEFAULT_VALUE,
+  bindLoad: NO_DEFAULT_VALUE,
+  bindError: NO_DEFAULT_VALUE
+};
+var Block = {};
+// For Vue，因为 slot 标签被 vue 占用了
+var SlotView = {
+  name: NO_DEFAULT_VALUE
+};
+// For React
+// Slot 和 SlotView 最终都会编译成 <view slot={{ i.name }} />
+// 因为 <slot name="{{ i.name }}" /> 适用性没有前者高（无法添加类和样式）
+// 不给 View 直接加 slot 属性的原因是性能损耗
+var Slot = {
+  name: NO_DEFAULT_VALUE
+};
+var NativeSlot = {
+  name: NO_DEFAULT_VALUE
+};
+var internalComponents = {
+  View: View,
+  Icon: Icon,
+  Progress: Progress,
+  RichText: RichText,
+  Text: Text,
+  Button: Button,
+  Checkbox: Checkbox,
+  CheckboxGroup: CheckboxGroup,
+  Form: Form,
+  Input: Input,
+  Label: Label,
+  Picker: Picker,
+  PickerView: PickerView,
+  PickerViewColumn: PickerViewColumn,
+  Radio: Radio,
+  RadioGroup: RadioGroup,
+  Slider: Slider,
+  Switch: Switch,
+  CoverImage: CoverImage,
+  Textarea: Textarea,
+  CoverView: CoverView,
+  MovableArea: MovableArea,
+  MovableView: MovableView,
+  ScrollView: ScrollView,
+  Swiper: Swiper,
+  SwiperItem: SwiperItem,
+  Navigator: Navigator,
+  Audio: Audio,
+  Camera: Camera,
+  Image: Image,
+  LivePlayer: LivePlayer,
+  Video: Video,
+  Canvas: Canvas,
+  Ad: Ad,
+  WebView: WebView,
+  Block: Block,
+  Map: MapComp,
+  Slot: Slot,
+  SlotView: SlotView,
+  NativeSlot: NativeSlot
+};
+var controlledComponent = new Set(['input', 'checkbox', 'picker', 'picker-view', 'radio', 'slider', 'switch', 'textarea']);
+var focusComponents = new Set(['input', 'textarea']);
+var voidElements = new Set(['progress', 'icon', 'rich-text', 'input', 'textarea', 'slider', 'switch', 'audio', 'ad', 'official-account', 'open-data', 'navigation-bar']);
+var nestElements = new Map([['view', -1], ['catch-view', -1], ['cover-view', -1], ['static-view', -1], ['pure-view', -1], ['block', -1], ['text', -1], ['static-text', 6], ['slot', 8], ['slot-view', 8], ['label', 6], ['form', 4], ['scroll-view', 4], ['swiper', 4], ['swiper-item', 4]]);
+var PLATFORM_TYPE;
+(function (PLATFORM_TYPE) {
+  PLATFORM_TYPE["MINI"] = "mini";
+  PLATFORM_TYPE["WEB"] = "web";
+  PLATFORM_TYPE["RN"] = "rn";
+  PLATFORM_TYPE["HARMONY"] = "harmony";
+  PLATFORM_TYPE["QUICK"] = "quickapp";
+})(PLATFORM_TYPE || (PLATFORM_TYPE = {}));
+var PLATFORM_CONFIG_MAP = {
+  h5: {
+    type: PLATFORM_TYPE.WEB
+  },
+  harmony: {
+    type: PLATFORM_TYPE.HARMONY
+  },
+  mini: {
+    type: PLATFORM_TYPE.MINI
+  },
+  rn: {
+    type: PLATFORM_TYPE.RN
+  },
+  quickapp: {
+    type: PLATFORM_TYPE.QUICK
+  }
 };
 var Events = /*#__PURE__*/function () {
   function Events(opts) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Events);
-    if (typeof opts !== 'undefined' && opts.callbacks) {
-      this.callbacks = opts.callbacks;
-    } else {
-      this.callbacks = {};
-    }
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Events);
+    var _a;
+    this.callbacks = (_a = opts === null || opts === void 0 ? void 0 : opts.callbacks) !== null && _a !== void 0 ? _a : {};
   }
-  Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Events, [{
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Events, [{
     key: "on",
     value: function on(eventName, callback, context) {
       var event, node, tail, list;
@@ -6050,13 +7332,13 @@ var Events = /*#__PURE__*/function () {
   }, {
     key: "once",
     value: function once(events, callback, context) {
-      var _this18 = this;
+      var _this = this;
       var wrapper = function wrapper() {
-        for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-          args[_key2] = arguments[_key2];
+        for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
         }
-        callback.apply(_this18, args);
-        _this18.off(events, wrapper, context);
+        callback.apply(_this, args);
+        _this.off(events, wrapper, context);
       };
       this.on(events, wrapper, context);
       return this;
@@ -6112,1222 +7394,7 @@ var Events = /*#__PURE__*/function () {
   }]);
   return Events;
 }();
-Events.eventSplitter = /\s+/;
-var hooks$1 = container.get(SERVICE_IDENTIFIER.Hooks);
-var eventCenter = hooks$1.getEventCenter(Events);
-container.bind(SERVICE_IDENTIFIER.eventCenter).toConstantValue(eventCenter);
-
-/* eslint-disable dot-notation */
-var instances = new Map();
-var pageId = incrementId();
-var hooks$2 = container.get(SERVICE_IDENTIFIER.Hooks);
-function injectPageInstance(inst, id) {
-  var _a;
-  (_a = hooks$2.mergePageInstance) === null || _a === void 0 ? void 0 : _a.call(hooks$2, instances.get(id), inst);
-  instances.set(id, inst);
-}
-function getPageInstance(id) {
-  return instances.get(id);
-}
-function addLeadingSlash(path) {
-  if (path == null) {
-    return '';
-  }
-  return path.charAt(0) === '/' ? path : '/' + path;
-}
-function safeExecute(path, lifecycle) {
-  for (var _len3 = arguments.length, args = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
-    args[_key3 - 2] = arguments[_key3];
-  }
-  var instance = instances.get(path);
-  if (instance == null) {
-    return;
-  }
-  var func = hooks$2.getLifecycle(instance, lifecycle);
-  if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(func)) {
-    var res = func.map(function (fn) {
-      return fn.apply(instance, args);
-    });
-    return res[0];
-  }
-  if (!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(func)) {
-    return;
-  }
-  return func.apply(instance, args);
-}
-function stringify(obj) {
-  if (obj == null) {
-    return '';
-  }
-  var path = Object.keys(obj).map(function (key) {
-    return key + '=' + obj[key];
-  }).join('&');
-  return path === '' ? path : '?' + path;
-}
-function getPath(id, options) {
-  var path = id;
-  if (!isBrowser) {
-    path = id + stringify(options);
-  }
-  return path;
-}
-function getOnReadyEventKey(path) {
-  return path + '.' + 'onReady';
-}
-function getOnShowEventKey(path) {
-  return path + '.' + 'onShow';
-}
-function getOnHideEventKey(path) {
-  return path + '.' + 'onHide';
-}
-function createPageConfig(component, pageName, data, pageConfig) {
-  var _a, _b;
-  var id = pageName !== null && pageName !== void 0 ? pageName : "taro_page_".concat(pageId());
-  // 小程序 Page 构造器是一个傲娇小公主，不能把复杂的对象挂载到参数上
-  var pageElement = null;
-  var unmounting = false;
-  var prepareMountList = [];
-  var loadResolver;
-  var hasLoaded;
-  var config = {
-    onLoad: function onLoad(options, cb) {
-      var _this19 = this;
-      hasLoaded = new Promise(function (resolve) {
-        loadResolver = resolve;
-      });
-      perf.start(PAGE_INIT);
-      Current.page = this;
-      this.config = pageConfig || {};
-      options.$taroTimestamp = Date.now();
-      // this.$taroPath 是页面唯一标识，不可变，因此页面参数 options 也不可变
-      this.$taroPath = getPath(id, options);
-      // this.$taroParams 作为暴露给开发者的页面参数对象，可以被随意修改
-      if (this.$taroParams == null) {
-        this.$taroParams = Object.assign({}, options);
-      }
-      var router = isBrowser ? this.$taroPath : this.route || this.__route__;
-      Current.router = {
-        params: this.$taroParams,
-        path: addLeadingSlash(router),
-        onReady: getOnReadyEventKey(id),
-        onShow: getOnShowEventKey(id),
-        onHide: getOnHideEventKey(id)
-      };
-      var mount = function mount() {
-        Current.app.mount(component, _this19.$taroPath, function () {
-          pageElement = document$2.getElementById(_this19.$taroPath);
-          Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* ensure */ "d"])(pageElement !== null, '没有找到页面实例。');
-          safeExecute(_this19.$taroPath, 'onLoad', _this19.$taroParams);
-          loadResolver();
-          if (!isBrowser) {
-            pageElement.ctx = _this19;
-            pageElement.performUpdate(true, cb);
-          } else {
-            Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(cb) && cb();
-          }
-        });
-      };
-      if (unmounting) {
-        prepareMountList.push(mount);
-      } else {
-        mount();
-      }
-    },
-    onReady: function onReady() {
-      raf(function () {
-        eventCenter.trigger(getOnReadyEventKey(id));
-      });
-      safeExecute(this.$taroPath, 'onReady');
-      this.onReady.called = true;
-    },
-    onUnload: function onUnload() {
-      var _this20 = this;
-      unmounting = true;
-      Current.app.unmount(this.$taroPath, function () {
-        unmounting = false;
-        instances.delete(_this20.$taroPath);
-        if (pageElement) {
-          pageElement.ctx = null;
-        }
-        if (prepareMountList.length) {
-          prepareMountList.forEach(function (fn) {
-            return fn();
-          });
-          prepareMountList = [];
-        }
-      });
-    },
-    onShow: function onShow() {
-      var _this21 = this;
-      hasLoaded.then(function () {
-        Current.page = _this21;
-        _this21.config = pageConfig || {};
-        var router = isBrowser ? _this21.$taroPath : _this21.route || _this21.__route__;
-        Current.router = {
-          params: _this21.$taroParams,
-          path: addLeadingSlash(router),
-          onReady: getOnReadyEventKey(id),
-          onShow: getOnShowEventKey(id),
-          onHide: getOnHideEventKey(id)
-        };
-        raf(function () {
-          eventCenter.trigger(getOnShowEventKey(id));
-        });
-        safeExecute(_this21.$taroPath, 'onShow');
-      });
-    },
-    onHide: function onHide() {
-      Current.page = null;
-      Current.router = null;
-      safeExecute(this.$taroPath, 'onHide');
-      eventCenter.trigger(getOnHideEventKey(id));
-    },
-    onPullDownRefresh: function onPullDownRefresh() {
-      return safeExecute(this.$taroPath, 'onPullDownRefresh');
-    },
-    onReachBottom: function onReachBottom() {
-      return safeExecute(this.$taroPath, 'onReachBottom');
-    },
-    onPageScroll: function onPageScroll(options) {
-      return safeExecute(this.$taroPath, 'onPageScroll', options);
-    },
-    onResize: function onResize(options) {
-      return safeExecute(this.$taroPath, 'onResize', options);
-    },
-    onTabItemTap: function onTabItemTap(options) {
-      return safeExecute(this.$taroPath, 'onTabItemTap', options);
-    },
-    onTitleClick: function onTitleClick() {
-      return safeExecute(this.$taroPath, 'onTitleClick');
-    },
-    onOptionMenuClick: function onOptionMenuClick() {
-      return safeExecute(this.$taroPath, 'onOptionMenuClick');
-    },
-    onPopMenuClick: function onPopMenuClick() {
-      return safeExecute(this.$taroPath, 'onPopMenuClick');
-    },
-    onPullIntercept: function onPullIntercept() {
-      return safeExecute(this.$taroPath, 'onPullIntercept');
-    },
-    onAddToFavorites: function onAddToFavorites() {
-      return safeExecute(this.$taroPath, 'onAddToFavorites');
-    }
-  };
-  // onShareAppMessage 和 onShareTimeline 一样，会影响小程序右上方按钮的选项，因此不能默认注册。
-  if (component.onShareAppMessage || ((_a = component.prototype) === null || _a === void 0 ? void 0 : _a.onShareAppMessage) || component.enableShareAppMessage) {
-    config.onShareAppMessage = function (options) {
-      var target = options === null || options === void 0 ? void 0 : options.target;
-      if (target != null) {
-        var _id = target.id;
-        var element = document$2.getElementById(_id);
-        if (element != null) {
-          options.target.dataset = element.dataset;
-        }
-      }
-      return safeExecute(this.$taroPath, 'onShareAppMessage', options);
-    };
-  }
-  if (component.onShareTimeline || ((_b = component.prototype) === null || _b === void 0 ? void 0 : _b.onShareTimeline) || component.enableShareTimeline) {
-    config.onShareTimeline = function () {
-      return safeExecute(this.$taroPath, 'onShareTimeline');
-    };
-  }
-  config.eh = eventHandler;
-  if (!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isUndefined */ "k"])(data)) {
-    config.data = data;
-  }
-  if (isBrowser) {
-    config.path = id;
-  }
-  return config;
-}
-function createComponentConfig(component, componentName, data) {
-  var _a, _b, _c;
-  var id = componentName !== null && componentName !== void 0 ? componentName : "taro_component_".concat(pageId());
-  var componentElement = null;
-  var config = {
-    attached: function attached() {
-      var _this22 = this;
-      var _a;
-      perf.start(PAGE_INIT);
-      var path = getPath(id, {
-        id: ((_a = this.getPageId) === null || _a === void 0 ? void 0 : _a.call(this)) || pageId()
-      });
-      Current.app.mount(component, path, function () {
-        componentElement = document$2.getElementById(path);
-        Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* ensure */ "d"])(componentElement !== null, '没有找到组件实例。');
-        safeExecute(path, 'onLoad');
-        if (!isBrowser) {
-          componentElement.ctx = _this22;
-          componentElement.performUpdate(true);
-        }
-      });
-    },
-    detached: function detached() {
-      var path = getPath(id, {
-        id: this.getPageId()
-      });
-      Current.app.unmount(path, function () {
-        instances.delete(path);
-        if (componentElement) {
-          componentElement.ctx = null;
-        }
-      });
-    },
-    methods: {
-      eh: eventHandler
-    }
-  };
-  if (!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isUndefined */ "k"])(data)) {
-    config.data = data;
-  }
-  config['options'] = (_a = component === null || component === void 0 ? void 0 : component['options']) !== null && _a !== void 0 ? _a : _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-  config['externalClasses'] = (_b = component === null || component === void 0 ? void 0 : component['externalClasses']) !== null && _b !== void 0 ? _b : _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-  config['behaviors'] = (_c = component === null || component === void 0 ? void 0 : component['behaviors']) !== null && _c !== void 0 ? _c : _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-  return config;
-}
-function createRecursiveComponentConfig(componentName) {
-  return {
-    properties: {
-      i: {
-        type: Object,
-        value: Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])({}, "nn" /* NodeName */, 'view')
-      },
-      l: {
-        type: String,
-        value: ''
-      }
-    },
-    options: {
-      addGlobalClass: true,
-      virtualHost: componentName !== 'custom-wrapper'
-    },
-    methods: {
-      eh: eventHandler
-    }
-  };
-}
-var hooks$3 = container.get(SERVICE_IDENTIFIER.Hooks);
-function isClassComponent(R, component) {
-  var _a;
-  return Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(component.render) || !!((_a = component.prototype) === null || _a === void 0 ? void 0 : _a.isReactComponent) || component.prototype instanceof R.Component; // compat for some others react-like library
-}
-// 初始值设置为 any 主要是为了过 TS 的校验
-var R = _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-var PageContext = _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"];
-function connectReactPage(R, id) {
-  var h = R.createElement;
-  return function (component) {
-    // eslint-disable-next-line dot-notation
-    var isReactComponent = isClassComponent(R, component);
-    var inject = function inject(node) {
-      return node && injectPageInstance(node, id);
-    };
-    var refs = isReactComponent ? {
-      ref: inject
-    } : {
-      forwardedRef: inject,
-      // 兼容 react-redux 7.20.1+
-      reactReduxForwardedRef: inject
-    };
-    if (PageContext === _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* EMPTY_OBJ */ "a"]) {
-      PageContext = R.createContext('');
-    }
-    return /*#__PURE__*/function (_R$Component) {
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Page, _R$Component);
-      var _super9 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Page);
-      function Page() {
-        var _this23;
-        Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Page);
-        _this23 = _super9.apply(this, arguments);
-        _this23.state = {
-          hasError: false
-        };
-        return _this23;
-      }
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Page, [{
-        key: "componentDidCatch",
-        value:
-        // React 16 uncaught error 会导致整个应用 crash，
-        // 目前把错误缩小到页面
-        function componentDidCatch(error, info) {
-           true && console.warn(error);
-           true && console.error(info.componentStack);
-        }
-      }, {
-        key: "render",
-        value: function render() {
-          var children = this.state.hasError ? [] : h(PageContext.Provider, {
-            value: id
-          }, h(component, Object.assign(Object.assign({}, this.props), refs)));
-          if (isBrowser) {
-            return h('div', {
-              id: id,
-              className: 'taro_page'
-            }, children);
-          }
-          return h('root', {
-            id: id
-          }, children);
-        }
-      }], [{
-        key: "getDerivedStateFromError",
-        value: function getDerivedStateFromError(error) {
-           true && console.warn(error);
-          return {
-            hasError: true
-          };
-        }
-      }]);
-      return Page;
-    }(R.Component);
-  };
-}
-var ReactDOM;
-function setReconciler() {
-  var getLifecycle = function getLifecycle(instance, lifecycle) {
-    lifecycle = lifecycle.replace(/^on(Show|Hide)$/, 'componentDid$1');
-    return instance[lifecycle];
-  };
-  var modifyMpEvent = function modifyMpEvent(event) {
-    event.type = event.type.replace(/-/g, '');
-  };
-  var batchedEventUpdates = function batchedEventUpdates(cb) {
-    ReactDOM.unstable_batchedUpdates(cb);
-  };
-  var mergePageInstance = function mergePageInstance(prev, next) {
-    if (!prev || !next) return;
-    // 子组件使用 lifecycle hooks 注册了生命周期后，会存在 prev，里面是注册的生命周期回调。
-    // prev 使用 Object.create(null) 创建，H5 的 fast-refresh 可能也会导致存在 prev，要排除这些意外产生的 prev
-    if ('constructor' in prev) return;
-    Object.keys(prev).forEach(function (item) {
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(next[item])) {
-        next[item] = [next[item]].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(prev[item]));
-      } else {
-        next[item] = [].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(next[item] || []), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(prev[item]));
-      }
-    });
-  };
-  hooks$3.getLifecycle = getLifecycle;
-  hooks$3.modifyMpEvent = modifyMpEvent;
-  hooks$3.batchedEventUpdates = batchedEventUpdates;
-  hooks$3.mergePageInstance = mergePageInstance;
-  if (false) {}
-}
-var pageKeyId = incrementId();
-function createReactApp(App, react, reactdom, config) {
-  R = react;
-  ReactDOM = reactdom;
-  Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* ensure */ "d"])(!!ReactDOM, '构建 React/Nerv 项目请把 process.env.FRAMEWORK 设置为 \'react\'/\'nerv\' ');
-  var ref = R.createRef();
-  var isReactComponent = isClassComponent(R, App);
-  setReconciler();
-  var AppWrapper = /*#__PURE__*/function (_R$Component2) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(AppWrapper, _R$Component2);
-    var _super10 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(AppWrapper);
-    function AppWrapper() {
-      var _this24;
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, AppWrapper);
-      _this24 = _super10.apply(this, arguments);
-      // run createElement() inside the render function to make sure that owner is right
-      _this24.pages = [];
-      _this24.elements = [];
-      return _this24;
-    }
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(AppWrapper, [{
-      key: "mount",
-      value: function mount(component, id, cb) {
-        var key = id + pageKeyId();
-        var page = function page() {
-          return R.createElement(component, {
-            key: key,
-            tid: id
-          });
-        };
-        this.pages.push(page);
-        this.forceUpdate(cb);
-      }
-    }, {
-      key: "unmount",
-      value: function unmount(id, cb) {
-        for (var i = 0; i < this.elements.length; i++) {
-          var element = this.elements[i];
-          if (element.props.tid === id) {
-            this.elements.splice(i, 1);
-            break;
-          }
-        }
-        this.forceUpdate(cb);
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        while (this.pages.length > 0) {
-          var page = this.pages.pop();
-          this.elements.push(page());
-        }
-        var props = null;
-        if (isReactComponent) {
-          props = {
-            ref: ref
-          };
-        }
-        return R.createElement(App, props, isBrowser ? R.createElement('div', null, this.elements.slice()) : this.elements.slice());
-      }
-    }]);
-    return AppWrapper;
-  }(R.Component);
-  var wrapper;
-  if (!isBrowser) {
-    // eslint-disable-next-line react/no-render-return-value
-    wrapper = ReactDOM.render(R.createElement(AppWrapper), document$2.getElementById('app'));
-  }
-  var app = Object.create({
-    render: function render(cb) {
-      wrapper.forceUpdate(cb);
-    },
-    mount: function mount(component, id, cb) {
-      var page = connectReactPage(R, id)(component);
-      wrapper.mount(page, id, cb);
-    },
-    unmount: function unmount(id, cb) {
-      wrapper.unmount(id, cb);
-    }
-  }, {
-    config: {
-      writable: true,
-      enumerable: true,
-      configurable: true,
-      value: config
-    },
-    onLaunch: {
-      enumerable: true,
-      writable: true,
-      value: function value(options) {
-        var _this25 = this;
-        Current.router = Object.assign({
-          params: options === null || options === void 0 ? void 0 : options.query
-        }, options);
-        if (isBrowser) {
-          // 由于 H5 路由初始化的时候会清除 app 下的 dom 元素，所以需要在路由初始化后执行 render
-          // eslint-disable-next-line react/no-render-return-value
-          wrapper = ReactDOM.render(R.createElement(AppWrapper), document$2.getElementById('app'));
-        }
-        var app = ref.current;
-        // For taroize
-        // 把 App Class 上挂载的额外属性同步到全局 app 对象中
-        if (app === null || app === void 0 ? void 0 : app.taroGlobalData) {
-          var globalData = app.taroGlobalData;
-          var keys = Object.keys(globalData);
-          var descriptors = Object.getOwnPropertyDescriptors(globalData);
-          keys.forEach(function (key) {
-            Object.defineProperty(_this25, key, {
-              configurable: true,
-              enumerable: true,
-              get: function get() {
-                return globalData[key];
-              },
-              set: function set(value) {
-                globalData[key] = value;
-              }
-            });
-          });
-          Object.defineProperties(this, descriptors);
-        }
-        this.$app = app;
-        if (app != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(app.onLaunch)) {
-          app.onLaunch(options);
-        }
-      }
-    },
-    onShow: {
-      enumerable: true,
-      writable: true,
-      value: function value(options) {
-        var app = ref.current;
-        Current.router = Object.assign({
-          params: options === null || options === void 0 ? void 0 : options.query
-        }, options);
-        if (app != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(app.componentDidShow)) {
-          app.componentDidShow(options);
-        }
-        // app useDidShow
-        triggerAppHook('onShow');
-      }
-    },
-    onHide: {
-      enumerable: true,
-      writable: true,
-      value: function value(options) {
-        var app = ref.current;
-        if (app != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(app.componentDidHide)) {
-          app.componentDidHide(options);
-        }
-        // app useDidHide
-        triggerAppHook('onHide');
-      }
-    },
-    onPageNotFound: {
-      enumerable: true,
-      writable: true,
-      value: function value(res) {
-        var app = ref.current;
-        if (app != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(app.onPageNotFound)) {
-          app.onPageNotFound(res);
-        }
-      }
-    }
-  });
-  function triggerAppHook(lifecycle) {
-    var instance = getPageInstance(HOOKS_APP_ID);
-    if (instance) {
-      var _app = ref.current;
-      var func = hooks$3.getLifecycle(instance, lifecycle);
-      if (Array.isArray(func)) {
-        func.forEach(function (cb) {
-          return cb.apply(_app);
-        });
-      }
-    }
-  }
-  Current.app = app;
-  return Current.app;
-}
-var getNativeCompId = incrementId();
-function initNativeComponentEntry(R, ReactDOM) {
-  var NativeComponentWrapper = /*#__PURE__*/function (_R$Component3) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(NativeComponentWrapper, _R$Component3);
-    var _super11 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(NativeComponentWrapper);
-    function NativeComponentWrapper() {
-      var _this26;
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, NativeComponentWrapper);
-      _this26 = _super11.apply(this, arguments);
-      _this26.root = R.createRef();
-      _this26.ctx = _this26.props.getCtx();
-      return _this26;
-    }
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(NativeComponentWrapper, [{
-      key: "componentDidMount",
-      value: function componentDidMount() {
-        this.ctx.component = this;
-        var rootElement = this.root.current;
-        rootElement.ctx = this.ctx;
-        rootElement.performUpdate(true);
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        return R.createElement('root', {
-          ref: this.root
-        }, this.props.renderComponent(this.ctx));
-      }
-    }]);
-    return NativeComponentWrapper;
-  }(R.Component);
-  var Entry = /*#__PURE__*/function (_R$Component4) {
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Entry, _R$Component4);
-    var _super12 = Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Entry);
-    function Entry() {
-      var _this27;
-      Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"])(this, Entry);
-      _this27 = _super12.apply(this, arguments);
-      _this27.state = {
-        components: []
-      };
-      return _this27;
-    }
-    Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"])(Entry, [{
-      key: "componentDidMount",
-      value: function componentDidMount() {
-        Current.app = this;
-      }
-    }, {
-      key: "mount",
-      value: function mount(Component, compId, getCtx) {
-        var isReactComponent = isClassComponent(R, Component);
-        var inject = function inject(node) {
-          return node && injectPageInstance(node, compId);
-        };
-        var refs = isReactComponent ? {
-          ref: inject
-        } : {
-          forwardedRef: inject,
-          reactReduxForwardedRef: inject
-        };
-        var item = {
-          compId: compId,
-          element: R.createElement(NativeComponentWrapper, {
-            key: compId,
-            getCtx: getCtx,
-            renderComponent: function renderComponent(ctx) {
-              return R.createElement(Component, Object.assign(Object.assign({}, (ctx.data || (ctx.data = {})).props), refs));
-            }
-          })
-        };
-        this.setState({
-          components: [].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(this.state.components), [item])
-        });
-      }
-    }, {
-      key: "unmount",
-      value: function unmount(compId) {
-        var components = this.state.components;
-        var index = components.findIndex(function (item) {
-          return item.compId === compId;
-        });
-        var next = [].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(components.slice(0, index)), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(components.slice(index + 1)));
-        this.setState({
-          components: next
-        });
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var components = this.state.components;
-        return components.map(function (_ref4) {
-          var element = _ref4.element;
-          return element;
-        });
-      }
-    }]);
-    return Entry;
-  }(R.Component);
-  setReconciler();
-  var app = document$2.getElementById('app');
-  ReactDOM.render(R.createElement(Entry, {}), app);
-}
-function createNativeComponentConfig(Component, react, reactdom, componentConfig) {
-  R = react;
-  ReactDOM = reactdom;
-  setReconciler();
-  var config = {
-    properties: {
-      props: {
-        type: null,
-        value: null,
-        observer: function observer(_newVal, oldVal) {
-          oldVal && this.component.forceUpdate();
-        }
-      }
-    },
-    created: function created() {
-      if (!Current.app) {
-        initNativeComponentEntry(R, ReactDOM);
-      }
-    },
-    attached: function attached() {
-      var _this28 = this;
-      setCurrent();
-      this.compId = getNativeCompId();
-      this.config = componentConfig;
-      Current.app.mount(Component, this.compId, function () {
-        return _this28;
-      });
-    },
-    ready: function ready() {
-      safeExecute(this.compId, 'onReady');
-    },
-    detached: function detached() {
-      Current.app.unmount(this.compId);
-    },
-    pageLifetimes: {
-      show: function show() {
-        safeExecute(this.compId, 'onShow');
-      },
-      hide: function hide() {
-        safeExecute(this.compId, 'onHide');
-      }
-    },
-    methods: {
-      eh: eventHandler
-    }
-  };
-  function setCurrent() {
-    var pages = getCurrentPages();
-    var currentPage = pages[pages.length - 1];
-    if (Current.page === currentPage) return;
-    Current.page = currentPage;
-    var route = currentPage.route || currentPage.__route__;
-    var router = {
-      params: currentPage.options || {},
-      path: addLeadingSlash(route),
-      onReady: '',
-      onHide: '',
-      onShow: ''
-    };
-    Current.router = router;
-    if (!currentPage.options) {
-      // 例如在微信小程序中，页面 options 的设置时机比组件 attached 慢
-      Object.defineProperty(currentPage, 'options', {
-        enumerable: true,
-        configurable: true,
-        get: function get() {
-          return this._optionsValue;
-        },
-        set: function set(value) {
-          router.params = value;
-          this._optionsValue = value;
-        }
-      });
-    }
-  }
-  return config;
-}
-function connectVuePage(Vue, id) {
-  return function (component) {
-    var injectedPage = Vue.extend({
-      props: {
-        tid: String
-      },
-      mixins: [component, {
-        created: function created() {
-          injectPageInstance(this, id);
-        }
-      }]
-    });
-    var options = {
-      render: function render(h) {
-        return h(isBrowser ? 'div' : 'root', {
-          attrs: {
-            id: id,
-            class: isBrowser ? 'taro_page' : ''
-          }
-        }, [h(injectedPage, {
-          props: {
-            tid: id
-          }
-        })]);
-      }
-    };
-    return options;
-  };
-}
-function setReconciler$1() {
-  var hooks = container.get(SERVICE_IDENTIFIER.Hooks);
-  var onRemoveAttribute = function onRemoveAttribute(dom, qualifiedName) {
-    // 处理原因: https://github.com/NervJS/taro/pull/5990
-    var props = dom.props;
-    if (!props.hasOwnProperty(qualifiedName) || Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isBoolean */ "g"])(props[qualifiedName])) {
-      dom.setAttribute(qualifiedName, false);
-      return true;
-    }
-  };
-  var getLifecycle = function getLifecycle(instance, lifecycle) {
-    return instance.$options[lifecycle];
-  };
-  hooks.onRemoveAttribute = onRemoveAttribute;
-  hooks.getLifecycle = getLifecycle;
-  if (false) {}
-}
-var Vue;
-function createVueApp(App, vue, config) {
-  Vue = vue;
-  Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* ensure */ "d"])(!!Vue, '构建 Vue 项目请把 process.env.FRAMEWORK 设置为 \'vue\'');
-  setReconciler$1();
-  Vue.config.getTagNamespace = _tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* noop */ "n"];
-  var elements = [];
-  var pages = [];
-  var appInstance;
-  var wrapper = new Vue({
-    render: function render(h) {
-      while (pages.length > 0) {
-        var page = pages.pop();
-        elements.push(page(h));
-      }
-      return h(App, {
-        ref: 'app'
-      }, elements.slice());
-    },
-    methods: {
-      mount: function mount(component, id, cb) {
-        pages.push(function (h) {
-          return h(component, {
-            key: id
-          });
-        });
-        this.updateSync(cb);
-      },
-      updateSync: function updateSync(cb) {
-        this._update(this._render(), false);
-        this.$children.forEach(function (child) {
-          return child._update(child._render(), false);
-        });
-        cb();
-      },
-      unmount: function unmount(id, cb) {
-        for (var i = 0; i < elements.length; i++) {
-          var element = elements[i];
-          if (element.key === id) {
-            elements.splice(i, 1);
-            break;
-          }
-        }
-        this.updateSync(cb);
-      }
-    }
-  });
-  if (!isBrowser) {
-    wrapper.$mount(document$2.getElementById('app'));
-  }
-  var app = Object.create({
-    mount: function mount(component, id, cb) {
-      var page = connectVuePage(Vue, id)(component);
-      wrapper.mount(page, id, cb);
-    },
-    unmount: function unmount(id, cb) {
-      wrapper.unmount(id, cb);
-    }
-  }, {
-    config: {
-      writable: true,
-      enumerable: true,
-      configurable: true,
-      value: config
-    },
-    onLaunch: {
-      writable: true,
-      enumerable: true,
-      value: function value(options) {
-        Current.router = Object.assign({
-          params: options === null || options === void 0 ? void 0 : options.query
-        }, options);
-        if (isBrowser) {
-          // 由于 H5 路由初始化的时候会清除 app 下的 dom 元素，所以需要在路由初始化后再执行 render
-          wrapper.$mount(document$2.getElementById('app'));
-        }
-        appInstance = wrapper.$refs.app;
-        if (appInstance != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(appInstance.$options.onLaunch)) {
-          appInstance.$options.onLaunch.call(appInstance, options);
-        }
-      }
-    },
-    onShow: {
-      writable: true,
-      enumerable: true,
-      value: function value(options) {
-        Current.router = Object.assign({
-          params: options === null || options === void 0 ? void 0 : options.query
-        }, options);
-        if (appInstance != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(appInstance.$options.onShow)) {
-          appInstance.$options.onShow.call(appInstance, options);
-        }
-      }
-    },
-    onHide: {
-      writable: true,
-      enumerable: true,
-      value: function value(options) {
-        if (appInstance != null && Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(appInstance.$options.onHide)) {
-          appInstance.$options.onHide.call(appInstance, options);
-        }
-      }
-    }
-  });
-  Current.app = app;
-  return Current.app;
-}
-function createVue3Page(h, id) {
-  return function (component) {
-    var _a;
-    var inject = {
-      props: {
-        tid: String
-      },
-      created: function created() {
-        injectPageInstance(this, id);
-        // vue3 组件 created 时机比小程序页面 onShow 慢，因此在 created 后再手动触发一次 onShow。
-        this.$nextTick(function () {
-          safeExecute(id, 'onShow');
-        });
-      }
-    };
-    if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(component.mixins)) {
-      var mixins = component.mixins;
-      var idx = mixins.length - 1;
-      if (!((_a = mixins[idx].props) === null || _a === void 0 ? void 0 : _a.tid)) {
-        // mixins 里还没注入过，直接推入数组
-        component.mixins.push(inject);
-      } else {
-        // mixins 里已经注入过，代替前者
-        component.mixins[idx] = inject;
-      }
-    } else {
-      component.mixins = [inject];
-    }
-    return h(isBrowser ? 'div' : 'root', {
-      key: id,
-      id: id,
-      class: isBrowser ? 'taro_page' : ''
-    }, [h(Object.assign({}, component), {
-      tid: id
-    })]);
-  };
-}
-function setReconciler$2() {
-  var hooks = container.get(SERVICE_IDENTIFIER.Hooks);
-  var getLifecycle = function getLifecycle(instance, lifecycle) {
-    return instance.$options[lifecycle];
-  };
-  var modifyMpEvent = function modifyMpEvent(event) {
-    event.type = event.type.replace(/-/g, '');
-  };
-  hooks.getLifecycle = getLifecycle;
-  hooks.modifyMpEvent = modifyMpEvent;
-  if (false) {}
-}
-function createVue3App(app, h, config) {
-  var pages = [];
-  var appInstance;
-  Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* ensure */ "d"])(!Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(app._component), '入口组件不支持使用函数式组件');
-  setReconciler$2();
-  app._component.render = function () {
-    return pages.slice();
-  };
-  if (!isBrowser) {
-    appInstance = app.mount('#app');
-  }
-  var appConfig = Object.create({
-    mount: function mount(component, id, cb) {
-      var page = createVue3Page(h, id)(component);
-      pages.push(page);
-      this.updateAppInstance(cb);
-    },
-    unmount: function unmount(id, cb) {
-      pages = pages.filter(function (page) {
-        return page.key !== id;
-      });
-      this.updateAppInstance(cb);
-    },
-    updateAppInstance: function updateAppInstance(cb) {
-      appInstance.$forceUpdate();
-      appInstance.$nextTick(cb);
-    }
-  }, {
-    config: {
-      writable: true,
-      enumerable: true,
-      configurable: true,
-      value: config
-    },
-    onLaunch: {
-      writable: true,
-      enumerable: true,
-      value: function value(options) {
-        var _this29 = this;
-        var _a;
-        Current.router = Object.assign({
-          params: options === null || options === void 0 ? void 0 : options.query
-        }, options);
-        if (isBrowser) {
-          appInstance = app.mount('#app');
-        }
-        // 把 App Class 上挂载的额外属性同步到全局 app 对象中
-        // eslint-disable-next-line dot-notation
-        if (app['taroGlobalData']) {
-          // eslint-disable-next-line dot-notation
-          var globalData = app['taroGlobalData'];
-          var keys = Object.keys(globalData);
-          var descriptors = Object.getOwnPropertyDescriptors(globalData);
-          keys.forEach(function (key) {
-            Object.defineProperty(_this29, key, {
-              configurable: true,
-              enumerable: true,
-              get: function get() {
-                return globalData[key];
-              },
-              set: function set(value) {
-                globalData[key] = value;
-              }
-            });
-          });
-          Object.defineProperties(this, descriptors);
-        }
-        var onLaunch = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onLaunch;
-        Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(onLaunch) && onLaunch.call(appInstance, options);
-      }
-    },
-    onShow: {
-      writable: true,
-      enumerable: true,
-      value: function value(options) {
-        var _a;
-        Current.router = Object.assign({
-          params: options === null || options === void 0 ? void 0 : options.query
-        }, options);
-        var onShow = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onShow;
-        Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(onShow) && onShow.call(appInstance, options);
-      }
-    },
-    onHide: {
-      writable: true,
-      enumerable: true,
-      value: function value(options) {
-        var _a;
-        var onHide = (_a = appInstance === null || appInstance === void 0 ? void 0 : appInstance.$options) === null || _a === void 0 ? void 0 : _a.onHide;
-        Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(onHide) && onHide.call(appInstance, options);
-      }
-    }
-  });
-  Current.app = appConfig;
-  return Current.app;
-}
-var taroHooks = function taroHooks(lifecycle) {
-  return function (fn) {
-    var id = R.useContext(PageContext) || HOOKS_APP_ID;
-    // hold fn ref and keep up to date
-    var fnRef = R.useRef(fn);
-    if (fnRef.current !== fn) fnRef.current = fn;
-    R.useLayoutEffect(function () {
-      var inst = getPageInstance(id);
-      var first = false;
-      if (inst == null) {
-        first = true;
-        inst = Object.create(null);
-      }
-      inst = inst;
-      // callback is immutable but inner function is up to date
-      var callback = function callback() {
-        return fnRef.current.apply(fnRef, arguments);
-      };
-      if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isFunction */ "h"])(inst[lifecycle])) {
-        inst[lifecycle] = [inst[lifecycle], callback];
-      } else {
-        inst[lifecycle] = [].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(inst[lifecycle] || []), [callback]);
-      }
-      if (first) {
-        injectPageInstance(inst, id);
-      }
-      return function () {
-        var inst = getPageInstance(id);
-        var list = inst[lifecycle];
-        if (list === callback) {
-          inst[lifecycle] = undefined;
-        } else if (Object(_tarojs_shared__WEBPACK_IMPORTED_MODULE_17__[/* isArray */ "f"])(list)) {
-          inst[lifecycle] = list.filter(function (item) {
-            return item !== callback;
-          });
-        }
-      };
-    }, []);
-  };
-};
-var useDidShow = taroHooks('componentDidShow');
-var useDidHide = taroHooks('componentDidHide');
-var usePullDownRefresh = taroHooks('onPullDownRefresh');
-var useReachBottom = taroHooks('onReachBottom');
-var usePageScroll = taroHooks('onPageScroll');
-var useResize = taroHooks('onResize');
-var useShareAppMessage = taroHooks('onShareAppMessage');
-var useTabItemTap = taroHooks('onTabItemTap');
-var useTitleClick = taroHooks('onTitleClick');
-var useOptionMenuClick = taroHooks('onOptionMenuClick');
-var usePullIntercept = taroHooks('onPullIntercept');
-var useShareTimeline = taroHooks('onShareTimeline');
-var useAddToFavorites = taroHooks('onAddToFavorites');
-var useReady = taroHooks('onReady');
-var useRouter = function useRouter() {
-  var dynamic = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-  return dynamic ? Current.router : R.useMemo(function () {
-    return Current.router;
-  }, []);
-};
-var useScope = function useScope() {
-  return undefined;
-};
-function removeLeadingSlash(path) {
-  if (path == null) {
-    return '';
-  }
-  return path.charAt(0) === '/' ? path.slice(1) : path;
-}
-var nextTick = function nextTick(cb, ctx) {
-  var _a, _b, _c;
-  var router = Current.router;
-  var timerFunc = function timerFunc() {
-    setTimeout(function () {
-      ctx ? cb.call(ctx) : cb();
-    }, 1);
-  };
-  if (router !== null) {
-    var pageElement = null;
-    var path = getPath(removeLeadingSlash(router.path), router.params);
-    pageElement = document$2.getElementById(path);
-    if (pageElement === null || pageElement === void 0 ? void 0 : pageElement.pendingUpdate) {
-      if (isBrowser) {
-        // eslint-disable-next-line dot-notation
-        (_c = (_b = (_a = pageElement.firstChild) === null || _a === void 0 ? void 0 : _a['componentOnReady']) === null || _b === void 0 ? void 0 : _b.call(_a).then(function () {
-          timerFunc();
-        })) !== null && _c !== void 0 ? _c : timerFunc();
-      } else {
-        pageElement.enqueueUpdateCallback(cb, ctx);
-      }
-    } else {
-      timerFunc();
-    }
-  } else {
-    timerFunc();
-  }
-};
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../_process@0.11.10@process/browser.js */ "./node_modules/_process@0.11.10@process/browser.js"), __webpack_require__(/*! ./../../../_webpack@4.46.0@webpack/buildin/global.js */ "./node_modules/_webpack@4.46.0@webpack/buildin/global.js"), __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js")["document"], __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js")["window"], __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js")["requestAnimationFrame"], __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js")["cancelAnimationFrame"]))
-
-/***/ }),
-
-/***/ "./node_modules/_@tarojs_shared@3.3.14@@tarojs/shared/dist/shared.esm.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/_@tarojs_shared@3.3.14@@tarojs/shared/dist/shared.esm.js ***!
-  \*******************************************************************************/
-/*! exports provided: EMPTY_ARR, EMPTY_OBJ, animationEvents, box, cacheDataGet, cacheDataHas, cacheDataSet, capitalize, controlledComponent, defaultReconciler, ensure, events, focusComponents, getUniqueKey, hasOwn, indent, internalComponents, isArray, isBoolean, isBooleanStringLiteral, isFunction, isNull, isNumber, isObject, isString, isUndefined, mergeInternalComponents, mergeReconciler, nestElements, noop, processApis, queryToJson, setUniqueKeyToRoute, singleQuote, styles, toCamelCase, toDashed, toKebabCase, touchEvents, unbox, unsupport, voidElements, warn */
-/*! exports used: EMPTY_OBJ, controlledComponent, defaultReconciler, ensure, internalComponents, isArray, isBoolean, isFunction, isObject, isString, isUndefined, mergeInternalComponents, mergeReconciler, noop, processApis, singleQuote, toCamelCase, toDashed, warn */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export EMPTY_ARR */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EMPTY_OBJ; });
-/* unused harmony export animationEvents */
-/* unused harmony export box */
-/* unused harmony export cacheDataGet */
-/* unused harmony export cacheDataHas */
-/* unused harmony export cacheDataSet */
-/* unused harmony export capitalize */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return controlledComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return defaultReconciler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return ensure; });
-/* unused harmony export events */
-/* unused harmony export focusComponents */
-/* unused harmony export getUniqueKey */
-/* unused harmony export hasOwn */
-/* unused harmony export indent */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return internalComponents; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return isArray; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return isBoolean; });
-/* unused harmony export isBooleanStringLiteral */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return isFunction; });
-/* unused harmony export isNull */
-/* unused harmony export isNumber */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return isObject; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return isString; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return isUndefined; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return mergeInternalComponents; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return mergeReconciler; });
-/* unused harmony export nestElements */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return noop; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return processApis; });
-/* unused harmony export queryToJson */
-/* unused harmony export setUniqueKeyToRoute */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return singleQuote; });
-/* unused harmony export styles */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return toCamelCase; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return toDashed; });
-/* unused harmony export toKebabCase */
-/* unused harmony export touchEvents */
-/* unused harmony export unbox */
-/* unused harmony export unsupport */
-/* unused harmony export voidElements */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return warn; });
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var _Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/_@babel_runtime@7.21.5@@babel/runtime/helpers/esm/typeof.js");
-
+Events.eventSplitter = ','; // Note: Harmony ACE API 8 开发板不支持使用正则 split 字符串 /\s+/
 
 function isString(o) {
   return typeof o === 'string';
@@ -7339,7 +7406,7 @@ function isNull(o) {
   return o === null;
 }
 function isObject(o) {
-  return o !== null && Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(o) === 'object';
+  return o !== null && (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__["default"])(o) === 'object';
 }
 function isBoolean(o) {
   return o === true || o === false;
@@ -7354,445 +7421,159 @@ function isBooleanStringLiteral(o) {
   return o === 'true' || o === 'false';
 }
 var isArray = Array.isArray;
-var styles = {
-  style: "i.".concat("st" /* Style */),
-  class: "i.".concat("cl" /* Class */)
+var isWebPlatform = function isWebPlatform() {
+  return  false || "mini" === 'web';
 };
-
-var events = {
-  bindtap: 'eh'
+var HOOK_TYPE;
+(function (HOOK_TYPE) {
+  HOOK_TYPE[HOOK_TYPE["SINGLE"] = 0] = "SINGLE";
+  HOOK_TYPE[HOOK_TYPE["MULTI"] = 1] = "MULTI";
+  HOOK_TYPE[HOOK_TYPE["WATERFALL"] = 2] = "WATERFALL";
+})(HOOK_TYPE || (HOOK_TYPE = {}));
+var defaultMiniLifecycle = {
+  app: ['onLaunch', 'onShow', 'onHide'],
+  page: ['onLoad', 'onUnload', 'onReady', 'onShow', 'onHide', ['onPullDownRefresh', 'onReachBottom', 'onPageScroll', 'onResize', 'onTabItemTap', 'onTitleClick', 'onOptionMenuClick', 'onPopMenuClick', 'onPullIntercept', 'onAddToFavorites'], ['onShareAppMessage', 'onShareTimeline']],
+  component: ['attached', 'detached']
 };
-var touchEvents = {
-  bindTouchStart: '',
-  bindTouchMove: '',
-  bindTouchEnd: '',
-  bindTouchCancel: '',
-  bindLongTap: ''
-};
-var animationEvents = {
-  bindAnimationStart: '',
-  bindAnimationIteration: '',
-  bindAnimationEnd: '',
-  bindTransitionEnd: ''
-};
-function singleQuote(s) {
-  return "'".concat(s, "'");
+function TaroHook(type, initial) {
+  return {
+    type: type,
+    initial: initial || null
+  };
 }
-var View = Object.assign(Object.assign({
-  'hover-class': singleQuote('none'),
-  'hover-stop-propagation': 'false',
-  'hover-start-time': '50',
-  'hover-stay-time': '400',
-  animation: ''
-}, touchEvents), animationEvents);
-var Icon = {
-  type: '',
-  size: '23',
-  color: ''
-};
-var MapComp = Object.assign({
-  longitude: '',
-  latitude: '',
-  scale: '16',
-  markers: '[]',
-  covers: '',
-  polyline: '[]',
-  circles: '[]',
-  controls: '[]',
-  'include-points': '[]',
-  'show-location': '',
-  'layer-style': '1',
-  bindMarkerTap: '',
-  bindControlTap: '',
-  bindCalloutTap: '',
-  bindUpdated: ''
-}, touchEvents);
-var Progress = {
-  percent: '',
-  'stroke-width': '6',
-  color: singleQuote('#09BB07'),
-  activeColor: singleQuote('#09BB07'),
-  backgroundColor: singleQuote('#EBEBEB'),
-  active: 'false',
-  'active-mode': singleQuote('backwards'),
-  'show-info': 'false'
-};
-var RichText = {
-  nodes: '[]'
-};
-var Text = {
-  selectable: 'false',
-  space: '',
-  decode: 'false'
-};
-var Button = Object.assign({
-  size: singleQuote('default'),
-  type: '',
-  plain: 'false',
-  disabled: '',
-  loading: 'false',
-  'form-type': '',
-  'open-type': '',
-  'hover-class': singleQuote('button-hover'),
-  'hover-stop-propagation': 'false',
-  'hover-start-time': '20',
-  'hover-stay-time': '70',
-  name: ''
-}, touchEvents);
-var Checkbox = {
-  value: '',
-  disabled: '',
-  checked: 'false',
-  color: singleQuote('#09BB07'),
-  name: ''
-};
-var CheckboxGroup = {
-  bindChange: '',
-  name: ''
-};
-var Form = {
-  'report-submit': 'false',
-  bindSubmit: '',
-  bindReset: '',
-  name: ''
-};
-var Input = {
-  value: '',
-  type: singleQuote(''),
-  password: 'false',
-  placeholder: '',
-  'placeholder-style': '',
-  'placeholder-class': singleQuote('input-placeholder'),
-  disabled: '',
-  maxlength: '140',
-  'cursor-spacing': '0',
-  focus: 'false',
-  'confirm-type': singleQuote('done'),
-  'confirm-hold': 'false',
-  cursor: 'i.value.length',
-  'selection-start': '-1',
-  'selection-end': '-1',
-  bindInput: '',
-  bindFocus: '',
-  bindBlur: '',
-  bindConfirm: '',
-  name: ''
-};
-var Label = {
-  for: '',
-  name: ''
-};
-var Picker = {
-  mode: singleQuote('selector'),
-  disabled: '',
-  range: '',
-  'range-key': '',
-  value: '',
-  start: '',
-  end: '',
-  fields: singleQuote('day'),
-  'custom-item': '',
-  name: '',
-  bindCancel: '',
-  bindChange: '',
-  bindColumnChange: ''
-};
-var PickerView = {
-  value: '',
-  'indicator-style': '',
-  'indicator-class': '',
-  'mask-style': '',
-  'mask-class': '',
-  bindChange: '',
-  name: ''
-};
-var PickerViewColumn = {
-  name: ''
-};
-var Radio = {
-  value: '',
-  checked: 'false',
-  disabled: '',
-  color: singleQuote('#09BB07'),
-  name: ''
-};
-var RadioGroup = {
-  bindChange: '',
-  name: ''
-};
-var Slider = {
-  min: '0',
-  max: '100',
-  step: '1',
-  disabled: '',
-  value: '0',
-  activeColor: singleQuote('#1aad19'),
-  backgroundColor: singleQuote('#e9e9e9'),
-  'block-size': '28',
-  'block-color': singleQuote('#ffffff'),
-  'show-value': 'false',
-  bindChange: '',
-  bindChanging: '',
-  name: ''
-};
-var Switch = {
-  checked: 'false',
-  disabled: '',
-  type: singleQuote('switch'),
-  color: singleQuote('#04BE02'),
-  bindChange: '',
-  name: ''
-};
-var Textarea = {
-  value: '',
-  placeholder: '',
-  'placeholder-style': '',
-  'placeholder-class': singleQuote('textarea-placeholder'),
-  disabled: '',
-  maxlength: '140',
-  'auto-focus': 'false',
-  focus: 'false',
-  'auto-height': 'false',
-  fixed: 'false',
-  'cursor-spacing': '0',
-  cursor: '-1',
-  'selection-start': '-1',
-  'selection-end': '-1',
-  bindFocus: '',
-  bindBlur: '',
-  bindLineChange: '',
-  bindInput: '',
-  bindConfirm: '',
-  name: ''
-};
-var CoverImage = {
-  src: '',
-  bindLoad: 'eh',
-  bindError: 'eh'
-};
-var CoverView = Object.assign({
-  'scroll-top': 'false'
-}, touchEvents);
-var MovableArea = {
-  'scale-area': 'false'
-};
-var MovableView = Object.assign(Object.assign({
-  direction: 'none',
-  inertia: 'false',
-  'out-of-bounds': 'false',
-  x: '',
-  y: '',
-  damping: '20',
-  friction: '2',
-  disabled: '',
-  scale: 'false',
-  'scale-min': '0.5',
-  'scale-max': '10',
-  'scale-value': '1',
-  animation: 'true',
-  bindChange: '',
-  bindScale: '',
-  bindHTouchMove: '',
-  bindVTouchMove: '',
-  width: singleQuote('10px'),
-  height: singleQuote('10px')
-}, touchEvents), animationEvents);
-var ScrollView = Object.assign(Object.assign({
-  'scroll-x': 'false',
-  'scroll-y': 'false',
-  'upper-threshold': '50',
-  'lower-threshold': '50',
-  'scroll-top': '',
-  'scroll-left': '',
-  'scroll-into-view': '',
-  'scroll-with-animation': 'false',
-  'enable-back-to-top': 'false',
-  bindScrollToUpper: '',
-  bindScrollToLower: '',
-  bindScroll: ''
-}, touchEvents), animationEvents);
-var Swiper = Object.assign({
-  'indicator-dots': 'false',
-  'indicator-color': singleQuote('rgba(0, 0, 0, .3)'),
-  'indicator-active-color': singleQuote('#000000'),
-  autoplay: 'false',
-  current: '0',
-  interval: '5000',
-  duration: '500',
-  circular: 'false',
-  vertical: 'false',
-  'previous-margin': '\'0px\'',
-  'next-margin': '\'0px\'',
-  'display-multiple-items': '1',
-  bindChange: '',
-  bindTransition: '',
-  bindAnimationFinish: ''
-}, touchEvents);
-var SwiperItem = {
-  'item-id': ''
-};
-var Navigator = {
-  url: '',
-  'open-type': singleQuote('navigate'),
-  delta: '1',
-  'hover-class': singleQuote('navigator-hover'),
-  'hover-stop-propagation': 'false',
-  'hover-start-time': '50',
-  'hover-stay-time': '600',
-  bindSuccess: '',
-  bindFail: '',
-  bindComplete: ''
-};
-var Audio = {
-  id: '',
-  src: '',
-  loop: 'false',
-  controls: 'false',
-  poster: '',
-  name: '',
-  author: '',
-  bindError: '',
-  bindPlay: '',
-  bindPause: '',
-  bindTimeUpdate: '',
-  bindEnded: ''
-};
-var Camera = {
-  'device-position': singleQuote('back'),
-  flash: singleQuote('auto'),
-  bindStop: '',
-  bindError: ''
-};
-var Image = Object.assign({
-  src: '',
-  mode: singleQuote('scaleToFill'),
-  'lazy-load': 'false',
-  bindError: '',
-  bindLoad: ''
-}, touchEvents);
-var LivePlayer = {
-  src: '',
-  autoplay: 'false',
-  muted: 'false',
-  orientation: singleQuote('vertical'),
-  'object-fit': singleQuote('contain'),
-  'background-mute': 'false',
-  'min-cache': '1',
-  'max-cache': '3',
-  animation: '',
-  bindStateChange: '',
-  bindFullScreenChange: '',
-  bindNetStatus: ''
-};
-var Video = {
-  src: '',
-  duration: '',
-  controls: 'true',
-  'danmu-list': '',
-  'danmu-btn': '',
-  'enable-danmu': '',
-  autoplay: 'false',
-  loop: 'false',
-  muted: 'false',
-  'initial-time': '0',
-  'page-gesture': 'false',
-  direction: '',
-  'show-progress': 'true',
-  'show-fullscreen-btn': 'true',
-  'show-play-btn': 'true',
-  'show-center-play-btn': 'true',
-  'enable-progress-gesture': 'true',
-  'object-fit': singleQuote('contain'),
-  poster: '',
-  'show-mute-btn': 'false',
-  animation: '',
-  bindPlay: '',
-  bindPause: '',
-  bindEnded: '',
-  bindTimeUpdate: '',
-  bindFullScreenChange: '',
-  bindWaiting: '',
-  bindError: ''
-};
-var Canvas = Object.assign({
-  'canvas-id': '',
-  'disable-scroll': 'false',
-  bindError: ''
-}, touchEvents);
-var Ad = {
-  'unit-id': '',
-  'ad-intervals': '',
-  bindLoad: '',
-  bindError: '',
-  bindClose: ''
-};
-var WebView = {
-  src: '',
-  bindMessage: '',
-  bindLoad: '',
-  bindError: ''
-};
-var Block = {};
-// For Vue，因为 slot 标签被 vue 占用了
-var SlotView = {
-  name: ''
-};
-// For React
-// Slot 和 SlotView 最终都会编译成 <view slot={{ i.name }} />
-// 因为 <slot name="{{ i.name }}" /> 适用性没有前者高（无法添加类和样式）
-// 不给 View 直接加 slot 属性的原因是性能损耗
-var Slot = {
-  name: ''
-};
-var internalComponents = {
-  View: View,
-  Icon: Icon,
-  Progress: Progress,
-  RichText: RichText,
-  Text: Text,
-  Button: Button,
-  Checkbox: Checkbox,
-  CheckboxGroup: CheckboxGroup,
-  Form: Form,
-  Input: Input,
-  Label: Label,
-  Picker: Picker,
-  PickerView: PickerView,
-  PickerViewColumn: PickerViewColumn,
-  Radio: Radio,
-  RadioGroup: RadioGroup,
-  Slider: Slider,
-  Switch: Switch,
-  CoverImage: CoverImage,
-  Textarea: Textarea,
-  CoverView: CoverView,
-  MovableArea: MovableArea,
-  MovableView: MovableView,
-  ScrollView: ScrollView,
-  Swiper: Swiper,
-  SwiperItem: SwiperItem,
-  Navigator: Navigator,
-  Audio: Audio,
-  Camera: Camera,
-  Image: Image,
-  LivePlayer: LivePlayer,
-  Video: Video,
-  Canvas: Canvas,
-  Ad: Ad,
-  WebView: WebView,
-  Block: Block,
-  Map: MapComp,
-  Slot: Slot,
-  SlotView: SlotView
-};
-var controlledComponent = new Set(['input', 'checkbox', 'picker', 'picker-view', 'radio', 'slider', 'switch', 'textarea']);
-var focusComponents = new Set(['input', 'textarea']);
-var voidElements = new Set(['progress', 'icon', 'rich-text', 'input', 'textarea', 'slider', 'switch', 'audio', 'ad', 'official-account', 'open-data', 'navigation-bar']);
-var nestElements = new Map([['view', -1], ['catch-view', -1], ['cover-view', -1], ['static-view', -1], ['pure-view', -1], ['block', -1], ['text', -1], ['static-text', 6], ['slot', 8], ['slot-view', 8], ['label', 6], ['form', 4], ['scroll-view', 4], ['swiper', 4], ['swiper-item', 4]]);
+var TaroHooks = /*#__PURE__*/function (_Events) {
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_3__["default"])(TaroHooks, _Events);
+  var _super = (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createSuper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(TaroHooks);
+  function TaroHooks(hooks, opts) {
+    var _this2;
+    (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__["default"])(this, TaroHooks);
+    _this2 = _super.call(this, opts);
+    _this2.hooks = hooks;
+    for (var hookName in hooks) {
+      var initial = hooks[hookName].initial;
+      if (isFunction(initial)) {
+        _this2.on(hookName, initial);
+      }
+    }
+    return _this2;
+  }
+  (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__["default"])(TaroHooks, [{
+    key: "tapOneOrMany",
+    value: function tapOneOrMany(hookName, callback) {
+      var _this3 = this;
+      var list = isFunction(callback) ? [callback] : callback;
+      list.forEach(function (cb) {
+        return _this3.on(hookName, cb);
+      });
+    }
+  }, {
+    key: "tap",
+    value: function tap(hookName, callback) {
+      var hooks = this.hooks;
+      var _hooks$hookName = hooks[hookName],
+        type = _hooks$hookName.type,
+        initial = _hooks$hookName.initial;
+      if (type === HOOK_TYPE.SINGLE) {
+        this.off(hookName);
+        this.on(hookName, isFunction(callback) ? callback : callback[callback.length - 1]);
+      } else {
+        initial && this.off(hookName, initial);
+        this.tapOneOrMany(hookName, callback);
+      }
+    }
+  }, {
+    key: "call",
+    value: function call(hookName) {
+      var _a;
+      var hook = this.hooks[hookName];
+      if (!hook) return;
+      var type = hook.type;
+      var calls = this.callbacks;
+      if (!calls) return;
+      var list = calls[hookName];
+      if (list) {
+        var tail = list.tail;
+        var node = list.next;
+        for (var _len2 = arguments.length, rest = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+          rest[_key2 - 1] = arguments[_key2];
+        }
+        var args = rest;
+        var res;
+        while (node !== tail) {
+          res = (_a = node.callback) === null || _a === void 0 ? void 0 : _a.apply(node.context || this, args);
+          if (type === HOOK_TYPE.WATERFALL) {
+            var params = [res];
+            args = params;
+          }
+          node = node.next;
+        }
+        return res;
+      }
+    }
+  }, {
+    key: "isExist",
+    value: function isExist(hookName) {
+      var _a;
+      return Boolean((_a = this.callbacks) === null || _a === void 0 ? void 0 : _a[hookName]);
+    }
+  }]);
+  return TaroHooks;
+}(Events);
+var hooks = new TaroHooks({
+  getMiniLifecycle: TaroHook(HOOK_TYPE.SINGLE, function (defaultConfig) {
+    return defaultConfig;
+  }),
+  getMiniLifecycleImpl: TaroHook(HOOK_TYPE.SINGLE, function () {
+    return this.call('getMiniLifecycle', defaultMiniLifecycle);
+  }),
+  getLifecycle: TaroHook(HOOK_TYPE.SINGLE, function (instance, lifecycle) {
+    return instance[lifecycle];
+  }),
+  getPathIndex: TaroHook(HOOK_TYPE.SINGLE, function (indexOfNode) {
+    return "[".concat(indexOfNode, "]");
+  }),
+  getEventCenter: TaroHook(HOOK_TYPE.SINGLE, function (Events) {
+    return new Events();
+  }),
+  isBubbleEvents: TaroHook(HOOK_TYPE.SINGLE, function (eventName) {
+    /**
+     * 支持冒泡的事件, 除 支付宝小程序外，其余的可冒泡事件都和微信保持一致
+     * 详见 见 https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
+     */
+    var BUBBLE_EVENTS = new Set(['touchstart', 'touchmove', 'touchcancel', 'touchend', 'touchforcechange', 'tap', 'longpress', 'longtap', 'transitionend', 'animationstart', 'animationiteration', 'animationend']);
+    return BUBBLE_EVENTS.has(eventName);
+  }),
+  getSpecialNodes: TaroHook(HOOK_TYPE.SINGLE, function () {
+    return ['view', 'text', 'image'];
+  }),
+  onRemoveAttribute: TaroHook(HOOK_TYPE.SINGLE),
+  batchedEventUpdates: TaroHook(HOOK_TYPE.SINGLE),
+  mergePageInstance: TaroHook(HOOK_TYPE.SINGLE),
+  modifyPageObject: TaroHook(HOOK_TYPE.SINGLE),
+  createPullDownComponent: TaroHook(HOOK_TYPE.SINGLE),
+  getDOMNode: TaroHook(HOOK_TYPE.SINGLE),
+  modifyHydrateData: TaroHook(HOOK_TYPE.SINGLE),
+  modifySetAttrPayload: TaroHook(HOOK_TYPE.SINGLE),
+  modifyRmAttrPayload: TaroHook(HOOK_TYPE.SINGLE),
+  onAddEvent: TaroHook(HOOK_TYPE.SINGLE),
+  modifyMpEvent: TaroHook(HOOK_TYPE.MULTI),
+  modifyMpEventImpl: TaroHook(HOOK_TYPE.SINGLE, function (e) {
+    try {
+      // 有些小程序的事件对象的某些属性只读
+      this.call('modifyMpEvent', e);
+    } catch (error) {
+      console.warn('[Taro modifyMpEvent hook Error]: ' + (error === null || error === void 0 ? void 0 : error.message));
+    }
+  }),
+  injectNewStyleProperties: TaroHook(HOOK_TYPE.SINGLE),
+  modifyTaroEvent: TaroHook(HOOK_TYPE.MULTI),
+  modifyDispatchEvent: TaroHook(HOOK_TYPE.MULTI),
+  initNativeApi: TaroHook(HOOK_TYPE.MULTI),
+  patchElement: TaroHook(HOOK_TYPE.MULTI)
+});
 var EMPTY_OBJ = {};
 var EMPTY_ARR = [];
 var noop = function noop() {};
-var defaultReconciler = Object.create(null);
 /**
  * box creates a boxed value.
  *
@@ -7841,7 +7622,6 @@ var hasOwnProperty = Object.prototype.hasOwnProperty;
 var hasOwn = function hasOwn(val, key) {
   return hasOwnProperty.call(val, key);
 };
-var reportIssue = '如有疑问，请提交 issue 至：https://github.com/nervjs/taro/issues';
 /**
  * ensure takes a condition and throw a error if the condition fails,
  * like failure::ensure: https://docs.rs/failure/0.1.1/failure/macro.ensure.html
@@ -7850,7 +7630,10 @@ var reportIssue = '如有疑问，请提交 issue 至：https://github.com/nervj
  */
 function ensure(condition, msg) {
   if (!condition) {
-    throw new Error(msg + '\n' + reportIssue);
+    if (true) {
+      var reportIssue = '\n如有疑问，请提交 issue 至：https://github.com/nervjs/taro/issues';
+      throw new Error(msg + reportIssue);
+    } else {}
   }
 }
 function warn(condition, msg) {
@@ -7916,23 +7699,63 @@ function mergeInternalComponents(components) {
       internalComponents[name] = components[name];
     }
   });
+  return internalComponents;
 }
-function mergeReconciler(hostConfig) {
-  Object.keys(hostConfig).forEach(function (key) {
-    var value = hostConfig[key];
-    var raw = defaultReconciler[key];
-    if (!raw) {
-      defaultReconciler[key] = value;
+function getComponentsAlias(origin) {
+  var mapping = {};
+  var viewAttrs = origin.View;
+  var extraList = {
+    '#text': {},
+    StaticView: viewAttrs,
+    StaticImage: origin.Image,
+    StaticText: origin.Text,
+    PureView: viewAttrs,
+    CatchView: viewAttrs
+  };
+  origin = Object.assign(Object.assign({}, origin), extraList);
+  Object.keys(origin).sort(function (a, b) {
+    var reg = /^(Static|Pure|Catch)*(View|Image|Text)$/;
+    var isACommonly = reg.test(a);
+    var isBCommonly = reg.test(b);
+    if (isACommonly && isBCommonly) {
+      return a > b ? 1 : -1;
+    } else if (isACommonly) {
+      return -1;
+    } else if (isBCommonly) {
+      return 1;
     } else {
-      if (isArray(raw)) {
-        defaultReconciler[key] = raw.push(value);
-      } else {
-        defaultReconciler[key] = [raw, value];
-      }
+      return a >= b ? 1 : -1;
     }
+  }).forEach(function (key, num) {
+    var obj = {
+      _num: String(num)
+    };
+    Object.keys(origin[key]).filter(function (attr) {
+      return !/^bind/.test(attr) && !['focus', 'blur'].includes(attr);
+    }).sort().forEach(function (attr, index) {
+      obj[toCamelCase(attr)] = 'p' + index;
+    });
+    mapping[toDashed(key)] = obj;
+  });
+  return mapping;
+}
+function getPlatformType() {
+  var platform = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'weapp';
+  var configNameOrType = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : PLATFORM_TYPE.MINI;
+  if (Object.keys(PLATFORM_CONFIG_MAP).includes(platform)) {
+    configNameOrType = platform;
+  }
+  var param = PLATFORM_CONFIG_MAP[configNameOrType] || {};
+  return param.type || configNameOrType;
+}
+function mergeReconciler(hostConfig, hooksForTest) {
+  var obj = hooksForTest || hooks;
+  var keys = Object.keys(hostConfig);
+  keys.forEach(function (key) {
+    obj.tap(key, hostConfig[key]);
   });
 }
-function unsupport(api) {
+function nonsupport(api) {
   return function () {
     console.warn("\u5C0F\u7A0B\u5E8F\u6682\u4E0D\u652F\u6301 ".concat(api));
   };
@@ -7956,12 +7779,15 @@ function indent(str, size) {
 var needPromiseApis = new Set(['addPhoneContact', 'authorize', 'canvasGetImageData', 'canvasPutImageData', 'canvasToTempFilePath', 'checkSession', 'chooseAddress', 'chooseImage', 'chooseInvoiceTitle', 'chooseLocation', 'chooseVideo', 'clearStorage', 'closeBLEConnection', 'closeBluetoothAdapter', 'closeSocket', 'compressImage', 'connectSocket', 'createBLEConnection', 'downloadFile', 'exitMiniProgram', 'getAvailableAudioSources', 'getBLEDeviceCharacteristics', 'getBLEDeviceServices', 'getBatteryInfo', 'getBeacons', 'getBluetoothAdapterState', 'getBluetoothDevices', 'getClipboardData', 'getConnectedBluetoothDevices', 'getConnectedWifi', 'getExtConfig', 'getFileInfo', 'getImageInfo', 'getLocation', 'getNetworkType', 'getSavedFileInfo', 'getSavedFileList', 'getScreenBrightness', 'getSetting', 'getStorage', 'getStorageInfo', 'getSystemInfo', 'getUserInfo', 'getWifiList', 'hideHomeButton', 'hideShareMenu', 'hideTabBar', 'hideTabBarRedDot', 'loadFontFace', 'login', 'makePhoneCall', 'navigateBack', 'navigateBackMiniProgram', 'navigateTo', 'navigateToBookshelf', 'navigateToMiniProgram', 'notifyBLECharacteristicValueChange', 'hideKeyboard', 'hideLoading', 'hideNavigationBarLoading', 'hideToast', 'openBluetoothAdapter', 'openDocument', 'openLocation', 'openSetting', 'pageScrollTo', 'previewImage', 'queryBookshelf', 'reLaunch', 'readBLECharacteristicValue', 'redirectTo', 'removeSavedFile', 'removeStorage', 'removeTabBarBadge', 'requestSubscribeMessage', 'saveFile', 'saveImageToPhotosAlbum', 'saveVideoToPhotosAlbum', 'scanCode', 'sendSocketMessage', 'setBackgroundColor', 'setBackgroundTextStyle', 'setClipboardData', 'setEnableDebug', 'setInnerAudioOption', 'setKeepScreenOn', 'setNavigationBarColor', 'setNavigationBarTitle', 'setScreenBrightness', 'setStorage', 'setTabBarBadge', 'setTabBarItem', 'setTabBarStyle', 'showActionSheet', 'showFavoriteGuide', 'showLoading', 'showModal', 'showShareMenu', 'showTabBar', 'showTabBarRedDot', 'showToast', 'startBeaconDiscovery', 'startBluetoothDevicesDiscovery', 'startDeviceMotionListening', 'startPullDownRefresh', 'stopBeaconDiscovery', 'stopBluetoothDevicesDiscovery', 'stopCompass', 'startCompass', 'startAccelerometer', 'stopAccelerometer', 'showNavigationBarLoading', 'stopDeviceMotionListening', 'stopPullDownRefresh', 'switchTab', 'uploadFile', 'vibrateLong', 'vibrateShort', 'writeBLECharacteristicValue']);
 function getCanIUseWebp(taro) {
   return function () {
-    if (typeof taro.getSystemInfoSync !== 'function') {
-      console.error('不支持 API canIUseWebp');
+    var _a;
+    var res = (_a = taro.getSystemInfoSync) === null || _a === void 0 ? void 0 : _a.call(taro);
+    if (!res) {
+      if (true) {
+        console.error('不支持 API canIUseWebp');
+      }
       return false;
     }
-    var _taro$getSystemInfoSy = taro.getSystemInfoSync(),
-      platform = _taro$getSystemInfoSy.platform;
+    var platform = res.platform;
     var platformLower = platform.toLowerCase();
     if (platformLower === 'android' || platformLower === 'devtools') {
       return true;
@@ -7971,12 +7797,9 @@ function getCanIUseWebp(taro) {
 }
 function getNormalRequest(global) {
   return function request(options) {
-    options = options || {};
-    if (typeof options === 'string') {
-      options = {
-        url: options
-      };
-    }
+    options = options ? isString(options) ? {
+      url: options
+    } : options : {};
     var originSuccess = options.success;
     var originFail = options.fail;
     var originComplete = options.complete;
@@ -7995,6 +7818,7 @@ function getNormalRequest(global) {
       };
       requestTask = global.request(options);
     });
+    equipTaskMethodsIntoPromise(requestTask, p);
     p.abort = function (cb) {
       cb && cb();
       if (requestTask) {
@@ -8008,11 +7832,11 @@ function getNormalRequest(global) {
 function processApis(taro, global) {
   var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   var patchNeedPromiseApis = config.needPromiseApis || [];
-  var _needPromiseApis = new Set([].concat(Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(patchNeedPromiseApis), Object(_Users_gaoyuan_Code_learn_let_us_think_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(needPromiseApis)));
+  var _needPromiseApis = new Set([].concat((0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(patchNeedPromiseApis), (0,_Users_gaoyuan_Documents_Code_learn_MyGithub_let_us_think_node_modules_store_babel_runtime_7_21_5_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(needPromiseApis)));
   var preserved = ['getEnv', 'interceptors', 'Current', 'getCurrentInstance', 'options', 'nextTick', 'eventCenter', 'Events', 'preload', 'webpackJsonp'];
   var apis = new Set(!config.isOnlyPromisify ? Object.keys(global).filter(function (api) {
     return preserved.indexOf(api) === -1;
-  }) : new Set(patchNeedPromiseApis));
+  }) : patchNeedPromiseApis);
   if (config.modifyApis) {
     config.modifyApis(apis);
   }
@@ -8021,8 +7845,8 @@ function processApis(taro, global) {
       var originKey = key;
       taro[originKey] = function () {
         var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-        for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-          args[_key - 1] = arguments[_key];
+        for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
+          args[_key3 - 1] = arguments[_key3];
         }
         var key = originKey;
         // 第一个参数 options 为字符串，单独处理
@@ -8039,7 +7863,7 @@ function processApis(taro, global) {
           options = transformResult.options;
           // 新 key 可能不存在
           if (!global.hasOwnProperty(key)) {
-            return unsupport(key)();
+            return nonsupport(key)();
           }
         }
         var task = null;
@@ -8076,7 +7900,8 @@ function processApis(taro, global) {
           }
         });
         // 给 promise 对象挂载属性
-        if (key === 'uploadFile' || key === 'downloadFile') {
+        if (['uploadFile', 'downloadFile'].includes(key)) {
+          equipTaskMethodsIntoPromise(task, p);
           p.progress = function (cb) {
             task === null || task === void 0 ? void 0 : task.onProgressUpdate(cb);
             return p;
@@ -8097,13 +7922,13 @@ function processApis(taro, global) {
       }
       // API 不存在
       if (!global.hasOwnProperty(platformKey)) {
-        taro[key] = unsupport(key);
+        taro[key] = nonsupport(key);
         return;
       }
-      if (typeof global[key] === 'function') {
+      if (isFunction(global[key])) {
         taro[key] = function () {
-          for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-            args[_key2] = arguments[_key2];
+          for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+            args[_key4] = arguments[_key4];
           }
           if (config.handleSyncApis) {
             return config.handleSyncApis(key, global, args);
@@ -8126,16 +7951,16 @@ function processApis(taro, global) {
 function equipCommonApis(taro, global) {
   var apis = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   taro.canIUseWebp = getCanIUseWebp(taro);
-  taro.getCurrentPages = getCurrentPages || unsupport('getCurrentPages');
-  taro.getApp = getApp || unsupport('getApp');
+  taro.getCurrentPages = getCurrentPages || nonsupport('getCurrentPages');
+  taro.getApp = getApp || nonsupport('getApp');
   taro.env = global.env || {};
   try {
-    taro.requirePlugin = requirePlugin || unsupport('requirePlugin');
+    taro.requirePlugin = requirePlugin || nonsupport('requirePlugin');
   } catch (error) {
-    taro.requirePlugin = unsupport('requirePlugin');
+    taro.requirePlugin = nonsupport('requirePlugin');
   }
   // request & interceptors
-  var request = apis.request ? apis.request : getNormalRequest(global);
+  var request = apis.request || getNormalRequest(global);
   function taroInterceptor(chain) {
     return request(chain.requestParams);
   }
@@ -8144,29 +7969,80 @@ function equipCommonApis(taro, global) {
   taro.addInterceptor = link.addInterceptor.bind(link);
   taro.cleanInterceptors = link.cleanInterceptors.bind(link);
   taro.miniGlobal = taro.options.miniGlobal = global;
+  taro.initAppInfo = function (appInfo) {
+    if (typeof taro.getAppInfo !== 'function') return;
+    taro.getAppInfo = function () {
+      return appInfo;
+    };
+  };
+}
+/**
+ * 将Task对象中的方法挂载到promise对象中，适配小程序api原生返回结果
+ * @param task Task对象 {RequestTask | DownloadTask | UploadTask}
+ * @param promise Promise
+ */
+function equipTaskMethodsIntoPromise(task, promise) {
+  if (!task || !promise) return;
+  var taskMethods = ['abort', 'onHeadersReceived', 'offHeadersReceived', 'onProgressUpdate', 'offProgressUpdate', 'onChunkReceived', 'offChunkReceived'];
+  task && taskMethods.forEach(function (method) {
+    if (method in task) {
+      promise[method] = task[method].bind(task);
+    }
+  });
 }
 
 
 /***/ }),
 
-/***/ "./node_modules/_@tarojs_taro@3.3.14@@tarojs/taro/index.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/_@tarojs_taro@3.3.14@@tarojs/taro/index.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/*! exports used: initPxTransform */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./node_modules/.store/@tarojs+taro@3.6.6/node_modules/@tarojs/taro/index.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+taro@3.6.6/node_modules/@tarojs/taro/index.js ***!
+  \***********************************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var _require = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/_@tarojs_runtime@3.3.14@@tarojs/runtime/dist/runtime.esm.js"),
-  container = _require.container,
-  SERVICE_IDENTIFIER = _require.SERVICE_IDENTIFIER;
-var taro = __webpack_require__(/*! @tarojs/api */ "./node_modules/_@tarojs_api@3.3.14@@tarojs/api/dist/index.esm.js").default;
-var hooks = container.get(SERVICE_IDENTIFIER.Hooks);
-if (typeof hooks.initNativeApi === 'function') {
-  hooks.initNativeApi(taro);
+var _require = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js"),
+  hooks = _require.hooks;
+var taro = (__webpack_require__(/*! @tarojs/api */ "./node_modules/.store/@tarojs+api@3.6.6/node_modules/@tarojs/api/dist/index.esm.js")["default"]);
+if (hooks.isExist('initNativeApi')) {
+  hooks.call('initNativeApi', taro);
 }
 module.exports = taro;
-module.exports.default = module.exports;
+module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ "./node_modules/.store/@tarojs+webpack5-runner@3.6.6/node_modules/@tarojs/webpack5-runner/dist/template/comp.js":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+webpack5-runner@3.6.6/node_modules/@tarojs/webpack5-runner/dist/template/comp.js ***!
+  \**********************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js");
+/* eslint-disable no-undef */
+
+// @ts-ignore
+Component((0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.createRecursiveComponentConfig)());
+
+/***/ }),
+
+/***/ "./node_modules/.store/@tarojs+webpack5-runner@3.6.6/node_modules/@tarojs/webpack5-runner/dist/template/custom-wrapper.js":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/.store/@tarojs+webpack5-runner@3.6.6/node_modules/@tarojs/webpack5-runner/dist/template/custom-wrapper.js ***!
+  \********************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+var __webpack_unused_export__;
+
+
+__webpack_unused_export__ = ({
+  value: true
+});
+/* eslint-disable no-undef */
+var runtime_1 = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/.store/@tarojs+runtime@3.6.6/node_modules/@tarojs/runtime/dist/runtime.esm.js");
+// @ts-ignore
+Component((0, runtime_1.createRecursiveComponentConfig)('custom-wrapper'));
 
 /***/ })
 
