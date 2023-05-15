@@ -12,5 +12,7 @@
         }
       ]
     }
-  }
+  },
+  "libVersion": "2.31.1",
+  "projectname": "let-us-think"
 }

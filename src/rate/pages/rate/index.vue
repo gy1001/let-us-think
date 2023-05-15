@@ -14,6 +14,7 @@
           class="nut-input-text"
           placeholder="请输入姓名"
           type="text"
+          clearable
         />
       </nut-form-item>
       <nut-form-item label="年龄">
@@ -22,6 +23,7 @@
           class="nut-input-text"
           placeholder="请输入年龄"
           type="text"
+          clearable
         />
       </nut-form-item>
       <nut-form-item label="联系电话">
@@ -30,6 +32,7 @@
           class="nut-input-text"
           placeholder="请输入联系电话"
           type="text"
+          clearable
         />
       </nut-form-item>
       <nut-form-item v-model="basicData.address" label="地址">
@@ -37,6 +40,7 @@
           class="nut-input-text"
           placeholder="请输入地址"
           type="text"
+          clearable
         />
       </nut-form-item>
       <nut-form-item label="备注">
