@@ -8,34 +8,45 @@
     </nut-cell-group>
 
     <nut-form>
-      <nut-form-item label="姓名">
+      <nut-form-item label="法语听力">
+        <nut-radio-group direction="horizontal" v-model="basicData.listen">
+          <nut-radio label="1">会</nut-radio>
+          <nut-radio label="2">否</nut-radio>
+        </nut-radio-group>
+      </nut-form-item>
+      <nut-form-item label="法语口语">
+        <nut-radio-group direction="horizontal" v-model="basicData.speak">
+          <nut-radio label="1">会</nut-radio>
+          <nut-radio label="2">否</nut-radio>
+        </nut-radio-group>
+      </nut-form-item>
+      <nut-form-item label="法语阅读">
+        <nut-radio-group direction="horizontal" v-model="basicData.read">
+          <nut-radio label="1">会</nut-radio>
+          <nut-radio label="2">否</nut-radio>
+        </nut-radio-group>
+      </nut-form-item>
+      <nut-form-item label="法语写作">
+        <nut-radio-group direction="horizontal" v-model="basicData.write">
+          <nut-radio label="1">会</nut-radio>
+          <nut-radio label="2">否</nut-radio>
+        </nut-radio-group>
+      </nut-form-item>
+      <nut-form-item label="法语英语综合">
+        <nut-radio-group direction="horizontal" v-model="basicData.write">
+          <nut-radio label="1">会</nut-radio>
+          <nut-radio label="2">否</nut-radio>
+        </nut-radio-group>
+      </nut-form-item>
+      <nut-form-item v-model="basicData.age" label="年龄">
         <nut-input
-          v-model="basicData.name"
           class="nut-input-text"
-          placeholder="请输入姓名"
+          placeholder="请输入地址"
           type="text"
           clearable
         />
       </nut-form-item>
-      <nut-form-item label="年龄">
-        <nut-input
-          v-model="basicData.age"
-          class="nut-input-text"
-          placeholder="请输入年龄"
-          type="text"
-          clearable
-        />
-      </nut-form-item>
-      <nut-form-item label="联系电话">
-        <nut-input
-          v-model="basicData.tel"
-          class="nut-input-text"
-          placeholder="请输入联系电话"
-          type="text"
-          clearable
-        />
-      </nut-form-item>
-      <nut-form-item v-model="basicData.address" label="地址">
+      <nut-form-item v-model="basicData.workAge" label="工作年龄">
         <nut-input
           class="nut-input-text"
           placeholder="请输入地址"
@@ -56,10 +67,15 @@
 import { ref, reactive } from 'vue'
 const radioVal = ref('1')
 const basicData = reactive({
+  listen: '',
+  speak: '',
+  read: '',
   name: '',
   age: '',
   tel: '',
   address: '',
+  workAge: '',
+  write: '',
 })
 </script>
 
