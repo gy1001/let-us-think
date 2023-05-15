@@ -1,30 +1,12 @@
 <template>
-  <view class="index">
-    <NumberDisplay/>
-    <NumberSubmit/>
-  </view>
+  <view class="index"> 首页 </view>
 </template>
 
-<script>
-import NumberDisplay from '../../components/NumberDisplay.vue'
-import NumberSubmit from '../../components/NumberSubmit.vue'
-
+<script lang="ts">
 export default {
-  name: 'Index',
-  components: {
-    NumberDisplay,
-    NumberSubmit
-  }
-}
+  name: "Index",
+  components: {},
+};
 </script>
 
-<style>
-.index {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
