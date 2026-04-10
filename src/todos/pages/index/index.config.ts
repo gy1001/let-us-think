@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '我的待办项',
+  navigationBarTitleText: 'My Todos',
 };

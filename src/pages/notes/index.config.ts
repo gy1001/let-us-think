@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '笔记',
+  navigationBarTitleText: 'Notes',
 };

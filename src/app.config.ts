@@ -1,29 +1,31 @@
 export default {
-  pages: ['pages/home/index', 'pages/mine/index', 'pages/notes/index'],
+  pages: ['pages/home/index', 'pages/notes/index', 'pages/mine/index'],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
+    navigationBarTitleText: 'Let Us Think',
     navigationBarTextStyle: 'black',
   },
   tabBar: {
-    color: '#9b9b9b',
-    selectedColor: '#f5a623',
+    color: '#999999',
+    selectedColor: '#1890ff',
+    backgroundColor: '#ffffff',
+    borderStyle: 'black',
     list: [
       {
-        text: '首页',
+        text: 'home',
         pagePath: 'pages/home/index',
         iconPath: 'images/tabBar/home.png',
         selectedIconPath: 'images/tabBar/home_active.png',
       },
       {
-        text: '笔记',
+        text: 'notes',
         pagePath: 'pages/notes/index',
         iconPath: 'images/tabBar/note.png',
         selectedIconPath: 'images/tabBar/note_active.png',
       },
       {
-        text: '我的',
+        text: 'mine',
         pagePath: 'pages/mine/index',
         iconPath: 'images/tabBar/mine.png',
         selectedIconPath: 'images/tabBar/mine_active.png',
