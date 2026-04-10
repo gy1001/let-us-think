@@ -4,12 +4,12 @@
     <view class="user-section">
       <nut-avatar size="large">
         <template #icon>
-          <My width="24" height="24"></My>
+          <My width="28" height="28"></My>
         </template>
       </nut-avatar>
       <view class="user-info">
-        <text class="username">用户昵称</text>
-        <text class="user-desc">个人简介</text>
+        <text class="user-name">{{username}}</text>
+        <text class="user-desc">{{userDesc}}</text>
       </view>
     </view>
 
@@ -17,17 +17,17 @@
     <nut-cell-group title="功能">
       <nut-cell title="我的笔记" is-link>
         <template #icon>
-          <Edit width="18" height="18"></Edit>
+          <Edit width="20" height="20"></Edit>
         </template>
       </nut-cell>
       <nut-cell title="我的待办" is-link>
         <template #icon>
-          <Check width="18" height="18"></Check>
+          <Check width="20" height="20"></Check>
         </template>
       </nut-cell>
       <nut-cell title="收藏" is-link>
         <template #icon>
-          <Star width="18" height="18"></Star>
+          <Star width="20" height="20"></Star>
         </template>
       </nut-cell>
     </nut-cell-group>
@@ -35,12 +35,12 @@
     <nut-cell-group title="设置">
       <nut-cell title="账号设置" is-link>
         <template #icon>
-          <Setting width="18" height="18"></Setting>
+          <Setting width="20" height="20"></Setting>
         </template>
       </nut-cell>
       <nut-cell title="关于我们" is-link>
         <template #icon>
-          <Tips width="18" height="18"></Tips>
+          <Tips width="20" height="20"></Tips>
         </template>
       </nut-cell>
     </nut-cell-group>
@@ -57,6 +57,7 @@ import { ref } from 'vue';
 import { My, Edit, Check, Star, Setting, Tips } from '@nutui/icons-vue-taro';
 
 const username = ref('用户昵称');
+const userDesc = ref('路漫漫其修远兮，吾将上下而求索');
 </script>
 
 <style lang="less">
@@ -67,33 +68,32 @@ const username = ref('用户昵称');
   .user-section {
     display: flex;
     align-items: center;
-    padding: 40px 20px 20px;
+    padding: 48px 20px 24px;
     background: linear-gradient(135deg, #1890ff 0%, #36cfc9 100%);
 
     .user-info {
-      margin-left: 16px;
+      margin-left: 18px;
       color: #fff;
 
-      .username {
+      .user-name {
         display: block;
-        font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
+        margin-bottom: 6px;
       }
 
       .user-desc {
         display: block;
-        margin-top: 4px;
-        font-size: 12px;
-        opacity: 0.8;
+        font-size: 26px;
+        opacity: 0.85;
       }
     }
   }
 
   .version {
     text-align: center;
-    padding: 20px;
+    padding: 24px;
     color: #999;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 </style>

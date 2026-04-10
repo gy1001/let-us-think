@@ -91,43 +91,46 @@ const handleAddNote = () => {
   background-color: #f5f5f5;
 
   .notes-list {
-    padding: 10px;
+    padding: 12px;
 
     .note-item {
       background-color: #fff;
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 10px;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
 
       .note-title {
-        font-size: 16px;
-        font-weight: 500;
-        color: #333;
-        margin-bottom: 8px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        //font-size: 34px;
       }
 
       .note-content {
-        font-size: 14px;
+        font-size: 26px;
         color: #666;
-        line-height: 1.5;
+        line-height: 1.6;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
       }
 
       .note-footer {
         display: flex;
         justify-content: space-between;
-        font-size: 12px;
+        align-items: center;
+        font-size: 22px;
         color: #999;
 
         .note-category {
           background-color: #e6f7ff;
           color: #1890ff;
-          padding: 2px 8px;
-          border-radius: 4px;
+          padding: 4px 10px;
+          border-radius: 6px;
+          font-size: 22px;
         }
       }
     }
@@ -137,15 +140,15 @@ const handleAddNote = () => {
     position: fixed;
     right: 20px;
     bottom: 100px;
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background: linear-gradient(135deg, #1890ff 0%, #36cfc9 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+    box-shadow: 0 4px 16px rgba(24, 144, 255, 0.4);
   }
 }
 </style>
