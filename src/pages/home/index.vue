@@ -1,6 +1,6 @@
 <template>
   <view class="home-page">
-    <!-- 顶部公告栏 -->
+    <!-- 顶部公告栏1111 -->
     <nut-noticebar scrollable :text="noticeText" />
 
     <!-- 轮播图 -->
@@ -12,16 +12,8 @@
       pagination-unselected-color="#fff"
       class="banner-swiper"
     >
-      <nut-swiper-item
-        v-for="(item, index) in bannerList"
-        :key="index"
-      >
-        <img
-          :src="item"
-          alt="banner"
-          class="banner-img"
-          draggable="false"
-        />
+      <nut-swiper-item v-for="(item, index) in bannerList" :key="index">
+        <img :src="item" alt="banner" class="banner-img" draggable="false" />
       </nut-swiper-item>
     </nut-swiper>
 
@@ -61,7 +53,10 @@
         is-link
         @click="handleToTodoPage"
       ></nut-cell>
-      <nut-empty v-if="recentTodos.length === 0" description="暂无待办事项"></nut-empty>
+      <nut-empty
+        v-if="recentTodos.length === 0"
+        description="暂无待办事项"
+      ></nut-empty>
     </nut-cell-group>
   </view>
 </template>
