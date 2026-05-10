@@ -53,6 +53,12 @@
         is-link
         @click="handleToTodoPage"
       ></nut-cell>
+      <nut-cell
+        title="喜帖随礼录入"
+        desc="记录随礼人员与金额"
+        is-link
+        @click="handleToGiftPage"
+      ></nut-cell>
       <nut-empty
         v-if="recentTodos.length === 0"
         description="暂无待办事项"
@@ -99,6 +105,12 @@ const handleToFavorite = () => {
 const handleToSetting = () => {
   Taro.switchTab({
     url: '/pages/mine/index',
+  });
+};
+
+const handleToGiftPage = () => {
+  Taro.navigateTo({
+    url: '/gifts/pages/index/index',
   });
 };
 </script>

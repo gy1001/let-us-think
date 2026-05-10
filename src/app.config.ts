@@ -45,5 +45,11 @@ export default {
       pages: ['pages/index/index'],
       independent: true,
     },
+    {
+      root: 'gifts',
+      name: 'gifts',
+      pages: ['pages/index/index'],
+      independent: true,
+    },
   ],
 };
