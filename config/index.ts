@@ -36,11 +36,15 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
     compiler: {
       type: 'webpack5',
       prebundle: {
-        enable: false,
+        // 预打包第三方依赖（如 vue、nutui），将其合并为单一 bundle，
+        // 减少 webpack 对 node_modules 的重复解析，加快冷启动速度
+        enable: true,
       },
     },
     cache: {
-      enable: false, // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
+      // 开启 webpack5 持久化文件缓存，二次编译直接复用上次结果，
+      // 显著提升 dev watch 模式下的重编译速度
+      enable: true,
     },
     mini: {
       postcss: {
