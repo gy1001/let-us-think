@@ -1,6 +1,6 @@
 <template>
   <view class="home-page">
-    <!-- 顶部公告栏1111 -->
+    <!-- 顶部公告栏 -->
     <nut-noticebar scrollable :text="noticeText" />
 
     <!-- 轮播图 -->
